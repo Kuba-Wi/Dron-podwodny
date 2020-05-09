@@ -155,7 +155,7 @@ template<typename Typ, int Rozmiar>
 std::ostream& operator << (std::ostream &Strm, const SWektor<Typ, Rozmiar> &Wek) {
 
     for(int i = 0; i < Rozmiar; i++)
-        Strm << Wek[i] << "   ";
+        Strm << Wek[i] << " ";
     
     Strm << std::endl;
 

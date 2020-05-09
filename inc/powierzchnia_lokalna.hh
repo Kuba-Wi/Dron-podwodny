@@ -12,7 +12,7 @@ class powierzchnia_lokalna {
         powierzchnia_lokalna(const std::string & nazwa) : nazwa_pliku(nazwa) {}
 
         /*! Zmienia lub dodaje nazwę pliku */
-        void zmien_plik_lok(const std::string & nazwa) { nazwa_pliku = nazwa; }
+        void dodaj_plik_lok(const std::string & nazwa);
 };
 
 #endif

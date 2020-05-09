@@ -20,9 +20,8 @@ class obiekt : public powierzchnia {
          /*! wczytuje wspolrzedne lokalne do wektora */
         void wczytaj_wspolrzedne();
     public:
-        obiekt() {}
-        obiekt(const std::string & nazwa_lok, const std::string & nazwa_glob) : 
-                powierzchnia(nazwa_lok, nazwa_glob) {}
+        obiekt();
+        obiekt(const std::string & nazwa_lok, const std::string & nazwa_glob);
 
         void ruch_na_wprost(double kat_wznoszenia, double odleglosc);
         void obrot(double kat_obrotu);
