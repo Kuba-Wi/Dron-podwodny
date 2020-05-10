@@ -5,9 +5,11 @@
 
 #include "SWektor.hh"
 #include "powierzchnia.hh"
+#include "SMacierz.hh"
 
 class obiekt : public powierzchnia {
     private:
+        enum osie{X, Y, Z};
         /*! zawiera wspolrzedne punktów obiektu, który ma zostać narysowany*/
         std::vector<SWektor<double, 3>> wspolrzedne;
         /*! o jaki kąt został dotychczas obrócony obiekt */
@@ -19,6 +21,8 @@ class obiekt : public powierzchnia {
         void wpisz_wspolrzedne_glob();
          /*! wczytuje wspolrzedne lokalne do wektora */
         void wczytaj_wspolrzedne();
+        /*! wypełnia macierz obrotu o laczny_kat_obrotu o zadany kat*/
+        void macierz_obrotu(SMacierz<double, 3> & obrot, osie os_obrotu, double kat_obrotu) const;
     public:
         obiekt();
         obiekt(const std::string & nazwa_lok, const std::string & nazwa_glob);

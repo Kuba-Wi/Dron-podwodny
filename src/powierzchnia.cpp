@@ -21,9 +21,10 @@ void powierzchnia::wczytaj_lok() {
     
     read >> wiersz;
     while(!read.eof()) {
-        if(read.bad()) {
+        if(!read) {
             read.clear();
             while(read.get() != '\n');
+            write << "#\n\n";
         }
         else
             write << wiersz;

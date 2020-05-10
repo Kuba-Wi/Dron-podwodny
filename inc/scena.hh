@@ -24,6 +24,8 @@ class scena {
         /*! rysuje wszystkie powierzchnie i obiekty na scenie */
         void rysuj() { Lacze.Rysuj(); }
 
+        void ruch_prosto(double kat_wznoszenia, double odleglosc);
+
 
 
 };

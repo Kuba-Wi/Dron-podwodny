@@ -19,4 +19,12 @@ int main() {
     char c;
     cout << "Nacisnij ENTER, aby zakonczyc ... " << flush;
     cin >> noskipws >> c;
+
+    proba.ruch_prosto(36000000,-50);
+    proba.rysuj();
+
+    cout << "Nacisnij ENTER, aby zakonczyc ... " << flush;
+    cin >> noskipws >> c;
+
+
 }
