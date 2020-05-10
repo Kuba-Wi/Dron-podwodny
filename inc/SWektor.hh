@@ -64,6 +64,8 @@ class SWektor {
      */
     SWektor<Typ, Rozmiar> operator *(Typ liczba) const;
 
+    SWektor<Typ, Rozmiar> operator /(Typ liczba) const;
+
     /*!
      * Metoda oblicza długość wektora:
      * Argumenty:   Brak
@@ -123,6 +125,15 @@ double SWektor<Typ, Rozmiar>::dlugosc() const {
     return sqrt(Wynik);
 }
 
+template<typename Typ, int Rozmiar>
+SWektor<Typ, Rozmiar> SWektor<Typ, Rozmiar>::operator /(Typ liczba) const {
+    SWektor<Typ, Rozmiar> Wynik;
+
+    for(int i = 0; i < Rozmiar; ++i)
+        Wynik[i] = skladowe[i] / liczba;
+
+    return Wynik;
+}
 
 
 

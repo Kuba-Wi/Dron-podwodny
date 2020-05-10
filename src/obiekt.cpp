@@ -17,9 +17,9 @@ obiekt::obiekt(const std::string & nazwa_lok, const std::string & nazwa_glob) :
     laczny_kat_obrotu = 0;
 }
 
-void obiekt::wczytaj_wspolrzedne() {
+void obiekt::wczytaj_wspolrzedne(const std::string & nazwa_pliku) {
     std::ifstream read;
-    read.open(plik_lokalny);
+    read.open(nazwa_pliku);
     if(!read.is_open())
         return;
 
@@ -61,49 +61,54 @@ void obiekt::wpisz_wspolrzedne_glob() {
     write.close();
 }
 
-void obiekt::macierz_obrotu(SMacierz<double, 3> & obrot, osie os_obrotu, double kat_obrotu) const {
+void obiekt::macierz_obrotu(SMacierz<double, 3> & obrot) const {
     const double pi = acos(-1);
 
-    int przejscie = 1, poczatek = 0;      //o ile pól przechodzimy w pętli for i od którego pola zaczynamy
-    if(os_obrotu == X)
-        poczatek = 1;
-    else if(os_obrotu == Y)
-        przejscie = 2;
-
-
     for(int i = 0; i < 3; ++i) {
-        obrot(os_obrotu, i) = 0;
-        obrot(i, os_obrotu) = 0;
+        obrot(2, i) = 0;
+        obrot(i, 2) = 0;
     }
-    obrot(os_obrotu, os_obrotu) = 1;
+    obrot(2, 2) = 1;
 
-    obrot(poczatek,poczatek) = cos(pi*(kat_obrotu/180.0));
-    obrot(poczatek+przejscie, poczatek+przejscie) = obrot(poczatek, poczatek);
-    obrot(poczatek, poczatek+przejscie) = -sin(pi*(kat_obrotu/180.0));
-    obrot(poczatek+przejscie, poczatek) = -obrot(poczatek, poczatek+przejscie);
+    obrot(0, 0) = cos(pi*(laczny_kat_obrotu/180.0));
+    obrot(1, 1) = obrot(0, 0);
+    obrot(1, 0) = sin(pi*(laczny_kat_obrotu/180.0));
+    obrot(0, 1) = -obrot(1, 0);
 }
 
 void obiekt::ruch_na_wprost(double kat_wznoszenia, double odleglosc) {
-    wczytaj_wspolrzedne();
+    wczytaj_wspolrzedne(plik_z_punktami);
+
+    const double pi = acos(-1);
 
     SWektor<double, 3> translacja;
+
+    translacja[0] = cos(pi*(laczny_kat_obrotu/180.0));
+    translacja[1] = sin(pi*(laczny_kat_obrotu/180.0));
+    translacja[2] = sin(pi*(kat_wznoszenia/180.0));
+    
+    translacja = translacja / translacja.dlugosc();
+    translacja = translacja * odleglosc;
+
+    for(SWektor<double, 3> &x : wspolrzedne) {
+        x = x + translacja;
+    }
+
+    przesuniecie = przesuniecie + translacja;    
+    wpisz_wspolrzedne_glob();
+}
+
+void obiekt::obrot(double kat_obrotu) {
+    wczytaj_wspolrzedne(plik_lokalny);
+
     SMacierz<double, 3> obrot;
 
-    for(int i = 1; i < 3; ++i)
-        translacja[i] = 0;
-    translacja[0] = odleglosc;
-
-    macierz_obrotu(obrot, Z, laczny_kat_obrotu);
-    translacja = obrot * translacja;            
-
-    macierz_obrotu(obrot, X, kat_wznoszenia);
-    translacja = obrot * translacja;
-
-    macierz_obrotu(obrot, Y, kat_wznoszenia);
-    translacja = obrot * translacja;
+    laczny_kat_obrotu += kat_obrotu;
+    macierz_obrotu(obrot);
 
     for(SWektor<double, 3> &x : wspolrzedne)
-        x = x + translacja;
+        x = obrot * x + przesuniecie;
+
     
     wpisz_wspolrzedne_glob();
 }

@@ -40,3 +40,6 @@ void scena::ruch_prosto(double kat_wznoszenia, double odleglosc) {
     dron.ruch_na_wprost(kat_wznoszenia, odleglosc);
 }
 
+void scena::obrot(double kat_obrotu) {
+    dron.obrot(kat_obrotu);
+}
