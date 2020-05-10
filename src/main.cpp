@@ -5,6 +5,7 @@ using namespace std;
 void obsluga_sceny() {
     scena glowna;
     glowna.dodaj_drona("dat/prostopadloscian.pow", "dat/prostopadloscian1.pow");
+    glowna.dodaj_dno("dat/dno.pow", "dat/dno1.pow");
     glowna.inicjalizuj();
     glowna.rysuj();
 

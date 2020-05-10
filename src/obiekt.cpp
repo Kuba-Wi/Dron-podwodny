@@ -83,16 +83,14 @@ void obiekt::ruch_na_wprost(double kat_wznoszenia, double odleglosc) {
 
     SWektor<double, 3> translacja;
 
-    translacja[0] = cos(pi*(laczny_kat_obrotu/180.0));
-    translacja[1] = sin(pi*(laczny_kat_obrotu/180.0));
+    translacja[0] = cos(pi*(laczny_kat_obrotu/180.0)) * cos(pi*(kat_wznoszenia/180.0));
+    translacja[1] = sin(pi*(laczny_kat_obrotu/180.0)) * cos(pi*(kat_wznoszenia/180.0));
     translacja[2] = sin(pi*(kat_wznoszenia/180.0));
-    
-    translacja = translacja / translacja.dlugosc();
+
     translacja = translacja * odleglosc;
 
-    for(SWektor<double, 3> &x : wspolrzedne) {
+    for(SWektor<double, 3> &x : wspolrzedne)
         x = x + translacja;
-    }
 
     przesuniecie = przesuniecie + translacja;    
     wpisz_wspolrzedne_glob();

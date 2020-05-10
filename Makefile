@@ -1,6 +1,9 @@
 
 CXXFLAGS=-g -Iinc -Wall -pedantic -std=c++17
 
+__start__: ./dron_podwodny
+	./dron_podwodny
+
 
 ./dron_podwodny: obj obj/main.o obj/powierzchnia.o obj/obiekt.o obj/scena.o obj/lacze_do_gnuplota.o
 	g++ -Wall -pedantic -o dron_podwodny obj/main.o obj/scena.o obj/powierzchnia.o obj/obiekt.o obj/lacze_do_gnuplota.o
