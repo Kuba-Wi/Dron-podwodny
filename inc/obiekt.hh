@@ -20,8 +20,8 @@ class obiekt : public powierzchnia {
         void wpisz_wspolrzedne_glob();
          /*! wczytuje wspolrzedne lokalne do wektora */
         void wczytaj_wspolrzedne(const std::string & nazwa_pliku);
-        /*! wypełnia macierz obrotu o laczny_kat_obrotu o zadany kat*/
-        void macierz_obrotu(SMacierz<double, 3> & obrot) const;
+        /*! wypełnia macierz obrotu o zadany kat*/
+        void macierz_obrotu(SMacierz<double, 3> & obrot, double kat_obrotu) const;
     public:
         obiekt();
         obiekt(const std::string & nazwa_lok, const std::string & nazwa_glob);

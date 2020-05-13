@@ -11,6 +11,9 @@ class scena {
         powierzchnia woda;
         obiekt dron;
         PzG::LaczeDoGNUPlota Lacze;
+
+        /*! rysuje wszystkie powierzchnie i obiekty na scenie */
+        void rysuj() { Lacze.Rysuj(); }
     public:
         scena() {}
 
@@ -21,8 +24,6 @@ class scena {
 
         /*! startuje gnuplota */
         void inicjalizuj();
-        /*! rysuje wszystkie powierzchnie i obiekty na scenie */
-        void rysuj() { Lacze.Rysuj(); }
 
         void ruch_prosto(double kat_wznoszenia, double odleglosc);
         void obrot(double kat_obrotu);

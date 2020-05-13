@@ -61,7 +61,7 @@ void obiekt::wpisz_wspolrzedne_glob() {
     write.close();
 }
 
-void obiekt::macierz_obrotu(SMacierz<double, 3> & obrot) const {
+void obiekt::macierz_obrotu(SMacierz<double, 3> & obrot, double kat_obrotu) const {
     const double pi = acos(-1);
 
     for(int i = 0; i < 3; ++i) {
@@ -70,9 +70,9 @@ void obiekt::macierz_obrotu(SMacierz<double, 3> & obrot) const {
     }
     obrot(2, 2) = 1;
 
-    obrot(0, 0) = cos(pi*(laczny_kat_obrotu/180.0));
+    obrot(0, 0) = cos(pi*(kat_obrotu/180.0));
     obrot(1, 1) = obrot(0, 0);
-    obrot(1, 0) = sin(pi*(laczny_kat_obrotu/180.0));
+    obrot(1, 0) = sin(pi*(kat_obrotu/180.0));
     obrot(0, 1) = -obrot(1, 0);
 }
 
@@ -102,7 +102,12 @@ void obiekt::obrot(double kat_obrotu) {
     SMacierz<double, 3> obrot;
 
     laczny_kat_obrotu += kat_obrotu;
-    macierz_obrotu(obrot);
+    while(laczny_kat_obrotu >= 360.0)
+        laczny_kat_obrotu -= 360.0;
+    while(laczny_kat_obrotu <= -360.0)
+        laczny_kat_obrotu -= 360.0;
+
+    macierz_obrotu(obrot, laczny_kat_obrotu);
 
     for(SWektor<double, 3> &x : wspolrzedne)
         x = obrot * x + przesuniecie;

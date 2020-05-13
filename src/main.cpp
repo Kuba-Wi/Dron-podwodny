@@ -2,12 +2,16 @@
 
 using namespace std;
 
+void naprawa_strumienia(istream & Strm) {
+    Strm.clear();
+    while(Strm.get() != '\n');
+}
+
 void obsluga_sceny() {
     scena glowna;
     glowna.dodaj_drona("dat/prostopadloscian.pow", "dat/prostopadloscian1.pow");
     glowna.dodaj_dno("dat/dno.pow", "dat/dno1.pow");
     glowna.inicjalizuj();
-    glowna.rysuj();
 
     char wybor = 'm';
     double kat;
@@ -21,20 +25,30 @@ void obsluga_sceny() {
                 cout << "\tWartosc kata> ";
                 cin >> kat;
                 cin.get();
+                if(!cin) {
+                    naprawa_strumienia(cin);
+                    break;
+                }
                 cout << "\nPodaj wartosc odleglosci, na ktora ma sie przemiescic dron.\n";
                 cout << "\tWartosc odleglosci> ";
                 cin >> odleglosc;
                 cin.get();
+                if(!cin) {
+                    naprawa_strumienia(cin);
+                    break;
+                }
                 glowna.ruch_prosto(kat, odleglosc);
-                glowna.rysuj();
                 break;
             case 'o':
                 cout << "\tPodaj wartosc kata w stopniach.\n";
                 cout << "\tWartosc kata> ";
                 cin >> kat;
                 cin.get();
+                if(!cin) {
+                    naprawa_strumienia(cin);
+                    break;
+                }
                 glowna.obrot(kat);
-                glowna.rysuj();
                 break;
             case 'm':
                 cout << "\tr - zadaj ruch na wprost\n";
