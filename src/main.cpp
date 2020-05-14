@@ -11,6 +11,7 @@ void obsluga_sceny() {
     scena glowna;
     glowna.dodaj_drona("dat/prostopadloscian.pow", "dat/prostopadloscian1.pow");
     glowna.dodaj_dno("dat/dno.pow", "dat/dno1.pow");
+    glowna.dodaj_wode("dat/pow_wody.dat", "dat/pow_wody1.dat");
     glowna.inicjalizuj();
 
     char wybor = 'm';

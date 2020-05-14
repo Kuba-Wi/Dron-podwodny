@@ -38,11 +38,17 @@ void scena::inicjalizuj() {
 }
 
 void scena::ruch_prosto(double kat_wznoszenia, double odleglosc) {
-    dron.ruch_na_wprost(kat_wznoszenia, odleglosc);
-    rysuj();
+    int kwant = 400;
+    for(int i = 0; i < kwant; ++i) {
+        dron.ruch_na_wprost(kat_wznoszenia, odleglosc/double(kwant));
+        rysuj();
+    }
 }
 
 void scena::obrot(double kat_obrotu) {
-    dron.obrot(kat_obrotu);
-    rysuj();
+    int kwant = 360;
+    for(int i = 0; i < kwant; ++i) {
+        dron.obrot(kat_obrotu/double(kwant));
+        rysuj();
+    }
 }
