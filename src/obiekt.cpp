@@ -105,7 +105,7 @@ void obiekt::obrot(double kat_obrotu) {
     while(laczny_kat_obrotu >= 360.0)
         laczny_kat_obrotu -= 360.0;
     while(laczny_kat_obrotu <= -360.0)
-        laczny_kat_obrotu -= 360.0;
+        laczny_kat_obrotu += 360.0;
 
     macierz_obrotu(obrot, laczny_kat_obrotu);
 
