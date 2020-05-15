@@ -119,6 +119,6 @@ void obiekt::obrot(double kat_obrotu) {
     wpisz_wspolrzedne_glob();
 }
 
-double obiekt::dolna_sciana() const {
-    return przesuniecie[2] - polowa_wysokosci;
+double obiekt::polozenie_z() const {
+    return przesuniecie[2];
 }

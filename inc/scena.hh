@@ -14,7 +14,12 @@ class scena {
 
         /*! rysuje wszystkie powierzchnie i obiekty na scenie */
         void rysuj() { Lacze.Rysuj(); }
-        bool kolizja_dno();
+
+        /*! zwrace tru gdy wykonanie ruchu zakończy się kolizją */
+        bool kolizja(double kat_wznoszenia, double odleglosc) const;
+
+        /*! zwraca true gdy jest wynurzenie */
+        bool wynurzenie() const;
     public:
         scena() {}
 

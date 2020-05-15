@@ -1,12 +1,18 @@
 #include "scena.hh"
 #include <iostream>
+#include <cmath>
 
 
 
-bool scena::kolizja_dno() {
-    return (dron.dolna_sciana() <= dno.polozenie_z());
+bool scena::kolizja(double kat_wznoszenia, double odleglosc) const {
+    double przesun_dol = sin(acos(-1) * (kat_wznoszenia/180.0)) * odleglosc;
+
+    return (fabs(dron.polozenie_z() + przesun_dol - dno.wysokosc_z()) <= dron.promien());
 }
 
+bool scena::wynurzenie() const {
+    return (fabs(dron.polozenie_z() - woda.wysokosc_z()) <= dron.promien());
+}
 
 
 
@@ -52,14 +58,16 @@ void scena::inicjalizuj() {
 void scena::ruch_prosto(double kat_wznoszenia, double odleglosc) {
     int kwant = 250;
     for(int i = 0; i < kwant; ++i) {
+        if(kolizja(kat_wznoszenia, odleglosc/double(kwant))) {
+            std::cout << "Kolizja.\n";
+            break;
+        } else if(wynurzenie() && ((kat_wznoszenia > 0 && odleglosc > 0) || (kat_wznoszenia < 0 && odleglosc < 0))) {
+            std::cout << "Wynurzenie.\n";
+            odleglosc = odleglosc * cos(acos(-1) * kat_wznoszenia / 180.0);
+            kat_wznoszenia = 0;
+        }
         dron.ruch_na_wprost(kat_wznoszenia, odleglosc/double(kwant));
         rysuj();
-        if(kolizja_dno()) {
-            std::cout << "Kolizja.\n";
-            dron.ruch_na_wprost(kat_wznoszenia, -odleglosc/double(kwant));
-            rysuj();
-            break;
-        }
     }
 }
 
@@ -70,3 +78,4 @@ void scena::obrot(double kat_obrotu) {
         rysuj();
     }
 }
+

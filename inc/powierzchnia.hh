@@ -18,7 +18,8 @@ class powierzchnia {
         /*! Wczytuje współrzędne lokalne do pliku z punktami */
         void wczytaj_lok();
 
-        double polozenie_z() const { return z_powierzchni; }
+        /*! zwraca wspolrzedna z-towa powierzchni*/
+        double wysokosc_z() const { return z_powierzchni; }
 };
 
 #endif

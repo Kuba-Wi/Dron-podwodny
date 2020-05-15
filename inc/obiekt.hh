@@ -32,7 +32,10 @@ class obiekt : public powierzchnia {
         void obrot(double kat_obrotu);
 
         /*! zwraca wartość współrzędnej z-towej dolnej ściany drona */
-        double dolna_sciana() const;
+        double polozenie_z() const;
+
+        /*! zwraca polowe wysokości drona */
+        double promien() const { return polowa_wysokosci; }
 };
 
 
