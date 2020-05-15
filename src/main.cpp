@@ -7,7 +7,13 @@ void naprawa_strumienia(istream & Strm) {
     while(Strm.get() != '\n');
 }
 
+void inf_o_obiektach() {
+    std::cout << "\n\tAktualna liczba obiektow wektor 3D: " << scena::aktualnie_obiekty() << "\n";
+    std::cout << "\tLaczna liczba obiektow wektor 3D: " << scena::lacznie_obiekty() << "\n";
+}
+
 void obsluga_sceny() {
+    {
     scena glowna;
     glowna.dodaj_drona("dat/prostopadloscian.pow", "dat/prostopadloscian1.pow");
     glowna.dodaj_dno("dat/dno.pow", "dat/dno1.pow");
@@ -58,10 +64,12 @@ void obsluga_sceny() {
                 cout << "\tk - koniec dzialania programu\n";
                 break;
         }
+        inf_o_obiektach();
         cout << "\nTwoj wybor, m - menu> ";
         cin >> wybor;
     }
-
+    }
+    inf_o_obiektach();
 }
 
 int main() {
