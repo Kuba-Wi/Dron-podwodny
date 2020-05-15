@@ -15,6 +15,8 @@ class obiekt : public powierzchnia {
         double laczny_kat_obrotu;
         /*! przesunięcie obiektu względem wspolrzednych lokalnych */
         SWektor<double, 3> przesuniecie;
+        /*! odległość środka drona od ściany górnej */
+        double polowa_wysokosci;
 
         /*! wpisuje wspolrzedne z vectora do pliku globalnego*/
         void wpisz_wspolrzedne_glob();
@@ -28,6 +30,9 @@ class obiekt : public powierzchnia {
 
         void ruch_na_wprost(double kat_wznoszenia, double odleglosc);
         void obrot(double kat_obrotu);
+
+        /*! zwraca wartość współrzędnej z-towej dolnej ściany drona */
+        double dolna_sciana() const;
 };
 
 

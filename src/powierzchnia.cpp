@@ -32,6 +32,8 @@ void powierzchnia::wczytaj_lok() {
         read >> wiersz;
     }
 
+    z_powierzchni = wiersz[2];
+
     read.close();
     write.close();
 }

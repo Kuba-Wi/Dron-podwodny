@@ -14,6 +14,7 @@ class scena {
 
         /*! rysuje wszystkie powierzchnie i obiekty na scenie */
         void rysuj() { Lacze.Rysuj(); }
+        bool kolizja_dno();
     public:
         scena() {}
 

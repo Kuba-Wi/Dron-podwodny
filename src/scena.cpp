@@ -1,6 +1,18 @@
 #include "scena.hh"
 #include <iostream>
 
+
+
+bool scena::kolizja_dno() {
+    return (dron.dolna_sciana() <= dno.polozenie_z());
+}
+
+
+
+
+
+
+
 void scena::dodaj_dno(const std::string & nazwa_lok, const std::string & nazwa_glob) {
     dno = powierzchnia(nazwa_lok, nazwa_glob);
     
@@ -38,10 +50,16 @@ void scena::inicjalizuj() {
 }
 
 void scena::ruch_prosto(double kat_wznoszenia, double odleglosc) {
-    int kwant = 400;
+    int kwant = 250;
     for(int i = 0; i < kwant; ++i) {
         dron.ruch_na_wprost(kat_wznoszenia, odleglosc/double(kwant));
         rysuj();
+        if(kolizja_dno()) {
+            std::cout << "Kolizja.\n";
+            dron.ruch_na_wprost(kat_wznoszenia, -odleglosc/double(kwant));
+            rysuj();
+            break;
+        }
     }
 }
 

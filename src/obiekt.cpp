@@ -15,6 +15,9 @@ obiekt::obiekt(const std::string & nazwa_lok, const std::string & nazwa_glob) :
         przesuniecie[i] = 0;
     
     laczny_kat_obrotu = 0;
+
+    wczytaj_wspolrzedne(nazwa_lok);
+    polowa_wysokosci = fabs(wspolrzedne[0][2] - wspolrzedne[1][2]);
 }
 
 void obiekt::wczytaj_wspolrzedne(const std::string & nazwa_pliku) {
@@ -24,7 +27,7 @@ void obiekt::wczytaj_wspolrzedne(const std::string & nazwa_pliku) {
         return;
 
     SWektor<double, 3> wiersz;
-    wspolrzedne.clear();
+    wspolrzedne.erase(wspolrzedne.begin(), wspolrzedne.end());
 
     read >> wiersz;
     while(!read.eof()) {
@@ -114,4 +117,8 @@ void obiekt::obrot(double kat_obrotu) {
 
     
     wpisz_wspolrzedne_glob();
+}
+
+double obiekt::dolna_sciana() const {
+    return przesuniecie[2] - polowa_wysokosci;
 }
