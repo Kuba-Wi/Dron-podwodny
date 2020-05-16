@@ -38,7 +38,7 @@ class obiekt : public powierzchnia {
 
     public:
         obiekt();
-        ~obiekt() { aktualnie_obiektow3D = 0; }
+        ~obiekt() { aktualnie_obiektow3D -= wspolrzedne.size(); }
        
         /*! wylicza polozenie zetowe środka lokalnego drona oraz polowe wysokosci*/
         void inicjalizuj_obiekt();
