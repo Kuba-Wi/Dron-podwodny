@@ -18,7 +18,8 @@ bool scena::wynurzenie() const {
 
 
 void scena::dodaj_dno(const std::string & nazwa_lok, const std::string & nazwa_glob) {
-    dno = powierzchnia(nazwa_lok, nazwa_glob);
+    dno.dodaj_plik_lok(nazwa_lok);
+    dno.dodaj_plik_glob(nazwa_glob);
     
     dno.wczytaj_lok();
 
@@ -28,7 +29,8 @@ void scena::dodaj_dno(const std::string & nazwa_lok, const std::string & nazwa_g
 }
 
 void scena::dodaj_wode(const std::string & nazwa_lok, const std::string & nazwa_glob) {
-    woda = powierzchnia(nazwa_lok, nazwa_glob);
+    woda.dodaj_plik_lok(nazwa_lok);
+    woda.dodaj_plik_glob(nazwa_glob);
 
     woda.wczytaj_lok();
 
@@ -38,7 +40,9 @@ void scena::dodaj_wode(const std::string & nazwa_lok, const std::string & nazwa_
 }
 
 void scena::dodaj_drona(const std::string & nazwa_lok, const std::string & nazwa_glob) {
-    dron = obiekt(nazwa_lok, nazwa_glob);
+    dron.dodaj_plik_lok(nazwa_lok);
+    dron.dodaj_plik_glob(nazwa_glob);
+    dron.inicjalizuj_obiekt();
 
     dron.wczytaj_lok();
 

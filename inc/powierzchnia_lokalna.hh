@@ -6,13 +6,10 @@
 class powierzchnia_lokalna {
     protected:
         /*! nazwa pliku ze współrzędnymi lokalnymi powierzchni */
-        std::string nazwa_pliku;
+        std::string nazwa_pliku_lok;
     public:
         powierzchnia_lokalna() {}
-        powierzchnia_lokalna(const std::string & nazwa) : nazwa_pliku(nazwa) {}
-
-        /*! Zmienia lub dodaje nazwę pliku */
-        void dodaj_plik_lok(const std::string & nazwa);
+        powierzchnia_lokalna(const std::string & nazwa) : nazwa_pliku_lok(nazwa) {}
 };
 
 #endif

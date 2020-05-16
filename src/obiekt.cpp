@@ -9,18 +9,35 @@ obiekt::obiekt() {
     laczny_kat_obrotu = 0;
 }
 
-obiekt::obiekt(const std::string & nazwa_lok, const std::string & nazwa_glob) : 
-                powierzchnia(nazwa_lok, nazwa_glob) {
-    for(int i = 0; i < 3; ++i)
-        przesuniecie[i] = 0;
-    
-    laczny_kat_obrotu = 0;
+void obiekt::inicjalizuj_obiekt() {
+    wczytaj_wspolrzedne_lok();
 
-    wczytaj_wspolrzedne(nazwa_lok);
-    polowa_wysokosci = fabs(wspolrzedne[0][2] - wspolrzedne[1][2]);
+    std::vector<double> zety;
+
+    for(auto & wiersz : wspolrzedne)
+        zety.push_back(wiersz[2]);
+    
+    auto minmax = std::minmax_element(zety.begin(), zety.end());
+
+    srodek_lok = (*minmax.first + *minmax.second) / 2;
+    polowa_wysokosci = fabs(*minmax.first - *minmax.second) / 2;
+
+    zety.erase(zety.begin(), zety.end());
 }
 
-void obiekt::wczytaj_wspolrzedne(const std::string & nazwa_pliku) {
+
+// obiekt::obiekt(const std::string & nazwa_lok, const std::string & nazwa_glob) : 
+//                 powierzchnia(nazwa_lok, nazwa_glob) {
+//     for(int i = 0; i < 3; ++i)
+//         przesuniecie[i] = 0;
+    
+//     laczny_kat_obrotu = 0;
+
+//     wczytaj_wspolrzedne_lok();
+//     polowa_wysokosci = fabs(wspolrzedne[0][2] - wspolrzedne[1][2]);
+// }
+
+void obiekt::wczytaj_wspolrz(const std::string & nazwa_pliku) {
     std::ifstream read;
     read.open(nazwa_pliku);
     if(!read.is_open())
@@ -42,6 +59,13 @@ void obiekt::wczytaj_wspolrzedne(const std::string & nazwa_pliku) {
     }
 
     read.close();
+}
+
+void obiekt::wczytaj_wspolrzedne_lok() {
+    wczytaj_wspolrz(nazwa_pliku_lok);
+}
+void obiekt::wczytaj_wspolrzedne_glob() {
+    wczytaj_wspolrz(plik_z_punktami);
 }
 
 void obiekt::wpisz_wspolrzedne_glob() {
@@ -80,7 +104,7 @@ void obiekt::macierz_obrotu(SMacierz<double, 3> & obrot, double kat_obrotu) cons
 }
 
 void obiekt::ruch_na_wprost(double kat_wznoszenia, double odleglosc) {
-    wczytaj_wspolrzedne(plik_z_punktami);
+    wczytaj_wspolrzedne_glob();
 
     const double pi = acos(-1);
 
@@ -100,7 +124,7 @@ void obiekt::ruch_na_wprost(double kat_wznoszenia, double odleglosc) {
 }
 
 void obiekt::obrot(double kat_obrotu) {
-    wczytaj_wspolrzedne(plik_lokalny);
+    wczytaj_wspolrzedne_lok();
 
     SMacierz<double, 3> obrot;
 

@@ -4,7 +4,15 @@
 
 
 powierzchnia::powierzchnia(const std::string & nazwa_lok, const std::string & nazwa_glob) {
-    plik_lokalny = nazwa_lok;
+    nazwa_pliku_lok = nazwa_lok;
+    plik_z_punktami = nazwa_glob;
+}
+
+void powierzchnia::dodaj_plik_lok(const std::string & nazwa_lok) {
+    nazwa_pliku_lok = nazwa_lok;
+}
+
+void powierzchnia::dodaj_plik_glob(const std::string & nazwa_glob) {
     plik_z_punktami = nazwa_glob;
 }
 
@@ -13,7 +21,7 @@ void powierzchnia::wczytaj_lok() {
     std::ofstream write;
     SWektor<double, 3> wiersz;
 
-    read.open(plik_lokalny);
+    read.open(nazwa_pliku_lok);
     write.open(plik_z_punktami);
 
     if(!(read.is_open() && write.is_open()))

@@ -17,21 +17,31 @@ class obiekt : public powierzchnia {
         SWektor<double, 3> przesuniecie;
         /*! odległość środka drona od ściany górnej */
         double polowa_wysokosci;
+        /*! polorzenie zetowe lokalnego środka drona */
+        double srodek_lok;
 
+        /*! wczytuje wspolrzedne z pliku do wektora */
+        void wczytaj_wspolrz(const std::string & nazwa_pliku);
+         /*! wczytuje wspolrzedne lokalne do wektora */
+        void wczytaj_wspolrzedne_lok();
+        /*! wczytuje wspolrzedne globalne do wektora */
+        void wczytaj_wspolrzedne_glob();
+        
         /*! wpisuje wspolrzedne z vectora do pliku globalnego*/
         void wpisz_wspolrzedne_glob();
-         /*! wczytuje wspolrzedne lokalne do wektora */
-        void wczytaj_wspolrzedne(const std::string & nazwa_pliku);
         /*! wypełnia macierz obrotu o zadany kat*/
         void macierz_obrotu(SMacierz<double, 3> & obrot, double kat_obrotu) const;
+
     public:
         obiekt();
-        obiekt(const std::string & nazwa_lok, const std::string & nazwa_glob);
+       // obiekt(const std::string & nazwa_lok, const std::string & nazwa_glob);
+        /*! wylicza polozenie zetowe środka lokalnego drona oraz polowe wysokosci*/
+        void inicjalizuj_obiekt();
 
         void ruch_na_wprost(double kat_wznoszenia, double odleglosc);
         void obrot(double kat_obrotu);
 
-        /*! zwraca wartość współrzędnej z-towej dolnej ściany drona */
+        /*! zwraca wartość współrzędnej z-towej środka drona */
         double polozenie_z() const;
 
         /*! zwraca polowe wysokości drona */
