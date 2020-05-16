@@ -8,8 +8,8 @@ void naprawa_strumienia(istream & Strm) {
 }
 
 void inf_o_obiektach() {
-    std::cout << "\n\tAktualna liczba obiektow wektor 3D: " << scena::aktualnie_obiekty() << "\n";
-    std::cout << "\tLaczna liczba obiektow wektor 3D: " << scena::lacznie_obiekty() << "\n";
+    std::cout << "\n\tAktualna liczba obiektow wektor 3D: " << obiekt::aktualnie_obiekty() << "\n";
+    std::cout << "\tLaczna liczba obiektow wektor 3D: " << obiekt::lacznie_obiekty() << "\n";
 }
 
 void obsluga_sceny() {

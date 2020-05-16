@@ -3,11 +3,6 @@
 #include <fstream>
 
 
-powierzchnia::powierzchnia(const std::string & nazwa_lok, const std::string & nazwa_glob) {
-    nazwa_pliku_lok = nazwa_lok;
-    plik_z_punktami = nazwa_glob;
-}
-
 void powierzchnia::dodaj_plik_lok(const std::string & nazwa_lok) {
     nazwa_pliku_lok = nazwa_lok;
 }

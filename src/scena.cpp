@@ -2,8 +2,6 @@
 #include <iostream>
 #include <cmath>
 
-int scena::lacznie_obiektow = 0;
-int scena::aktualnie_obiektow = 0;
 
 bool scena::kolizja(double kat_wznoszenia, double odleglosc) const {
     double przesun_dol = sin(acos(-1) * (kat_wznoszenia/180.0)) * odleglosc;
@@ -49,9 +47,6 @@ void scena::dodaj_drona(const std::string & nazwa_lok, const std::string & nazwa
     char pom[100] = {0};
     nazwa_glob.copy(pom, 100);
     Lacze.DodajNazwePliku(pom);
-
-    ++lacznie_obiektow;
-    ++aktualnie_obiektow;
 }
 
 void scena::inicjalizuj() {

@@ -12,9 +12,6 @@ class scena {
         obiekt dron;
         PzG::LaczeDoGNUPlota Lacze;
 
-        static int lacznie_obiektow;
-        static int aktualnie_obiektow;
-
         /*! rysuje wszystkie powierzchnie i obiekty na scenie */
         void rysuj() { Lacze.Rysuj(); }
 
@@ -25,7 +22,6 @@ class scena {
         bool wynurzenie() const;
     public:
         scena() {}
-        ~scena() { --aktualnie_obiektow; }
 
         /*! dodaje dno do sceny i do lacza do gnuplota */
         void dodaj_dno(const std::string & nazwa_lok, const std::string & nazwa_glob);
@@ -38,8 +34,6 @@ class scena {
         void ruch_prosto(double kat_wznoszenia, double odleglosc);
         void obrot(double kat_obrotu);
 
-        static int lacznie_obiekty() { return lacznie_obiektow; }
-        static int aktualnie_obiekty() { return aktualnie_obiektow; }
 };
 
 

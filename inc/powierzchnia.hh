@@ -12,7 +12,8 @@ class powierzchnia : public powierzchnia_lokalna {
         double z_powierzchni;
     public:
         powierzchnia() {}
-        powierzchnia(const std::string & nazwa_lok, const std::string & nazwa_glob);
+        powierzchnia(const std::string & nazwa_lok, const std::string & nazwa_glob) :
+                    powierzchnia_lokalna(nazwa_lok), plik_z_punktami(nazwa_glob) {}
 
         /*! dodaje plik lokalny ze wspolrzednymi */
         void dodaj_plik_lok(const std::string & nazwa_lok);

@@ -2,6 +2,9 @@
 #include <fstream>
 #include <cmath>
 
+int obiekt::lacznie_obiektow3D = 0;
+int obiekt::aktualnie_obiektow3D = 0;
+
 obiekt::obiekt() {
     for(int i = 0; i < 3; ++i)
         przesuniecie[i] = 0;
@@ -21,21 +24,8 @@ void obiekt::inicjalizuj_obiekt() {
 
     srodek_lok = (*minmax.first + *minmax.second) / 2;
     polowa_wysokosci = fabs(*minmax.first - *minmax.second) / 2;
-
-    zety.erase(zety.begin(), zety.end());
 }
 
-
-// obiekt::obiekt(const std::string & nazwa_lok, const std::string & nazwa_glob) : 
-//                 powierzchnia(nazwa_lok, nazwa_glob) {
-//     for(int i = 0; i < 3; ++i)
-//         przesuniecie[i] = 0;
-    
-//     laczny_kat_obrotu = 0;
-
-//     wczytaj_wspolrzedne_lok();
-//     polowa_wysokosci = fabs(wspolrzedne[0][2] - wspolrzedne[1][2]);
-// }
 
 void obiekt::wczytaj_wspolrz(const std::string & nazwa_pliku) {
     std::ifstream read;
@@ -44,7 +34,8 @@ void obiekt::wczytaj_wspolrz(const std::string & nazwa_pliku) {
         return;
 
     SWektor<double, 3> wiersz;
-    wspolrzedne.erase(wspolrzedne.begin(), wspolrzedne.end());
+    wspolrzedne.clear();
+    aktualnie_obiektow3D = 0;
 
     read >> wiersz;
     while(!read.eof()) {
@@ -52,9 +43,11 @@ void obiekt::wczytaj_wspolrz(const std::string & nazwa_pliku) {
             read.clear();
             while(read.get() != '\n');
         }
-        else
+        else {
             wspolrzedne.push_back(wiersz);
-        
+            ++aktualnie_obiektow3D;
+            ++lacznie_obiektow3D;
+        }
         read >> wiersz;
     }
 

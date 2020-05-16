@@ -9,6 +9,10 @@
 
 class obiekt : public powierzchnia {
     private:
+
+        static int lacznie_obiektow3D;
+        static int aktualnie_obiektow3D;
+
         /*! zawiera wspolrzedne punktów obiektu, który ma zostać narysowany*/
         std::vector<SWektor<double, 3>> wspolrzedne;
         /*! o jaki kąt został dotychczas obrócony obiekt */
@@ -34,7 +38,8 @@ class obiekt : public powierzchnia {
 
     public:
         obiekt();
-       // obiekt(const std::string & nazwa_lok, const std::string & nazwa_glob);
+        ~obiekt() { aktualnie_obiektow3D = 0; }
+       
         /*! wylicza polozenie zetowe środka lokalnego drona oraz polowe wysokosci*/
         void inicjalizuj_obiekt();
 
@@ -46,6 +51,9 @@ class obiekt : public powierzchnia {
 
         /*! zwraca polowe wysokości drona */
         double promien() const { return polowa_wysokosci; }
+
+        static int lacznie_obiekty() { return lacznie_obiektow3D; }
+        static int aktualnie_obiekty() { return aktualnie_obiektow3D; }
 };
 
 
