@@ -4,34 +4,83 @@
 #include "obiekt.hh"
 #include "lacze_do_gnuplota.hh"
 
-
+/*!
+ * \brief Modeluje pojęcie sceny
+ * Klasa opisuje scenę na której będzie poruszać się obiekt
+ * oraz będą przechowywane powierzchnia wody i powierzchnia dna.
+ */
 class scena {
     private:
+        /*! \brief Opisuje powierzchnię dna */
         powierzchnia dno;
+        /*! \brief Opisuje powierzchnię wody */
         powierzchnia woda;
+        /*! \brief Opisuje obiekt dron */
         obiekt dron;
+        /*! \brief Łącze z programem gnuplot */
         PzG::LaczeDoGNUPlota Lacze;
 
-        /*! rysuje wszystkie powierzchnie i obiekty na scenie */
+        /*! \brief Rysuje wszystkie powierzchnie i obiekty na scenie */
         void rysuj() { Lacze.Rysuj(); }
 
-        /*! zwrace tru gdy wykonanie ruchu zakończy się kolizją */
+        /*!
+         * \brief Zwraca informację o kolizji
+         * Sprawdza czy wykonanie ruchu na zadane odległość i kąt wznoszenia
+         * będzie skutkować kolizją
+         * \retval true - gdy będzie kolizja
+         * \retval false - gdy nie będzie kolizja 
+         */
         bool kolizja(double kat_wznoszenia, double odleglosc) const;
 
-        /*! zwraca true gdy jest wynurzenie */
+        /*!
+         * \brief Zwraca informację o wynurzenie
+         * Sprawdza czy obiekt jest wynurzony
+         * \retval true - gdy jest wynurzenie
+         * \retval false - gdy nie ma wynurzenia 
+         */
         bool wynurzenie() const;
     public:
+        /*! \brief Konstruktor domyślny */
         scena() {}
 
-        /*! dodaje dno do sceny i do lacza do gnuplota */
+        /*!
+         * \brief Dodaje dno do sceny
+         * Zapisuje pliki opisujące powierzchnię dna
+         * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
+         * \parm[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+         */
         void dodaj_dno(const std::string & nazwa_lok, const std::string & nazwa_glob);
+        /*!
+         * \brief Dodaje wodę do sceny
+         * Zapisuje pliki opisujące powierzchnię wody
+         * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
+         * \parm[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+         */
         void dodaj_wode(const std::string & nazwa_lok, const std::string & nazwa_glob);
+        /*!
+         * \brief Dodaje obiekt dron do sceny
+         * Zapisuje pliki opisujące obiekt dron i inicjalizuje go
+         * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
+         * \parm[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+         */
         void dodaj_drona(const std::string & nazwa_lok, const std::string & nazwa_glob);
 
-        /*! startuje gnuplota */
+        /*! \brief Inicjalizuje Łącze do gnuplota */
         void inicjalizuj();
 
+        /*! 
+         * \brief Powoduje ruch drona na wprost
+         * Powoduje ruch obiektu dron na wprost na zadaną odległość
+         * i o dany kąt wznoszenia
+         * \param[in] kat_wznoszenia - kąt o jaki ma się wznieść dron
+         * \param[in] odleglosc - odległość na jaką ma się przemiaeścić dron
+         */
         void ruch_prosto(double kat_wznoszenia, double odleglosc);
+        /*!
+         * \brief Powoduje obrót drona
+         * Powoduje obrót drona wokół własnej osi o zadany kąt
+         * \param[in] kat_obrotu - kąt o jaki ma być wykonany obrót
+         */
         void obrot(double kat_obrotu);
 
 };

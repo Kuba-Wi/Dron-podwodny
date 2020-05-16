@@ -6,11 +6,11 @@
 bool scena::kolizja(double kat_wznoszenia, double odleglosc) const {
     double przesun_dol = sin(acos(-1) * (kat_wznoszenia/180.0)) * odleglosc;
 
-    return (fabs(dron.polozenie_z() + przesun_dol - dno.wysokosc_z()) <= dron.promien());
+    return (fabs(dron.polozenie_z() + przesun_dol - dno.zwroc_z()) <= dron.promien());
 }
 
 bool scena::wynurzenie() const {
-    return (fabs(dron.polozenie_z() - woda.wysokosc_z()) <= dron.promien());
+    return (fabs(dron.polozenie_z() - woda.zwroc_z()) <= dron.promien());
 }
 
 

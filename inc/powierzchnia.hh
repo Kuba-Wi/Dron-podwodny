@@ -4,27 +4,54 @@
 #include "powierzchnia_lokalna.hh"
 #include <string>
 
+/*!
+ * \brief Modeluje pojęcie powierzchni
+ * 
+ * Klasa przechowuje nazwę pliku z współrzędnymi 
+ * globalnymi powierzchni, z którego gnuplot odczytuje współrzędne 
+ * do rysowania.
+ */
 class powierzchnia : public powierzchnia_lokalna {
     protected:
-        /*! plik z którego będzie rysowana powierzchnia */
+        /*! \brief plik z którego będzie rysowana powierzchnia */
         std::string plik_z_punktami;
-        /*! współrzędna z-towa powierzchni */
+        /*! \brief współrzędna z-towa powierzchni */
         double z_powierzchni;
     public:
+        /*! \brief Konstruktor bezparametryczny */
         powierzchnia() {}
+        /*! \brief Konstruktor zapisuje nazwę pliku lokalnego i globalnego
+         * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
+         * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+         */
         powierzchnia(const std::string & nazwa_lok, const std::string & nazwa_glob) :
                     powierzchnia_lokalna(nazwa_lok), plik_z_punktami(nazwa_glob) {}
 
-        /*! dodaje plik lokalny ze wspolrzednymi */
+        /*!
+         * \brief Zapisuje plik lokalny
+         * Metoda zapisuje nazwę pliku z współrzędnymi lokalnymi 
+         * \param[in] nazwa_lok - nazwa pliku z danymi lokalnymi
+         */
         void dodaj_plik_lok(const std::string & nazwa_lok);
-        /*! dodaje plik globalny ze wspolrzednymi */
+        /*!
+         * \brief Zapisuje plik globalny
+         * Metoda zapisuje nazwę pliku z współrzędnymi globalnymi 
+         * \param[in] nazwa_lok - nazwa pliku z danymi lokalnymi
+         */
         void dodaj_plik_glob(const std::string & nazwa_glob);
         
-        /*! Wczytuje współrzędne lokalne do pliku z punktami */
+        /*!
+         * \brief Przepisuje plik lokalny do pliku z punktami
+         * Metoda zapisuje współrzędne z pliku z współrzędnymi lokalnymi
+         * do pliku z współrzędnymi globalnymi  
+         */
         void wczytaj_lok();
 
-        /*! zwraca wspolrzedna z-towa powierzchni*/
-        double wysokosc_z() const { return z_powierzchni; }
+        /*! 
+         * \brief zwraca wspolrzedną z-tową powierzchni
+         * \retval z_powierzchni - współrzędna klasy
+         */
+        double zwroc_z() const { return z_powierzchni; }
 };
 
 #endif
