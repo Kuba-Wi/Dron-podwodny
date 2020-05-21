@@ -5,74 +5,144 @@
 #include <cassert>
 #include <cmath>
 /*!
- * Szablon klasy modeluje pojęcie Wektora
+ * \brief modeluje pojęcie Wektora
+ * Szablon klasy modeluje pojęcie wektora dowolnego rozmiaru
+ * i dowolnego typu
  */
 template<typename Typ, int Rozmiar>
 class SWektor {
 
+     /*! \brief Liczy wszystkie utworzone wektory 3D */
+    static int lacznie_wektorow3D;
+    /*! \brief Liczy aktualnie istniejące wektory 3D */
+    static int aktualnie_wektorow3D;
+
     Typ skladowe[Rozmiar]; /*! kolejne składowe wektora */
   public:
+
     /*!
+     * \brief Konsturuktor
+     * Tworzy nowy obiekt SWektor. 
+     * Zwiększa o jeden pola statyczne klasy, jeśli wektor 
+     * ma rozmiar równy 3.
+     */
+    SWektor();
+    /*!
+     * \brief Konstruktor kopiujący
+     * Kopiuje wektor do obiektu, który wywołuje tę metodę.
+     * Zwiększa o jeden pole aktualnie_wektorow3D, jeśli wektor 
+     * ma rozmiar równy 3.
+     * \param[in] Wek - kopiowany wektor
+     */
+    SWektor(const SWektor<Typ, Rozmiar> & Wek);
+    /*!
+     * \brief Destruktor
+     * Zmniejsza o jeden pole aktualnie_wektorow3D, jeśli wektor 
+     * ma rozmiar równy 3.
+     */
+    ~SWektor();
+
+    /*!
+     * \brief Odczytuje odpowiednią współrzędną wektora.
      * Metoda pozwala odczytać odpowiednią składową wektora.
-     * Argumenty:
-     * i - indeks składowej
-     * Zwraca:
-     * i-tą składową wektora
+     * \param[in] i - indeks składowej
+     * \return i-tą składową wektora
      */
     Typ operator [](int i) const { assert(i < Rozmiar); return skladowe[i]; }
     /*!
+     * \brief Wpisuje odpowiednią składową wektora
      * Metoda pozwala wpisać odpowiednią składową wektora.
-     * Argumenty:
-     * i - indeks składowej
-     * Zwraca:
-     * referencję do i-tej składowej
+     * \param[in] i - indeks składowej
+     * \return referencję do i-tej składowej
      */
     Typ & operator [](int i) { assert(i < Rozmiar); return skladowe[i]; }
 
     /*!
+     * \brief oblicza sumę dwóch wektorów
      * Metoda oblicza sumę dwóch wektorów.
-     * Argumenty:
-     * drugi - wektor, który dodajemy
-     * Zwraca:
-     * sumę dwóch wektorów
+     * \param[in] drugi - wektor, który dodajemy
+     * \return sumę dwóch wektorów
      */
     SWektor<Typ, Rozmiar> operator +(const SWektor<Typ, Rozmiar> & drugi) const;
 
     /*!
+     * \brief Oblicza różnicę dwóch wektorów
      * Metoda oblicza różnicę dwóch wektorów.
-     * Argumenty:
-     * drugi - wektór, który odejmujemy
-     * Zwraca:
-     * wynik odejmowania
+     * \param[in] drugi - wektór, który odejmujemy
+     * \return wynik odejmowania
      */
     SWektor<Typ, Rozmiar> operator -(const SWektor<Typ, Rozmiar> & drugi) const;
 
     /*!
+     * \brief Oblicza iloczyn skalarny
      * Metoda liczy iloczyn skalarny dwóch wektorów.
-     * Argumenty:
-     * drugi - drugi składnik iloczynu
-     * Zwraca:
-     * wynik mnożenia
+     * \param[in] drugi - drugi składnik iloczynu
+     * \return wynik mnożenia
      */
     Typ operator *(const SWektor<Typ, Rozmiar> & drugi) const;
     /*!
+     * \brief Oblicza iloczyn wektora przez liczbę
      * Metoda liczy iloczyn wektora przez liczbę
-     * Argumenty:
-     * liczba - liczba przez którą mnożymy
-     * Zwraca:
-     * wynik mnożenia
+     * \param[in] liczba - liczba przez którą mnożymy
+     * \return wynik mnożenia
      */
     SWektor<Typ, Rozmiar> operator *(Typ liczba) const;
 
+     /*!
+     * \brief Oblicza iloraz wektora przez liczbę
+     * Metoda liczy iloraz wektora przez liczbę
+     * \param[in] liczba - liczba przez którą dzielimy
+     * \return wynik dzielenia
+     */
     SWektor<Typ, Rozmiar> operator /(Typ liczba) const;
-
     /*!
+     * \brief Oblicza długość wektora
      * Metoda oblicza długość wektora:
-     * Argumenty:   Brak
-     * Zwraca:  długość wektora
+     * \return długość wektora
      */
     double dlugosc() const;
+
+    /*!
+     * \brief Zwraca łączną liczbę wektorów 3D
+     * \retval lacznie_obiektow3D - pole klasy
+     */
+    static int lacznie_wektory() { return lacznie_wektorow3D; }
+    /*!
+     * \brief Zwraca aktualną liczbę wektorów 3D
+     * \retval aktualnie_obiektow3D - pole klasy
+     */
+     static int aktualnie_wektory() { return aktualnie_wektorow3D; }
 };
+
+template<typename Typ, int Rozmiar>
+int SWektor<Typ, Rozmiar>::lacznie_wektorow3D = 0;
+
+template<typename Typ, int Rozmiar>
+int SWektor<Typ, Rozmiar>::aktualnie_wektorow3D = 0;
+
+
+template<typename Typ, int Rozmiar>
+SWektor<Typ, Rozmiar>::SWektor() {
+    if(Rozmiar == 3) {
+        ++lacznie_wektorow3D;
+        ++aktualnie_wektorow3D;
+    }
+}
+
+template<typename Typ, int Rozmiar>
+SWektor<Typ, Rozmiar>::SWektor(const SWektor<Typ, Rozmiar> & Wek) {
+    *this = Wek;
+    if(Rozmiar == 3) {
+        ++aktualnie_wektorow3D;
+        ++lacznie_wektorow3D;
+    }
+}
+
+template<typename Typ, int Rozmiar>
+SWektor<Typ, Rozmiar>::~SWektor() {
+    if(Rozmiar == 3)
+        --aktualnie_wektorow3D;
+}
 
 
 template<typename Typ, int Rozmiar>

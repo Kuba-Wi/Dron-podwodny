@@ -8,12 +8,11 @@ void naprawa_strumienia(istream & Strm) {
 }
 
 void inf_o_obiektach() {
-    std::cout << "\n\tAktualna liczba obiektow wektor 3D: " << obiekt::aktualnie_obiekty() << "\n";
-    std::cout << "\tLaczna liczba obiektow wektor 3D: " << obiekt::lacznie_obiekty() << "\n";
+    std::cout << "\n\tAktualna liczba obiektow wektor 3D: " << SWektor<double, 3>::aktualnie_wektory() << "\n";
+    std::cout << "\tLaczna liczba obiektow wektor 3D: " << SWektor<double, 3>::lacznie_wektory() << "\n";
 }
 
 void obsluga_sceny() {
-    {
     scena glowna;
     glowna.dodaj_drona("dat/prostopadloscian.pow", "dat/prostopadloscian1.pow");
     glowna.dodaj_dno("dat/dno.pow", "dat/dno1.pow");
@@ -68,13 +67,11 @@ void obsluga_sceny() {
         cout << "\nTwoj wybor, m - menu> ";
         cin >> wybor;
     }
-    }
-    inf_o_obiektach();
 }
 
 int main() {
 
-  obsluga_sceny();
-
+    obsluga_sceny();
+    inf_o_obiektach();
 
 }

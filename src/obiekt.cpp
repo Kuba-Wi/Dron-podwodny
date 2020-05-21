@@ -2,8 +2,6 @@
 #include <fstream>
 #include <cmath>
 
-int obiekt::lacznie_obiektow3D = 0;
-int obiekt::aktualnie_obiektow3D = 0;
 
 obiekt::obiekt() {
     for(int i = 0; i < 3; ++i)
@@ -35,7 +33,6 @@ void obiekt::wczytaj_wspolrz(const std::string & nazwa_pliku) {
 
     SWektor<double, 3> wiersz;
     wspolrzedne.clear();
-    aktualnie_obiektow3D = 0;
 
     read >> wiersz;
     while(!read.eof()) {
@@ -45,8 +42,6 @@ void obiekt::wczytaj_wspolrz(const std::string & nazwa_pliku) {
         }
         else {
             wspolrzedne.push_back(wiersz);
-            ++aktualnie_obiektow3D;
-            ++lacznie_obiektow3D;
         }
         read >> wiersz;
     }

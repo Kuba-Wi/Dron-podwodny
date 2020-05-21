@@ -14,11 +14,6 @@
  */
 class obiekt : public powierzchnia {
     private:
-        /*! \brief Liczy wszystkie utworzone wektory 3D */
-        static int lacznie_obiektow3D;
-        /*! \brief Liczy aktualnie istniejące wektory 3D */
-        static int aktualnie_obiektow3D;
-
         /*! \brief Przechowuje współrzędne punktów tworzących obiekt */
         std::vector<SWektor<double, 3>> wspolrzedne;
         /*! \brief Łączny kąt obrotu obiektu */
@@ -68,17 +63,11 @@ class obiekt : public powierzchnia {
          * Zeruje wektor przesunięcia i łączny kąt obrotu.
          */
         obiekt();
-        /*! 
-         * \brief Destruktor
-         * Zmniejsza liczbę aktualnie_obiektow o ilość współrzędnych
-         * alktualnie istniejących.
-         */
-        ~obiekt() { aktualnie_obiektow3D -= wspolrzedne.size(); }
        
-        /*! wylicza polozenie zetowe środka lokalnego drona oraz polowe wysokosci*/
         /*!
          * \brief Inicjalizuje pola klasy
-         * Wylicza srodek_lok oraz polowa_wysokosci
+         * Wylicza srodek_lok oraz polowa_wysokosci,
+         * metoda powinna być wywołana przed wykonaniem ruchów przez obiekt
          */
         void inicjalizuj_obiekt();
 
@@ -98,29 +87,19 @@ class obiekt : public powierzchnia {
          */
         void obrot(double kat_obrotu);
 
-        /*! zwraca wartość współrzędnej z-towej środka drona */
         /*!
          * \brief Zwraca środek drona
+         * Metoda zwraca wartość współrzędnej zetowej drona
          * \return Współrzędna zetowa środka drona
          */
         double polozenie_z() const;
 
         /*!
          * \brief Zwraca polowę wysokości obiektu
+         * Metoda zwraca połowę wysokości obiektu
          * \retval polowa_wysokosci - pole klasy 
          */
         double promien() const { return polowa_wysokosci; }
-
-        /*!
-         * \brief Zwraca łączną liczbę wektorów 3D
-         * \retval lacznie_obiektow3D - pole klasy
-         */
-        static int lacznie_obiekty() { return lacznie_obiektow3D; }
-        /*!
-         * \brief Zwraca aktualną liczbę wektorów 3D
-         * \retval aktualnie_obiektow3D - pole klasy
-         */
-        static int aktualnie_obiekty() { return aktualnie_obiektow3D; }
 };
 
 
