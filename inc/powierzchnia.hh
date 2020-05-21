@@ -36,7 +36,7 @@ class powierzchnia : public powierzchnia_lokalna {
         /*!
          * \brief Zapisuje plik globalny
          * Metoda zapisuje nazwę pliku z współrzędnymi globalnymi 
-         * \param[in] nazwa_lok - nazwa pliku z danymi lokalnymi
+         * \param[in] nazwa_glob - nazwa pliku z danymi lokalnymi
          */
         void dodaj_plik_glob(const std::string & nazwa_glob);
         

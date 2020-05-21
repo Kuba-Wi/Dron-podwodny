@@ -1,0 +1,9 @@
+/*!
+   \mainpage Dron-podwodny - zadanie 5 kpo
+    
+    Program steruje programem gnuplot. 
+    W programie tworzone są obiekty geometryczne, takie jak powierzchnia
+    czy prostopadłościan.\n Obiekty te symbolizują powierzchnię wody
+    i powierzchnię dna oraz drona podwodnego.
+    Użytkownik programu może natomiast sterować dronem.
+ */
