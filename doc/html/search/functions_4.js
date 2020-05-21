@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['inf_5fo_5fobiektach',['inf_o_obiektach',['../main_8cpp.html#af20b42416a1531564b366ef201040562',1,'main.cpp']]],
+  ['infoplikudorysowania',['InfoPlikuDoRysowania',['../class_pz_g_1_1_info_pliku_do_rysowania.html#a48bc8ad94ef5fd5120b668a566c9172e',1,'PzG::InfoPlikuDoRysowania']]],
+  ['inicjalizuj',['Inicjalizuj',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e',1,'PzG::LaczeDoGNUPlota::Inicjalizuj()'],['../classscena.html#af2e5207902ca5eed0744d41ff9f806db',1,'scena::inicjalizuj()']]],
+  ['inicjalizuj_5fobiekt',['inicjalizuj_obiekt',['../classobiekt.html#a5e8fe236162ef911e76bceebde10062f',1,'obiekt']]]
+];

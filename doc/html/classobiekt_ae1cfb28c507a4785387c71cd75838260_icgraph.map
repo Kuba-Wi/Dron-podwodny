@@ -1,0 +1,7 @@
+<map id="obiekt::wczytaj_wspolrzedne_glob" name="obiekt::wczytaj_wspolrzedne_glob">
+<area shape="rect" id="node2" href="$classobiekt.html#abed02239841bbe8fee37b45caf1d79fd" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej do góry lub do dołu o zadany kąt oraz na..." alt="" coords="275,31,432,57"/>
+<area shape="rect" id="node3" href="$classscena.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="480,31,613,57"/>
+<area shape="rect" id="node4" href="$classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="666,5,766,32"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="661,56,771,83"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="819,56,869,83"/>
+</map>

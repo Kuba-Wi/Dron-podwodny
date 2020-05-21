@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Dron podwodny: Plik źródłowy inc/scena.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dron podwodny
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('scena_8hh_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">scena.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="scena_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SCENA_HH</span></div><div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="scena_8hh.html#a5c000346565632c725182c8c978d9426">    2</a></span>&#160;<span class="preprocessor">#define SCEN_HH</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="obiekt_8hh.html">obiekt.hh</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lacze__do__gnuplota_8hh.html">lacze_do_gnuplota.hh</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classscena.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classscena.html">scena</a> {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classscena.html#a902bc3201c404b9c35c60439edd588a8">   15</a></span>&#160;        <a class="code" href="classpowierzchnia.html">powierzchnia</a> <a class="code" href="classscena.html#a902bc3201c404b9c35c60439edd588a8">dno</a>;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classscena.html#aff7ec64e4965c19430c2277f667e7f6c">   17</a></span>&#160;        <a class="code" href="classpowierzchnia.html">powierzchnia</a> <a class="code" href="classscena.html#aff7ec64e4965c19430c2277f667e7f6c">woda</a>;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classscena.html#ab68771a89a7c3bcade329244e92498c0">   19</a></span>&#160;        <a class="code" href="classobiekt.html">obiekt</a> <a class="code" href="classscena.html#ab68771a89a7c3bcade329244e92498c0">dron</a>;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classscena.html#adfa3c7f586b75cd7e1499003be73389e">   21</a></span>&#160;        <a class="code" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a> <a class="code" href="classscena.html#adfa3c7f586b75cd7e1499003be73389e">Lacze</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classscena.html#acbeaad76c7ea16ae2ae839d08e9051b8">   24</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classscena.html#acbeaad76c7ea16ae2ae839d08e9051b8">rysuj</a>() { Lacze.<a class="code" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335">Rysuj</a>(); }</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classscena.html#a6ae791d0fca6996f5b83494738bbf781">kolizja</a>(<span class="keywordtype">double</span> kat_wznoszenia, <span class="keywordtype">double</span> odleglosc) <span class="keyword">const</span>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classscena.html#ac3df4e790dea99820852b895a96da648">wynurzenie</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f">   44</a></span>&#160;        <a class="code" href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f">scena</a>() {}</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classscena.html#ad7c4ca7a3eb26bc133eabe65476791d4">dodaj_dno</a>(<span class="keyword">const</span> std::string &amp; nazwa_lok, <span class="keyword">const</span> std::string &amp; nazwa_glob);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classscena.html#a9721c738d27eb6b7806685edd3f84ce5">dodaj_wode</a>(<span class="keyword">const</span> std::string &amp; nazwa_lok, <span class="keyword">const</span> std::string &amp; nazwa_glob);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classscena.html#a9c3bd117d7b5df6b16682b62fb6d8ec6">dodaj_drona</a>(<span class="keyword">const</span> std::string &amp; nazwa_lok, <span class="keyword">const</span> std::string &amp; nazwa_glob);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classscena.html#af2e5207902ca5eed0744d41ff9f806db">inicjalizuj</a>();</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classscena.html#a0a72068a1c9059f235b4f560fcd317ec">ruch_prosto</a>(<span class="keywordtype">double</span> kat_wznoszenia, <span class="keywordtype">double</span> odleglosc);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classscena.html#abef62e7d58fc529eda33e376dfc25383">obrot</a>(<span class="keywordtype">double</span> kat_obrotu);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classscena_html_ad7c4ca7a3eb26bc133eabe65476791d4"><div class="ttname"><a href="classscena.html#ad7c4ca7a3eb26bc133eabe65476791d4">scena::dodaj_dno</a></div><div class="ttdeci">void dodaj_dno(const std::string &amp;nazwa_lok, const std::string &amp;nazwa_glob)</div><div class="ttdoc">Dodaje dno do sceny Zapisuje pliki opisujące powierzchnię dna. </div><div class="ttdef"><b>Definition:</b> scena.cpp:18</div></div>
+<div class="ttc" id="classscena_html_ac3df4e790dea99820852b895a96da648"><div class="ttname"><a href="classscena.html#ac3df4e790dea99820852b895a96da648">scena::wynurzenie</a></div><div class="ttdeci">bool wynurzenie() const </div><div class="ttdoc">Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. </div><div class="ttdef"><b>Definition:</b> scena.cpp:12</div></div>
+<div class="ttc" id="classscena_html_aff7ec64e4965c19430c2277f667e7f6c"><div class="ttname"><a href="classscena.html#aff7ec64e4965c19430c2277f667e7f6c">scena::woda</a></div><div class="ttdeci">powierzchnia woda</div><div class="ttdoc">Opisuje powierzchnię wody. </div><div class="ttdef"><b>Definition:</b> scena.hh:17</div></div>
+<div class="ttc" id="classscena_html_a9721c738d27eb6b7806685edd3f84ce5"><div class="ttname"><a href="classscena.html#a9721c738d27eb6b7806685edd3f84ce5">scena::dodaj_wode</a></div><div class="ttdeci">void dodaj_wode(const std::string &amp;nazwa_lok, const std::string &amp;nazwa_glob)</div><div class="ttdoc">Dodaje wodę do sceny Zapisuje pliki opisujące powierzchnię wody. </div><div class="ttdef"><b>Definition:</b> scena.cpp:29</div></div>
+<div class="ttc" id="classscena_html_adfa3c7f586b75cd7e1499003be73389e"><div class="ttname"><a href="classscena.html#adfa3c7f586b75cd7e1499003be73389e">scena::Lacze</a></div><div class="ttdeci">PzG::LaczeDoGNUPlota Lacze</div><div class="ttdoc">Łącze z programem gnuplot. </div><div class="ttdef"><b>Definition:</b> scena.hh:21</div></div>
+<div class="ttc" id="lacze__do__gnuplota_8hh_html"><div class="ttname"><a href="lacze__do__gnuplota_8hh.html">lacze_do_gnuplota.hh</a></div><div class="ttdoc">Zawiera definicję klasy PzG::LaczeDoGNUPlota. </div></div>
+<div class="ttc" id="classscena_html_af2e5207902ca5eed0744d41ff9f806db"><div class="ttname"><a href="classscena.html#af2e5207902ca5eed0744d41ff9f806db">scena::inicjalizuj</a></div><div class="ttdeci">void inicjalizuj()</div><div class="ttdoc">Inicjalizuje Łącze do gnuplota. </div><div class="ttdef"><b>Definition:</b> scena.cpp:52</div></div>
+<div class="ttc" id="classscena_html"><div class="ttname"><a href="classscena.html">scena</a></div><div class="ttdoc">Modeluje pojęcie sceny Klasa opisuje scenę na której będzie poruszać się obiekt oraz będą przechowywa...</div><div class="ttdef"><b>Definition:</b> scena.hh:12</div></div>
+<div class="ttc" id="obiekt_8hh_html"><div class="ttname"><a href="obiekt_8hh.html">obiekt.hh</a></div></div>
+<div class="ttc" id="classscena_html_a9c3bd117d7b5df6b16682b62fb6d8ec6"><div class="ttname"><a href="classscena.html#a9c3bd117d7b5df6b16682b62fb6d8ec6">scena::dodaj_drona</a></div><div class="ttdeci">void dodaj_drona(const std::string &amp;nazwa_lok, const std::string &amp;nazwa_glob)</div><div class="ttdoc">Dodaje obiekt dron do sceny Zapisuje pliki opisujące obiekt dron i inicjalizuje go. </div><div class="ttdef"><b>Definition:</b> scena.cpp:40</div></div>
+<div class="ttc" id="classobiekt_html"><div class="ttname"><a href="classobiekt.html">obiekt</a></div><div class="ttdoc">Modeluje pojęcie obiektu Klasa opisuje obiekt geometryczny, który może się poruszać i obracać wokół w...</div><div class="ttdef"><b>Definition:</b> obiekt.hh:15</div></div>
+<div class="ttc" id="classscena_html_a902bc3201c404b9c35c60439edd588a8"><div class="ttname"><a href="classscena.html#a902bc3201c404b9c35c60439edd588a8">scena::dno</a></div><div class="ttdeci">powierzchnia dno</div><div class="ttdoc">Opisuje powierzchnię dna. </div><div class="ttdef"><b>Definition:</b> scena.hh:15</div></div>
+<div class="ttc" id="classscena_html_a6ae791d0fca6996f5b83494738bbf781"><div class="ttname"><a href="classscena.html#a6ae791d0fca6996f5b83494738bbf781">scena::kolizja</a></div><div class="ttdeci">bool kolizja(double kat_wznoszenia, double odleglosc) const </div><div class="ttdoc">Zwraca informację o kolizji Sprawdza czy wykonanie ruchu na zadane odległość i kąt wznoszenia będzie ...</div><div class="ttdef"><b>Definition:</b> scena.cpp:6</div></div>
+<div class="ttc" id="class_pz_g_1_1_lacze_do_g_n_u_plota_html_a065f5b8402737cc62b0ad4f66d028335"><div class="ttname"><a href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335">PzG::LaczeDoGNUPlota::Rysuj</a></div><div class="ttdeci">bool Rysuj()</div><div class="ttdef"><b>Definition:</b> lacze_do_gnuplota.cpp:336</div></div>
+<div class="ttc" id="classscena_html_a152626dcaf5c3bbb9c803a3134999d2f"><div class="ttname"><a href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f">scena::scena</a></div><div class="ttdeci">scena()</div><div class="ttdoc">Konstruktor domyślny. </div><div class="ttdef"><b>Definition:</b> scena.hh:44</div></div>
+<div class="ttc" id="classscena_html_ab68771a89a7c3bcade329244e92498c0"><div class="ttname"><a href="classscena.html#ab68771a89a7c3bcade329244e92498c0">scena::dron</a></div><div class="ttdeci">obiekt dron</div><div class="ttdoc">Opisuje obiekt dron. </div><div class="ttdef"><b>Definition:</b> scena.hh:19</div></div>
+<div class="ttc" id="classscena_html_a0a72068a1c9059f235b4f560fcd317ec"><div class="ttname"><a href="classscena.html#a0a72068a1c9059f235b4f560fcd317ec">scena::ruch_prosto</a></div><div class="ttdeci">void ruch_prosto(double kat_wznoszenia, double odleglosc)</div><div class="ttdoc">Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w...</div><div class="ttdef"><b>Definition:</b> scena.cpp:58</div></div>
+<div class="ttc" id="classscena_html_abef62e7d58fc529eda33e376dfc25383"><div class="ttname"><a href="classscena.html#abef62e7d58fc529eda33e376dfc25383">scena::obrot</a></div><div class="ttdeci">void obrot(double kat_obrotu)</div><div class="ttdoc">Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. </div><div class="ttdef"><b>Definition:</b> scena.cpp:74</div></div>
+<div class="ttc" id="class_pz_g_1_1_lacze_do_g_n_u_plota_html"><div class="ttname"><a href="class_pz_g_1_1_lacze_do_g_n_u_plota.html">PzG::LaczeDoGNUPlota</a></div><div class="ttdoc">Klasa realizuje interfejs do programu GNUPlot. </div><div class="ttdef"><b>Definition:</b> lacze_do_gnuplota.hh:127</div></div>
+<div class="ttc" id="classpowierzchnia_html"><div class="ttname"><a href="classpowierzchnia.html">powierzchnia</a></div><div class="ttdoc">Modeluje pojęcie powierzchni. </div><div class="ttdef"><b>Definition:</b> powierzchnia.hh:14</div></div>
+<div class="ttc" id="classscena_html_acbeaad76c7ea16ae2ae839d08e9051b8"><div class="ttname"><a href="classscena.html#acbeaad76c7ea16ae2ae839d08e9051b8">scena::rysuj</a></div><div class="ttdeci">void rysuj()</div><div class="ttdoc">Rysuje wszystkie powierzchnie i obiekty na scenie. </div><div class="ttdef"><b>Definition:</b> scena.hh:24</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="scena_8hh.html">scena.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

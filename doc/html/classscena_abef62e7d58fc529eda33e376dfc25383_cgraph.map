@@ -1,0 +1,14 @@
+<map id="scena::obrot" name="scena::obrot">
+<area shape="rect" id="node2" href="$classobiekt.html#a968676d67a6b4e31486f045eb3dac91a" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadany kąt. " alt="" coords="148,56,243,83"/>
+<area shape="rect" id="node7" href="$classscena.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="149,195,242,221"/>
+<area shape="rect" id="node3" href="$classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="291,5,505,32"/>
+<area shape="rect" id="node5" href="$classobiekt.html#a6db0a0913df74536144636759a7c2655" title="Wypełnia macierz obrotu o zadany kat Wypełnia macierz służącą do transformacji współrzędnych obiektu..." alt="" coords="321,56,475,83"/>
+<area shape="rect" id="node6" href="$classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="293,107,503,133"/>
+<area shape="rect" id="node4" href="$classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="553,5,716,32"/>
+<area shape="rect" id="node8" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="PzG::LaczeDoGNUPlota\l::Rysuj" alt="" coords="314,158,482,199"/>
+<area shape="rect" id="node9" href="$classscena.html#a6ae791d0fca6996f5b83494738bbf781" title="Zwraca informację o kolizji Sprawdza czy wykonanie ruchu na zadane odległość i kąt wznoszenia będzie ..." alt="" coords="347,224,449,251"/>
+<area shape="rect" id="node13" href="$classscena.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. " alt="" coords="333,275,463,301"/>
+<area shape="rect" id="node10" href="$classobiekt.html#a081d3dee3d37262cb2411010d2fe7ae9" title="Zwraca środek drona Metoda zwraca wartość współrzędnej zetowej drona. " alt="" coords="567,199,702,225"/>
+<area shape="rect" id="node11" href="$classpowierzchnia.html#afae813342be6d8f34701d85bc60d4f18" title="zwraca wspolrzedną z&#45;tową powierzchni " alt="" coords="557,249,712,276"/>
+<area shape="rect" id="node12" href="$classobiekt.html#a25f7a7e06704d3044555cccba13688e5" title="Zwraca polowę wysokości obiektu Metoda zwraca połowę wysokości obiektu. " alt="" coords="579,300,690,327"/>
+</map>

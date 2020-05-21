@@ -1,0 +1,11 @@
+<map id="scena::inicjalizuj" name="scena::inicjalizuj">
+<area shape="rect" id="node2" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a10950349b348fd3a3d4143e95337527c" title="Zmienia tryb rysowania. " alt="" coords="172,5,340,47"/>
+<area shape="rect" id="node3" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e" title="Inicjalizuje połączenie z programem gnuplot. " alt="" coords="172,71,340,112"/>
+<area shape="rect" id="node4" href="$classscena.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="209,137,303,163"/>
+<area shape="rect" id="node5" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="PzG::LaczeDoGNUPlota\l::Rysuj" alt="" coords="388,71,556,112"/>
+<area shape="rect" id="node6" href="$classscena.html#a6ae791d0fca6996f5b83494738bbf781" title="Zwraca informację o kolizji Sprawdza czy wykonanie ruchu na zadane odległość i kąt wznoszenia będzie ..." alt="" coords="421,187,523,214"/>
+<area shape="rect" id="node10" href="$classscena.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. " alt="" coords="407,137,537,163"/>
+<area shape="rect" id="node7" href="$classobiekt.html#a081d3dee3d37262cb2411010d2fe7ae9" title="Zwraca środek drona Metoda zwraca wartość współrzędnej zetowej drona. " alt="" coords="614,111,749,138"/>
+<area shape="rect" id="node8" href="$classpowierzchnia.html#afae813342be6d8f34701d85bc60d4f18" title="zwraca wspolrzedną z&#45;tową powierzchni " alt="" coords="604,162,759,189"/>
+<area shape="rect" id="node9" href="$classobiekt.html#a25f7a7e06704d3044555cccba13688e5" title="Zwraca polowę wysokości obiektu Metoda zwraca połowę wysokości obiektu. " alt="" coords="626,213,737,239"/>
+</map>

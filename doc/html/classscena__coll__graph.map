@@ -1,0 +1,7 @@
+<map id="scena" name="scena">
+<area shape="rect" id="node2" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html" title="Klasa realizuje interfejs do programu GNUPlot. " alt="" coords="5,172,173,199"/>
+<area shape="rect" id="node3" href="$classobiekt.html" title="Modeluje pojęcie obiektu Klasa opisuje obiekt geometryczny, który może się poruszać i obracać wokół w..." alt="" coords="282,172,339,199"/>
+<area shape="rect" id="node4" href="$classpowierzchnia.html" title="Modeluje pojęcie powierzchni. " alt="" coords="172,81,271,108"/>
+<area shape="rect" id="node5" href="$classpowierzchnia__lokalna.html" title="Modeluje powierzchnię lokalną Klasa przechowuje nazwę pliku ze współrzędnymi lokalnymi powierzchni..." alt="" coords="148,5,295,32"/>
+<area shape="rect" id="node6" href="$class_s_wektor.html" title="SWektor\&lt; double, 3 \&gt;" alt="" coords="295,81,446,108"/>
+</map>

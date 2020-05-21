@@ -1,0 +1,8 @@
+<map id="PzG::LaczeDoGNUPlota::DodajNazwePliku" name="PzG::LaczeDoGNUPlota::DodajNazwePliku">
+<area shape="rect" id="node2" href="$classscena.html#ad7c4ca7a3eb26bc133eabe65476791d4" title="Dodaje dno do sceny Zapisuje pliki opisujące powierzchnię dna. " alt="" coords="227,5,351,32"/>
+<area shape="rect" id="node6" href="$classscena.html#a9721c738d27eb6b7806685edd3f84ce5" title="Dodaje wodę do sceny Zapisuje pliki opisujące powierzchnię wody. " alt="" coords="221,56,356,83"/>
+<area shape="rect" id="node7" href="$classscena.html#a9c3bd117d7b5df6b16682b62fb6d8ec6" title="Dodaje obiekt dron do sceny Zapisuje pliki opisujące obiekt dron i inicjalizuje go. " alt="" coords="221,107,356,133"/>
+<area shape="rect" id="node3" href="$classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="409,31,509,57"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="404,81,513,108"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="561,81,612,108"/>
+</map>

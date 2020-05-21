@@ -1,0 +1,9 @@
+<map id="PzG::CzyJestPlik" name="PzG::CzyJestPlik">
+<area shape="rect" id="node2" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku. " alt="" coords="180,49,348,90"/>
+<area shape="rect" id="node3" href="$classscena.html#ad7c4ca7a3eb26bc133eabe65476791d4" title="Dodaje dno do sceny Zapisuje pliki opisujące powierzchnię dna. " alt="" coords="401,5,525,32"/>
+<area shape="rect" id="node7" href="$classscena.html#a9721c738d27eb6b7806685edd3f84ce5" title="Dodaje wodę do sceny Zapisuje pliki opisujące powierzchnię wody. " alt="" coords="396,56,531,83"/>
+<area shape="rect" id="node8" href="$classscena.html#a9c3bd117d7b5df6b16682b62fb6d8ec6" title="Dodaje obiekt dron do sceny Zapisuje pliki opisujące obiekt dron i inicjalizuje go. " alt="" coords="396,107,531,133"/>
+<area shape="rect" id="node4" href="$classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="583,31,683,57"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="579,81,688,108"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="736,81,787,108"/>
+</map>

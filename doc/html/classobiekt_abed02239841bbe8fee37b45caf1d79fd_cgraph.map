@@ -1,0 +1,5 @@
+<map id="obiekt::ruch_na_wprost" name="obiekt::ruch_na_wprost">
+<area shape="rect" id="node2" href="$classobiekt.html#ae1cfb28c507a4785387c71cd75838260" title="Wczytuje wspolrzedne globalne Wczytuje współrzędne z pliku z punktami i zapisuje je do pola współrzęd..." alt="" coords="211,5,432,32"/>
+<area shape="rect" id="node4" href="$classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="216,56,427,83"/>
+<area shape="rect" id="node3" href="$classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="480,5,643,32"/>
+</map>

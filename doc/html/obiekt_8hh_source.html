@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Dron podwodny: Plik źródłowy inc/obiekt.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dron podwodny
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('obiekt_8hh_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">obiekt.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="obiekt_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OBIEKT_HH</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define OBIEKT_HH</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s_wektor_8hh.html">SWektor.hh</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="powierzchnia_8hh.html">powierzchnia.hh</a>&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s_macierz_8hh.html">SMacierz.hh</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classobiekt.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classobiekt.html">obiekt</a> : <span class="keyword">public</span> <a class="code" href="classpowierzchnia.html">powierzchnia</a> {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classobiekt.html#a4d666e6f47762b43eb8a81f6c0547ca4">   18</a></span>&#160;        std::vector&lt;SWektor&lt;double, 3&gt;&gt; <a class="code" href="classobiekt.html#a4d666e6f47762b43eb8a81f6c0547ca4">wspolrzedne</a>;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classobiekt.html#abff80a8bd32ccb93f679c62d1fc88da4">   20</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classobiekt.html#abff80a8bd32ccb93f679c62d1fc88da4">laczny_kat_obrotu</a>;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classobiekt.html#afd74db9e2d32cf5d9384a9198650383a">   22</a></span>&#160;        <a class="code" href="class_s_wektor.html">SWektor&lt;double, 3&gt;</a> <a class="code" href="classobiekt.html#afd74db9e2d32cf5d9384a9198650383a">przesuniecie</a>;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classobiekt.html#a53786fb91c63c924505732b699dc79b2">   24</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classobiekt.html#a53786fb91c63c924505732b699dc79b2">polowa_wysokosci</a>;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classobiekt.html#a1f9d7d2b6b0b04232e28d9dee8d799cc">   26</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classobiekt.html#a1f9d7d2b6b0b04232e28d9dee8d799cc">srodek_lok</a>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classobiekt.html#a39861805e6f688c581d23bfd992e4834">wczytaj_wspolrz</a>(<span class="keyword">const</span> std::string &amp; nazwa_pliku);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6">wczytaj_wspolrzedne_lok</a>();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classobiekt.html#ae1cfb28c507a4785387c71cd75838260">wczytaj_wspolrzedne_glob</a>();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        </div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classobiekt.html#a108f138692512335c2f27fa6105ac622">wpisz_wspolrzedne_glob</a>();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classobiekt.html#a6db0a0913df74536144636759a7c2655">macierz_obrotu</a>(<a class="code" href="class_s_macierz.html">SMacierz&lt;double, 3&gt;</a> &amp; <a class="code" href="classobiekt.html#a968676d67a6b4e31486f045eb3dac91a">obrot</a>, <span class="keywordtype">double</span> kat_obrotu) <span class="keyword">const</span>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="classobiekt.html#a8900a8b09fec5c8628a9ce19d4054451">obiekt</a>();</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;       </div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classobiekt.html#a5e8fe236162ef911e76bceebde10062f">inicjalizuj_obiekt</a>();</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classobiekt.html#abed02239841bbe8fee37b45caf1d79fd">ruch_na_wprost</a>(<span class="keywordtype">double</span> kat_wznoszenia, <span class="keywordtype">double</span> odleglosc);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classobiekt.html#a968676d67a6b4e31486f045eb3dac91a">obrot</a>(<span class="keywordtype">double</span> kat_obrotu);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classobiekt.html#a081d3dee3d37262cb2411010d2fe7ae9">polozenie_z</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classobiekt.html#a25f7a7e06704d3044555cccba13688e5">  102</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classobiekt.html#a25f7a7e06704d3044555cccba13688e5">promien</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classobiekt.html#a53786fb91c63c924505732b699dc79b2">polowa_wysokosci</a>; }</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classobiekt_html_a25f7a7e06704d3044555cccba13688e5"><div class="ttname"><a href="classobiekt.html#a25f7a7e06704d3044555cccba13688e5">obiekt::promien</a></div><div class="ttdeci">double promien() const </div><div class="ttdoc">Zwraca polowę wysokości obiektu Metoda zwraca połowę wysokości obiektu. </div><div class="ttdef"><b>Definition:</b> obiekt.hh:102</div></div>
+<div class="ttc" id="classobiekt_html_abff80a8bd32ccb93f679c62d1fc88da4"><div class="ttname"><a href="classobiekt.html#abff80a8bd32ccb93f679c62d1fc88da4">obiekt::laczny_kat_obrotu</a></div><div class="ttdeci">double laczny_kat_obrotu</div><div class="ttdoc">Łączny kąt obrotu obiektu. </div><div class="ttdef"><b>Definition:</b> obiekt.hh:20</div></div>
+<div class="ttc" id="classobiekt_html_a4d666e6f47762b43eb8a81f6c0547ca4"><div class="ttname"><a href="classobiekt.html#a4d666e6f47762b43eb8a81f6c0547ca4">obiekt::wspolrzedne</a></div><div class="ttdeci">std::vector&lt; SWektor&lt; double, 3 &gt; &gt; wspolrzedne</div><div class="ttdoc">Przechowuje współrzędne punktów tworzących obiekt. </div><div class="ttdef"><b>Definition:</b> obiekt.hh:18</div></div>
+<div class="ttc" id="classobiekt_html_afd74db9e2d32cf5d9384a9198650383a"><div class="ttname"><a href="classobiekt.html#afd74db9e2d32cf5d9384a9198650383a">obiekt::przesuniecie</a></div><div class="ttdeci">SWektor&lt; double, 3 &gt; przesuniecie</div><div class="ttdoc">przesunięcie obiektu względem wspolrzednych lokalnych </div><div class="ttdef"><b>Definition:</b> obiekt.hh:22</div></div>
+<div class="ttc" id="classobiekt_html_a108f138692512335c2f27fa6105ac622"><div class="ttname"><a href="classobiekt.html#a108f138692512335c2f27fa6105ac622">obiekt::wpisz_wspolrzedne_glob</a></div><div class="ttdeci">void wpisz_wspolrzedne_glob()</div><div class="ttdoc">Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego...</div><div class="ttdef"><b>Definition:</b> obiekt.cpp:59</div></div>
+<div class="ttc" id="class_s_macierz_html"><div class="ttname"><a href="class_s_macierz.html">SMacierz</a></div><div class="ttdef"><b>Definition:</b> SMacierz.hh:15</div></div>
+<div class="ttc" id="_s_wektor_8hh_html"><div class="ttname"><a href="_s_wektor_8hh.html">SWektor.hh</a></div></div>
+<div class="ttc" id="class_s_wektor_html"><div class="ttname"><a href="class_s_wektor.html">SWektor&lt; double, 3 &gt;</a></div></div>
+<div class="ttc" id="classobiekt_html_a89652c905d14d51b3db0f54ebe4875f6"><div class="ttname"><a href="classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6">obiekt::wczytaj_wspolrzedne_lok</a></div><div class="ttdeci">void wczytaj_wspolrzedne_lok()</div><div class="ttdoc">Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ...</div><div class="ttdef"><b>Definition:</b> obiekt.cpp:52</div></div>
+<div class="ttc" id="classobiekt_html"><div class="ttname"><a href="classobiekt.html">obiekt</a></div><div class="ttdoc">Modeluje pojęcie obiektu Klasa opisuje obiekt geometryczny, który może się poruszać i obracać wokół w...</div><div class="ttdef"><b>Definition:</b> obiekt.hh:15</div></div>
+<div class="ttc" id="classobiekt_html_a8900a8b09fec5c8628a9ce19d4054451"><div class="ttname"><a href="classobiekt.html#a8900a8b09fec5c8628a9ce19d4054451">obiekt::obiekt</a></div><div class="ttdeci">obiekt()</div><div class="ttdoc">Konstruktor Zeruje wektor przesunięcia i łączny kąt obrotu. </div><div class="ttdef"><b>Definition:</b> obiekt.cpp:6</div></div>
+<div class="ttc" id="classobiekt_html_a53786fb91c63c924505732b699dc79b2"><div class="ttname"><a href="classobiekt.html#a53786fb91c63c924505732b699dc79b2">obiekt::polowa_wysokosci</a></div><div class="ttdeci">double polowa_wysokosci</div><div class="ttdoc">odległość środka drona od ściany górnej </div><div class="ttdef"><b>Definition:</b> obiekt.hh:24</div></div>
+<div class="ttc" id="classobiekt_html_a1f9d7d2b6b0b04232e28d9dee8d799cc"><div class="ttname"><a href="classobiekt.html#a1f9d7d2b6b0b04232e28d9dee8d799cc">obiekt::srodek_lok</a></div><div class="ttdeci">double srodek_lok</div><div class="ttdoc">Środek wspolrzednych lokalnych obiektu. </div><div class="ttdef"><b>Definition:</b> obiekt.hh:26</div></div>
+<div class="ttc" id="_s_macierz_8hh_html"><div class="ttname"><a href="_s_macierz_8hh.html">SMacierz.hh</a></div></div>
+<div class="ttc" id="classobiekt_html_ae1cfb28c507a4785387c71cd75838260"><div class="ttname"><a href="classobiekt.html#ae1cfb28c507a4785387c71cd75838260">obiekt::wczytaj_wspolrzedne_glob</a></div><div class="ttdeci">void wczytaj_wspolrzedne_glob()</div><div class="ttdoc">Wczytuje wspolrzedne globalne Wczytuje współrzędne z pliku z punktami i zapisuje je do pola współrzęd...</div><div class="ttdef"><b>Definition:</b> obiekt.cpp:55</div></div>
+<div class="ttc" id="powierzchnia_8hh_html"><div class="ttname"><a href="powierzchnia_8hh.html">powierzchnia.hh</a></div></div>
+<div class="ttc" id="classobiekt_html_a081d3dee3d37262cb2411010d2fe7ae9"><div class="ttname"><a href="classobiekt.html#a081d3dee3d37262cb2411010d2fe7ae9">obiekt::polozenie_z</a></div><div class="ttdeci">double polozenie_z() const </div><div class="ttdoc">Zwraca środek drona Metoda zwraca wartość współrzędnej zetowej drona. </div><div class="ttdef"><b>Definition:</b> obiekt.cpp:134</div></div>
+<div class="ttc" id="classobiekt_html_abed02239841bbe8fee37b45caf1d79fd"><div class="ttname"><a href="classobiekt.html#abed02239841bbe8fee37b45caf1d79fd">obiekt::ruch_na_wprost</a></div><div class="ttdeci">void ruch_na_wprost(double kat_wznoszenia, double odleglosc)</div><div class="ttdoc">Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej do góry lub do dołu o zadany kąt oraz na...</div><div class="ttdef"><b>Definition:</b> obiekt.cpp:94</div></div>
+<div class="ttc" id="classpowierzchnia_html"><div class="ttname"><a href="classpowierzchnia.html">powierzchnia</a></div><div class="ttdoc">Modeluje pojęcie powierzchni. </div><div class="ttdef"><b>Definition:</b> powierzchnia.hh:14</div></div>
+<div class="ttc" id="classobiekt_html_a39861805e6f688c581d23bfd992e4834"><div class="ttname"><a href="classobiekt.html#a39861805e6f688c581d23bfd992e4834">obiekt::wczytaj_wspolrz</a></div><div class="ttdeci">void wczytaj_wspolrz(const std::string &amp;nazwa_pliku)</div><div class="ttdoc">Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. </div><div class="ttdef"><b>Definition:</b> obiekt.cpp:28</div></div>
+<div class="ttc" id="classobiekt_html_a6db0a0913df74536144636759a7c2655"><div class="ttname"><a href="classobiekt.html#a6db0a0913df74536144636759a7c2655">obiekt::macierz_obrotu</a></div><div class="ttdeci">void macierz_obrotu(SMacierz&lt; double, 3 &gt; &amp;obrot, double kat_obrotu) const </div><div class="ttdoc">Wypełnia macierz obrotu o zadany kat Wypełnia macierz służącą do transformacji współrzędnych obiektu...</div><div class="ttdef"><b>Definition:</b> obiekt.cpp:79</div></div>
+<div class="ttc" id="classobiekt_html_a968676d67a6b4e31486f045eb3dac91a"><div class="ttname"><a href="classobiekt.html#a968676d67a6b4e31486f045eb3dac91a">obiekt::obrot</a></div><div class="ttdeci">void obrot(double kat_obrotu)</div><div class="ttdoc">Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadany kąt. </div><div class="ttdef"><b>Definition:</b> obiekt.cpp:114</div></div>
+<div class="ttc" id="classobiekt_html_a5e8fe236162ef911e76bceebde10062f"><div class="ttname"><a href="classobiekt.html#a5e8fe236162ef911e76bceebde10062f">obiekt::inicjalizuj_obiekt</a></div><div class="ttdeci">void inicjalizuj_obiekt()</div><div class="ttdoc">Inicjalizuje pola klasy Wylicza srodek_lok oraz polowa_wysokosci, metoda powinna być wywołana przed w...</div><div class="ttdef"><b>Definition:</b> obiekt.cpp:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="obiekt_8hh.html">obiekt.hh</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<map id="obiekt::macierz_obrotu" name="obiekt::macierz_obrotu">
+<area shape="rect" id="node2" href="$classobiekt.html#a968676d67a6b4e31486f045eb3dac91a" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadany kąt. " alt="" coords="208,31,303,57"/>
+<area shape="rect" id="node3" href="$classscena.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="351,31,445,57"/>
+<area shape="rect" id="node4" href="$classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="498,5,598,32"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="493,56,603,83"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="651,56,701,83"/>
+</map>

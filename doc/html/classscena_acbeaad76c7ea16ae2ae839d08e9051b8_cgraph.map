@@ -1,0 +1,8 @@
+<map id="scena::rysuj" name="scena::rysuj">
+<area shape="rect" id="node2" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="PzG::LaczeDoGNUPlota\l::Rysuj" alt="" coords="147,5,315,47"/>
+<area shape="rect" id="node3" href="$classscena.html#a6ae791d0fca6996f5b83494738bbf781" title="Zwraca informację o kolizji Sprawdza czy wykonanie ruchu na zadane odległość i kąt wznoszenia będzie ..." alt="" coords="179,122,282,149"/>
+<area shape="rect" id="node7" href="$classscena.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. " alt="" coords="165,71,296,98"/>
+<area shape="rect" id="node4" href="$classobiekt.html#a081d3dee3d37262cb2411010d2fe7ae9" title="Zwraca środek drona Metoda zwraca wartość współrzędnej zetowej drona. " alt="" coords="373,46,507,73"/>
+<area shape="rect" id="node5" href="$classpowierzchnia.html#afae813342be6d8f34701d85bc60d4f18" title="zwraca wspolrzedną z&#45;tową powierzchni " alt="" coords="363,97,517,123"/>
+<area shape="rect" id="node6" href="$classobiekt.html#a25f7a7e06704d3044555cccba13688e5" title="Zwraca polowę wysokości obiektu Metoda zwraca połowę wysokości obiektu. " alt="" coords="385,147,495,174"/>
+</map>
