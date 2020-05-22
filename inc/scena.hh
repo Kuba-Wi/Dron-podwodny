@@ -47,21 +47,21 @@ class scena {
          * \brief Dodaje dno do sceny
          * Zapisuje pliki opisujące powierzchnię dna
          * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
-         * \parm[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+         * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
          */
         void dodaj_dno(const std::string & nazwa_lok, const std::string & nazwa_glob);
         /*!
          * \brief Dodaje wodę do sceny
          * Zapisuje pliki opisujące powierzchnię wody
          * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
-         * \parm[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+         * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
          */
         void dodaj_wode(const std::string & nazwa_lok, const std::string & nazwa_glob);
         /*!
          * \brief Dodaje obiekt dron do sceny
          * Zapisuje pliki opisujące obiekt dron i inicjalizuje go
          * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
-         * \parm[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+         * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
          */
         void dodaj_drona(const std::string & nazwa_lok, const std::string & nazwa_glob);
 
