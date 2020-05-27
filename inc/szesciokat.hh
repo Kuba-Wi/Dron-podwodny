@@ -91,5 +91,5 @@ class szesciokat : public powierzchnia {
          * Metoda zwraca połowę wysokości obiektu
          * \retval polowa_wysokosci - pole klasy 
          */
-        double polowa_wysokosci() const { return polowa_wysokosci; }
+        double polowa_wys() const { return polowa_wysokosci; }
 };
