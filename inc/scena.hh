@@ -1,7 +1,7 @@
 #ifndef SCENA_HH
 #define SCEN_HH
 
-#include "obiekt.hh"
+#include "dron.hh"
 #include "lacze_do_gnuplota.hh"
 
 /*!
@@ -16,7 +16,7 @@ class scena {
         /*! \brief Opisuje powierzchnię wody */
         powierzchnia woda;
         /*! \brief Opisuje obiekt dron */
-        obiekt dron;
+        dron dron_scena;
         /*! \brief Łącze z programem gnuplot */
         PzG::LaczeDoGNUPlota Lacze;
 
@@ -30,7 +30,7 @@ class scena {
          * \retval true - gdy będzie kolizja
          * \retval false - gdy nie będzie kolizja 
          */
-        bool kolizja(double kat_wznoszenia, double odleglosc) const;
+       // bool kolizja(double kat_wznoszenia, double odleglosc) const;
 
         /*!
          * \brief Zwraca informację o wynurzenie
@@ -38,7 +38,7 @@ class scena {
          * \retval true - gdy jest wynurzenie
          * \retval false - gdy nie ma wynurzenia 
          */
-        bool wynurzenie() const;
+        //bool wynurzenie() const;
     public:
         /*! \brief Konstruktor domyślny */
         scena() {}
@@ -63,7 +63,10 @@ class scena {
          * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
          * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
          */
-        void dodaj_drona(const std::string & nazwa_lok, const std::string & nazwa_glob);
+        void dodaj_korpus(const std::string & nazwa_lok, const std::string & nazwa_glob);
+
+        void dodaj_sruba_lewa(const std::string & nazwa_lok, const std::string & nazwa_glob);
+        void dodaj_sruba_prawa(const std::string & nazwa_lok, const std::string & nazwa_glob);
 
         /*! \brief Inicjalizuje Łącze do gnuplota */
         void inicjalizuj();
