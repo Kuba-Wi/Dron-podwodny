@@ -14,6 +14,11 @@ class dron {
         //przesuniecie sruby wzgledem korpusu może dodam później
         SWektor<double, 3> przesuniecie_lok_sruby;
 
+
+        void wylicz_translacje(SWektor<double, 3> & wek, double kat_wznoszenia, double odleglosc) const;
+
+        void wylicz_macierz_obrotu(SMacierz<double, 3> & obrot, double kat_obrotu) const;
+
     public:
         //zeruje przesuniecie_lok_sruby
         dron();
@@ -25,5 +30,8 @@ class dron {
 
         void ruch_na_wprost(double kat_wznoszenia, double odleglosc);
         void obrot(double kat_obrotu);
+        //ruch sruby lewej o przesuniecie i zadana macierz obrotu
+        void sruba_lewa_ruch(const SMacierz<double, 3> & obrot);
+        void sruba_prawa_ruch(const SMacierz<double, 3> & obrot);
 
 };

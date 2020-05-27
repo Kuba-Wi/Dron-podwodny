@@ -23,24 +23,12 @@ class szesciokat : public powierzchnia {
          * \param[in] nazwa_pliku - nazwa pliku z którego będą odczytywane dane 
          */
         void wczytaj_wspolrz(const std::string & nazwa_pliku);
-         /*! 
-          * \brief Wczytuje wspolrzedne lokalne
-          * Wczytuje współrzędne z pliku z współrzędnymi lokalnymi 
-          * i zapisuje je do pola współrzędne. 
-          */
-        void wczytaj_wspolrzedne_lok();
         /*! 
           * \brief Wczytuje wspolrzedne globalne
           * Wczytuje współrzędne z pliku z punktami 
           * i zapisuje je do pola współrzędne. 
           */
         void wczytaj_wspolrzedne_glob();
-        
-        /*!
-         * \brief Wpisuje współrzędne do pliku_z_punktami
-         * Zapisuje współrzędne z pola współrzędne do pliku globalnego 
-         */
-        void wpisz_wspolrzedne_glob();
         /*! 
          * \brief Wypełnia macierz obrotu o zadany kat
          * Wypełnia macierz służącą do transformacji współrzędnych obiektu.
@@ -63,6 +51,20 @@ class szesciokat : public powierzchnia {
          */
         void inicjalizuj_szesciokat();
 
+        /*! 
+          * \brief Wczytuje wspolrzedne lokalne
+          * Wczytuje współrzędne z pliku z współrzędnymi lokalnymi 
+          * i zapisuje je do pola współrzędne. 
+          */
+        void wczytaj_wspolrzedne_lok();
+        /*!
+         * \brief Wpisuje współrzędne do pliku_z_punktami
+         * Zapisuje współrzędne z pola współrzędne do pliku globalnego 
+         */
+        void wpisz_wspolrzedne_glob();
+
+        void macierz_obrotu_y(SMacierz<double, 3> & obrot, double kat_obrotu) const;
+
         /*!
          * \brief Przeprowadza ruch na wprost
          * Powoduje ruch obiektu po prostej do góry lub do dołu
@@ -70,14 +72,15 @@ class szesciokat : public powierzchnia {
          * \param[in] kat_wznoszenia - katruchu do góry
          * \param[in] odleglosc - dystans do pokonania
          */
-        void ruch_na_wprost(double kat_wznoszenia, double odleglosc);
-
+        void ruch_na_wprost(const SWektor<double, 3> & przesun);
         /*!
          * \brief Powoduje obrót obiektu
          * Metoda powoduje obrót obiektu wokół własnej osi o zadany kąt
          * \param[in] kat_obrotu - zadany kąt
          */
-        void obrot(double kat_obrotu);
+        void obrot(const SMacierz<double, 3> & mac_obrotu);
+        //ruch o wspolrzedne sruby
+        void ruch_lokalny();
 
         /*!
          * \brief Zwraca środek drona
@@ -92,5 +95,10 @@ class szesciokat : public powierzchnia {
          * \retval polowa_wysokosci - pole klasy 
          */
         SWektor<double, 3> polowa_dlugosci() const { return polowa_dl; }
+
+        //zwraca przesuniecie szesciokata
+        SWektor<double, 3> zwroc_przesuniecie() const { return przesuniecie; }
+
+        double zwroc_kat_obrotu() const { return laczny_kat_obrotu; }
 
 };
