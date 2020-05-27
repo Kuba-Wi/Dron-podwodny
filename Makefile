@@ -5,8 +5,9 @@ __start__: ./dron_podwodny
 	./dron_podwodny
 
 
-./dron_podwodny: obj obj/main.o obj/powierzchnia.o obj/obiekt.o obj/scena.o obj/lacze_do_gnuplota.o
-	g++ -Wall -pedantic -o dron_podwodny obj/main.o obj/scena.o obj/powierzchnia.o obj/obiekt.o obj/lacze_do_gnuplota.o
+./dron_podwodny: obj obj/main.o obj/powierzchnia.o obj/obiekt.o obj/scena.o obj/lacze_do_gnuplota.o obj/szesciokat.o obj/dron.o
+	g++ -Wall -pedantic -o dron_podwodny obj/main.o obj/scena.o obj/powierzchnia.o obj/obiekt.o obj/lacze_do_gnuplota.o\
+				obj/szesciokat.o obj/dron.o
 
 obj:
 	mkdir -p obj
@@ -19,6 +20,12 @@ obj/powierzchnia.o: inc/powierzchnia.hh src/powierzchnia.cpp
 
 obj/obiekt.o: inc/obiekt.hh inc/SWektor.hh inc/powierzchnia.hh src/obiekt.cpp
 	g++ -c ${CXXFLAGS} -o obj/obiekt.o src/obiekt.cpp
+
+obj/szesciokat.o: inc/szesciokat.hh src/szesciokat.cpp inc/powierzchnia.hh
+	g++ -c ${CXXFLAGS} -o obj/szesciokat.o src/szesciokat.cpp
+
+obj/dron.o: inc/dron.hh src/dron.cpp inc/szesciokat.hh inc/obiekt.hh
+	g++ -c ${CXXFLAGS} -o obj/dron.o src/dron.cpp
 
 obj/scena.o: inc/scena.hh inc/obiekt.hh inc/lacze_do_gnuplota.hh src/scena.cpp
 	g++ -c ${CXXFLAGS} -o obj/scena.o src/scena.cpp

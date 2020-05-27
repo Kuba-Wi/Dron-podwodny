@@ -14,7 +14,10 @@ void inf_o_obiektach() {
 
 void obsluga_sceny() {
     scena glowna;
-    glowna.dodaj_drona("dat/prostopadloscian.pow", "dat/prostopadloscian1.pow");
+    glowna.dodaj_korpus("dat/prostopadloscian.pow", "dat/prostopadloscian1.pow");
+    glowna.dodaj_sruba_lewa("dat/sruba_lewa.dat", "dat/sruba_lewa1.dat");
+    glowna.dodaj_sruba_prawa("dat/sruba_prawa.dat", "dat/sruba_prawa1.dat");
+
     glowna.dodaj_dno("dat/dno.pow", "dat/dno1.pow");
     glowna.dodaj_wode("dat/pow_wody.dat", "dat/pow_wody1.dat");
     glowna.inicjalizuj();
