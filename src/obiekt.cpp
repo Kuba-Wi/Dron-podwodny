@@ -92,22 +92,25 @@ void obiekt::macierz_obrotu(SMacierz<double, 3> & obrot, double kat_obrotu) cons
 }
 
 void obiekt::ruch_na_wprost(double kat_wznoszenia, double odleglosc) {
-    wczytaj_wspolrzedne_glob();
+    wczytaj_wspolrzedne_lok();
+
+    SMacierz<double, 3> obrot;
+    SWektor<double, 3> translacja;
 
     const double pi = acos(-1);
 
-    SWektor<double, 3> translacja;
+    macierz_obrotu(obrot, laczny_kat_obrotu);
 
     translacja[0] = cos(pi*(laczny_kat_obrotu/180.0)) * cos(pi*(kat_wznoszenia/180.0));
     translacja[1] = sin(pi*(laczny_kat_obrotu/180.0)) * cos(pi*(kat_wznoszenia/180.0));
     translacja[2] = sin(pi*(kat_wznoszenia/180.0));
 
     translacja = translacja * odleglosc;
+    przesuniecie = przesuniecie + translacja;    
 
     for(SWektor<double, 3> &x : wspolrzedne)
-        x = x + translacja;
+        x = obrot * x + przesuniecie;
 
-    przesuniecie = przesuniecie + translacja;    
     wpisz_wspolrzedne_glob();
 }
 
