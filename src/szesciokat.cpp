@@ -13,15 +13,23 @@ szesciokat::szesciokat() {
 void szesciokat::inicjalizuj_szesciokat() {
     wczytaj_wspolrzedne_lok();
 
-    std::vector<double> zety;
+    SWektor<double, 3> min_wsp = wspolrzedne[0];
+    SWektor<double, 3> max_wsp = wspolrzedne[0];
 
-    for(auto & wiersz : wspolrzedne)
-        zety.push_back(wiersz[2]);
+    for(auto & wiersz : wspolrzedne) {
+
+        for(int i = 0; i < 3; ++i) {
+
+            if(wiersz[i] < min_wsp[i])
+                min_wsp[i] = wiersz[i];
+            else if(wiersz[i] > max_wsp[i])
+                max_wsp[i] = wiersz[i];
+        }
+    }
     
-    auto minmax = std::minmax_element(zety.begin(), zety.end());
 
-    srodek_lok = (*minmax.first + *minmax.second) / 2;
-    polowa_wysokosci = fabs(*minmax.first - *minmax.second) / 2;
+    srodek_lok = (min_wsp + max_wsp) / 2;
+    polowa_dl = (max_wsp - min_wsp) / 2;
 }
 
 
@@ -134,6 +142,6 @@ void szesciokat::obrot(double kat_obrotu) {
     wpisz_wspolrzedne_glob();
 }
 
-double szesciokat::polozenie_z() const {
-    return przesuniecie[2];
+SWektor<double, 3> szesciokat::polozenie() const {
+    return srodek_lok + przesuniecie;
 }
