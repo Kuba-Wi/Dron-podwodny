@@ -11,9 +11,12 @@ class dron {
         double laczny_kat_obrotu;
         /*! \brief przesunięcie obiektu względem wspolrzednych lokalnych */
         SWektor<double, 3> przesuniecie;
+        //przesuniecie sruby wzgledem korpusu może dodam później
+        SWektor<double, 3> przesuniecie_lok_sruby;
 
     public:
-        dron() {}
+        //zeruje przesuniecie_lok_sruby
+        dron();
         void inicjalizuj_drona();
         //dodaje pliki lokalne i globalne dla korpusu wczytuje plik_lok do pliku_glob
         void dodaj_pliki_korpus(const std::string & nazwa_lok, const std::string & nazwa_glob);

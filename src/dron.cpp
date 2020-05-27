@@ -1,6 +1,12 @@
 #include "dron.hh"
 
 
+dron::dron() {
+    for(int i = 0; i < 3; ++i)
+        przesuniecie_lok_sruby[i] = 0;
+}
+
+
 void dron::inicjalizuj_drona() {
     korpus.inicjalizuj_obiekt();
     sruba_lewa.inicjalizuj_szesciokat();
