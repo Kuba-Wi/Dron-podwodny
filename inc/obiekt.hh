@@ -20,10 +20,10 @@ class obiekt : public powierzchnia {
         double laczny_kat_obrotu;
         /*! \brief przesunięcie obiektu względem wspolrzednych lokalnych */
         SWektor<double, 3> przesuniecie;
-        /*! \brief odległość środka drona od ściany górnej */
-        double polowa_wysokosci;
+        /*! \brief odległości środka obiektu od ścian */
+        SWektor<double, 3> polowa_dl;
         /*! \brief Środek wspolrzednych lokalnych obiektu */
-        double srodek_lok;
+        SWektor<double, 3> srodek_lok;
 
         /*! 
          * \brief Wczytuje wspolrzedne z pliku
@@ -92,14 +92,14 @@ class obiekt : public powierzchnia {
          * Metoda zwraca wartość współrzędnej zetowej drona
          * \return Współrzędna zetowa środka drona
          */
-        double polozenie_z() const;
+        SWektor<double, 3> polozenie() const;
 
         /*!
          * \brief Zwraca polowę wysokości obiektu
          * Metoda zwraca połowę wysokości obiektu
          * \retval polowa_wysokosci - pole klasy 
          */
-        double promien() const { return polowa_wysokosci; }
+        SWektor<double, 3> polowa_dlugosci() const { return polowa_dl; }
 };
 
 

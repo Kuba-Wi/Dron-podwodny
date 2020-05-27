@@ -27,7 +27,6 @@ void szesciokat::inicjalizuj_szesciokat() {
         }
     }
     
-
     srodek_lok = (min_wsp + max_wsp) / 2;
     polowa_dl = (max_wsp - min_wsp) / 2;
 }
