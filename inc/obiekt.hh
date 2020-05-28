@@ -31,24 +31,12 @@ class obiekt : public powierzchnia {
          * \param[in] nazwa_pliku - nazwa pliku z którego będą odczytywane dane 
          */
         void wczytaj_wspolrz(const std::string & nazwa_pliku);
-         /*! 
-          * \brief Wczytuje wspolrzedne lokalne
-          * Wczytuje współrzędne z pliku z współrzędnymi lokalnymi 
-          * i zapisuje je do pola współrzędne. 
-          */
-        void wczytaj_wspolrzedne_lok();
         /*! 
           * \brief Wczytuje wspolrzedne globalne
           * Wczytuje współrzędne z pliku z punktami 
           * i zapisuje je do pola współrzędne. 
           */
         void wczytaj_wspolrzedne_glob();
-        
-        /*!
-         * \brief Wpisuje współrzędne do pliku_z_punktami
-         * Zapisuje współrzędne z pola współrzędne do pliku globalnego 
-         */
-        void wpisz_wspolrzedne_glob();
         /*! 
          * \brief Wypełnia macierz obrotu o zadany kat
          * Wypełnia macierz służącą do transformacji współrzędnych obiektu.
@@ -70,6 +58,19 @@ class obiekt : public powierzchnia {
          * metoda powinna być wywołana przed wykonaniem ruchów przez obiekt
          */
         void inicjalizuj_obiekt();
+
+        /*! 
+          * \brief Wczytuje wspolrzedne lokalne
+          * Wczytuje współrzędne z pliku z współrzędnymi lokalnymi 
+          * i zapisuje je do pola współrzędne. 
+          */
+        void wczytaj_wspolrzedne_lok();
+
+        /*!
+         * \brief Wpisuje współrzędne do pliku_z_punktami
+         * Zapisuje współrzędne z pola współrzędne do pliku globalnego 
+         */
+        void wpisz_wspolrzedne_glob();
 
         /*!
          * \brief Przeprowadza ruch na wprost

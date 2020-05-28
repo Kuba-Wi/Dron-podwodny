@@ -33,5 +33,6 @@ class dron {
         //ruch sruby lewej o przesuniecie i zadana macierz obrotu
         void sruba_lewa_ruch(const SMacierz<double, 3> & obrot);
         void sruba_prawa_ruch(const SMacierz<double, 3> & obrot);
+        void korpus_ruch(const SMacierz<double, 3> & obrot);
 
 };

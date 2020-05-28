@@ -58,10 +58,6 @@ void dron::dodaj_pliki_sruby_prawej(const std::string & nazwa_lok, const std::st
 }
 
 void dron::ruch_na_wprost(double kat_wznoszenia, double odleglosc) {
-    // korpus.ruch_na_wprost(kat_wznoszenia, odleglosc);
-
-    // sruba_lewa.ruch_na_wprost(kat_wznoszenia, odleglosc);
-    // sruba_prawa.ruch_na_wprost(kat_wznoszenia, odleglosc);
 
     SWektor<double, 3> translacja;
     SMacierz<double, 3> obrot;
@@ -73,13 +69,12 @@ void dron::ruch_na_wprost(double kat_wznoszenia, double odleglosc) {
 
     sruba_lewa_ruch(obrot);
     sruba_prawa_ruch(obrot);
+    korpus_ruch(obrot);
 }
 
 void dron::obrot(double kat_obrotu) {
 
-    korpus.obrot(kat_obrotu);
-    sruba_lewa.obrot(kat_obrotu);
-    sruba_prawa.obrot(kat_obrotu);
+    SMacierz<double, 3> obrot;
 
     laczny_kat_obrotu += kat_obrotu;
     while(laczny_kat_obrotu >= 360.0)
@@ -87,17 +82,15 @@ void dron::obrot(double kat_obrotu) {
     while(laczny_kat_obrotu <= -360.0)
         laczny_kat_obrotu += 360.0;
 
+    wylicz_macierz_obrotu(obrot, laczny_kat_obrotu);
 
-    sruba_lewa.wczytaj_wspolrzedne_lok();
-
-    SMacierz<double, 3> obrot;
-
-    sruba_lewa.macierz_obrotu_y(obrot, 10);
-
+    sruba_lewa_ruch(obrot);
+    sruba_prawa_ruch(obrot);
+    korpus_ruch(obrot);
 }
 
 void dron::sruba_lewa_ruch(const SMacierz<double, 3> & obrot) {
-    sruba_lewa.wczytaj_lok();
+    sruba_lewa.wczytaj_wspolrzedne_lok();
 
     sruba_lewa.ruch_lokalny();
     sruba_lewa.obrot(obrot);
@@ -107,11 +100,20 @@ void dron::sruba_lewa_ruch(const SMacierz<double, 3> & obrot) {
 }
 
 void dron::sruba_prawa_ruch(const SMacierz<double, 3> & obrot) {
-    sruba_prawa.wczytaj_lok();
+    sruba_prawa.wczytaj_wspolrzedne_lok();
 
     sruba_prawa.ruch_lokalny();
     sruba_prawa.obrot(obrot);
     sruba_prawa.ruch_na_wprost(przesuniecie);
 
     sruba_prawa.wpisz_wspolrzedne_glob();
+}
+
+void dron::korpus_ruch(const SMacierz<double, 3> & obrot) {
+    korpus.wczytaj_wspolrzedne_lok();
+
+    korpus.obrot(obrot);
+    korpus.ruch_na_wprost(przesuniecie);
+
+    korpus.wpisz_wspolrzedne_glob();
 }
