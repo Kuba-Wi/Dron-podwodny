@@ -34,6 +34,14 @@ void dron::inicjalizuj_drona() {
     korpus.inicjalizuj_obiekt();
     sruba_lewa.inicjalizuj_szesciokat();
     sruba_prawa.inicjalizuj_szesciokat();
+
+    SWektor<double, 3> przesun;
+    przesun[0] = -20;
+    przesun[1] = -20;
+    przesun[2] = 0;
+    sruba_prawa.wpisz_przesuniecie(przesun);
+    przesun[1] = 20;
+    sruba_lewa.wpisz_przesuniecie(przesun);
 }
 
 void dron::dodaj_pliki_korpus(const std::string & nazwa_lok, const std::string & nazwa_glob) {

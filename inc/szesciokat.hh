@@ -43,6 +43,8 @@ class szesciokat : public powierzchnia {
          * Zeruje wektor przesunięcia i łączny kąt obrotu.
          */
         szesciokat();
+        //wpisuje wektor przesun do współrzędnych przesunięcie
+        void wpisz_przesuniecie(const SWektor<double, 3> & przesun) { przesuniecie = przesun; }
        
         /*!
          * \brief Inicjalizuje pola klasy
@@ -63,7 +65,7 @@ class szesciokat : public powierzchnia {
          */
         void wpisz_wspolrzedne_glob();
 
-        void macierz_obrotu_y(SMacierz<double, 3> & obrot, double kat_obrotu) const;
+        void macierz_obrotu_z(SMacierz<double, 3> & obrot, double kat_obrotu) const;
 
         /*!
          * \brief Przeprowadza ruch na wprost

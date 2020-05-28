@@ -98,20 +98,20 @@ void szesciokat::macierz_obrotu(SMacierz<double, 3> & obrot, double kat_obrotu) 
     obrot(0, 1) = -obrot(1, 0);
 }
 
-void szesciokat::macierz_obrotu_y(SMacierz<double, 3> & obrot, double kat_obrotu) const {
+void szesciokat::macierz_obrotu_z(SMacierz<double, 3> & obrot, double kat_obrotu) const {
     const double pi = acos(-1);
 
     obrot(0, 1) = 0;
+    obrot(0, 2) = 0;
     obrot(1, 0) = 0;
-    obrot(1, 2) = 0;
-    obrot(2, 1) = 0;
+    obrot(2, 0) = 0;
 
-    obrot(1, 1) = 1;
+    obrot(0, 0) = 1;
 
-    obrot(0, 0) = cos(pi*(kat_obrotu/180.0));
-    obrot(2, 2) = obrot(0, 0);
-    obrot(2, 0) = sin(pi*(kat_obrotu/180.0));
-    obrot(0, 2) = -obrot(2, 0);
+    obrot(1, 1) = cos(pi*(kat_obrotu/180.0));
+    obrot(2, 2) = obrot(1, 1);
+    obrot(2, 1) = sin(pi*(kat_obrotu/180.0));
+    obrot(1, 2) = -obrot(2, 1);
 }
 
 void szesciokat::ruch_na_wprost(const SWektor<double, 3> & przesun) {
@@ -133,7 +133,7 @@ void szesciokat::ruch_lokalny() {
     while(laczny_kat_obrotu <= -360.0)
         laczny_kat_obrotu += 360.0;
 
-    macierz_obrotu_y(mac_obrotu, laczny_kat_obrotu);
+    macierz_obrotu_z(mac_obrotu, laczny_kat_obrotu);
 
     obrot(mac_obrotu);
     ruch_na_wprost(przesuniecie);

@@ -22,9 +22,7 @@ int main() {
     int counter = 0;
 
     while(cin >> pom) {
-        pom = pom * 10;
-        pom[0] -= 25;
-        pom[1] -= 10;
+        pom = pom * 20;
         cout << pom;
         if(++counter % 4 == 0) {
             cout<<"#\n\n";
