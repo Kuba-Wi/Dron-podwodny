@@ -98,47 +98,14 @@ void obiekt::macierz_obrotu(SMacierz<double, 3> & obrot, double kat_obrotu) cons
     obrot(0, 1) = -obrot(1, 0);
 }
 
-void obiekt::ruch_na_wprost(double kat_wznoszenia, double odleglosc) {
-    wczytaj_wspolrzedne_lok();
-
-    SMacierz<double, 3> obrot;
-    SWektor<double, 3> translacja;
-
-    const double pi = acos(-1);
-
-    macierz_obrotu(obrot, laczny_kat_obrotu);
-
-    translacja[0] = cos(pi*(laczny_kat_obrotu/180.0)) * cos(pi*(kat_wznoszenia/180.0));
-    translacja[1] = sin(pi*(laczny_kat_obrotu/180.0)) * cos(pi*(kat_wznoszenia/180.0));
-    translacja[2] = sin(pi*(kat_wznoszenia/180.0));
-
-    translacja = translacja * odleglosc;
-    przesuniecie = przesuniecie + translacja;    
-
+void obiekt::ruch_na_wprost(const SWektor<double, 3> & przesun) {
     for(SWektor<double, 3> &x : wspolrzedne)
-        x = obrot * x + przesuniecie;
-
-    wpisz_wspolrzedne_glob();
+        x = x + przesun;
 }
 
-void obiekt::obrot(double kat_obrotu) {
-    wczytaj_wspolrzedne_lok();
-
-    SMacierz<double, 3> obrot;
-
-    laczny_kat_obrotu += kat_obrotu;
-    while(laczny_kat_obrotu >= 360.0)
-        laczny_kat_obrotu -= 360.0;
-    while(laczny_kat_obrotu <= -360.0)
-        laczny_kat_obrotu += 360.0;
-
-    macierz_obrotu(obrot, laczny_kat_obrotu);
-
+void obiekt::obrot(const SMacierz<double, 3> & mac_obrotu) {
     for(SWektor<double, 3> &x : wspolrzedne)
-        x = obrot * x + przesuniecie;
-
-    
-    wpisz_wspolrzedne_glob();
+        x = mac_obrotu * x;
 }
 
 SWektor<double, 3> obiekt::polozenie() const {

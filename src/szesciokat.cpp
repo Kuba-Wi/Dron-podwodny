@@ -115,46 +115,13 @@ void szesciokat::macierz_obrotu_y(SMacierz<double, 3> & obrot, double kat_obrotu
 }
 
 void szesciokat::ruch_na_wprost(const SWektor<double, 3> & przesun) {
-    //wczytaj_wspolrzedne_lok();
-
-    // SMacierz<double, 3> obrot;
-    // SWektor<double, 3> translacja;
-
-    // const double pi = acos(-1);
-
-    // macierz_obrotu(obrot, laczny_kat_obrotu);
-
-    // translacja[0] = cos(pi*(laczny_kat_obrotu/180.0)) * cos(pi*(kat_wznoszenia/180.0));
-    // translacja[1] = sin(pi*(laczny_kat_obrotu/180.0)) * cos(pi*(kat_wznoszenia/180.0));
-    // translacja[2] = sin(pi*(kat_wznoszenia/180.0));
-
-    // translacja = translacja * odleglosc;
-    // przesuniecie = przesuniecie + translacja;    
-
     for(SWektor<double, 3> &x : wspolrzedne)
         x = x + przesun;
-
-    //wpisz_wspolrzedne_glob();
 }
 
 void szesciokat::obrot(const SMacierz<double, 3> & mac_obrotu) {
-    //wczytaj_wspolrzedne_lok();
-
-    //SMacierz<double, 3> obrot;
-
-    // laczny_kat_obrotu += kat_obrotu;
-    // while(laczny_kat_obrotu >= 360.0)
-    //     laczny_kat_obrotu -= 360.0;
-    // while(laczny_kat_obrotu <= -360.0)
-    //     laczny_kat_obrotu += 360.0;
-
-    //macierz_obrotu(obrot, laczny_kat_obrotu);
-
     for(SWektor<double, 3> &x : wspolrzedne)
         x = mac_obrotu * x;
-
-    
-    //wpisz_wspolrzedne_glob();
 }
 
 void szesciokat::ruch_lokalny() {

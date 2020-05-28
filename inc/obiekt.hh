@@ -78,14 +78,14 @@ class obiekt : public powierzchnia {
          * \param[in] kat_wznoszenia - katruchu do góry
          * \param[in] odleglosc - dystans do pokonania
          */
-        void ruch_na_wprost(double kat_wznoszenia, double odleglosc);
+        void ruch_na_wprost(const SWektor<double, 3> & przesun);
 
         /*!
          * \brief Powoduje obrót obiektu
          * Metoda powoduje obrót obiektu wokół własnej osi o zadany kąt
          * \param[in] kat_obrotu - zadany kąt
          */
-        void obrot(double kat_obrotu);
+        void obrot(const SMacierz<double, 3> & mac_obrotu);
 
         /*!
          * \brief Zwraca środek drona
