@@ -3,6 +3,8 @@
 
 #include "dron.hh"
 #include "lacze_do_gnuplota.hh"
+#include <list>
+#include <memory>
 
 /*!
  * \brief Modeluje pojęcie sceny
@@ -20,8 +22,12 @@ class scena {
         /*! \brief Łącze z programem gnuplot */
         PzG::LaczeDoGNUPlota Lacze;
 
+        //lista z przeszkodami
+        std::list<std::shared_ptr<obiekt>> lista_przeszkod;
+
         /*! \brief Rysuje wszystkie powierzchnie i obiekty na scenie */
         void rysuj() { Lacze.Rysuj(); }
+        void lacze_dodaj_plik(const std::string& nazwa_pliku);
 
         /*!
          * \brief Zwraca informację o kolizji
@@ -67,6 +73,8 @@ class scena {
 
         void dodaj_sruba_lewa(const std::string & nazwa_lok, const std::string & nazwa_glob);
         void dodaj_sruba_prawa(const std::string & nazwa_lok, const std::string & nazwa_glob);
+        //dodaje przeszkodę na scenę
+        void dodaj_przeszkode(const std::string & nazwa_lok, const std::string & nazwa_glob);
 
         /*! \brief Inicjalizuje Łącze do gnuplota */
         void inicjalizuj();

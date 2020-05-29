@@ -56,7 +56,7 @@ class obiekt : public powierzchnia {
        
         /*!
          * \brief Inicjalizuje pola klasy
-         * Wylicza srodek_lok oraz polowa_wysokosci,
+         * Wylicza srodek_lok oraz polowa_wysokosci, wpisuje plik lokalny do pliku z punktami
          * metoda powinna być wywołana przed wykonaniem ruchów przez obiekt
          */
         void inicjalizuj_obiekt();

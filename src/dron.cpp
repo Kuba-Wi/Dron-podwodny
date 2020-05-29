@@ -56,22 +56,16 @@ void dron::inicjalizuj_drona() {
 void dron::dodaj_pliki_korpus(const std::string & nazwa_lok, const std::string & nazwa_glob) {
     korpus.dodaj_plik_lok(nazwa_lok);
     korpus.dodaj_plik_glob(nazwa_glob);
-
-    korpus.wczytaj_lok();
 }
 
 void dron::dodaj_pliki_sruby_lewej(const std::string & nazwa_lok, const std::string & nazwa_glob) {
     sruba_lewa.dodaj_plik_lok(nazwa_lok);
     sruba_lewa.dodaj_plik_glob(nazwa_glob);
-
-    sruba_lewa.wczytaj_lok();
 }
 
 void dron::dodaj_pliki_sruby_prawej(const std::string & nazwa_lok, const std::string & nazwa_glob) {
     sruba_prawa.dodaj_plik_lok(nazwa_lok);
     sruba_prawa.dodaj_plik_glob(nazwa_glob);
-
-    sruba_prawa.wczytaj_lok();
 }
 
 void dron::ruch_na_wprost(double kat_wznoszenia, double odleglosc) {

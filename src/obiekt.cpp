@@ -11,6 +11,7 @@ obiekt::obiekt() {
 }
 
 void obiekt::inicjalizuj_obiekt() {
+    wczytaj_lok();
     wczytaj_wspolrzedne_lok();
 
     SWektor<double, 3> min_wsp = wspolrzedne[0];
