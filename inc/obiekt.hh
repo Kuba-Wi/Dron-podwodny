@@ -51,6 +51,8 @@ class obiekt : public powierzchnia {
          * Zeruje wektor przesunięcia i łączny kąt obrotu.
          */
         obiekt();
+
+        virtual ~obiekt() {}
        
         /*!
          * \brief Inicjalizuje pola klasy

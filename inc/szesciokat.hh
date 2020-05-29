@@ -5,7 +5,9 @@
 #include "SMacierz.hh"
 
 class szesciokat : public obiekt {
-       
+    private:
+        //zapisuje macierz obrotu wokół osi x
+        void macierz_obrotu_x(SMacierz<double, 3> & obrot, double kat_obrotu) const;
     public:
         /*! 
          * \brief Konstruktor
@@ -14,9 +16,6 @@ class szesciokat : public obiekt {
         szesciokat() : obiekt() {}
         //wpisuje wektor przesun do współrzędnych przesunięcie
         void wpisz_przesuniecie(const SWektor<double, 3> & przesun) { przesuniecie = przesun; }
-       
-
-        void macierz_obrotu_z(SMacierz<double, 3> & obrot, double kat_obrotu) const;
 
         //ruch o wspolrzedne sruby
         void ruch_lokalny();

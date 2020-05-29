@@ -3,7 +3,7 @@
 #include <cmath>
 
 
-void szesciokat::macierz_obrotu_z(SMacierz<double, 3> & obrot, double kat_obrotu) const {
+void szesciokat::macierz_obrotu_x(SMacierz<double, 3> & obrot, double kat_obrotu) const {
     const double pi = acos(-1);
 
     obrot(0, 1) = 0;
@@ -29,7 +29,7 @@ void szesciokat::ruch_lokalny() {
     while(laczny_kat_obrotu <= -360.0)
         laczny_kat_obrotu += 360.0;
 
-    macierz_obrotu_z(mac_obrotu, laczny_kat_obrotu);
+    macierz_obrotu_x(mac_obrotu, laczny_kat_obrotu);
 
     obrot(mac_obrotu);
     ruch_na_wprost(przesuniecie);
