@@ -31,12 +31,11 @@ class scena {
 
         /*!
          * \brief Zwraca informację o kolizji
-         * Sprawdza czy wykonanie ruchu na zadane odległość i kąt wznoszenia
-         * będzie skutkować kolizją
+         * Sprawdza czy jest kolizja
          * \retval true - gdy będzie kolizja
          * \retval false - gdy nie będzie kolizja 
          */
-       // bool kolizja(double kat_wznoszenia, double odleglosc) const;
+        bool kolizja() const;
 
         /*!
          * \brief Zwraca informację o wynurzenie

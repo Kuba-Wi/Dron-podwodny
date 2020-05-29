@@ -33,4 +33,6 @@ class dron {
         void sruba_prawa_ruch(const SMacierz<double, 3> & obrot);
         void korpus_ruch(const SMacierz<double, 3> & obrot);
 
+        SWektor<double, 3> zwroc_polozenie() const;
+        SWektor<double, 3> zwroc_dlugosci() const;
 };

@@ -128,3 +128,11 @@ void dron::korpus_ruch(const SMacierz<double, 3> & obrot) {
 
     korpus.wpisz_wspolrzedne_glob();
 }
+
+SWektor<double, 3> dron::zwroc_polozenie() const {
+    return (korpus.polozenie() + sruba_lewa.polozenie() + sruba_prawa.polozenie()) / 3;
+}
+
+SWektor<double, 3> dron::zwroc_dlugosci() const {
+    return korpus.zwroc_polowy_dlugosci() + sruba_lewa.zwroc_polowy_dlugosci();
+}

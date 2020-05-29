@@ -13,6 +13,32 @@
 //     return (fabs(dron.polozenie_z() - woda.zwroc_z()) <= dron.promien());
 // }
 
+bool scena::kolizja() const {
+    SWektor<double, 3> dlugosci_drona = dron_scena.zwroc_dlugosci();
+    SWektor<double, 3> srodek_drona = dron_scena.zwroc_polozenie();
+    SWektor<double, 3> dlugosci_przeszkody;
+    SWektor<double, 3> odleglosci;
+
+    bool jest_kolizja = false;
+
+    for(auto& przeszkoda : lista_przeszkod) {
+        dlugosci_przeszkody = przeszkoda->zwroc_polowy_dlugosci();
+        odleglosci = srodek_drona - przeszkoda->polozenie();
+
+        for(int i = 0; i < 3; ++i) {
+            if(fabs(odleglosci[i]) <= (dlugosci_przeszkody[i] + dlugosci_drona[i])) {
+                jest_kolizja = true;
+            } else {
+                jest_kolizja = false;
+            }
+        }
+        if(jest_kolizja) {
+            return true;
+        }
+    }
+    return false;
+}
+
 
 void scena::lacze_dodaj_plik(const std::string& nazwa_pliku) {
     
@@ -88,6 +114,10 @@ void scena::ruch_prosto(double kat_wznoszenia, double odleglosc) {
         //     kat_wznoszenia = 0;
         // }
         dron_scena.ruch_na_wprost(kat_wznoszenia, odleglosc/double(kwant));
+        if(kolizja()) {
+            std::cout << "Kolizja!\n";
+            dron_scena.ruch_na_wprost(kat_wznoszenia, -odleglosc/double(kwant));
+        }
         rysuj();
     }
 }

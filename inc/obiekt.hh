@@ -98,11 +98,11 @@ class obiekt : public powierzchnia {
         SWektor<double, 3> polozenie() const;
 
         /*!
-         * \brief Zwraca polowę wysokości obiektu
+         * \brief Zwraca wektor z polowami dlugości obiektu
          * Metoda zwraca połowę wysokości obiektu
          * \retval polowa_wysokosci - pole klasy 
          */
-        SWektor<double, 3> polowa_dlugosci() const { return polowa_dl; }
+        SWektor<double, 3> zwroc_polowy_dlugosci() const { return polowa_dl; }
 };
 
 
