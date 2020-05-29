@@ -13,7 +13,7 @@
  * i obracać wokół własnej osi. 
  */
 class obiekt : public powierzchnia {
-    private:
+    protected:
         /*! \brief Przechowuje współrzędne punktów tworzących obiekt */
         std::vector<SWektor<double, 3>> wspolrzedne;
         /*! \brief Łączny kąt obrotu obiektu */
@@ -90,8 +90,8 @@ class obiekt : public powierzchnia {
 
         /*!
          * \brief Zwraca środek drona
-         * Metoda zwraca wartość współrzędnej zetowej drona
-         * \return Współrzędna zetowa środka drona
+         * Metoda zwraca wartość współrzędnych środka drona
+         * \return Współrzędna środka drona
          */
         SWektor<double, 3> polozenie() const;
 

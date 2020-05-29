@@ -34,8 +34,8 @@ void dron::wylicz_macierz_obrotu(SMacierz<double, 3> & obrot, double kat_obrotu)
 
 void dron::inicjalizuj_drona() {
     korpus.inicjalizuj_obiekt();
-    sruba_lewa.inicjalizuj_szesciokat();
-    sruba_prawa.inicjalizuj_szesciokat();
+    sruba_lewa.inicjalizuj_obiekt();
+    sruba_prawa.inicjalizuj_obiekt();
 
     SWektor<double, 3> przesun;
     przesun[0] = -20;
