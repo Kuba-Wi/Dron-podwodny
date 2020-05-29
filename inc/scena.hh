@@ -3,6 +3,9 @@
 
 #include "dron.hh"
 #include "lacze_do_gnuplota.hh"
+#include "prostopadloscian.hh"
+#include "pret.hh"
+#include "prostokat.hh"
 #include <list>
 #include <memory>
 
@@ -28,6 +31,9 @@ class scena {
         /*! \brief Rysuje wszystkie powierzchnie i obiekty na scenie */
         void rysuj() { Lacze.Rysuj(); }
         void lacze_dodaj_plik(const std::string& nazwa_pliku);
+
+         //dodaje przeszkodę na scenę
+        void dodaj_przeszkode(const std::string & nazwa_lok, const std::string & nazwa_glob);
 
         /*!
          * \brief Zwraca informację o kolizji
@@ -72,8 +78,10 @@ class scena {
 
         void dodaj_sruba_lewa(const std::string & nazwa_lok, const std::string & nazwa_glob);
         void dodaj_sruba_prawa(const std::string & nazwa_lok, const std::string & nazwa_glob);
-        //dodaje przeszkodę na scenę
-        void dodaj_przeszkode(const std::string & nazwa_lok, const std::string & nazwa_glob);
+        //dodaje prostopadloscian na scenę
+        void dodaj_prostopadloscian(const std::string & nazwa_lok, const std::string & nazwa_glob);
+        void dodaj_pret(const std::string & nazwa_lok, const std::string & nazwa_glob);
+        void dodaj_prostokat(const std::string & nazwa_lok, const std::string & nazwa_glob);
 
         /*! \brief Inicjalizuje Łącze do gnuplota */
         void inicjalizuj();

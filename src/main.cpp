@@ -18,7 +18,9 @@ void obsluga_sceny() {
     glowna.dodaj_sruba_lewa("dat/sruba_lewa.dat", "dat/sruba_lewa1.dat");
     glowna.dodaj_sruba_prawa("dat/sruba_prawa.dat", "dat/sruba_prawa1.dat");
 
-    glowna.dodaj_przeszkode("dat/prostopadloscian.dat", "dat/prostopadloscian1.dat");
+    glowna.dodaj_prostopadloscian("dat/prostopadloscian.dat", "dat/prostopadloscian1.dat");
+    glowna.dodaj_pret("dat/pret.dat", "dat/pret1.dat");
+    glowna.dodaj_prostokat("dat/prostokat.dat", "dat/prostokat1.dat");
 
     glowna.dodaj_dno("dat/dno.pow", "dat/dno1.pow");
     glowna.dodaj_wode("dat/pow_wody.dat", "dat/pow_wody1.dat");

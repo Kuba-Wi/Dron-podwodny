@@ -20,6 +20,7 @@ bool scena::kolizja() const {
     SWektor<double, 3> odleglosci;
 
     bool jest_kolizja = false;
+    std::cout<<srodek_drona<<" xxx "<<dlugosci_drona;
 
     for(auto& przeszkoda : lista_przeszkod) {
         dlugosci_przeszkody = przeszkoda->zwroc_polowy_dlugosci();
@@ -84,7 +85,6 @@ void scena::dodaj_sruba_prawa(const std::string & nazwa_lok, const std::string &
 }
 
 void scena::dodaj_przeszkode(const std::string & nazwa_lok, const std::string & nazwa_glob) {
-    lista_przeszkod.push_back(std::make_shared<obiekt>());
 
     lista_przeszkod.back()->dodaj_plik_lok(nazwa_lok);
     lista_przeszkod.back()->dodaj_plik_glob(nazwa_glob);
@@ -92,6 +92,24 @@ void scena::dodaj_przeszkode(const std::string & nazwa_lok, const std::string & 
     lista_przeszkod.back()->inicjalizuj_obiekt();
 
     lacze_dodaj_plik(nazwa_glob);
+}
+
+void scena::dodaj_prostopadloscian(const std::string & nazwa_lok, const std::string & nazwa_glob) {
+    lista_przeszkod.push_back(std::make_shared<prostopadloscian>());
+
+    dodaj_przeszkode(nazwa_lok, nazwa_glob);
+}
+
+void scena::dodaj_pret(const std::string & nazwa_lok, const std::string & nazwa_glob) {
+    lista_przeszkod.push_back(std::make_shared<pret>());
+
+    dodaj_przeszkode(nazwa_lok, nazwa_glob);
+}
+
+void scena::dodaj_prostokat(const std::string & nazwa_lok, const std::string & nazwa_glob) {
+    lista_przeszkod.push_back(std::make_shared<prostokat>());
+
+    dodaj_przeszkode(nazwa_lok, nazwa_glob);
 }
 
 void scena::inicjalizuj() {
