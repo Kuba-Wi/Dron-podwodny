@@ -43,13 +43,15 @@ class scena {
          */
         bool kolizja() const;
 
+        bool kolizja_dno() const;
+
         /*!
          * \brief Zwraca informację o wynurzenie
          * Sprawdza czy obiekt jest wynurzony
          * \retval true - gdy jest wynurzenie
          * \retval false - gdy nie ma wynurzenia 
          */
-        //bool wynurzenie() const;
+        bool wynurzenie() const;
     public:
         /*! \brief Konstruktor domyślny */
         scena() {}

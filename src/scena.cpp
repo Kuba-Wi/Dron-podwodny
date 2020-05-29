@@ -3,15 +3,13 @@
 #include <cmath>
 
 
-// bool scena::kolizja(double kat_wznoszenia, double odleglosc) const {
-//     double przesun_dol = sin(acos(-1) * (kat_wznoszenia/180.0)) * odleglosc;
+bool scena::kolizja_dno() const {
+    return (fabs(dron_scena.zwroc_polozenie()[2] - dno.zwroc_z()) <= dron_scena.zwroc_dlugosci()[2]);
+}
 
-//     return (fabs(dron.polozenie_z() + przesun_dol - dno.zwroc_z()) <= dron.promien());
-// }
-
-// bool scena::wynurzenie() const {
-//     return (fabs(dron.polozenie_z() - woda.zwroc_z()) <= dron.promien());
-// }
+bool scena::wynurzenie() const {
+    return (fabs(dron_scena.zwroc_polozenie()[2] - woda.zwroc_z()) <= dron_scena.zwroc_dlugosci()[2] - 20);
+}
 
 bool scena::kolizja() const {
     SWektor<double, 3> dlugosci_drona = dron_scena.zwroc_dlugosci();
@@ -20,7 +18,6 @@ bool scena::kolizja() const {
     SWektor<double, 3> odleglosci;
 
     bool jest_kolizja = false;
-    std::cout<<srodek_drona<<" xxx "<<dlugosci_drona;
 
     for(auto& przeszkoda : lista_przeszkod) {
         dlugosci_przeszkody = przeszkoda->zwroc_polowy_dlugosci();
@@ -122,19 +119,15 @@ void scena::inicjalizuj() {
 void scena::ruch_prosto(double kat_wznoszenia, double odleglosc) {
     int kwant = 250;
     for(int i = 0; i < kwant; ++i) {
-        // if(kolizja(kat_wznoszenia, odleglosc/double(kwant))) {
-        //     std::cout << "Kolizja.\n";
-        //     break;
-        // } else if(wynurzenie() && ((kat_wznoszenia > 0 && odleglosc > 0) || (kat_wznoszenia < 0 && odleglosc < 0))) {
-        //     std::cout << "Wynurzenie.\n";
-        //     odleglosc = odleglosc * cos(acos(-1) * kat_wznoszenia / 180.0);
-        //     kat_wznoszenia = 0;
-        // }
         dron_scena.ruch_na_wprost(kat_wznoszenia, odleglosc/double(kwant));
-        if(kolizja()) {
+        if(kolizja() || kolizja_dno()) {
             std::cout << "Kolizja!\n";
             dron_scena.ruch_na_wprost(kat_wznoszenia, -odleglosc/double(kwant));
             break;
+        } else if(wynurzenie() && ((kat_wznoszenia > 0 && odleglosc > 0) || (kat_wznoszenia < 0 && odleglosc < 0))) {
+            std::cout << "Wynurzenie.\n";
+            odleglosc = odleglosc * cos(acos(-1) * kat_wznoszenia / 180.0);
+            kat_wznoszenia = 0;
         }
         rysuj();
     }
