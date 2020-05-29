@@ -13,9 +13,9 @@ template<typename Typ, int Rozmiar>
 class SWektor {
 
      /*! \brief Liczy wszystkie utworzone wektory 3D */
-    static int lacznie_wektorow3D;
+    static int lacznie_wektorow;
     /*! \brief Liczy aktualnie istniejące wektory 3D */
-    static int aktualnie_wektorow3D;
+    static int aktualnie_wektorow;
 
     Typ skladowe[Rozmiar]; /*! kolejne składowe wektora */
   public:
@@ -106,26 +106,26 @@ class SWektor {
      * \brief Zwraca łączną liczbę wektorów 3D
      * \retval lacznie_obiektow3D - pole klasy
      */
-    static int lacznie_wektory() { return lacznie_wektorow3D; }
+    static int lacznie_wektory() { return lacznie_wektorow; }
     /*!
      * \brief Zwraca aktualną liczbę wektorów 3D
      * \retval aktualnie_obiektow3D - pole klasy
      */
-     static int aktualnie_wektory() { return aktualnie_wektorow3D; }
+     static int aktualnie_wektory() { return aktualnie_wektorow; }
 };
 
 template<typename Typ, int Rozmiar>
-int SWektor<Typ, Rozmiar>::lacznie_wektorow3D = 0;
+int SWektor<Typ, Rozmiar>::lacznie_wektorow = 0;
 
 template<typename Typ, int Rozmiar>
-int SWektor<Typ, Rozmiar>::aktualnie_wektorow3D = 0;
+int SWektor<Typ, Rozmiar>::aktualnie_wektorow = 0;
 
 
 template<typename Typ, int Rozmiar>
 SWektor<Typ, Rozmiar>::SWektor() {
     if(Rozmiar == 3) {
-        ++lacznie_wektorow3D;
-        ++aktualnie_wektorow3D;
+        ++lacznie_wektorow;
+        ++aktualnie_wektorow;
     }
 }
 
@@ -133,15 +133,15 @@ template<typename Typ, int Rozmiar>
 SWektor<Typ, Rozmiar>::SWektor(const SWektor<Typ, Rozmiar> & Wek) {
     *this = Wek;
     if(Rozmiar == 3) {
-        ++aktualnie_wektorow3D;
-        ++lacznie_wektorow3D;
+        ++aktualnie_wektorow;
+        ++lacznie_wektorow;
     }
 }
 
 template<typename Typ, int Rozmiar>
 SWektor<Typ, Rozmiar>::~SWektor() {
     if(Rozmiar == 3)
-        --aktualnie_wektorow3D;
+        --aktualnie_wektorow;
 }
 
 

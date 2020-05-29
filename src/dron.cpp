@@ -3,7 +3,9 @@
 
 dron::dron() {
     for(int i = 0; i < 3; ++i)
-        przesuniecie_lok_sruby[i] = 0;
+        przesuniecie[i] = 0;
+
+    laczny_kat_obrotu = 0;
 }
 
 void dron::wylicz_translacje(SWektor<double, 3> & translacja, double kat_wznoszenia, double odleglosc) const {
@@ -42,6 +44,13 @@ void dron::inicjalizuj_drona() {
     sruba_prawa.wpisz_przesuniecie(przesun);
     przesun[1] = 20;
     sruba_lewa.wpisz_przesuniecie(przesun);
+
+    SMacierz<double, 3> obrot_temp;
+
+    wylicz_macierz_obrotu(obrot_temp, 0);
+
+    sruba_lewa_ruch(obrot_temp);
+    sruba_prawa_ruch(obrot_temp);
 }
 
 void dron::dodaj_pliki_korpus(const std::string & nazwa_lok, const std::string & nazwa_glob) {

@@ -11,8 +11,6 @@ class dron {
         double laczny_kat_obrotu;
         /*! \brief przesunięcie obiektu względem wspolrzednych lokalnych */
         SWektor<double, 3> przesuniecie;
-        //przesuniecie sruby wzgledem korpusu może dodam później
-        SWektor<double, 3> przesuniecie_lok_sruby;
 
 
         void wylicz_translacje(SWektor<double, 3> & wek, double kat_wznoszenia, double odleglosc) const;
