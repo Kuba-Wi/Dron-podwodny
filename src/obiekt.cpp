@@ -30,9 +30,6 @@ void obiekt::inicjalizuj_obiekt() {
     
     srodek_lok = (min_wsp + max_wsp) / 2;
     polowa_dl = (max_wsp - min_wsp) / 2;
-
-    for(int i = 0; i < 3; ++i)
-        polowa_dl[i] += 2;
 }
 
 

@@ -19,13 +19,24 @@ int main() {
 //             kwadrat(x,y);
 
     SWektor<double, 3> pom;
+    SWektor<double, 3> przesun;
+    przesun[0] = 100;
+    przesun[1] = 100;
+    przesun[2] = -50;
     int counter = 0;
 
-    while(cin >> pom) {
-        pom = pom * 20;
+    while(counter < 5) {
+        cin >> pom;
+        pom = pom + przesun;
         cout << pom;
-        if(++counter % 4 == 0) {
+        // if(++counter % 4 == 0) {
+        //     cout<<"#\n\n";
+        // }
+        if(!cin) {
+            cin.clear();
+            while(cin.get() != '\n');
             cout<<"#\n\n";
+            counter++;
         }
     }
 }

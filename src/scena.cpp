@@ -26,10 +26,9 @@ bool scena::kolizja() const {
         odleglosci = srodek_drona - przeszkoda->polozenie();
 
         for(int i = 0; i < 3; ++i) {
-            if(fabs(odleglosci[i]) <= (dlugosci_przeszkody[i] + dlugosci_drona[i])) {
-                jest_kolizja = true;
-            } else {
-                jest_kolizja = false;
+            jest_kolizja = (fabs(odleglosci[i]) <= (dlugosci_przeszkody[i] + dlugosci_drona[i]));
+            if(!jest_kolizja) {
+                break;
             }
         }
         if(jest_kolizja) {
@@ -117,6 +116,7 @@ void scena::ruch_prosto(double kat_wznoszenia, double odleglosc) {
         if(kolizja()) {
             std::cout << "Kolizja!\n";
             dron_scena.ruch_na_wprost(kat_wznoszenia, -odleglosc/double(kwant));
+            break;
         }
         rysuj();
     }
