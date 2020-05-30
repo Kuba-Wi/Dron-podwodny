@@ -31,19 +31,6 @@ class obiekt : public powierzchnia {
          * \param[in] nazwa_pliku - nazwa pliku z którego będą odczytywane dane 
          */
         void wczytaj_wspolrz(const std::string & nazwa_pliku);
-        /*! 
-          * \brief Wczytuje wspolrzedne globalne
-          * Wczytuje współrzędne z pliku z punktami 
-          * i zapisuje je do pola współrzędne. 
-          */
-        void wczytaj_wspolrzedne_glob();
-        /*! 
-         * \brief Wypełnia macierz obrotu o zadany kat
-         * Wypełnia macierz służącą do transformacji współrzędnych obiektu.
-         * \param[in] obrot - macierz, która ma być zapisana
-         * \param[in] kat_obrotu - kąt jakim ma być wypełniona macierz
-         */
-        void macierz_obrotu(SMacierz<double, 3> & obrot, double kat_obrotu) const;
 
     public:
         /*! 

@@ -130,9 +130,15 @@ void dron::korpus_ruch(const SMacierz<double, 3> & obrot) {
 }
 
 SWektor<double, 3> dron::zwroc_polozenie() const {
-    return przesuniecie + (korpus.polozenie() + sruba_lewa.polozenie() + sruba_prawa.polozenie()) / 3;
+    return przesuniecie + korpus.polozenie();
 }
 
 SWektor<double, 3> dron::zwroc_dlugosci() const {
-    return korpus.zwroc_polowy_dlugosci() + sruba_lewa.zwroc_polowy_dlugosci();
+    SWektor<double, 3> dlugosc_sr = sruba_lewa.zwroc_polowy_dlugosci();
+    SWektor<double, 3> dlugosc_kor = korpus.zwroc_polowy_dlugosci();
+
+    dlugosc_sr[0] = dlugosc_sr[1] = sqrt(dlugosc_sr[0] * dlugosc_sr[0] + dlugosc_sr[1] * dlugosc_sr[1]);
+    dlugosc_kor[0] = dlugosc_kor[1] = sqrt(dlugosc_kor[0] * dlugosc_kor[0] + dlugosc_kor[1] * dlugosc_kor[1]);
+    
+    return dlugosc_kor + dlugosc_sr;
 }

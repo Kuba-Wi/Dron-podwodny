@@ -30,6 +30,10 @@ void obiekt::inicjalizuj_obiekt() {
     
     srodek_lok = (min_wsp + max_wsp) / 2;
     polowa_dl = (max_wsp - min_wsp) / 2;
+
+    for(int i = 0; i < 3; ++i) {
+        polowa_dl[i] += 0.25;
+    }
 }
 
 
@@ -60,9 +64,6 @@ void obiekt::wczytaj_wspolrz(const std::string & nazwa_pliku) {
 void obiekt::wczytaj_wspolrzedne_lok() {
     wczytaj_wspolrz(nazwa_pliku_lok);
 }
-void obiekt::wczytaj_wspolrzedne_glob() {
-    wczytaj_wspolrz(plik_z_punktami);
-}
 
 void obiekt::wpisz_wspolrzedne_glob() {
     std::ofstream write;
@@ -84,20 +85,6 @@ void obiekt::wpisz_wspolrzedne_glob() {
     write.close();
 }
 
-void obiekt::macierz_obrotu(SMacierz<double, 3> & obrot, double kat_obrotu) const {
-    const double pi = acos(-1);
-
-    for(int i = 0; i < 3; ++i) {
-        obrot(2, i) = 0;
-        obrot(i, 2) = 0;
-    }
-    obrot(2, 2) = 1;
-
-    obrot(0, 0) = cos(pi*(kat_obrotu/180.0));
-    obrot(1, 1) = obrot(0, 0);
-    obrot(1, 0) = sin(pi*(kat_obrotu/180.0));
-    obrot(0, 1) = -obrot(1, 0);
-}
 
 void obiekt::ruch_na_wprost(const SWektor<double, 3> & przesun) {
     for(SWektor<double, 3> &x : wspolrzedne)
