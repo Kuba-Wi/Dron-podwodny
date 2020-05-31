@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['lacze_5fdo_5fgnuplota_2ecpp',['lacze_do_gnuplota.cpp',['../lacze__do__gnuplota_8cpp.html',1,'']]],
-  ['lacze_5fdo_5fgnuplota_2ehh',['lacze_do_gnuplota.hh',['../lacze__do__gnuplota_8hh.html',1,'']]]
+  ['_5fs_5fmacierz_5f8hh_2ejs',['_s_macierz_8hh.js',['../__s__macierz__8hh_8js.html',1,'']]],
+  ['_5fs_5fwektor_5f8hh_2ejs',['_s_wektor_8hh.js',['../__s__wektor__8hh_8js.html',1,'']]]
 ];

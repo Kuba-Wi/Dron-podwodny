@@ -1,9 +1,14 @@
 <map id="powierzchnia::dodaj_plik_lok" name="powierzchnia::dodaj_plik_lok">
 <area shape="rect" id="node2" href="$classpowierzchnia.html#a6ac31a60fe60f0be1d9859367ca631d8" title="Konstruktor zapisuje nazwę pliku lokalnego i globalnego. " alt="" coords="191,5,373,32"/>
-<area shape="rect" id="node3" href="$classscena.html#ad7c4ca7a3eb26bc133eabe65476791d4" title="Dodaje dno do sceny Zapisuje pliki opisujące powierzchnię dna. " alt="" coords="220,56,344,83"/>
-<area shape="rect" id="node7" href="$classscena.html#a9721c738d27eb6b7806685edd3f84ce5" title="Dodaje wodę do sceny Zapisuje pliki opisujące powierzchnię wody. " alt="" coords="215,107,349,133"/>
-<area shape="rect" id="node8" href="$classscena.html#a9c3bd117d7b5df6b16682b62fb6d8ec6" title="Dodaje obiekt dron do sceny Zapisuje pliki opisujące obiekt dron i inicjalizuje go. " alt="" coords="215,157,349,184"/>
-<area shape="rect" id="node4" href="$classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="426,81,526,108"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="421,132,531,159"/>
-<area shape="rect" id="node6" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="579,132,629,159"/>
+<area shape="rect" id="node3" href="$classdron.html#ad4e3e1c99980abc862fad7177d014427" title="Dodaje pliki korpusu Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące korpus..." alt="" coords="201,56,363,83"/>
+<area shape="rect" id="node8" href="$classdron.html#a3ca8cc6f8ed5bd221a1931d1a6d95bee" title="Dodaje pliki lewej śruby Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące lewą ..." alt="" coords="205,107,359,149"/>
+<area shape="rect" id="node10" href="$classdron.html#abe7dbb66c7a242dc0110cefcf3268f26" title="Dodaje pliki prawej śruby Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące praw..." alt="" coords="205,173,359,214"/>
+<area shape="rect" id="node12" href="$classscena.html#ad7c4ca7a3eb26bc133eabe65476791d4" title="Dodaje dno na scenę Zapisuje pliki opisujące powierzchnię dna. " alt="" coords="444,239,568,265"/>
+<area shape="rect" id="node13" href="$classscena.html#a9721c738d27eb6b7806685edd3f84ce5" title="Dodaje wodę na scenę Zapisuje pliki opisujące powierzchnię wody. " alt="" coords="439,289,573,316"/>
+<area shape="rect" id="node4" href="$classscena.html#ad5d8213c9a23276befedb02e7d4fad7c" title="Dodaje korpus drona na scenę Zapisuje pliki opisujące korpus. " alt="" coords="435,71,577,97"/>
+<area shape="rect" id="node5" href="$classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="643,155,743,181"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="639,205,748,232"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="796,205,847,232"/>
+<area shape="rect" id="node9" href="$classscena.html#a8be47f62d8ed373c1f0569405115e471" title="Dodaje lewą śrubę drona na scenę Zapisuje pliki opisujące lewą śrubę " alt="" coords="421,121,591,148"/>
+<area shape="rect" id="node11" href="$classscena.html#a11c177de196341b4b951c10429df969f" title="Dodaje prawą śrubę drona na scenę Zapisuje pliki opisujące prawą śrubę " alt="" coords="439,173,573,214"/>
 </map>

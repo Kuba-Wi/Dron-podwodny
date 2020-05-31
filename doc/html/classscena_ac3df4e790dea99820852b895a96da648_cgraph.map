@@ -1,5 +1,7 @@
 <map id="scena::wynurzenie" name="scena::wynurzenie">
-<area shape="rect" id="node2" href="$classobiekt.html#a081d3dee3d37262cb2411010d2fe7ae9" title="Zwraca środek drona Metoda zwraca wartość współrzędnej zetowej drona. " alt="" coords="194,5,329,32"/>
-<area shape="rect" id="node3" href="$classpowierzchnia.html#afae813342be6d8f34701d85bc60d4f18" title="zwraca wspolrzedną z&#45;tową powierzchni " alt="" coords="184,56,339,83"/>
-<area shape="rect" id="node4" href="$classobiekt.html#a25f7a7e06704d3044555cccba13688e5" title="Zwraca polowę wysokości obiektu Metoda zwraca połowę wysokości obiektu. " alt="" coords="206,107,317,133"/>
+<area shape="rect" id="node2" href="$classdron.html#a19e92252d303310b61c69d2068030923" title="Zwraca położenie drona Metoda zwraca aktualne położenie drona. " alt="" coords="185,5,337,32"/>
+<area shape="rect" id="node4" href="$classpowierzchnia.html#afae813342be6d8f34701d85bc60d4f18" title="zwraca wspolrzedną z&#45;tową powierzchni " alt="" coords="184,56,339,83"/>
+<area shape="rect" id="node5" href="$classdron.html#acc3c64940ea21cc19e61a072b8445b0a" title="Zwraca wymiary drona Metoda zwraca odległości środka drona od jego ścian. " alt="" coords="189,107,334,133"/>
+<area shape="rect" id="node3" href="$classobiekt.html#a8025abcf481c01e568af0ddff445d6fe" title="Zwraca środek drona Metoda zwraca wartość współrzędnych środka drona. " alt="" coords="401,5,521,32"/>
+<area shape="rect" id="node6" href="$classobiekt.html#a3ecfb97e19691cdb46f997fca5f23a53" title="Zwraca wektor z polowami dlugości obiektu Metoda zwraca połowę wysokości obiektu. ..." alt="" coords="387,99,535,141"/>
 </map>

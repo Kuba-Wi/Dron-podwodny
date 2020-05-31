@@ -63,17 +63,15 @@ class obiekt : public powierzchnia {
 
         /*!
          * \brief Przeprowadza ruch na wprost
-         * Powoduje ruch obiektu po prostej do góry lub do dołu
-         * o zadany kąt oraz na zadaną odległość
-         * \param[in] kat_wznoszenia - katruchu do góry
-         * \param[in] odleglosc - dystans do pokonania
+         * Powoduje ruch obiektu po prostej o zadany wektor translacji
+         * \param[in] przesun - zadany wektor
          */
         void ruch_na_wprost(const SWektor<double, 3> & przesun);
 
         /*!
          * \brief Powoduje obrót obiektu
-         * Metoda powoduje obrót obiektu wokół własnej osi o zadany kąt
-         * \param[in] kat_obrotu - zadany kąt
+         * Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu
+         * \param[in] mac_obrotu - zadana macierz obrotu
          */
         void obrot(const SMacierz<double, 3> & mac_obrotu);
 

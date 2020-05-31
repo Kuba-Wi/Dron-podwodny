@@ -25,8 +25,9 @@ var NAVTREE =
     [ "Pliki", null, [
       [ "Lista plików", "files.html", "files" ],
       [ "Składowe plików", "globals.html", [
-        [ "All", "globals.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
         [ "Funkcje", "globals_func.html", null ],
+        [ "Zmienne", "globals_vars.html", null ],
         [ "Definicje", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -35,7 +36,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_s_macierz_8hh.html"
+"__s__macierz__8hh_8js.html",
+"classscena.html#a902bc3201c404b9c35c60439edd588a8",
+"navtreedata_8js.html#afc3e53a71ba26a8215797019b9b1451b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

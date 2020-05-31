@@ -1,4 +1,5 @@
 <map id="obiekt::inicjalizuj_obiekt" name="obiekt::inicjalizuj_obiekt">
-<area shape="rect" id="node2" href="$classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="172,13,387,39"/>
-<area shape="rect" id="node3" href="$classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="435,13,597,39"/>
+<area shape="rect" id="node2" href="$classpowierzchnia.html#ab30b9bda0dea7c2baffa3a917c1beb7b" title="Przepisuje plik lokalny do pliku z punktami Metoda zapisuje współrzędne z pliku z współrzędnymi lokal..." alt="" coords="192,5,367,32"/>
+<area shape="rect" id="node3" href="$classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="172,56,387,83"/>
+<area shape="rect" id="node4" href="$classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="435,56,597,83"/>
 </map>

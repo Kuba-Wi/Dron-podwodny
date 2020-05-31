@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['lacze',['Lacze',['../classscena.html#adfa3c7f586b75cd7e1499003be73389e',1,'scena']]],
-  ['lacze_5fdo_5fgnuplota_2ecpp',['lacze_do_gnuplota.cpp',['../lacze__do__gnuplota_8cpp.html',1,'']]],
-  ['lacze_5fdo_5fgnuplota_2ehh',['lacze_do_gnuplota.hh',['../lacze__do__gnuplota_8hh.html',1,'']]],
-  ['laczedognuplota',['LaczeDoGNUPlota',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html',1,'PzG']]],
-  ['laczedognuplota',['LaczeDoGNUPlota',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a5845189b5ab8c3634acf57024e5deeaf',1,'PzG::LaczeDoGNUPlota']]],
-  ['lacznie_5fwektorow3d',['lacznie_wektorow3D',['../class_s_wektor.html#ad2b95d61d2c14e880d319821d1a6b75a',1,'SWektor']]],
-  ['lacznie_5fwektory',['lacznie_wektory',['../class_s_wektor.html#a76170887551196bde29fa51a85ca0859',1,'SWektor']]],
-  ['laczny_5fkat_5fobrotu',['laczny_kat_obrotu',['../classobiekt.html#abff80a8bd32ccb93f679c62d1fc88da4',1,'obiekt']]]
+  ['getdata',['getData',['../navtree_8js.html#a819e84218d50e54d98161b272d1d5b01',1,'navtree.js']]],
+  ['getnode',['getNode',['../navtree_8js.html#a256aa4fbee866e9227f78e82e9f258bb',1,'navtree.js']]],
+  ['getscript',['getScript',['../navtree_8js.html#a32f4aac18d03aee747b55dea195731ac',1,'navtree.js']]],
+  ['getxpos',['getXPos',['../search_8js.html#a76d24aea0009f892f8ccc31d941c0a2b',1,'search.js']]],
+  ['getypos',['getYPos',['../search_8js.html#a8d7b405228661d7b6216b6925d2b8a69',1,'search.js']]],
+  ['gloweffect',['glowEffect',['../navtree_8js.html#a23b68d2deb28f9c2678f546e2d60e5ee',1,'navtree.js']]],
+  ['gotoanchor',['gotoAnchor',['../navtree_8js.html#aee1fc3771eeb15da54962a03da1f3c11',1,'navtree.js']]],
+  ['gotonode',['gotoNode',['../navtree_8js.html#a0e6a2d65190a43246d668bba554243e5',1,'navtree.js']]],
+  ['gt',['gt',['../all__d_8js.html#ad5da31f3075c294d98796c35975e5d56',1,'gt():&#160;all_d.js'],['../classes__4_8js.html#aed7a7f1f82df5fd3dd11622b2e8a0351',1,'gt():&#160;classes_4.js']]]
 ];

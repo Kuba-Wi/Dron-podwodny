@@ -1,5 +1,3 @@
 <map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
-<area shape="rect" id="node1" href="$classpowierzchnia__lokalna.html" title="Modeluje powierzchnię lokalną Klasa przechowuje nazwę pliku ze współrzędnymi lokalnymi powierzchni..." alt="" coords="5,5,152,32"/>
-<area shape="rect" id="node2" href="$classpowierzchnia.html" title="Modeluje pojęcie powierzchni. " alt="" coords="200,5,299,32"/>
-<area shape="rect" id="node3" href="$classobiekt.html" title="Modeluje pojęcie obiektu Klasa opisuje obiekt geometryczny, który może się poruszać i obracać wokół w..." alt="" coords="347,5,404,32"/>
+<area shape="rect" id="node1" href="$classdron.html" title="Modeluje pojęcie drona Klasa opisuje drona złożonego z obiektu i dwóch graniastosłupów sześciokątnych..." alt="" coords="5,5,52,32"/>
 </map>

@@ -1,10 +1,16 @@
 var hierarchy =
 [
+    [ "dron", "classdron.html", null ],
     [ "PzG::InfoPlikuDoRysowania", "class_pz_g_1_1_info_pliku_do_rysowania.html", null ],
     [ "PzG::LaczeDoGNUPlota", "class_pz_g_1_1_lacze_do_g_n_u_plota.html", null ],
     [ "powierzchnia_lokalna", "classpowierzchnia__lokalna.html", [
       [ "powierzchnia", "classpowierzchnia.html", [
-        [ "obiekt", "classobiekt.html", null ]
+        [ "obiekt", "classobiekt.html", [
+          [ "pret", "classpret.html", null ],
+          [ "prostokat", "classprostokat.html", null ],
+          [ "prostopadloscian", "classprostopadloscian.html", null ],
+          [ "szesciokat", "classszesciokat.html", null ]
+        ] ]
       ] ]
     ] ],
     [ "scena", "classscena.html", null ],

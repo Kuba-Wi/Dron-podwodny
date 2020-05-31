@@ -1,11 +1,16 @@
 var searchData=
 [
-  ['zamien_5fkolumny',['zamien_kolumny',['../class_s_macierz.html#af77c85c89de06d0c4f6a2a3b3d8c9593',1,'SMacierz']]],
-  ['zapiszustawienierotacjiiskali',['ZapiszUstawienieRotacjiISkali',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1ff05325e6dfa77ed1e081aea3df6d28',1,'PzG::LaczeDoGNUPlota']]],
-  ['zapiszustawieniezakresu',['ZapiszUstawienieZakresu',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a3fc0ab02fcbaee3f0af9840cd8001cfa',1,'PzG::LaczeDoGNUPlota']]],
-  ['zmax',['Zmax',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a65e3ac2d56a464ce6f9519eaa89d9f62',1,'PzG::LaczeDoGNUPlota']]],
-  ['zmiennazwepliku',['ZmienNazwePliku',['../class_pz_g_1_1_info_pliku_do_rysowania.html#ae734c69f5cecf9c0584e3a7f433340ea',1,'PzG::InfoPlikuDoRysowania']]],
-  ['zmientrybrys',['ZmienTrybRys',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a10950349b348fd3a3d4143e95337527c',1,'PzG::LaczeDoGNUPlota']]],
-  ['zmin',['Zmin',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#ae291789be6ef8f7bfc4ee660fca57861',1,'PzG::LaczeDoGNUPlota']]],
-  ['zwroc_5fz',['zwroc_z',['../classpowierzchnia.html#afae813342be6d8f34701d85bc60d4f18',1,'powierzchnia']]]
+  ['updatestripes',['updateStripes',['../dynsections_8js.html#a8f7493ad859d4fbf2523917511ee7177',1,'dynsections.js']]],
+  ['ustawrotacjex',['UstawRotacjeX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a88324c53a70846fb6bc9d918ce21fd56',1,'PzG::LaczeDoGNUPlota']]],
+  ['ustawrotacjexz',['UstawRotacjeXZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a94d8527fd78048ed6cb32ffb29e5f903',1,'PzG::LaczeDoGNUPlota']]],
+  ['ustawrotacjez',['UstawRotacjeZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a458399aa2a8f4b3f00ccd5b272857ea1',1,'PzG::LaczeDoGNUPlota']]],
+  ['ustawskalex',['UstawSkaleX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a855b8338bfe3e5d294d719f24b11090e',1,'PzG::LaczeDoGNUPlota']]],
+  ['ustawskalexz',['UstawSkaleXZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a4308151b54e105d302803146a3238699',1,'PzG::LaczeDoGNUPlota']]],
+  ['ustawskalez',['UstawSkaleZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#ab0486db3166d8db6580a221079af241f',1,'PzG::LaczeDoGNUPlota']]],
+  ['ustawzakresx',['UstawZakresX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a9c91987dfc869d6fcea96205c581daef',1,'PzG::LaczeDoGNUPlota']]],
+  ['ustawzakresy',['UstawZakresY',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a54c6e9cf9ab2eae479451fd953c2717c',1,'PzG::LaczeDoGNUPlota']]],
+  ['ustawzakresz',['UstawZakresZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1dbbb2b86fb13b8632e6bad9df2a82e3',1,'PzG::LaczeDoGNUPlota']]],
+  ['usunostatnianazwe',['UsunOstatniaNazwe',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a75f599f17413ea8602c6dbba09f36407',1,'PzG::LaczeDoGNUPlota']]],
+  ['usunwszystkienazwyplikow',['UsunWszystkieNazwyPlikow',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a89a1d90d017d264cd26398464d074073',1,'PzG::LaczeDoGNUPlota']]],
+  ['utworzprocespotomny',['UtworzProcesPotomny',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1c7b9acc40de8d8bbb40fb0722512933',1,'PzG::LaczeDoGNUPlota']]]
 ];

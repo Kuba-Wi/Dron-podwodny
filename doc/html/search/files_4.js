@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['scena_2ecpp',['scena.cpp',['../scena_8cpp.html',1,'']]],
-  ['scena_2ehh',['scena.hh',['../scena_8hh.html',1,'']]],
-  ['smacierz_2ehh',['SMacierz.hh',['../_s_macierz_8hh.html',1,'']]],
-  ['strona1_2edox',['strona1.dox',['../strona1_8dox.html',1,'']]],
-  ['strona_5fdiagram_2edox',['strona_diagram.dox',['../strona__diagram_8dox.html',1,'']]],
-  ['swektor_2ehh',['SWektor.hh',['../_s_wektor_8hh.html',1,'']]]
+  ['enums_5f0_2ejs',['enums_0.js',['../enums__0_8js.html',1,'']]],
+  ['enums_5f1_2ejs',['enums_1.js',['../enums__1_8js.html',1,'']]],
+  ['enumvalues_5f0_2ejs',['enumvalues_0.js',['../enumvalues__0_8js.html',1,'']]],
+  ['enumvalues_5f1_2ejs',['enumvalues_1.js',['../enumvalues__1_8js.html',1,'']]]
 ];

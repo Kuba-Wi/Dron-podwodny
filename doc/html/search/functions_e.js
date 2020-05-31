@@ -1,16 +1,15 @@
 var searchData=
 [
-  ['wczytaj_5flok',['wczytaj_lok',['../classpowierzchnia.html#ab30b9bda0dea7c2baffa3a917c1beb7b',1,'powierzchnia']]],
-  ['wczytaj_5fwspolrz',['wczytaj_wspolrz',['../classobiekt.html#a39861805e6f688c581d23bfd992e4834',1,'obiekt']]],
-  ['wczytaj_5fwspolrzedne_5fglob',['wczytaj_wspolrzedne_glob',['../classobiekt.html#ae1cfb28c507a4785387c71cd75838260',1,'obiekt']]],
-  ['wczytaj_5fwspolrzedne_5flok',['wczytaj_wspolrzedne_lok',['../classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6',1,'obiekt']]],
-  ['weznazwepliku',['WezNazwePliku',['../class_pz_g_1_1_info_pliku_do_rysowania.html#a09cd4e5cc04b456b482eba2efa51f8ea',1,'PzG::InfoPlikuDoRysowania']]],
-  ['wezrodzrys',['WezRodzRys',['../class_pz_g_1_1_info_pliku_do_rysowania.html#a390f291cdaea71c5919c24c6c27a40c9',1,'PzG::InfoPlikuDoRysowania']]],
-  ['wezszerokosc',['WezSzerokosc',['../class_pz_g_1_1_info_pliku_do_rysowania.html#aa9af97b6c1fff023902b5b3bc4642a7e',1,'PzG::InfoPlikuDoRysowania']]],
-  ['weztrybrys',['WezTrybRys',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a114cd58a1b8cf00cd72aac204d7743b8',1,'PzG::LaczeDoGNUPlota']]],
-  ['wpisz_5fwspolrzedne_5fglob',['wpisz_wspolrzedne_glob',['../classobiekt.html#a108f138692512335c2f27fa6105ac622',1,'obiekt']]],
-  ['wstaw_5fkolumne',['wstaw_kolumne',['../class_s_macierz.html#a7f57cdd320892ca27a2f9651a080bc52',1,'SMacierz']]],
-  ['wynurzenie',['wynurzenie',['../classscena.html#ac3df4e790dea99820852b895a96da648',1,'scena']]],
-  ['wyswietlajkomunikatybledow',['WyswietlajKomunikatyBledow',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a4531e6d166faf2e2c8bb4a54a9c9e1f8',1,'PzG::LaczeDoGNUPlota']]],
-  ['wyznacznik',['wyznacznik',['../class_s_macierz.html#a729c4e17ee5a88bef8eb731577803057',1,'SMacierz']]]
+  ['readcookie',['readCookie',['../resize_8js.html#a578d54a5ebd9224fad0213048e7a49a7',1,'resize.js']]],
+  ['removetoinsertlater',['removeToInsertLater',['../navtree_8js.html#aa78016020f40c28356aefd325cd4df74',1,'navtree.js']]],
+  ['resizeheight',['resizeHeight',['../resize_8js.html#a4bd3414bc1780222b192bcf33b645804',1,'resize.js']]],
+  ['resizewidth',['resizeWidth',['../resize_8js.html#a99942f5b5c75445364f2437051090367',1,'resize.js']]],
+  ['restorewidth',['restoreWidth',['../resize_8js.html#a517273f9259c941fd618dda7a901e6c2',1,'resize.js']]],
+  ['rotacjax',['RotacjaX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#af6fc8ea5b068e5fa099f13f40821fe36',1,'PzG::LaczeDoGNUPlota']]],
+  ['rotacjaz',['RotacjaZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a6b89a8300be0c17a6f9f9bf8bc8934cb',1,'PzG::LaczeDoGNUPlota']]],
+  ['ruch_5flokalny',['ruch_lokalny',['../classszesciokat.html#a7489c4f4a62fa96c88ff7431bf2108ac',1,'szesciokat']]],
+  ['ruch_5fna_5fwprost',['ruch_na_wprost',['../classdron.html#a809f2fc3fc515c8992d5f04081893a97',1,'dron::ruch_na_wprost()'],['../classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0',1,'obiekt::ruch_na_wprost()']]],
+  ['ruch_5fprosto',['ruch_prosto',['../classscena.html#a0a72068a1c9059f235b4f560fcd317ec',1,'scena']]],
+  ['rysuj',['Rysuj',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335',1,'PzG::LaczeDoGNUPlota::Rysuj()'],['../classscena.html#acbeaad76c7ea16ae2ae839d08e9051b8',1,'scena::rysuj()']]],
+  ['rysujdopliku',['RysujDoPliku',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#addae9ac156ae2fb227f792faff3aa148',1,'PzG::LaczeDoGNUPlota']]]
 ];

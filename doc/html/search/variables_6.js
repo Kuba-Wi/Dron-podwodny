@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['plik_5fz_5fpunktami',['plik_z_punktami',['../classpowierzchnia.html#ab5ec871a127bbdc25b05f717616fcf43',1,'powierzchnia']]],
-  ['polowa_5fwysokosci',['polowa_wysokosci',['../classobiekt.html#a53786fb91c63c924505732b699dc79b2',1,'obiekt']]],
-  ['przesuniecie',['przesuniecie',['../classobiekt.html#afd74db9e2d32cf5d9384a9198650383a',1,'obiekt']]]
+  ['gt',['gt',['../all__d_8js.html#ad5da31f3075c294d98796c35975e5d56',1,'gt():&#160;all_d.js'],['../classes__4_8js.html#aed7a7f1f82df5fd3dd11622b2e8a0351',1,'gt():&#160;classes_4.js']]]
 ];

@@ -1,13 +1,20 @@
 var searchData=
 [
-  ['rodzajrysowania',['RodzajRysowania',['../namespace_pz_g.html#a705c92106f39b7d0c34a6739d10ff0b6',1,'PzG']]],
-  ['rotacjax',['RotacjaX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#af6fc8ea5b068e5fa099f13f40821fe36',1,'PzG::LaczeDoGNUPlota']]],
-  ['rotacjaz',['RotacjaZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a6b89a8300be0c17a6f9f9bf8bc8934cb',1,'PzG::LaczeDoGNUPlota']]],
-  ['roz_5flinii',['ROZ_LINII',['../lacze__do__gnuplota_8cpp.html#a2b501945c8d86114fcf6420cc1ee6306',1,'lacze_do_gnuplota.cpp']]],
-  ['rr_5fciagly',['RR_Ciagly',['../namespace_pz_g.html#a705c92106f39b7d0c34a6739d10ff0b6a927eaa159aa4bd3198f0a330b967746d',1,'PzG']]],
-  ['rr_5fpunktowy',['RR_Punktowy',['../namespace_pz_g.html#a705c92106f39b7d0c34a6739d10ff0b6aa01097ee8266d6402b752ef6f9a4690c',1,'PzG']]],
-  ['ruch_5fna_5fwprost',['ruch_na_wprost',['../classobiekt.html#abed02239841bbe8fee37b45caf1d79fd',1,'obiekt']]],
-  ['ruch_5fprosto',['ruch_prosto',['../classscena.html#a0a72068a1c9059f235b4f560fcd317ec',1,'scena']]],
-  ['rysuj',['rysuj',['../classscena.html#acbeaad76c7ea16ae2ae839d08e9051b8',1,'scena::rysuj()'],['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335',1,'PzG::LaczeDoGNUPlota::Rysuj()']]],
-  ['rysujdopliku',['RysujDoPliku',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#addae9ac156ae2fb227f792faff3aa148',1,'PzG::LaczeDoGNUPlota']]]
+  ['l',['L',['../jquery_8js.html#a38ee4c0b5f4fe2a18d0c783af540d253',1,'jquery.js']]],
+  ['lacze',['Lacze',['../classscena.html#adfa3c7f586b75cd7e1499003be73389e',1,'scena']]],
+  ['lacze_5f_5fdo_5f_5fgnuplota_5f8cpp',['lacze__do__gnuplota_8cpp',['../lacze____do____gnuplota__8cpp_8js.html#a0ea5048282858f451ad919fc393b0447',1,'lacze__do__gnuplota_8cpp.js']]],
+  ['lacze_5f_5fdo_5f_5fgnuplota_5f8cpp_2ejs',['lacze__do__gnuplota_8cpp.js',['../lacze____do____gnuplota__8cpp_8js.html',1,'']]],
+  ['lacze_5f_5fdo_5f_5fgnuplota_5f8hh',['lacze__do__gnuplota_8hh',['../lacze____do____gnuplota__8hh_8js.html#adc23aaaef81eb22f6b171d18dd499945',1,'lacze__do__gnuplota_8hh.js']]],
+  ['lacze_5f_5fdo_5f_5fgnuplota_5f8hh_2ejs',['lacze__do__gnuplota_8hh.js',['../lacze____do____gnuplota__8hh_8js.html',1,'']]],
+  ['lacze_5fdo_5fgnuplota_2ecpp',['lacze_do_gnuplota.cpp',['../lacze__do__gnuplota_8cpp.html',1,'']]],
+  ['lacze_5fdo_5fgnuplota_2ehh',['lacze_do_gnuplota.hh',['../lacze__do__gnuplota_8hh.html',1,'']]],
+  ['lacze_5fdodaj_5fplik',['lacze_dodaj_plik',['../classscena.html#a27983afc7ecb584cb1d0059904608d7b',1,'scena']]],
+  ['laczedognuplota',['LaczeDoGNUPlota',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html',1,'PzG']]],
+  ['laczedognuplota',['LaczeDoGNUPlota',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a5845189b5ab8c3634acf57024e5deeaf',1,'PzG::LaczeDoGNUPlota']]],
+  ['lacznie_5fwektorow',['lacznie_wektorow',['../class_s_wektor.html#ad3a89b4268f8def5412be41070421315',1,'SWektor']]],
+  ['lacznie_5fwektory',['lacznie_wektory',['../class_s_wektor.html#a76170887551196bde29fa51a85ca0859',1,'SWektor']]],
+  ['laczny_5fkat_5fobrotu',['laczny_kat_obrotu',['../classdron.html#a6e199e48792ca2707a482599583110e2',1,'dron::laczny_kat_obrotu()'],['../classobiekt.html#abff80a8bd32ccb93f679c62d1fc88da4',1,'obiekt::laczny_kat_obrotu()']]],
+  ['lista_5fprzeszkod',['lista_przeszkod',['../classscena.html#a5244b1962af5927eda3f5820bd6f8501',1,'scena']]],
+  ['localstoragesupported',['localStorageSupported',['../navtree_8js.html#ac49af616f532f2364be9f58280469d33',1,'navtree.js']]],
+  ['lt',['lt',['../all__a_8js.html#a857c8c8ca640fb2283d751a715bd1ee9',1,'lt():&#160;all_a.js'],['../functions__9_8js.html#a857c8c8ca640fb2283d751a715bd1ee9',1,'lt():&#160;functions_9.js']]]
 ];

@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['ymax',['Ymax',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#afb7d43adcfee4aa8150cb9474a6d8c86',1,'PzG::LaczeDoGNUPlota']]],
-  ['ymin',['Ymin',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a72aade1f962add104eba0a34073c5dd2',1,'PzG::LaczeDoGNUPlota']]]
+  ['togglefolder',['toggleFolder',['../dynsections_8js.html#af244da4527af2d845dca04f5656376cd',1,'dynsections.js']]],
+  ['toggleinherit',['toggleInherit',['../dynsections_8js.html#ac057b640b17ff32af11ced151c9305b4',1,'dynsections.js']]],
+  ['togglelevel',['toggleLevel',['../dynsections_8js.html#a19f577cc1ba571396a85bb1f48bf4df2',1,'dynsections.js']]],
+  ['togglesyncbutton',['toggleSyncButton',['../navtree_8js.html#a646cb31d83b39aafec92e0e1d123563a',1,'navtree.js']]],
+  ['togglevisibility',['toggleVisibility',['../dynsections_8js.html#a1922c462474df7dfd18741c961d59a25',1,'dynsections.js']]]
 ];

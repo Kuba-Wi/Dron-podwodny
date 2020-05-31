@@ -1,0 +1,10 @@
+<map id="obiekt::~obiekt" name="obiekt::~obiekt">
+<area shape="rect" id="node2" href="$classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="Inicjalizuje pola klasy Wylicza srodek_lok oraz polowa_wysokosci, wpisuje plik lokalny do pliku z pun..." alt="" coords="207,5,326,47"/>
+<area shape="rect" id="node4" href="$classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="420,67,635,94"/>
+<area shape="rect" id="node6" href="$classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="161,122,372,149"/>
+<area shape="rect" id="node7" href="$classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany wektor translacji. " alt="" coords="188,173,345,199"/>
+<area shape="rect" id="node8" href="$classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu..." alt="" coords="219,223,314,250"/>
+<area shape="rect" id="node9" href="$classobiekt.html#a8025abcf481c01e568af0ddff445d6fe" title="Zwraca środek drona Metoda zwraca wartość współrzędnych środka drona. " alt="" coords="207,274,327,301"/>
+<area shape="rect" id="node3" href="$classpowierzchnia.html#ab30b9bda0dea7c2baffa3a917c1beb7b" title="Przepisuje plik lokalny do pliku z punktami Metoda zapisuje współrzędne z pliku z współrzędnymi lokal..." alt="" coords="440,13,615,39"/>
+<area shape="rect" id="node5" href="$classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="683,67,845,94"/>
+</map>

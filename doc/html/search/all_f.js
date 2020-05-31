@@ -1,15 +1,16 @@
 var searchData=
 [
-  ['ustawrotacjex',['UstawRotacjeX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a88324c53a70846fb6bc9d918ce21fd56',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawrotacjexz',['UstawRotacjeXZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a94d8527fd78048ed6cb32ffb29e5f903',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawrotacjez',['UstawRotacjeZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a458399aa2a8f4b3f00ccd5b272857ea1',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawskalex',['UstawSkaleX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a855b8338bfe3e5d294d719f24b11090e',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawskalexz',['UstawSkaleXZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a4308151b54e105d302803146a3238699',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawskalez',['UstawSkaleZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#ab0486db3166d8db6580a221079af241f',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawzakresx',['UstawZakresX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a9c91987dfc869d6fcea96205c581daef',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawzakresy',['UstawZakresY',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a54c6e9cf9ab2eae479451fd953c2717c',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawzakresz',['UstawZakresZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1dbbb2b86fb13b8632e6bad9df2a82e3',1,'PzG::LaczeDoGNUPlota']]],
-  ['usunostatnianazwe',['UsunOstatniaNazwe',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a75f599f17413ea8602c6dbba09f36407',1,'PzG::LaczeDoGNUPlota']]],
-  ['usunwszystkienazwyplikow',['UsunWszystkieNazwyPlikow',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a89a1d90d017d264cd26398464d074073',1,'PzG::LaczeDoGNUPlota']]],
-  ['utworzprocespotomny',['UtworzProcesPotomny',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1c7b9acc40de8d8bbb40fb0722512933',1,'PzG::LaczeDoGNUPlota']]]
+  ['obiekt',['obiekt',['../classobiekt.html',1,'obiekt'],['../classobiekt.html#a8900a8b09fec5c8628a9ce19d4054451',1,'obiekt::obiekt()']]],
+  ['obiekt_2ecpp',['obiekt.cpp',['../obiekt_8cpp.html',1,'']]],
+  ['obiekt_2ehh',['obiekt.hh',['../obiekt_8hh.html',1,'']]],
+  ['obrot',['obrot',['../classdron.html#a648ea5308782ad19b74f6651c712708f',1,'dron::obrot()'],['../classobiekt.html#ae17951004694760b0bcd91ed8eb12104',1,'obiekt::obrot()'],['../classscena.html#abef62e7d58fc529eda33e376dfc25383',1,'scena::obrot()']]],
+  ['obsluga_5fsceny',['obsluga_sceny',['../main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836',1,'main.cpp']]],
+  ['operator_28_29',['operator()',['../class_s_macierz.html#abe3b962f00324890d283b4230e7dfdb8',1,'SMacierz::operator()(unsigned int a, unsigned int b)'],['../class_s_macierz.html#a49d22ffdc538a7911ea3283a2049522b',1,'SMacierz::operator()(unsigned int a, unsigned int b) const ']]],
+  ['operator_2a',['operator*',['../class_s_macierz.html#a489e2a82f0a338327a3efee0e56ef7f1',1,'SMacierz::operator*()'],['../class_s_wektor.html#a561c2b02565d56dad23411a753c48af1',1,'SWektor::operator*(const SWektor&lt; Typ, Rozmiar &gt; &amp;drugi) const '],['../class_s_wektor.html#a5b2de3223d6b2b2939f4ce190bb467d7',1,'SWektor::operator*(Typ liczba) const ']]],
+  ['operator_2b',['operator+',['../class_s_wektor.html#abc5656ca4a8861824f9adf3eea770dc4',1,'SWektor']]],
+  ['operator_2d',['operator-',['../class_s_wektor.html#a0dc9963c33a8241d93d3ab2e4a54417e',1,'SWektor']]],
+  ['operator_2f',['operator/',['../class_s_wektor.html#ada9164ca582df4c698b7e9772d454dd2',1,'SWektor']]],
+  ['operator_3c_3c',['operator&lt;&lt;',['../_s_macierz_8hh.html#aac2aad0e761c72329d9450d4464be1cb',1,'operator&lt;&lt;(std::ostream &amp;Strm, const SMacierz&lt; Typ, Rozmiar &gt; &amp;Mac):&#160;SMacierz.hh'],['../_s_wektor_8hh.html#ab4c3fa9299728214b551b7a55a952c01',1,'operator&lt;&lt;(std::ostream &amp;Strm, const SWektor&lt; Typ, Rozmiar &gt; &amp;Wek):&#160;SWektor.hh']]],
+  ['operator_3e_3e',['operator&gt;&gt;',['../_s_macierz_8hh.html#a1650e6239306ae9e4d64344decd099ef',1,'operator&gt;&gt;(std::istream &amp;Strm, SMacierz&lt; Typ, Rozmiar &gt; &amp;Mac):&#160;SMacierz.hh'],['../_s_wektor_8hh.html#ac27960941f078d7b6c231ad7fbd08909',1,'operator&gt;&gt;(std::istream &amp;Strm, SWektor&lt; Typ, Rozmiar &gt; &amp;Wek):&#160;SWektor.hh']]],
+  ['operator_5b_5d',['operator[]',['../class_s_wektor.html#a5faa1c222de386efa364f7a2c72c38bd',1,'SWektor::operator[](int i) const '],['../class_s_wektor.html#a62b2246e6963637391a4823666b096cb',1,'SWektor::operator[](int i)']]]
 ];

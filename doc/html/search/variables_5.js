@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nazwa_5fpliku_5flok',['nazwa_pliku_lok',['../classpowierzchnia__lokalna.html#a886e47fef0ae67fc2e7313f8a70382b5',1,'powierzchnia_lokalna']]]
+  ['files',['files',['../files_8js.html#a0742cac2750bccc2d88ac080fb9daa22',1,'files.js']]]
 ];

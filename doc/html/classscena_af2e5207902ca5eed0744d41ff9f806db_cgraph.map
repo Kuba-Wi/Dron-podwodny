@@ -1,11 +1,34 @@
 <map id="scena::inicjalizuj" name="scena::inicjalizuj">
-<area shape="rect" id="node2" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a10950349b348fd3a3d4143e95337527c" title="Zmienia tryb rysowania. " alt="" coords="172,5,340,47"/>
-<area shape="rect" id="node3" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e" title="Inicjalizuje połączenie z programem gnuplot. " alt="" coords="172,71,340,112"/>
-<area shape="rect" id="node4" href="$classscena.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="209,137,303,163"/>
-<area shape="rect" id="node5" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="PzG::LaczeDoGNUPlota\l::Rysuj" alt="" coords="388,71,556,112"/>
-<area shape="rect" id="node6" href="$classscena.html#a6ae791d0fca6996f5b83494738bbf781" title="Zwraca informację o kolizji Sprawdza czy wykonanie ruchu na zadane odległość i kąt wznoszenia będzie ..." alt="" coords="421,187,523,214"/>
-<area shape="rect" id="node10" href="$classscena.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. " alt="" coords="407,137,537,163"/>
-<area shape="rect" id="node7" href="$classobiekt.html#a081d3dee3d37262cb2411010d2fe7ae9" title="Zwraca środek drona Metoda zwraca wartość współrzędnej zetowej drona. " alt="" coords="614,111,749,138"/>
-<area shape="rect" id="node8" href="$classpowierzchnia.html#afae813342be6d8f34701d85bc60d4f18" title="zwraca wspolrzedną z&#45;tową powierzchni " alt="" coords="604,162,759,189"/>
-<area shape="rect" id="node9" href="$classobiekt.html#a25f7a7e06704d3044555cccba13688e5" title="Zwraca polowę wysokości obiektu Metoda zwraca połowę wysokości obiektu. " alt="" coords="626,213,737,239"/>
+<area shape="rect" id="node2" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a10950349b348fd3a3d4143e95337527c" title="Zmienia tryb rysowania. " alt="" coords="172,151,340,192"/>
+<area shape="rect" id="node3" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e" title="Inicjalizuje połączenie z programem gnuplot. " alt="" coords="172,216,340,257"/>
+<area shape="rect" id="node4" href="$classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje korpus i śruby oraz przesuwa śruby względem korpusu..." alt="" coords="183,282,329,309"/>
+<area shape="rect" id="node20" href="$classscena.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="209,510,303,537"/>
+<area shape="rect" id="node5" href="$classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="Inicjalizuje pola klasy Wylicza srodek_lok oraz polowa_wysokosci, wpisuje plik lokalny do pliku z pun..." alt="" coords="414,125,533,167"/>
+<area shape="rect" id="node9" href="$classszesciokat.html#a7493ea80abcb9dec7f5c0df0c80db7b1" title="Zmienia przesunięcie graniastosłupa Metoda wpisuje wektor wejściowy do wektora przesunięcie. " alt="" coords="607,358,813,385"/>
+<area shape="rect" id="node14" href="$classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9" title="Wylicza macierz obrotu. Metoda wylicza macierz obrotu wokół osi OZ na podstawie zadanych parametrów..." alt="" coords="401,191,546,232"/>
+<area shape="rect" id="node16" href="$classdron.html#abec453101e86600f17535f7bde1c3f35" title="Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o wektor przesunięcie i obrót o zadaną mac..." alt="" coords="869,299,1022,326"/>
+<area shape="rect" id="node18" href="$classdron.html#ab4a804bb48d6e7a58f31d6ea6d839f5c" title="Powoduje ruch sruby prawej Metoda powoduje ruch prawej śruby o wektor przesunięcie i obrót o zadaną m..." alt="" coords="865,198,1026,225"/>
+<area shape="rect" id="node6" href="$classpowierzchnia.html#ab30b9bda0dea7c2baffa3a917c1beb7b" title="Przepisuje plik lokalny do pliku z punktami Metoda zapisuje współrzędne z pliku z współrzędnymi lokal..." alt="" coords="623,147,797,174"/>
+<area shape="rect" id="node7" href="$classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="1077,97,1292,123"/>
+<area shape="rect" id="node8" href="$classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="1340,97,1503,123"/>
+<area shape="rect" id="node10" href="$classszesciokat.html#a7489c4f4a62fa96c88ff7431bf2108ac" title="Powoduje ruch o wektor przesunięcie Metoda powoduje przesunięcie graniastosłupa o wektor przesunięcie..." alt="" coords="1101,401,1268,427"/>
+<area shape="rect" id="node11" href="$classszesciokat.html#a470a40b18794d7f58423ccd1e6f0aa45" title="wylicza macierz obrotu Metoda wylicza macierz obrotu wokół osi OX. " alt="" coords="1352,397,1491,439"/>
+<area shape="rect" id="node12" href="$classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu..." alt="" coords="1551,346,1645,373"/>
+<area shape="rect" id="node13" href="$classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany wektor translacji. " alt="" coords="1343,246,1500,273"/>
+<area shape="rect" id="node15" href="$classdron.html#a648ea5308782ad19b74f6651c712708f" title="Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt obrotu. " alt="" coords="668,198,752,225"/>
+<area shape="rect" id="node19" href="$classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead" title="Powoduje ruch korpusu Metoda powoduje ruch korpusu o wektor przesunięcie i obrót o zadaną macierz..." alt="" coords="882,46,1009,73"/>
+<area shape="rect" id="node17" href="$classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="1079,249,1290,275"/>
+<area shape="rect" id="node21" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="PzG::LaczeDoGNUPlota\l::Rysuj" alt="" coords="389,561,557,603"/>
+<area shape="rect" id="node22" href="$classscena.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="629,653,791,679"/>
+<area shape="rect" id="node25" href="$classscena.html#a37056be2e45de7e80a4b72a4cedb08c1" title="Dodaje przeszkodę na scenie Metoda dodaje na scenę przeszkodę zapisaną w zadanych plikach..." alt="" coords="388,627,559,654"/>
+<area shape="rect" id="node26" href="$classscena.html#a9bbff749c1f2d34f3959afd97e044fc0" title="Zwraca informację o kolizji Sprawdza czy jest kolizja z jakąś przeszkodą " alt="" coords="422,510,525,537"/>
+<area shape="rect" id="node31" href="$classscena.html#ab5fbfa861967e0faa82d61d4d239fdf5" title="Zwraca informację o kolizji z dnem Metoda sprawdza czy nie ma kolizji z dnem. " alt="" coords="408,409,539,435"/>
+<area shape="rect" id="node33" href="$classscena.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. " alt="" coords="408,459,539,486"/>
+<area shape="rect" id="node23" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku. " alt="" coords="861,645,1029,687"/>
+<area shape="rect" id="node24" href="$namespace_pz_g.html#ae1ae4d36f66c77879380ba73da8e20e3" title="PzG::CzyJestPlik" alt="" coords="1121,653,1248,679"/>
+<area shape="rect" id="node27" href="$classdron.html#acc3c64940ea21cc19e61a072b8445b0a" title="Zwraca wymiary drona Metoda zwraca odległości środka drona od jego ścian. " alt="" coords="637,510,783,537"/>
+<area shape="rect" id="node29" href="$classdron.html#a19e92252d303310b61c69d2068030923" title="Zwraca położenie drona Metoda zwraca aktualne położenie drona. " alt="" coords="634,459,786,486"/>
+<area shape="rect" id="node28" href="$classobiekt.html#a3ecfb97e19691cdb46f997fca5f23a53" title="Zwraca wektor z polowami dlugości obiektu Metoda zwraca połowę wysokości obiektu. ..." alt="" coords="871,507,1019,548"/>
+<area shape="rect" id="node30" href="$classobiekt.html#a8025abcf481c01e568af0ddff445d6fe" title="Zwraca środek drona Metoda zwraca wartość współrzędnych środka drona. " alt="" coords="885,455,1005,482"/>
+<area shape="rect" id="node32" href="$classpowierzchnia.html#afae813342be6d8f34701d85bc60d4f18" title="zwraca wspolrzedną z&#45;tową powierzchni " alt="" coords="633,409,787,435"/>
 </map>

@@ -1,0 +1,1150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Dron podwodny: Dokumentacja klasy dron</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Dron podwodny
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classdron.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="classdron-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy dron</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Modeluje pojęcie drona Klasa opisuje drona złożonego z obiektu i dwóch graniastosłupów sześciokątnych, który może się poruszać i obracać wokół własnej osi.  
+ <a href="classdron.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="dron_8hh_source.html">dron.hh</a>&gt;</code></p>
+<div class="dynheader">
+Diagram współpracy dla dron:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron__coll__graph.png" border="0" usemap="#dron_coll__map" alt="Collaboration graph"/></div>
+<map name="dron_coll__map" id="dron_coll__map">
+<area shape="rect" id="node2" href="class_s_wektor.html" title="SWektor\&lt; double, 3 \&gt;" alt="" coords="5,81,156,108"/>
+<area shape="rect" id="node3" href="classobiekt.html" title="Modeluje pojęcie obiektu Klasa opisuje obiekt geometryczny, który może się poruszać i obracać wokół w..." alt="" coords="165,200,223,227"/>
+<area shape="rect" id="node6" href="classszesciokat.html" title="Modeluje pojęcie graniastosłupa sześciokątnego Klasa opisuje graniastosłup sześciokątny, który może się poruszać i obracać wokół własnej osi. " alt="" coords="246,289,331,316"/>
+<area shape="rect" id="node4" href="classpowierzchnia.html" title="Modeluje pojęcie powierzchni. " alt="" coords="181,81,279,108"/>
+<area shape="rect" id="node5" href="classpowierzchnia__lokalna.html" title="Modeluje powierzchnię lokalną Klasa przechowuje nazwę pliku ze współrzędnymi lokalnymi powierzchni..." alt="" coords="157,5,303,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a792ff4fe0c9f8df5a0c35ff1d56e6b1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#a792ff4fe0c9f8df5a0c35ff1d56e6b1d">dron</a> ()</td></tr>
+<tr class="memdesc:a792ff4fe0c9f8df5a0c35ff1d56e6b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor Zeruje wektor przesunięcie i laczny_kat_obrotu.  <a href="#a792ff4fe0c9f8df5a0c35ff1d56e6b1d">Więcej...</a><br /></td></tr>
+<tr class="separator:a792ff4fe0c9f8df5a0c35ff1d56e6b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ff7cc6b57a1b6dc148ac7d33b33332"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332">inicjalizuj_drona</a> ()</td></tr>
+<tr class="memdesc:a81ff7cc6b57a1b6dc148ac7d33b33332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjaizuje drona Metoda inicjalizuje korpus i śruby oraz przesuwa śruby względem korpusu.  <a href="#a81ff7cc6b57a1b6dc148ac7d33b33332">Więcej...</a><br /></td></tr>
+<tr class="separator:a81ff7cc6b57a1b6dc148ac7d33b33332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e3e1c99980abc862fad7177d014427"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#ad4e3e1c99980abc862fad7177d014427">dodaj_pliki_korpus</a> (<a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> std::string &amp;nazwa_lok, <a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> std::string &amp;nazwa_glob)</td></tr>
+<tr class="memdesc:ad4e3e1c99980abc862fad7177d014427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje pliki korpusu Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące korpus.  <a href="#ad4e3e1c99980abc862fad7177d014427">Więcej...</a><br /></td></tr>
+<tr class="separator:ad4e3e1c99980abc862fad7177d014427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca8cc6f8ed5bd221a1931d1a6d95bee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#a3ca8cc6f8ed5bd221a1931d1a6d95bee">dodaj_pliki_sruby_lewej</a> (<a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> std::string &amp;nazwa_lok, <a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> std::string &amp;nazwa_glob)</td></tr>
+<tr class="memdesc:a3ca8cc6f8ed5bd221a1931d1a6d95bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje pliki lewej śruby Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące lewą śrubę.  <a href="#a3ca8cc6f8ed5bd221a1931d1a6d95bee">Więcej...</a><br /></td></tr>
+<tr class="separator:a3ca8cc6f8ed5bd221a1931d1a6d95bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7dbb66c7a242dc0110cefcf3268f26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#abe7dbb66c7a242dc0110cefcf3268f26">dodaj_pliki_sruby_prawej</a> (<a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> std::string &amp;nazwa_lok, <a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> std::string &amp;nazwa_glob)</td></tr>
+<tr class="memdesc:abe7dbb66c7a242dc0110cefcf3268f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje pliki prawej śruby Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące prawą śrubę.  <a href="#abe7dbb66c7a242dc0110cefcf3268f26">Więcej...</a><br /></td></tr>
+<tr class="separator:abe7dbb66c7a242dc0110cefcf3268f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a809f2fc3fc515c8992d5f04081893a97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#a809f2fc3fc515c8992d5f04081893a97">ruch_na_wprost</a> (<a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a> kat_wznoszenia, <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a> odleglosc)</td></tr>
+<tr class="memdesc:a809f2fc3fc515c8992d5f04081893a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Powoduje ruch drona po prostej Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość  <a href="#a809f2fc3fc515c8992d5f04081893a97">Więcej...</a><br /></td></tr>
+<tr class="separator:a809f2fc3fc515c8992d5f04081893a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648ea5308782ad19b74f6651c712708f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#a648ea5308782ad19b74f6651c712708f">obrot</a> (<a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a> kat_obrotu)</td></tr>
+<tr class="memdesc:a648ea5308782ad19b74f6651c712708f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt obrotu.  <a href="#a648ea5308782ad19b74f6651c712708f">Więcej...</a><br /></td></tr>
+<tr class="separator:a648ea5308782ad19b74f6651c712708f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e92252d303310b61c69d2068030923"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_wektor.html">SWektor</a>&lt; <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#a19e92252d303310b61c69d2068030923">zwroc_polozenie</a> () <a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> </td></tr>
+<tr class="memdesc:a19e92252d303310b61c69d2068030923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca położenie drona Metoda zwraca aktualne położenie drona.  <a href="#a19e92252d303310b61c69d2068030923">Więcej...</a><br /></td></tr>
+<tr class="separator:a19e92252d303310b61c69d2068030923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3c64940ea21cc19e61a072b8445b0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_wektor.html">SWektor</a>&lt; <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#acc3c64940ea21cc19e61a072b8445b0a">zwroc_dlugosci</a> () <a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> </td></tr>
+<tr class="memdesc:acc3c64940ea21cc19e61a072b8445b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca wymiary drona Metoda zwraca odległości środka drona od jego ścian.  <a href="#acc3c64940ea21cc19e61a072b8445b0a">Więcej...</a><br /></td></tr>
+<tr class="separator:acc3c64940ea21cc19e61a072b8445b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:a4e4e78ab43842943e45ac80fee68a1ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#a4e4e78ab43842943e45ac80fee68a1ce">wylicz_translacje</a> (<a class="el" href="class_s_wektor.html">SWektor</a>&lt; <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3 &gt; &amp;wek, <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a> kat_wznoszenia, <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a> odleglosc) <a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> </td></tr>
+<tr class="memdesc:a4e4e78ab43842943e45ac80fee68a1ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wylicza wektor translacji. Metoda wylicza wektor translacji na podstawie zadanych parametrów.  <a href="#a4e4e78ab43842943e45ac80fee68a1ce">Więcej...</a><br /></td></tr>
+<tr class="separator:a4e4e78ab43842943e45ac80fee68a1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d6e8b01b4701c34f2813d1e4c2eff9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9">wylicz_macierz_obrotu</a> (<a class="el" href="class_s_macierz.html">SMacierz</a>&lt; <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3 &gt; &amp;<a class="el" href="classdron.html#a648ea5308782ad19b74f6651c712708f">obrot</a>, <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a> kat_obrotu) <a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> </td></tr>
+<tr class="memdesc:a69d6e8b01b4701c34f2813d1e4c2eff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wylicza macierz obrotu. Metoda wylicza macierz obrotu wokół osi OZ na podstawie zadanych parametrów.  <a href="#a69d6e8b01b4701c34f2813d1e4c2eff9">Więcej...</a><br /></td></tr>
+<tr class="separator:a69d6e8b01b4701c34f2813d1e4c2eff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec453101e86600f17535f7bde1c3f35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#abec453101e86600f17535f7bde1c3f35">sruba_lewa_ruch</a> (<a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> <a class="el" href="class_s_macierz.html">SMacierz</a>&lt; <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3 &gt; &amp;<a class="el" href="classdron.html#a648ea5308782ad19b74f6651c712708f">obrot</a>)</td></tr>
+<tr class="memdesc:abec453101e86600f17535f7bde1c3f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o wektor przesunięcie i obrót o zadaną macierz.  <a href="#abec453101e86600f17535f7bde1c3f35">Więcej...</a><br /></td></tr>
+<tr class="separator:abec453101e86600f17535f7bde1c3f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a804bb48d6e7a58f31d6ea6d839f5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#ab4a804bb48d6e7a58f31d6ea6d839f5c">sruba_prawa_ruch</a> (<a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> <a class="el" href="class_s_macierz.html">SMacierz</a>&lt; <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3 &gt; &amp;<a class="el" href="classdron.html#a648ea5308782ad19b74f6651c712708f">obrot</a>)</td></tr>
+<tr class="memdesc:ab4a804bb48d6e7a58f31d6ea6d839f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Powoduje ruch sruby prawej Metoda powoduje ruch prawej śruby o wektor przesunięcie i obrót o zadaną macierz.  <a href="#ab4a804bb48d6e7a58f31d6ea6d839f5c">Więcej...</a><br /></td></tr>
+<tr class="separator:ab4a804bb48d6e7a58f31d6ea6d839f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4889c22bd1f50dc42ac4bb70daff2ead"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead">korpus_ruch</a> (<a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> <a class="el" href="class_s_macierz.html">SMacierz</a>&lt; <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3 &gt; &amp;<a class="el" href="classdron.html#a648ea5308782ad19b74f6651c712708f">obrot</a>)</td></tr>
+<tr class="memdesc:a4889c22bd1f50dc42ac4bb70daff2ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Powoduje ruch korpusu Metoda powoduje ruch korpusu o wektor przesunięcie i obrót o zadaną macierz.  <a href="#a4889c22bd1f50dc42ac4bb70daff2ead">Więcej...</a><br /></td></tr>
+<tr class="separator:a4889c22bd1f50dc42ac4bb70daff2ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a79f5815d281a0e1705264f560aafe2f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classobiekt.html">obiekt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#a79f5815d281a0e1705264f560aafe2f9">korpus</a></td></tr>
+<tr class="memdesc:a79f5815d281a0e1705264f560aafe2f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Korpus drona.  <a href="#a79f5815d281a0e1705264f560aafe2f9">Więcej...</a><br /></td></tr>
+<tr class="separator:a79f5815d281a0e1705264f560aafe2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ad0a884748bdcb3b7eb7cd27880567"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classszesciokat.html">szesciokat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#a74ad0a884748bdcb3b7eb7cd27880567">sruba_prawa</a></td></tr>
+<tr class="memdesc:a74ad0a884748bdcb3b7eb7cd27880567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prawa śruba drona.  <a href="#a74ad0a884748bdcb3b7eb7cd27880567">Więcej...</a><br /></td></tr>
+<tr class="separator:a74ad0a884748bdcb3b7eb7cd27880567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8315f6b6ef76d5890f43e9df65e1f25c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classszesciokat.html">szesciokat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#a8315f6b6ef76d5890f43e9df65e1f25c">sruba_lewa</a></td></tr>
+<tr class="separator:a8315f6b6ef76d5890f43e9df65e1f25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e199e48792ca2707a482599583110e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#a6e199e48792ca2707a482599583110e2">laczny_kat_obrotu</a></td></tr>
+<tr class="memdesc:a6e199e48792ca2707a482599583110e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Łączny kąt obrotu obiektu.  <a href="#a6e199e48792ca2707a482599583110e2">Więcej...</a><br /></td></tr>
+<tr class="separator:a6e199e48792ca2707a482599583110e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6215dec0f86efc5cb7821c74caacfb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_wektor.html">SWektor</a>&lt; <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdron.html#ab6215dec0f86efc5cb7821c74caacfb5">przesuniecie</a></td></tr>
+<tr class="memdesc:ab6215dec0f86efc5cb7821c74caacfb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">przesunięcie obiektu względem wspolrzednych lokalnych  <a href="#ab6215dec0f86efc5cb7821c74caacfb5">Więcej...</a><br /></td></tr>
+<tr class="separator:ab6215dec0f86efc5cb7821c74caacfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Modeluje pojęcie drona Klasa opisuje drona złożonego z obiektu i dwóch graniastosłupów sześciokątnych, który może się poruszać i obracać wokół własnej osi. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="a792ff4fe0c9f8df5a0c35ff1d56e6b1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dron::dron </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor Zeruje wektor przesunięcie i laczny_kat_obrotu. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="ad4e3e1c99980abc862fad7177d014427"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dron::dodaj_pliki_korpus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>nazwa_lok</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>nazwa_glob</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dodaje pliki korpusu Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące korpus. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nazwa_lok</td><td>- plik ze współrzędnymi lokalnymi </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nazwa_glob</td><td>- plik ze współrzędnymi globalnymi </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_ad4e3e1c99980abc862fad7177d014427_cgraph.png" border="0" usemap="#classdron_ad4e3e1c99980abc862fad7177d014427_cgraph" alt=""/></div>
+<map name="classdron_ad4e3e1c99980abc862fad7177d014427_cgraph" id="classdron_ad4e3e1c99980abc862fad7177d014427_cgraph">
+<area shape="rect" id="node2" href="classpowierzchnia.html#a97bcc95edec5081f08e6234afff0f1f8" title="Zapisuje plik lokalny Metoda zapisuje nazwę pliku z współrzędnymi lokalnymi. " alt="" coords="216,5,353,47"/>
+<area shape="rect" id="node3" href="classpowierzchnia.html#adc90beb15e09c8eccf0603e4eadfbeec" title="Zapisuje plik globalny Metoda zapisuje nazwę pliku z współrzędnymi globalnymi. " alt="" coords="216,71,353,112"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_ad4e3e1c99980abc862fad7177d014427_icgraph.png" border="0" usemap="#classdron_ad4e3e1c99980abc862fad7177d014427_icgraph" alt=""/></div>
+<map name="classdron_ad4e3e1c99980abc862fad7177d014427_icgraph" id="classdron_ad4e3e1c99980abc862fad7177d014427_icgraph">
+<area shape="rect" id="node2" href="classscena.html#ad5d8213c9a23276befedb02e7d4fad7c" title="Dodaje korpus drona na scenę Zapisuje pliki opisujące korpus. " alt="" coords="216,31,359,57"/>
+<area shape="rect" id="node3" href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="411,5,511,32"/>
+<area shape="rect" id="node4" href="main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="407,56,516,83"/>
+<area shape="rect" id="node5" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="564,56,615,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ca8cc6f8ed5bd221a1931d1a6d95bee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dron::dodaj_pliki_sruby_lewej </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>nazwa_lok</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>nazwa_glob</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dodaje pliki lewej śruby Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące lewą śrubę. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nazwa_lok</td><td>- plik ze współrzędnymi lokalnymi </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nazwa_glob</td><td>- plik ze współrzędnymi globalnymi </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_a3ca8cc6f8ed5bd221a1931d1a6d95bee_cgraph.png" border="0" usemap="#classdron_a3ca8cc6f8ed5bd221a1931d1a6d95bee_cgraph" alt=""/></div>
+<map name="classdron_a3ca8cc6f8ed5bd221a1931d1a6d95bee_cgraph" id="classdron_a3ca8cc6f8ed5bd221a1931d1a6d95bee_cgraph">
+<area shape="rect" id="node2" href="classpowierzchnia.html#a97bcc95edec5081f08e6234afff0f1f8" title="Zapisuje plik lokalny Metoda zapisuje nazwę pliku z współrzędnymi lokalnymi. " alt="" coords="208,5,345,47"/>
+<area shape="rect" id="node3" href="classpowierzchnia.html#adc90beb15e09c8eccf0603e4eadfbeec" title="Zapisuje plik globalny Metoda zapisuje nazwę pliku z współrzędnymi globalnymi. " alt="" coords="208,71,345,112"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_a3ca8cc6f8ed5bd221a1931d1a6d95bee_icgraph.png" border="0" usemap="#classdron_a3ca8cc6f8ed5bd221a1931d1a6d95bee_icgraph" alt=""/></div>
+<map name="classdron_a3ca8cc6f8ed5bd221a1931d1a6d95bee_icgraph" id="classdron_a3ca8cc6f8ed5bd221a1931d1a6d95bee_icgraph">
+<area shape="rect" id="node2" href="classscena.html#a8be47f62d8ed373c1f0569405115e471" title="Dodaje lewą śrubę drona na scenę Zapisuje pliki opisujące lewą śrubę " alt="" coords="208,31,377,57"/>
+<area shape="rect" id="node3" href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="430,5,530,32"/>
+<area shape="rect" id="node4" href="main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="425,56,535,83"/>
+<area shape="rect" id="node5" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="583,56,633,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abe7dbb66c7a242dc0110cefcf3268f26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dron::dodaj_pliki_sruby_prawej </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>nazwa_lok</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> std::string &amp;&#160;</td>
+          <td class="paramname"><em>nazwa_glob</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dodaje pliki prawej śruby Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące prawą śrubę. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nazwa_lok</td><td>- plik ze współrzędnymi lokalnymi </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nazwa_glob</td><td>- plik ze współrzędnymi globalnymi </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_abe7dbb66c7a242dc0110cefcf3268f26_cgraph.png" border="0" usemap="#classdron_abe7dbb66c7a242dc0110cefcf3268f26_cgraph" alt=""/></div>
+<map name="classdron_abe7dbb66c7a242dc0110cefcf3268f26_cgraph" id="classdron_abe7dbb66c7a242dc0110cefcf3268f26_cgraph">
+<area shape="rect" id="node2" href="classpowierzchnia.html#a97bcc95edec5081f08e6234afff0f1f8" title="Zapisuje plik lokalny Metoda zapisuje nazwę pliku z współrzędnymi lokalnymi. " alt="" coords="208,5,345,47"/>
+<area shape="rect" id="node3" href="classpowierzchnia.html#adc90beb15e09c8eccf0603e4eadfbeec" title="Zapisuje plik globalny Metoda zapisuje nazwę pliku z współrzędnymi globalnymi. " alt="" coords="208,71,345,112"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_abe7dbb66c7a242dc0110cefcf3268f26_icgraph.png" border="0" usemap="#classdron_abe7dbb66c7a242dc0110cefcf3268f26_icgraph" alt=""/></div>
+<map name="classdron_abe7dbb66c7a242dc0110cefcf3268f26_icgraph" id="classdron_abe7dbb66c7a242dc0110cefcf3268f26_icgraph">
+<area shape="rect" id="node2" href="classscena.html#a11c177de196341b4b951c10429df969f" title="Dodaje prawą śrubę drona na scenę Zapisuje pliki opisujące prawą śrubę " alt="" coords="208,23,343,65"/>
+<area shape="rect" id="node3" href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="395,5,495,32"/>
+<area shape="rect" id="node4" href="main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="391,56,500,83"/>
+<area shape="rect" id="node5" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="548,56,599,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a81ff7cc6b57a1b6dc148ac7d33b33332"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dron::inicjalizuj_drona </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicjaizuje drona Metoda inicjalizuje korpus i śruby oraz przesuwa śruby względem korpusu. </p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_a81ff7cc6b57a1b6dc148ac7d33b33332_cgraph.png" border="0" usemap="#classdron_a81ff7cc6b57a1b6dc148ac7d33b33332_cgraph" alt=""/></div>
+<map name="classdron_a81ff7cc6b57a1b6dc148ac7d33b33332_cgraph" id="classdron_a81ff7cc6b57a1b6dc148ac7d33b33332_cgraph">
+<area shape="rect" id="node2" href="classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="Inicjalizuje pola klasy Wylicza srodek_lok oraz polowa_wysokosci, wpisuje plik lokalny do pliku z pun..." alt="" coords="213,149,332,190"/>
+<area shape="rect" id="node6" href="classszesciokat.html#a7493ea80abcb9dec7f5c0df0c80db7b1" title="Zmienia przesunięcie graniastosłupa Metoda wpisuje wektor wejściowy do wektora przesunięcie. " alt="" coords="393,383,600,410"/>
+<area shape="rect" id="node11" href="classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9" title="Wylicza macierz obrotu. Metoda wylicza macierz obrotu wokół osi OZ na podstawie zadanych parametrów..." alt="" coords="200,266,345,308"/>
+<area shape="rect" id="node13" href="classdron.html#abec453101e86600f17535f7bde1c3f35" title="Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o wektor przesunięcie i obrót o zadaną mac..." alt="" coords="652,282,805,308"/>
+<area shape="rect" id="node15" href="classdron.html#ab4a804bb48d6e7a58f31d6ea6d839f5c" title="Powoduje ruch sruby prawej Metoda powoduje ruch prawej śruby o wektor przesunięcie i obrót o zadaną m..." alt="" coords="648,215,809,242"/>
+<area shape="rect" id="node3" href="classpowierzchnia.html#ab30b9bda0dea7c2baffa3a917c1beb7b" title="Przepisuje plik lokalny do pliku z punktami Metoda zapisuje współrzędne z pliku z współrzędnymi lokal..." alt="" coords="409,164,584,191"/>
+<area shape="rect" id="node4" href="classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="857,130,1072,156"/>
+<area shape="rect" id="node5" href="classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="1120,130,1283,156"/>
+<area shape="rect" id="node7" href="classszesciokat.html#a7489c4f4a62fa96c88ff7431bf2108ac" title="Powoduje ruch o wektor przesunięcie Metoda powoduje przesunięcie graniastosłupa o wektor przesunięcie..." alt="" coords="881,383,1048,410"/>
+<area shape="rect" id="node8" href="classszesciokat.html#a470a40b18794d7f58423ccd1e6f0aa45" title="wylicza macierz obrotu Metoda wylicza macierz obrotu wokół osi OX. " alt="" coords="1132,434,1271,476"/>
+<area shape="rect" id="node9" href="classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu..." alt="" coords="1331,332,1425,359"/>
+<area shape="rect" id="node10" href="classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany wektor translacji. " alt="" coords="1123,231,1280,258"/>
+<area shape="rect" id="node12" href="classdron.html#a648ea5308782ad19b74f6651c712708f" title="Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt obrotu. " alt="" coords="455,274,539,300"/>
+<area shape="rect" id="node16" href="classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead" title="Powoduje ruch korpusu Metoda powoduje ruch korpusu o wektor przesunięcie i obrót o zadaną macierz..." alt="" coords="665,63,792,90"/>
+<area shape="rect" id="node14" href="classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="859,231,1070,258"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_a81ff7cc6b57a1b6dc148ac7d33b33332_icgraph.png" border="0" usemap="#classdron_a81ff7cc6b57a1b6dc148ac7d33b33332_icgraph" alt=""/></div>
+<map name="classdron_a81ff7cc6b57a1b6dc148ac7d33b33332_icgraph" id="classdron_a81ff7cc6b57a1b6dc148ac7d33b33332_icgraph">
+<area shape="rect" id="node2" href="classscena.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="200,31,319,57"/>
+<area shape="rect" id="node3" href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="371,5,471,32"/>
+<area shape="rect" id="node4" href="main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="367,56,476,83"/>
+<area shape="rect" id="node5" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="524,56,575,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4889c22bd1f50dc42ac4bb70daff2ead"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dron::korpus_ruch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> <a class="el" href="class_s_macierz.html">SMacierz</a>&lt; <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obrot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Powoduje ruch korpusu Metoda powoduje ruch korpusu o wektor przesunięcie i obrót o zadaną macierz. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">obrot</td><td>- macierz z zapisanym obrotem </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_a4889c22bd1f50dc42ac4bb70daff2ead_cgraph.png" border="0" usemap="#classdron_a4889c22bd1f50dc42ac4bb70daff2ead_cgraph" alt=""/></div>
+<map name="classdron_a4889c22bd1f50dc42ac4bb70daff2ead_cgraph" id="classdron_a4889c22bd1f50dc42ac4bb70daff2ead_cgraph">
+<area shape="rect" id="node2" href="classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="180,5,395,32"/>
+<area shape="rect" id="node4" href="classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu..." alt="" coords="240,56,335,83"/>
+<area shape="rect" id="node5" href="classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany wektor translacji. " alt="" coords="209,107,366,133"/>
+<area shape="rect" id="node6" href="classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="182,157,393,184"/>
+<area shape="rect" id="node3" href="classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="443,5,605,32"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_a4889c22bd1f50dc42ac4bb70daff2ead_icgraph.png" border="0" usemap="#classdron_a4889c22bd1f50dc42ac4bb70daff2ead_icgraph" alt=""/></div>
+<map name="classdron_a4889c22bd1f50dc42ac4bb70daff2ead_icgraph" id="classdron_a4889c22bd1f50dc42ac4bb70daff2ead_icgraph">
+<area shape="rect" id="node2" href="classdron.html#a809f2fc3fc515c8992d5f04081893a97" title="Powoduje ruch drona po prostej Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość ..." alt="" coords="505,111,652,137"/>
+<area shape="rect" id="node7" href="classdron.html#a648ea5308782ad19b74f6651c712708f" title="Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt obrotu. " alt="" coords="180,56,264,83"/>
+<area shape="rect" id="node3" href="classscena.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="700,107,833,133"/>
+<area shape="rect" id="node4" href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="886,81,986,108"/>
+<area shape="rect" id="node5" href="main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="881,31,991,57"/>
+<area shape="rect" id="node6" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1039,31,1089,57"/>
+<area shape="rect" id="node8" href="classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9" title="Wylicza macierz obrotu. Metoda wylicza macierz obrotu wokół osi OZ na podstawie zadanych parametrów..." alt="" coords="312,49,457,90"/>
+<area shape="rect" id="node11" href="classscena.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="719,5,814,32"/>
+<area shape="rect" id="node9" href="classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje korpus i śruby oraz przesuwa śruby względem korpusu..." alt="" coords="505,56,652,83"/>
+<area shape="rect" id="node10" href="classscena.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="707,56,826,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a648ea5308782ad19b74f6651c712708f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dron::obrot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>&#160;</td>
+          <td class="paramname"><em>kat_obrotu</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt obrotu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kat_obrotu</td><td>- kąt o jaki ma obrócić się dron w osi OZ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_a648ea5308782ad19b74f6651c712708f_cgraph.png" border="0" usemap="#classdron_a648ea5308782ad19b74f6651c712708f_cgraph" alt=""/></div>
+<map name="classdron_a648ea5308782ad19b74f6651c712708f_cgraph" id="classdron_a648ea5308782ad19b74f6651c712708f_cgraph">
+<area shape="rect" id="node2" href="classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9" title="Wylicza macierz obrotu. Metoda wylicza macierz obrotu wokół osi OZ na podstawie zadanych parametrów..." alt="" coords="145,69,291,110"/>
+<area shape="rect" id="node3" href="classdron.html#abec453101e86600f17535f7bde1c3f35" title="Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o wektor przesunięcie i obrót o zadaną mac..." alt="" coords="141,262,295,288"/>
+<area shape="rect" id="node11" href="classdron.html#ab4a804bb48d6e7a58f31d6ea6d839f5c" title="Powoduje ruch sruby prawej Metoda powoduje ruch prawej śruby o wektor przesunięcie i obrót o zadaną m..." alt="" coords="137,186,299,212"/>
+<area shape="rect" id="node12" href="classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead" title="Powoduje ruch korpusu Metoda powoduje ruch korpusu o wektor przesunięcie i obrót o zadaną macierz..." alt="" coords="155,135,281,162"/>
+<area shape="rect" id="node4" href="classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="347,135,561,162"/>
+<area shape="rect" id="node6" href="classszesciokat.html#a7489c4f4a62fa96c88ff7431bf2108ac" title="Powoduje ruch o wektor przesunięcie Metoda powoduje przesunięcie graniastosłupa o wektor przesunięcie..." alt="" coords="371,338,537,364"/>
+<area shape="rect" id="node8" href="classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu..." alt="" coords="820,271,915,298"/>
+<area shape="rect" id="node9" href="classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany wektor translacji. " alt="" coords="612,203,769,230"/>
+<area shape="rect" id="node10" href="classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="349,236,559,263"/>
+<area shape="rect" id="node5" href="classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="609,135,772,162"/>
+<area shape="rect" id="node7" href="classszesciokat.html#a470a40b18794d7f58423ccd1e6f0aa45" title="wylicza macierz obrotu Metoda wylicza macierz obrotu wokół osi OX. " alt="" coords="621,322,760,364"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_a648ea5308782ad19b74f6651c712708f_icgraph.png" border="0" usemap="#classdron_a648ea5308782ad19b74f6651c712708f_icgraph" alt=""/></div>
+<map name="classdron_a648ea5308782ad19b74f6651c712708f_icgraph" id="classdron_a648ea5308782ad19b74f6651c712708f_icgraph">
+<area shape="rect" id="node2" href="classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9" title="Wylicza macierz obrotu. Metoda wylicza macierz obrotu wokół osi OZ na podstawie zadanych parametrów..." alt="" coords="137,5,283,47"/>
+<area shape="rect" id="node8" href="classdron.html#a809f2fc3fc515c8992d5f04081893a97" title="Powoduje ruch drona po prostej Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość ..." alt="" coords="331,67,477,94"/>
+<area shape="rect" id="node10" href="classscena.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="545,118,639,145"/>
+<area shape="rect" id="node3" href="classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje korpus i śruby oraz przesuwa śruby względem korpusu..." alt="" coords="331,15,477,42"/>
+<area shape="rect" id="node4" href="classscena.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="533,17,651,43"/>
+<area shape="rect" id="node5" href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="711,42,811,69"/>
+<area shape="rect" id="node6" href="main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="707,93,816,119"/>
+<area shape="rect" id="node7" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="864,93,915,119"/>
+<area shape="rect" id="node9" href="classscena.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="525,67,659,94"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a809f2fc3fc515c8992d5f04081893a97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dron::ruch_na_wprost </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>&#160;</td>
+          <td class="paramname"><em>kat_wznoszenia</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>&#160;</td>
+          <td class="paramname"><em>odleglosc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Powoduje ruch drona po prostej Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">kat_wznoszenia</td><td>- kąt o jaki ma wznieść się dron </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">odleglosc</td><td>- odległość na jaką ma przesunąć się dron </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_a809f2fc3fc515c8992d5f04081893a97_cgraph.png" border="0" usemap="#classdron_a809f2fc3fc515c8992d5f04081893a97_cgraph" alt=""/></div>
+<map name="classdron_a809f2fc3fc515c8992d5f04081893a97_cgraph" id="classdron_a809f2fc3fc515c8992d5f04081893a97_cgraph">
+<area shape="rect" id="node2" href="classdron.html#a648ea5308782ad19b74f6651c712708f" title="Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt obrotu. " alt="" coords="235,123,319,150"/>
+<area shape="rect" id="node3" href="classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9" title="Wylicza macierz obrotu. Metoda wylicza macierz obrotu wokół osi OZ na podstawie zadanych parametrów..." alt="" coords="411,90,556,132"/>
+<area shape="rect" id="node4" href="classdron.html#abec453101e86600f17535f7bde1c3f35" title="Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o wektor przesunięcie i obrót o zadaną mac..." alt="" coords="407,156,560,183"/>
+<area shape="rect" id="node12" href="classdron.html#ab4a804bb48d6e7a58f31d6ea6d839f5c" title="Powoduje ruch sruby prawej Metoda powoduje ruch prawej śruby o wektor przesunięcie i obrót o zadaną m..." alt="" coords="403,224,564,251"/>
+<area shape="rect" id="node13" href="classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead" title="Powoduje ruch korpusu Metoda powoduje ruch korpusu o wektor przesunięcie i obrót o zadaną macierz..." alt="" coords="420,31,547,58"/>
+<area shape="rect" id="node14" href="classdron.html#a4e4e78ab43842943e45ac80fee68a1ce" title="Wylicza wektor translacji. Metoda wylicza wektor translacji na podstawie zadanych parametrów..." alt="" coords="200,275,355,302"/>
+<area shape="rect" id="node5" href="classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="612,139,827,166"/>
+<area shape="rect" id="node7" href="classszesciokat.html#a7489c4f4a62fa96c88ff7431bf2108ac" title="Powoduje ruch o wektor przesunięcie Metoda powoduje przesunięcie graniastosłupa o wektor przesunięcie..." alt="" coords="636,291,803,318"/>
+<area shape="rect" id="node9" href="classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu..." alt="" coords="1085,236,1180,263"/>
+<area shape="rect" id="node10" href="classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany wektor translacji. " alt="" coords="877,186,1035,212"/>
+<area shape="rect" id="node11" href="classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="614,88,825,115"/>
+<area shape="rect" id="node6" href="classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="875,135,1037,162"/>
+<area shape="rect" id="node8" href="classszesciokat.html#a470a40b18794d7f58423ccd1e6f0aa45" title="wylicza macierz obrotu Metoda wylicza macierz obrotu wokół osi OX. " alt="" coords="887,288,1025,329"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_a809f2fc3fc515c8992d5f04081893a97_icgraph.png" border="0" usemap="#classdron_a809f2fc3fc515c8992d5f04081893a97_icgraph" alt=""/></div>
+<map name="classdron_a809f2fc3fc515c8992d5f04081893a97_icgraph" id="classdron_a809f2fc3fc515c8992d5f04081893a97_icgraph">
+<area shape="rect" id="node2" href="classscena.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="200,31,333,57"/>
+<area shape="rect" id="node3" href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="386,5,486,32"/>
+<area shape="rect" id="node4" href="main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="381,56,491,83"/>
+<area shape="rect" id="node5" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="539,56,589,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abec453101e86600f17535f7bde1c3f35"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dron::sruba_lewa_ruch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> <a class="el" href="class_s_macierz.html">SMacierz</a>&lt; <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obrot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o wektor przesunięcie i obrót o zadaną macierz. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">obrot</td><td>- macierz z zapisanym obrotem </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_abec453101e86600f17535f7bde1c3f35_cgraph.png" border="0" usemap="#classdron_abec453101e86600f17535f7bde1c3f35_cgraph" alt=""/></div>
+<map name="classdron_abec453101e86600f17535f7bde1c3f35_cgraph" id="classdron_abec453101e86600f17535f7bde1c3f35_cgraph">
+<area shape="rect" id="node2" href="classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="207,39,421,65"/>
+<area shape="rect" id="node4" href="classszesciokat.html#a7489c4f4a62fa96c88ff7431bf2108ac" title="Powoduje ruch o wektor przesunięcie Metoda powoduje przesunięcie graniastosłupa o wektor przesunięcie..." alt="" coords="231,123,397,149"/>
+<area shape="rect" id="node6" href="classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu..." alt="" coords="680,123,775,149"/>
+<area shape="rect" id="node7" href="classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany wektor translacji. " alt="" coords="472,173,629,200"/>
+<area shape="rect" id="node8" href="classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="209,275,419,301"/>
+<area shape="rect" id="node3" href="classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="469,5,632,32"/>
+<area shape="rect" id="node5" href="classszesciokat.html#a470a40b18794d7f58423ccd1e6f0aa45" title="wylicza macierz obrotu Metoda wylicza macierz obrotu wokół osi OX. " alt="" coords="481,57,620,98"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_abec453101e86600f17535f7bde1c3f35_icgraph.png" border="0" usemap="#classdron_abec453101e86600f17535f7bde1c3f35_icgraph" alt=""/></div>
+<map name="classdron_abec453101e86600f17535f7bde1c3f35_icgraph" id="classdron_abec453101e86600f17535f7bde1c3f35_icgraph">
+<area shape="rect" id="node2" href="classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje korpus i śruby oraz przesuwa śruby względem korpusu..." alt="" coords="532,30,679,57"/>
+<area shape="rect" id="node7" href="classdron.html#a809f2fc3fc515c8992d5f04081893a97" title="Powoduje ruch drona po prostej Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość ..." alt="" coords="532,89,679,115"/>
+<area shape="rect" id="node9" href="classdron.html#a648ea5308782ad19b74f6651c712708f" title="Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt obrotu. " alt="" coords="207,59,291,86"/>
+<area shape="rect" id="node3" href="classscena.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="734,38,853,65"/>
+<area shape="rect" id="node4" href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="913,114,1013,141"/>
+<area shape="rect" id="node5" href="main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="908,63,1017,90"/>
+<area shape="rect" id="node6" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1065,63,1116,90"/>
+<area shape="rect" id="node8" href="classscena.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="727,89,860,115"/>
+<area shape="rect" id="node10" href="classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9" title="Wylicza macierz obrotu. Metoda wylicza macierz obrotu wokół osi OZ na podstawie zadanych parametrów..." alt="" coords="339,23,484,64"/>
+<area shape="rect" id="node11" href="classscena.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="746,139,841,166"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab4a804bb48d6e7a58f31d6ea6d839f5c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dron::sruba_prawa_ruch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> <a class="el" href="class_s_macierz.html">SMacierz</a>&lt; <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obrot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Powoduje ruch sruby prawej Metoda powoduje ruch prawej śruby o wektor przesunięcie i obrót o zadaną macierz. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">obrot</td><td>- macierz z zapisanym obrotem </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_ab4a804bb48d6e7a58f31d6ea6d839f5c_cgraph.png" border="0" usemap="#classdron_ab4a804bb48d6e7a58f31d6ea6d839f5c_cgraph" alt=""/></div>
+<map name="classdron_ab4a804bb48d6e7a58f31d6ea6d839f5c_cgraph" id="classdron_ab4a804bb48d6e7a58f31d6ea6d839f5c_cgraph">
+<area shape="rect" id="node2" href="classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="215,39,429,65"/>
+<area shape="rect" id="node4" href="classszesciokat.html#a7489c4f4a62fa96c88ff7431bf2108ac" title="Powoduje ruch o wektor przesunięcie Metoda powoduje przesunięcie graniastosłupa o wektor przesunięcie..." alt="" coords="239,123,405,149"/>
+<area shape="rect" id="node6" href="classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu..." alt="" coords="688,123,783,149"/>
+<area shape="rect" id="node7" href="classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany wektor translacji. " alt="" coords="480,173,637,200"/>
+<area shape="rect" id="node8" href="classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="217,275,427,301"/>
+<area shape="rect" id="node3" href="classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="477,5,640,32"/>
+<area shape="rect" id="node5" href="classszesciokat.html#a470a40b18794d7f58423ccd1e6f0aa45" title="wylicza macierz obrotu Metoda wylicza macierz obrotu wokół osi OX. " alt="" coords="489,57,628,98"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_ab4a804bb48d6e7a58f31d6ea6d839f5c_icgraph.png" border="0" usemap="#classdron_ab4a804bb48d6e7a58f31d6ea6d839f5c_icgraph" alt=""/></div>
+<map name="classdron_ab4a804bb48d6e7a58f31d6ea6d839f5c_icgraph" id="classdron_ab4a804bb48d6e7a58f31d6ea6d839f5c_icgraph">
+<area shape="rect" id="node2" href="classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje korpus i śruby oraz przesuwa śruby względem korpusu..." alt="" coords="540,30,687,57"/>
+<area shape="rect" id="node7" href="classdron.html#a809f2fc3fc515c8992d5f04081893a97" title="Powoduje ruch drona po prostej Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość ..." alt="" coords="540,89,687,115"/>
+<area shape="rect" id="node9" href="classdron.html#a648ea5308782ad19b74f6651c712708f" title="Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt obrotu. " alt="" coords="215,59,299,86"/>
+<area shape="rect" id="node3" href="classscena.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="742,38,861,65"/>
+<area shape="rect" id="node4" href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="921,114,1021,141"/>
+<area shape="rect" id="node5" href="main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="916,63,1025,90"/>
+<area shape="rect" id="node6" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1073,63,1124,90"/>
+<area shape="rect" id="node8" href="classscena.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="735,89,868,115"/>
+<area shape="rect" id="node10" href="classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9" title="Wylicza macierz obrotu. Metoda wylicza macierz obrotu wokół osi OZ na podstawie zadanych parametrów..." alt="" coords="347,23,492,64"/>
+<area shape="rect" id="node11" href="classscena.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="754,139,849,166"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a69d6e8b01b4701c34f2813d1e4c2eff9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dron::wylicz_macierz_obrotu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_macierz.html">SMacierz</a>&lt; <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>obrot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>&#160;</td>
+          <td class="paramname"><em>kat_obrotu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wylicza macierz obrotu. Metoda wylicza macierz obrotu wokół osi OZ na podstawie zadanych parametrów. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">obrot</td><td>- wypełniana macierz obrotu </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kat_obrotu</td><td>- kąt dla jakiego ma zostać wyliczona macierz </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_a69d6e8b01b4701c34f2813d1e4c2eff9_cgraph.png" border="0" usemap="#classdron_a69d6e8b01b4701c34f2813d1e4c2eff9_cgraph" alt=""/></div>
+<map name="classdron_a69d6e8b01b4701c34f2813d1e4c2eff9_cgraph" id="classdron_a69d6e8b01b4701c34f2813d1e4c2eff9_cgraph">
+<area shape="rect" id="node2" href="classdron.html#a648ea5308782ad19b74f6651c712708f" title="Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt obrotu. " alt="" coords="199,178,283,204"/>
+<area shape="rect" id="node3" href="classdron.html#abec453101e86600f17535f7bde1c3f35" title="Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o wektor przesunięcie i obrót o zadaną mac..." alt="" coords="335,254,488,280"/>
+<area shape="rect" id="node11" href="classdron.html#ab4a804bb48d6e7a58f31d6ea6d839f5c" title="Powoduje ruch sruby prawej Metoda powoduje ruch prawej śruby o wektor przesunięcie i obrót o zadaną m..." alt="" coords="331,178,492,204"/>
+<area shape="rect" id="node12" href="classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead" title="Powoduje ruch korpusu Metoda powoduje ruch korpusu o wektor przesunięcie i obrót o zadaną macierz..." alt="" coords="348,127,475,154"/>
+<area shape="rect" id="node4" href="classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="540,127,755,154"/>
+<area shape="rect" id="node6" href="classszesciokat.html#a7489c4f4a62fa96c88ff7431bf2108ac" title="Powoduje ruch o wektor przesunięcie Metoda powoduje przesunięcie graniastosłupa o wektor przesunięcie..." alt="" coords="564,330,731,356"/>
+<area shape="rect" id="node8" href="classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu..." alt="" coords="1013,263,1108,290"/>
+<area shape="rect" id="node9" href="classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany wektor translacji. " alt="" coords="805,195,963,222"/>
+<area shape="rect" id="node10" href="classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="542,228,753,255"/>
+<area shape="rect" id="node5" href="classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="803,127,965,154"/>
+<area shape="rect" id="node7" href="classszesciokat.html#a470a40b18794d7f58423ccd1e6f0aa45" title="wylicza macierz obrotu Metoda wylicza macierz obrotu wokół osi OX. " alt="" coords="815,314,953,356"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_a69d6e8b01b4701c34f2813d1e4c2eff9_icgraph.png" border="0" usemap="#classdron_a69d6e8b01b4701c34f2813d1e4c2eff9_icgraph" alt=""/></div>
+<map name="classdron_a69d6e8b01b4701c34f2813d1e4c2eff9_icgraph" id="classdron_a69d6e8b01b4701c34f2813d1e4c2eff9_icgraph">
+<area shape="rect" id="node2" href="classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje korpus i śruby oraz przesuwa śruby względem korpusu..." alt="" coords="199,5,345,32"/>
+<area shape="rect" id="node7" href="classdron.html#a809f2fc3fc515c8992d5f04081893a97" title="Powoduje ruch drona po prostej Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość ..." alt="" coords="393,56,540,83"/>
+<area shape="rect" id="node9" href="classdron.html#a648ea5308782ad19b74f6651c712708f" title="Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt obrotu. " alt="" coords="230,107,314,133"/>
+<area shape="rect" id="node3" href="classscena.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="595,5,714,32"/>
+<area shape="rect" id="node4" href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="774,31,874,57"/>
+<area shape="rect" id="node5" href="main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="769,81,879,108"/>
+<area shape="rect" id="node6" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="927,81,977,108"/>
+<area shape="rect" id="node8" href="classscena.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="588,56,721,83"/>
+<area shape="rect" id="node10" href="classscena.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="607,107,702,133"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e4e78ab43842943e45ac80fee68a1ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dron::wylicz_translacje </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_wektor.html">SWektor</a>&lt; <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>wek</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>&#160;</td>
+          <td class="paramname"><em>kat_wznoszenia</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>&#160;</td>
+          <td class="paramname"><em>odleglosc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wylicza wektor translacji. Metoda wylicza wektor translacji na podstawie zadanych parametrów. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wek</td><td>- wektor który będzie zapisany </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kat_wznoszenia</td><td>- kąt o jaki ma być odchylony wektor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">odleglosc</td><td>- długość wektora </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_a4e4e78ab43842943e45ac80fee68a1ce_icgraph.png" border="0" usemap="#classdron_a4e4e78ab43842943e45ac80fee68a1ce_icgraph" alt=""/></div>
+<map name="classdron_a4e4e78ab43842943e45ac80fee68a1ce_icgraph" id="classdron_a4e4e78ab43842943e45ac80fee68a1ce_icgraph">
+<area shape="rect" id="node2" href="classdron.html#a809f2fc3fc515c8992d5f04081893a97" title="Powoduje ruch drona po prostej Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość ..." alt="" coords="208,31,355,57"/>
+<area shape="rect" id="node3" href="classscena.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="403,31,536,57"/>
+<area shape="rect" id="node4" href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="589,5,689,32"/>
+<area shape="rect" id="node5" href="main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="584,56,693,83"/>
+<area shape="rect" id="node6" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="741,56,792,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acc3c64940ea21cc19e61a072b8445b0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_wektor.html">SWektor</a>&lt; <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3 &gt; dron::zwroc_dlugosci </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraca wymiary drona Metoda zwraca odległości środka drona od jego ścian. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>wektor z zapisanymi długościami </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_acc3c64940ea21cc19e61a072b8445b0a_cgraph.png" border="0" usemap="#classdron_acc3c64940ea21cc19e61a072b8445b0a_cgraph" alt=""/></div>
+<map name="classdron_acc3c64940ea21cc19e61a072b8445b0a_cgraph" id="classdron_acc3c64940ea21cc19e61a072b8445b0a_cgraph">
+<area shape="rect" id="node2" href="classobiekt.html#a3ecfb97e19691cdb46f997fca5f23a53" title="Zwraca wektor z polowami dlugości obiektu Metoda zwraca połowę wysokości obiektu. ..." alt="" coords="199,5,347,47"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_acc3c64940ea21cc19e61a072b8445b0a_icgraph.png" border="0" usemap="#classdron_acc3c64940ea21cc19e61a072b8445b0a_icgraph" alt=""/></div>
+<map name="classdron_acc3c64940ea21cc19e61a072b8445b0a_icgraph" id="classdron_acc3c64940ea21cc19e61a072b8445b0a_icgraph">
+<area shape="rect" id="node2" href="classscena.html#ab5fbfa861967e0faa82d61d4d239fdf5" title="Zwraca informację o kolizji z dnem Metoda sprawdza czy nie ma kolizji z dnem. " alt="" coords="199,31,329,57"/>
+<area shape="rect" id="node10" href="classscena.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. " alt="" coords="199,132,329,159"/>
+<area shape="rect" id="node11" href="classscena.html#a9bbff749c1f2d34f3959afd97e044fc0" title="Zwraca informację o kolizji Sprawdza czy jest kolizja z jakąś przeszkodą " alt="" coords="213,81,315,108"/>
+<area shape="rect" id="node3" href="classscena.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="377,56,471,83"/>
+<area shape="rect" id="node8" href="classscena.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="519,107,652,133"/>
+<area shape="rect" id="node4" href="classscena.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="526,56,645,83"/>
+<area shape="rect" id="node9" href="classscena.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="538,5,633,32"/>
+<area shape="rect" id="node5" href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="705,31,805,57"/>
+<area shape="rect" id="node6" href="main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="700,81,809,108"/>
+<area shape="rect" id="node7" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="857,81,908,108"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a19e92252d303310b61c69d2068030923"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_wektor.html">SWektor</a>&lt; <a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3 &gt; dron::zwroc_polozenie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraca położenie drona Metoda zwraca aktualne położenie drona. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>wektor z zapisanymi współrzędnymi kartezjańskimi drona </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_a19e92252d303310b61c69d2068030923_cgraph.png" border="0" usemap="#classdron_a19e92252d303310b61c69d2068030923_cgraph" alt=""/></div>
+<map name="classdron_a19e92252d303310b61c69d2068030923_cgraph" id="classdron_a19e92252d303310b61c69d2068030923_cgraph">
+<area shape="rect" id="node2" href="classobiekt.html#a8025abcf481c01e568af0ddff445d6fe" title="Zwraca środek drona Metoda zwraca wartość współrzędnych środka drona. " alt="" coords="205,5,325,32"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdron_a19e92252d303310b61c69d2068030923_icgraph.png" border="0" usemap="#classdron_a19e92252d303310b61c69d2068030923_icgraph" alt=""/></div>
+<map name="classdron_a19e92252d303310b61c69d2068030923_icgraph" id="classdron_a19e92252d303310b61c69d2068030923_icgraph">
+<area shape="rect" id="node2" href="classscena.html#ab5fbfa861967e0faa82d61d4d239fdf5" title="Zwraca informację o kolizji z dnem Metoda sprawdza czy nie ma kolizji z dnem. " alt="" coords="205,31,336,57"/>
+<area shape="rect" id="node10" href="classscena.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. " alt="" coords="205,132,336,159"/>
+<area shape="rect" id="node11" href="classscena.html#a9bbff749c1f2d34f3959afd97e044fc0" title="Zwraca informację o kolizji Sprawdza czy jest kolizja z jakąś przeszkodą " alt="" coords="219,81,322,108"/>
+<area shape="rect" id="node3" href="classscena.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="384,56,477,83"/>
+<area shape="rect" id="node8" href="classscena.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="525,107,659,133"/>
+<area shape="rect" id="node4" href="classscena.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="533,56,651,83"/>
+<area shape="rect" id="node9" href="classscena.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="545,5,639,32"/>
+<area shape="rect" id="node5" href="classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="711,31,811,57"/>
+<area shape="rect" id="node6" href="main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="707,81,816,108"/>
+<area shape="rect" id="node7" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="864,81,915,108"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a class="anchor" id="a79f5815d281a0e1705264f560aafe2f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classobiekt.html">obiekt</a> dron::korpus</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Korpus drona. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6e199e48792ca2707a482599583110e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a> dron::laczny_kat_obrotu</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Łączny kąt obrotu obiektu. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab6215dec0f86efc5cb7821c74caacfb5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_wektor.html">SWektor</a>&lt;<a class="el" href="classes__4_8js.html#a45c855d65dd0e2b57b08024500ff9159">double</a>, 3&gt; dron::przesuniecie</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>przesunięcie obiektu względem wspolrzednych lokalnych </p>
+
+</div>
+</div>
+<a class="anchor" id="a8315f6b6ef76d5890f43e9df65e1f25c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classszesciokat.html">szesciokat</a> dron::sruba_lewa</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Lewa śruba drona </p>
+
+</div>
+</div>
+<a class="anchor" id="a74ad0a884748bdcb3b7eb7cd27880567"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classszesciokat.html">szesciokat</a> dron::sruba_prawa</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prawa śruba drona. </p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>inc/<a class="el" href="dron_8hh_source.html">dron.hh</a></li>
+<li>src/<a class="el" href="dron_8cpp.html">dron.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classdron.html">dron</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -92,7 +92,7 @@ class dron {
         /*!
          * \brief Powoduje ruch drona po prostej
          * Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość
-         * \param[in] kat wznoszenia - kąt o jaki ma wznieść się dron
+         * \param[in] kat_wznoszenia - kąt o jaki ma wznieść się dron
          * \param[in] odleglosc - odległość na jaką ma przesunąć się dron
          */
         void ruch_na_wprost(double kat_wznoszenia, double odleglosc);

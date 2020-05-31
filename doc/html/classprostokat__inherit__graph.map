@@ -1,0 +1,5 @@
+<map id="prostokat" name="prostokat">
+<area shape="rect" id="node2" href="$classobiekt.html" title="Modeluje pojęcie obiektu Klasa opisuje obiekt geometryczny, który może się poruszać i obracać wokół w..." alt="" coords="50,155,107,181"/>
+<area shape="rect" id="node3" href="$classpowierzchnia.html" title="Modeluje pojęcie powierzchni. " alt="" coords="29,80,128,107"/>
+<area shape="rect" id="node4" href="$classpowierzchnia__lokalna.html" title="Modeluje powierzchnię lokalną Klasa przechowuje nazwę pliku ze współrzędnymi lokalnymi powierzchni..." alt="" coords="5,5,152,32"/>
+</map>
