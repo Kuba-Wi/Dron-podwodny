@@ -25,24 +25,38 @@ class scena {
         /*! \brief Łącze z programem gnuplot */
         PzG::LaczeDoGNUPlota Lacze;
 
-        //lista z przeszkodami
+        /*! \brief lista z wskaźnikami na przeszkody */
         std::list<std::shared_ptr<obiekt>> lista_przeszkod;
 
         /*! \brief Rysuje wszystkie powierzchnie i obiekty na scenie */
         void rysuj() { Lacze.Rysuj(); }
+        /*!
+         * \brief Dodaje plik do łącza do gnuplota
+         * \param[in] nazwa_pliku - nazwa dołączanego pliku
+         */
         void lacze_dodaj_plik(const std::string& nazwa_pliku);
 
-         //dodaje przeszkodę na scenę
+        /*!
+         * \brief Dodaje przeszkodę na scenie
+         * Metoda dodaje na scenę przeszkodę zapisaną w zadanych plikach
+         * \param[in] nazwa_lok - nazwa pliku z danymi lokalnymi
+         * \param[in] nazwa_glob - nazwa pliku z danymi globalnymi
+         */
         void dodaj_przeszkode(const std::string & nazwa_lok, const std::string & nazwa_glob);
 
         /*!
          * \brief Zwraca informację o kolizji
-         * Sprawdza czy jest kolizja
+         * Sprawdza czy jest kolizja z jakąś przeszkodą
          * \retval true - gdy będzie kolizja
          * \retval false - gdy nie będzie kolizja 
          */
         bool kolizja() const;
-
+        /*!
+         * \brief Zwraca informację o kolizji z dnem
+         * Metoda sprawdza czy nie ma kolizji z dnem
+         * \retval true - gdy jest kolizja
+         * \retval false - gdy nie ma kolizji
+         */
         bool kolizja_dno() const;
 
         /*!
@@ -57,35 +71,63 @@ class scena {
         scena() {}
 
         /*!
-         * \brief Dodaje dno do sceny
+         * \brief Dodaje dno na scenę
          * Zapisuje pliki opisujące powierzchnię dna
          * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
          * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
          */
         void dodaj_dno(const std::string & nazwa_lok, const std::string & nazwa_glob);
         /*!
-         * \brief Dodaje wodę do sceny
+         * \brief Dodaje wodę na scenę
          * Zapisuje pliki opisujące powierzchnię wody
          * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
          * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
          */
         void dodaj_wode(const std::string & nazwa_lok, const std::string & nazwa_glob);
         /*!
-         * \brief Dodaje obiekt dron do sceny
-         * Zapisuje pliki opisujące obiekt dron i inicjalizuje go
+         * \brief Dodaje korpus drona na scenę
+         * Zapisuje pliki opisujące korpus
          * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
          * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
          */
         void dodaj_korpus(const std::string & nazwa_lok, const std::string & nazwa_glob);
-
+        /*!
+         * \brief Dodaje lewą śrubę drona na scenę
+         * Zapisuje pliki opisujące lewą śrubę
+         * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
+         * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+         */
         void dodaj_sruba_lewa(const std::string & nazwa_lok, const std::string & nazwa_glob);
+        /*!
+         * \brief Dodaje prawą śrubę drona na scenę
+         * Zapisuje pliki opisujące prawą śrubę
+         * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
+         * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+         */
         void dodaj_sruba_prawa(const std::string & nazwa_lok, const std::string & nazwa_glob);
-        //dodaje prostopadloscian na scenę
+        /*!
+         * \brief Dodaje prostopadłościan na scenę
+         * Zapisuje pliki opisujące prostopadłościan i dodaje go na koniec listy przeszkód.
+         * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
+         * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+         */
         void dodaj_prostopadloscian(const std::string & nazwa_lok, const std::string & nazwa_glob);
+        /*!
+         * \brief Dodaje pręt na scenę
+         * Zapisuje pliki opisujące pręt i dodaje go na koniec listy przeszkód.
+         * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
+         * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+         */
         void dodaj_pret(const std::string & nazwa_lok, const std::string & nazwa_glob);
+        /*!
+         * \brief Dodaje prostokąt na scenę
+         * Zapisuje pliki opisujące prostokąt i dodaje go na koniec listy przeszkód.
+         * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
+         * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+         */
         void dodaj_prostokat(const std::string & nazwa_lok, const std::string & nazwa_glob);
 
-        /*! \brief Inicjalizuje Łącze do gnuplota */
+        /*! \brief Inicjalizuje Łącze do gnuplota oraz drona */
         void inicjalizuj();
 
         /*! 

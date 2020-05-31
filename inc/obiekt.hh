@@ -38,7 +38,7 @@ class obiekt : public powierzchnia {
          * Zeruje wektor przesunięcia i łączny kąt obrotu.
          */
         obiekt();
-
+        /*! \brief Destruktor wirtualny */
         virtual ~obiekt() {}
        
         /*!
