@@ -1,5 +1,5 @@
 <map id="stage::kolizja" name="stage::kolizja">
 <area shape="rect" id="node2" href="$classobiekt.html#a081d3dee3d37262cb2411010d2fe7ae9" title="Zwraca środek drona Metoda zwraca wartość współrzędnej zetowej drona. " alt="" coords="166,5,301,32"/>
-<area shape="rect" id="node3" href="$classpowierzchnia.html#afae813342be6d8f34701d85bc60d4f18" title="zwraca wspolrzedną z&#45;tową powierzchni " alt="" coords="156,56,311,83"/>
+<area shape="rect" id="node3" href="$classsurface.html#afae813342be6d8f34701d85bc60d4f18" title="zwraca wspolrzedną z&#45;tową powierzchni " alt="" coords="156,56,311,83"/>
 <area shape="rect" id="node4" href="$classobiekt.html#a25f7a7e06704d3044555cccba13688e5" title="Zwraca polowę wysokości obiektu Metoda zwraca połowę wysokości obiektu. " alt="" coords="178,107,289,133"/>
 </map>

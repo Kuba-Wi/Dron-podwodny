@@ -1,5 +1,5 @@
-<map id="powierzchnia_lokalna" name="powierzchnia_lokalna">
-<area shape="rect" id="node2" href="$classpowierzchnia.html" title="Modeluje pojęcie powierzchni. " alt="" coords="123,80,222,107"/>
+<map id="local_surface" name="local_surface">
+<area shape="rect" id="node2" href="$classsurface.html" title="Modeluje pojęcie powierzchni. " alt="" coords="123,80,222,107"/>
 <area shape="rect" id="node3" href="$classobiekt.html" title="Modeluje pojęcie obiektu Klasa opisuje obiekt geometryczny, który może się poruszać i obracać wokół w..." alt="" coords="144,155,201,181"/>
 <area shape="rect" id="node4" href="$classbar.html" title="Modeluje pojęcie pręta Klasa modeluje pojęcie pręta, dziedziczy po klasie obiekt. Utworzona w celu sk..." alt="" coords="5,229,49,256"/>
 <area shape="rect" id="node5" href="$classrectangle.html" title="Modeluje pojęcie prostokąta Klasa modeluje pojęcie prostokąta, dziedziczy po klasie obiekt..." alt="" coords="73,229,149,256"/>

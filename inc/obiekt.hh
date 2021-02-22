@@ -4,14 +4,14 @@
 
 #include "TMatrix.hh"
 #include "TVector.hh"
-#include "powierzchnia.hh"
+#include "surface.hh"
 
 /*!
  * \brief Modeluje pojęcie obiektu
  * Klasa opisuje obiekt geometryczny, który może się poruszać
  * i obracać wokół własnej osi.
  */
-class obiekt : public powierzchnia {
+class obiekt : public surface {
 protected:
     /*! \brief Przechowuje współrzędne punktów tworzących obiekt */
     std::vector<TVector<double, 3>> wspolrzedne;

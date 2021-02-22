@@ -1,6 +1,6 @@
-<map id="inc/powierzchnia.hh" name="inc/powierzchnia.hh">
+<map id="inc/surface.hh" name="inc/surface.hh">
 <area shape="rect" id="node2" href="$obiekt_8hh.html" title="inc/obiekt.hh" alt="" coords="295,80,391,107"/>
-<area shape="rect" id="node14" href="$powierzchnia_8cpp.html" title="src/powierzchnia.cpp" alt="" coords="416,80,561,107"/>
+<area shape="rect" id="node14" href="$surface_8cpp.html" title="src/surface.cpp" alt="" coords="416,80,561,107"/>
 <area shape="rect" id="node3" href="$dron_8hh.html" title="inc/dron.hh" alt="" coords="9,229,96,256"/>
 <area shape="rect" id="node8" href="$hexagon_8hh.html" title="inc/hexagon.hh" alt="" coords="124,155,248,181"/>
 <area shape="rect" id="node10" href="$bar_8hh.html" title="inc/bar.hh" alt="" coords="277,229,359,256"/>

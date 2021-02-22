@@ -7,11 +7,11 @@ var dir_bfccd401955b95cf8c75461437045ac0 =
     [ "obiekt.hh", "obiekt_8hh.html", [
       [ "obiekt", "classobiekt.html", "classobiekt" ]
     ] ],
-    [ "powierzchnia.hh", "powierzchnia_8hh.html", [
-      [ "powierzchnia", "classpowierzchnia.html", "classpowierzchnia" ]
+    [ "surface.hh", "surface_8hh.html", [
+      [ "surface", "classsurface.html", "classsurface" ]
     ] ],
-    [ "powierzchnia_lokalna.hh", "powierzchnia__lokalna_8hh.html", [
-      [ "powierzchnia_lokalna", "classpowierzchnia__lokalna.html", "classpowierzchnia__lokalna" ]
+    [ "local_surface.hh", "surface__lokalna_8hh.html", [
+      [ "local_surface", "classsurface__lokalna.html", "classsurface__lokalna" ]
     ] ],
     [ "bar.hh", "bar_8hh.html", [
       [ "bar", "classbar.html", "classbar" ]

@@ -1,6 +1,6 @@
 <map id="bar" name="bar">
 <area shape="rect" id="node2" href="$classobiekt.html" title="Modeluje pojęcie obiektu Klasa opisuje obiekt geometryczny, który może się poruszać i obracać wokół w..." alt="" coords="162,200,219,227"/>
-<area shape="rect" id="node3" href="$classpowierzchnia.html" title="Modeluje pojęcie powierzchni. " alt="" coords="29,81,128,108"/>
-<area shape="rect" id="node4" href="$classpowierzchnia__lokalna.html" title="Modeluje powierzchnię lokalną Klasa przechowuje nazwę pliku ze współrzędnymi lokalnymi powierzchni..." alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node3" href="$classsurface.html" title="Modeluje pojęcie powierzchni. " alt="" coords="29,81,128,108"/>
+<area shape="rect" id="node4" href="$classsurface__lokalna.html" title="Modeluje powierzchnię lokalną Klasa przechowuje nazwę pliku ze współrzędnymi lokalnymi powierzchni..." alt="" coords="5,5,152,32"/>
 <area shape="rect" id="node5" href="$class_s_wektor.html" title="TVector\&lt; double, 3 \&gt;" alt="" coords="153,81,303,108"/>
 </map>

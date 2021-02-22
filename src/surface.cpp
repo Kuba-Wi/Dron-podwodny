@@ -1,16 +1,16 @@
-#include "powierzchnia.hh"
+#include "surface.hh"
 #include <fstream>
 #include "TVector.hh"
 
-void powierzchnia::dodaj_plik_lok(const std::string& nazwa_lok) {
+void surface::dodaj_plik_lok(const std::string& nazwa_lok) {
     nazwa_pliku_lok = nazwa_lok;
 }
 
-void powierzchnia::dodaj_plik_glob(const std::string& nazwa_glob) {
+void surface::dodaj_plik_glob(const std::string& nazwa_glob) {
     plik_z_punktami = nazwa_glob;
 }
 
-void powierzchnia::wczytaj_lok() {
+void surface::wczytaj_lok() {
     std::ifstream read;
     std::ofstream write;
     TVector<double, 3> wiersz;

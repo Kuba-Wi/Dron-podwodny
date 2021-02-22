@@ -10,5 +10,5 @@ var searchData=
   ['zwroc_5fdlugosci',['zwroc_dlugosci',['../classdron.html#acc3c64940ea21cc19e61a072b8445b0a',1,'dron']]],
   ['zwroc_5fpolowy_5fdlugosci',['zwroc_polowy_dlugosci',['../classobiekt.html#a3ecfb97e19691cdb46f997fca5f23a53',1,'obiekt']]],
   ['zwroc_5fpolozenie',['zwroc_polozenie',['../classdron.html#a19e92252d303310b61c69d2068030923',1,'dron']]],
-  ['zwroc_5fz',['zwroc_z',['../classpowierzchnia.html#afae813342be6d8f34701d85bc60d4f18',1,'powierzchnia']]]
+  ['zwroc_5fz',['zwroc_z',['../classsurface.html#afae813342be6d8f34701d85bc60d4f18',1,'surface']]]
 ];

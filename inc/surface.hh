@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include "powierzchnia_lokalna.hh"
+#include "local_surface.hh"
 
 /*!
  * \brief Modeluje pojęcie powierzchni
@@ -10,22 +10,22 @@
  * globalnymi powierzchni, z którego gnuplot odczytuje współrzędne
  * do rysowania.
  */
-class powierzchnia : public powierzchnia_lokalna {
+class surface : public local_surface {
 protected:
-    /*! \brief plik z którego będzie rysowana powierzchnia */
+    /*! \brief plik z którego będzie rysowana surface */
     std::string plik_z_punktami;
     /*! \brief współrzędna z-towa powierzchni */
     double z_powierzchni;
 
 public:
     /*! \brief Konstruktor bezparametryczny */
-    powierzchnia() {}
+    surface() {}
     /*! \brief Konstruktor zapisuje nazwę pliku lokalnego i globalnego
      * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
      * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
      */
-    powierzchnia(const std::string& nazwa_lok, const std::string& nazwa_glob)
-        : powierzchnia_lokalna(nazwa_lok), plik_z_punktami(nazwa_glob) {}
+    surface(const std::string& nazwa_lok, const std::string& nazwa_glob)
+        : local_surface(nazwa_lok), plik_z_punktami(nazwa_glob) {}
 
     /*!
      * \brief Zapisuje plik lokalny

@@ -11,14 +11,14 @@
 /*!
  * \brief Modeluje pojęcie sceny
  * Klasa opisuje scenę na której będzie poruszać się obiekt
- * oraz będą przechowywane powierzchnia wody i powierzchnia dna.
+ * oraz będą przechowywane surface wody i surface dna.
  */
 class stage {
 private:
     /*! \brief Opisuje powierzchnię dna */
-    powierzchnia dno;
+    surface dno;
     /*! \brief Opisuje powierzchnię wody */
-    powierzchnia woda;
+    surface woda;
     /*! \brief Opisuje obiekt dron */
     dron dron_stage;
     /*! \brief Łącze z programem gnuplot */

@@ -10,7 +10,7 @@ var searchData=
   ['classes_5f3_2ejs',['classes_3.js',['../classes__3_8js.html',1,'']]],
   ['classes_5f4_2ejs',['classes_4.js',['../classes__4_8js.html',1,'']]],
   ['classobiekt_2ejs',['classobiekt.js',['../classobiekt_8js.html',1,'']]],
-  ['classpowierzchnia_2ejs',['classpowierzchnia.js',['../classpowierzchnia_8js.html',1,'']]],
-  ['classpowierzchnia_5f_5flokalna_2ejs',['classpowierzchnia__lokalna.js',['../classpowierzchnia____lokalna_8js.html',1,'']]],
+  ['classsurface_2ejs',['classsurface.js',['../classsurface_8js.html',1,'']]],
+  ['classsurface_5f_5flokalna_2ejs',['classsurface__lokalna.js',['../classsurface____lokalna_8js.html',1,'']]],
   ['classstage_2ejs',['classstage.js',['../classstage_8js.html',1,'']]]
 ];

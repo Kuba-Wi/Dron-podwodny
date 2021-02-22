@@ -10,9 +10,9 @@
 <area shape="rect" id="node20" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="195,887,313,913"/>
 <area shape="rect" id="node47" href="$classstage.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="187,627,321,653"/>
 <area shape="rect" id="node50" href="$classstage.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="207,677,301,704"/>
-<area shape="rect" id="node3" href="$classpowierzchnia.html#a97bcc95edec5081f08e6234afff0f1f8" title="Zapisuje plik lokalny Metoda zapisuje nazwę pliku z współrzędnymi lokalnymi. " alt="" coords="857,82,995,123"/>
-<area shape="rect" id="node4" href="$classpowierzchnia.html#adc90beb15e09c8eccf0603e4eadfbeec" title="Zapisuje plik globalny Metoda zapisuje nazwę pliku z współrzędnymi globalnymi. " alt="" coords="857,147,995,189"/>
-<area shape="rect" id="node5" href="$classpowierzchnia.html#ab30b9bda0dea7c2baffa3a917c1beb7b" title="Przepisuje plik lokalny do pliku z punktami Metoda zapisuje współrzędne z pliku z współrzędnymi lokal..." alt="" coords="839,239,1013,265"/>
+<area shape="rect" id="node3" href="$classsurface.html#a97bcc95edec5081f08e6234afff0f1f8" title="Zapisuje plik lokalny Metoda zapisuje nazwę pliku z współrzędnymi lokalnymi. " alt="" coords="857,82,995,123"/>
+<area shape="rect" id="node4" href="$classsurface.html#adc90beb15e09c8eccf0603e4eadfbeec" title="Zapisuje plik globalny Metoda zapisuje nazwę pliku z współrzędnymi globalnymi. " alt="" coords="857,147,995,189"/>
+<area shape="rect" id="node5" href="$classsurface.html#ab30b9bda0dea7c2baffa3a917c1beb7b" title="Przepisuje plik lokalny do pliku z punktami Metoda zapisuje współrzędne z pliku z współrzędnymi lokal..." alt="" coords="839,239,1013,265"/>
 <area shape="rect" id="node6" href="$classstage.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="845,340,1007,367"/>
 <area shape="rect" id="node7" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku. " alt="" coords="1081,333,1249,374"/>
 <area shape="rect" id="node8" href="$namespace_pz_g.html#ae1ae4d36f66c77879380ba73da8e20e3" title="PzG::CzyJestPlik" alt="" coords="1360,340,1487,367"/>
@@ -45,7 +45,7 @@
 <area shape="rect" id="node42" href="$classdron.html#a19e92252d303310b61c69d2068030923" title="Zwraca położenie drona Metoda zwraca aktualne położenie drona. " alt="" coords="850,660,1002,687"/>
 <area shape="rect" id="node41" href="$classobiekt.html#a3ecfb97e19691cdb46f997fca5f23a53" title="Zwraca wektor z polowami dlugości obiektu Metoda zwraca połowę wysokości obiektu. ..." alt="" coords="1091,598,1239,639"/>
 <area shape="rect" id="node43" href="$classobiekt.html#a8025abcf481c01e568af0ddff445d6fe" title="Zwraca środek drona Metoda zwraca wartość współrzędnych środka drona. " alt="" coords="1105,664,1225,691"/>
-<area shape="rect" id="node45" href="$classpowierzchnia.html#afae813342be6d8f34701d85bc60d4f18" title="zwraca wspolrzedną z&#45;tową powierzchni " alt="" coords="849,711,1003,737"/>
+<area shape="rect" id="node45" href="$classsurface.html#afae813342be6d8f34701d85bc60d4f18" title="zwraca wspolrzedną z&#45;tową powierzchni " alt="" coords="849,711,1003,737"/>
 <area shape="rect" id="node48" href="$classdron.html#a809f2fc3fc515c8992d5f04081893a97" title="Powoduje ruch drona po prostej Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość ..." alt="" coords="414,996,561,1023"/>
 <area shape="rect" id="node49" href="$classdron.html#a4e4e78ab43842943e45ac80fee68a1ce" title="Wylicza wektor translacji. Metoda wylicza wektor translacji na podstawie zadanych parametrów..." alt="" coords="628,1300,783,1327"/>
 </map>

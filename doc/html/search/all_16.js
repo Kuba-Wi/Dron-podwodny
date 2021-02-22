@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wczytaj_5flok',['wczytaj_lok',['../classpowierzchnia.html#ab30b9bda0dea7c2baffa3a917c1beb7b',1,'powierzchnia']]],
+  ['wczytaj_5flok',['wczytaj_lok',['../classsurface.html#ab30b9bda0dea7c2baffa3a917c1beb7b',1,'surface']]],
   ['wczytaj_5fwspolrz',['wczytaj_wspolrz',['../classobiekt.html#a39861805e6f688c581d23bfd992e4834',1,'obiekt']]],
   ['wczytaj_5fwspolrzedne_5flok',['wczytaj_wspolrzedne_lok',['../classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6',1,'obiekt']]],
   ['weznazwepliku',['WezNazwePliku',['../class_pz_g_1_1_info_pliku_do_rysowania.html#a09cd4e5cc04b456b482eba2efa51f8ea',1,'PzG::InfoPlikuDoRysowania']]],

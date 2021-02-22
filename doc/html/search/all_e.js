@@ -14,6 +14,6 @@ var searchData=
   ['navtreeindex0',['NAVTREEINDEX0',['../navtreeindex0_8js.html#a27601402e464d8aaacc40c422ad0426a',1,'navtreeindex0.js']]],
   ['navtreeindex0_2ejs',['navtreeindex0.js',['../navtreeindex0_8js.html',1,'']]],
   ['navtreesubindices',['navTreeSubIndices',['../navtree_8js.html#aee39e0d4ab2646ada03125bd7e750cf7',1,'navtree.js']]],
-  ['nazwa_5fpliku_5flok',['nazwa_pliku_lok',['../classpowierzchnia__lokalna.html#a886e47fef0ae67fc2e7313f8a70382b5',1,'powierzchnia_lokalna']]],
+  ['nazwa_5fpliku_5flok',['nazwa_pliku_lok',['../classsurface__lokalna.html#a886e47fef0ae67fc2e7313f8a70382b5',1,'local_surface']]],
   ['newnode',['newNode',['../navtree_8js.html#aa2418b16159e9502e990f97ea6ec26c8',1,'navtree.js']]]
 ];

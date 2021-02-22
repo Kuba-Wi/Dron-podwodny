@@ -21,7 +21,7 @@
 <area shape="rect" id="node19" href="$classdron.html#a19e92252d303310b61c69d2068030923" title="Zwraca położenie drona Metoda zwraca aktualne położenie drona. " alt="" coords="605,540,757,567"/>
 <area shape="rect" id="node18" href="$classobiekt.html#a3ecfb97e19691cdb46f997fca5f23a53" title="Zwraca wektor z polowami dlugości obiektu Metoda zwraca połowę wysokości obiektu. ..." alt="" coords="843,478,991,519"/>
 <area shape="rect" id="node20" href="$classobiekt.html#a8025abcf481c01e568af0ddff445d6fe" title="Zwraca środek drona Metoda zwraca wartość współrzędnych środka drona. " alt="" coords="857,544,977,571"/>
-<area shape="rect" id="node22" href="$classpowierzchnia.html#afae813342be6d8f34701d85bc60d4f18" title="zwraca wspolrzedną z&#45;tową powierzchni " alt="" coords="603,597,758,624"/>
+<area shape="rect" id="node22" href="$classsurface.html#afae813342be6d8f34701d85bc60d4f18" title="zwraca wspolrzedną z&#45;tową powierzchni " alt="" coords="603,597,758,624"/>
 <area shape="rect" id="node25" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="PzG::LaczeDoGNUPlota\l::Rysuj" alt="" coords="383,537,551,578"/>
 <area shape="rect" id="node26" href="$classstage.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="600,673,761,700"/>
 <area shape="rect" id="node29" href="$classstage.html#a37056be2e45de7e80a4b72a4cedb08c1" title="Dodaje przeszkodę na scenie Metoda dodaje na scenę przeszkodę zapisaną w zadanych plikach..." alt="" coords="381,704,552,731"/>

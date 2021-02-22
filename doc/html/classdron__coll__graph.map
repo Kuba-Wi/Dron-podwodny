@@ -2,6 +2,6 @@
 <area shape="rect" id="node2" href="$class_s_wektor.html" title="TVector\&lt; double, 3 \&gt;" alt="" coords="5,81,156,108"/>
 <area shape="rect" id="node3" href="$classobiekt.html" title="Modeluje pojęcie obiektu Klasa opisuje obiekt geometryczny, który może się poruszać i obracać wokół w..." alt="" coords="165,200,223,227"/>
 <area shape="rect" id="node6" href="$classhexagon.html" title="Modeluje pojęcie graniastosłupa sześciokątnego Klasa opisuje graniastosłup sześciokątny, który może się poruszać i obracać wokół własnej osi. " alt="" coords="246,289,331,316"/>
-<area shape="rect" id="node4" href="$classpowierzchnia.html" title="Modeluje pojęcie powierzchni. " alt="" coords="181,81,279,108"/>
-<area shape="rect" id="node5" href="$classpowierzchnia__lokalna.html" title="Modeluje powierzchnię lokalną Klasa przechowuje nazwę pliku ze współrzędnymi lokalnymi powierzchni..." alt="" coords="157,5,303,32"/>
+<area shape="rect" id="node4" href="$classsurface.html" title="Modeluje pojęcie powierzchni. " alt="" coords="181,81,279,108"/>
+<area shape="rect" id="node5" href="$classsurface__lokalna.html" title="Modeluje powierzchnię lokalną Klasa przechowuje nazwę pliku ze współrzędnymi lokalnymi powierzchni..." alt="" coords="157,5,303,32"/>
 </map>
