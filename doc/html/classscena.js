@@ -21,6 +21,6 @@ var classstage =
     [ "bottom", "classstage.html#a902bc3201c404b9c35c60439edd588a8", null ],
     [ "dron_stage", "classstage.html#a09b3f94d23f3ee6b7e438fe7a51aebc6", null ],
     [ "Lacze", "classstage.html#adfa3c7f586b75cd7e1499003be73389e", null ],
-    [ "lista_przeszkod", "classstage.html#a5244b1962af5927eda3f5820bd6f8501", null ],
+    [ "obstacles_list", "classstage.html#a5244b1962af5927eda3f5820bd6f8501", null ],
     [ "water", "classstage.html#aff7ec64e4965c19430c2277f667e7f6c", null ]
 ];
