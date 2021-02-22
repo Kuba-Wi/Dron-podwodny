@@ -30,7 +30,7 @@ namespace PzG {
    *
    *  Typ wyliczeniowy określające dopuszczalne tryby rysowania
    *  realizowanego przez program \p gnuplot. Wybór trybu wiąże się
-   *  ze zmianą sposobu interpretacji danych zawartych pliku. Jeśli 
+   *  ze zmianą sposobu interbaracji danych zawartych pliku. Jeśli 
    *  np. wybrany zostanie tryb 2D, to zakłada się, że w każdej linii
    *  pliku z danymi znajdują się wartości współrzędnych \e x, \e y.
    *  Wartości typu:

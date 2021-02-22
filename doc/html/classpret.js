@@ -1,4 +1,4 @@
-var classpret =
+var classbar =
 [
-    [ "~pret", "classpret.html#a4c114f7de887ce350e87d2a21eb15bff", null ]
+    [ "~bar", "classbar.html#a4c114f7de887ce350e87d2a21eb15bff", null ]
 ];

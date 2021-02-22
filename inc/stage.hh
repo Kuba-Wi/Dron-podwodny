@@ -4,7 +4,7 @@
 #include <memory>
 #include "dron.hh"
 #include "lacze_do_gnuplota.hh"
-#include "pret.hh"
+#include "bar.hh"
 #include "rectangle.hh"
 #include "cuboid.hh"
 
@@ -118,7 +118,7 @@ public:
      * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
      * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
      */
-    void dodaj_pret(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void dodaj_bar(const std::string& nazwa_lok, const std::string& nazwa_glob);
     /*!
      * \brief Dodaje prostokąt na scenę
      * Zapisuje pliki opisujące prostokąt i dodaje go na koniec listy przeszkód.

@@ -5,7 +5,7 @@ var annotated_dup =
     [ "obiekt", "classobiekt.html", "classobiekt" ],
     [ "powierzchnia", "classpowierzchnia.html", "classpowierzchnia" ],
     [ "powierzchnia_lokalna", "classpowierzchnia__lokalna.html", "classpowierzchnia__lokalna" ],
-    [ "pret", "classpret.html", "classpret" ],
+    [ "bar", "classbar.html", "classbar" ],
     [ "rectangle", "classrectangle.html", "classrectangle" ],
     [ "cuboid", "classcuboid.html", "classcuboid" ],
     [ "stage", "classstage.html", "classstage" ],

@@ -13,8 +13,8 @@ var dir_bfccd401955b95cf8c75461437045ac0 =
     [ "powierzchnia_lokalna.hh", "powierzchnia__lokalna_8hh.html", [
       [ "powierzchnia_lokalna", "classpowierzchnia__lokalna.html", "classpowierzchnia__lokalna" ]
     ] ],
-    [ "pret.hh", "pret_8hh.html", [
-      [ "pret", "classpret.html", "classpret" ]
+    [ "bar.hh", "bar_8hh.html", [
+      [ "bar", "classbar.html", "classbar" ]
     ] ],
     [ "rectangle.hh", "rectangle_8hh.html", [
       [ "rectangle", "classrectangle.html", "classrectangle" ]

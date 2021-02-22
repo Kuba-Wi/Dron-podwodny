@@ -7,8 +7,8 @@
  * Klasa modeluje pojęcie pręta, dziedziczy po klasie obiekt.
  * Utworzona w celu skorzystania z rzutowania w górę.
  */
-class pret : public obiekt {
+class bar : public obiekt {
 public:
     /*! Wirtualny destruktor */
-    virtual ~pret() {}
+    virtual ~bar() {}
 };

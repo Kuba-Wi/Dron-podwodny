@@ -20,7 +20,7 @@ void obsluga_sceny() {
     glowna.dodaj_sruba_prawa("dat/sruba_prawa.dat", "dat/sruba_prawa1.dat");
 
     glowna.dodaj_cuboid("dat/cuboid.dat", "dat/cuboid1.dat");
-    glowna.dodaj_pret("dat/pret.dat", "dat/pret1.dat");
+    glowna.dodaj_bar("dat/bar.dat", "dat/bar1.dat");
     glowna.dodaj_rectangle("dat/rectangle.dat", "dat/rectangle1.dat");
 
     glowna.dodaj_dno("dat/dno.pow", "dat/dno1.pow");

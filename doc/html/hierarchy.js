@@ -6,7 +6,7 @@ var hierarchy =
     [ "powierzchnia_lokalna", "classpowierzchnia__lokalna.html", [
       [ "powierzchnia", "classpowierzchnia.html", [
         [ "obiekt", "classobiekt.html", [
-          [ "pret", "classpret.html", null ],
+          [ "bar", "classbar.html", null ],
           [ "rectangle", "classrectangle.html", null ],
           [ "cuboid", "classcuboid.html", null ],
           [ "hexagon", "classhexagon.html", null ]

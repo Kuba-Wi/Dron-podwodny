@@ -90,8 +90,8 @@ void stage::dodaj_cuboid(const std::string& nazwa_lok, const std::string& nazwa_
     dodaj_przeszkode(nazwa_lok, nazwa_glob);
 }
 
-void stage::dodaj_pret(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    lista_przeszkod.push_back(std::make_shared<pret>());
+void stage::dodaj_bar(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+    lista_przeszkod.push_back(std::make_shared<bar>());
 
     dodaj_przeszkode(nazwa_lok, nazwa_glob);
 }
