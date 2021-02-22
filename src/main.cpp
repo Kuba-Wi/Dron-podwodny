@@ -16,8 +16,8 @@ void inf_o_obiektach() {
 void obsluga_sceny() {
     stage glowna;
     glowna.dodaj_body("dat/body.pow", "dat/body1.pow");
-    glowna.dodaj_sruba_lewa("dat/sruba_lewa.dat", "dat/sruba_lewa1.dat");
-    glowna.dodaj_sruba_prawa("dat/sruba_prawa.dat", "dat/sruba_prawa1.dat");
+    glowna.dodaj_left_motor("dat/left_motor.dat", "dat/left_motor1.dat");
+    glowna.dodaj_right_motor("dat/right_motor.dat", "dat/right_motor1.dat");
 
     glowna.dodaj_cuboid("dat/cuboid.dat", "dat/cuboid1.dat");
     glowna.dodaj_bar("dat/bar.dat", "dat/bar1.dat");

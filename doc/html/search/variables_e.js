@@ -5,8 +5,8 @@ var searchData=
   ['sidenav',['sidenav',['../resize_8js.html#a9a7b07fe0df5af5957564912e842c0a4',1,'resize.js']]],
   ['skladowe',['skladowe',['../class_s_wektor.html#a7a649b8a13ca81a98cd19b9aa6eb2fd2',1,'TVector']]],
   ['srodek_5flok',['srodek_lok',['../classobiekt.html#a2a6beb67b4b01af91b6d106eb541e04d',1,'obiekt']]],
-  ['sruba_5flewa',['sruba_lewa',['../classdron.html#a8315f6b6ef76d5890f43e9df65e1f25c',1,'dron']]],
-  ['sruba_5fprawa',['sruba_prawa',['../classdron.html#a74ad0a884748bdcb3b7eb7cd27880567',1,'dron']]],
+  ['sruba_5flewa',['left_motor',['../classdron.html#a8315f6b6ef76d5890f43e9df65e1f25c',1,'dron']]],
+  ['sruba_5fprawa',['right_motor',['../classdron.html#a74ad0a884748bdcb3b7eb7cd27880567',1,'dron']]],
   ['syncoffmsg',['SYNCOFFMSG',['../navtreedata_8js.html#a8b93d8f469f8aeb3a0c17b922a2d32ed',1,'navtreedata.js']]],
   ['synconmsg',['SYNCONMSG',['../navtreedata_8js.html#ab31fdb4752a1ada1b708d49d7482f948',1,'navtreedata.js']]]
 ];

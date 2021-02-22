@@ -97,14 +97,14 @@ public:
      * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
      * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
      */
-    void dodaj_sruba_lewa(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void dodaj_left_motor(const std::string& nazwa_lok, const std::string& nazwa_glob);
     /*!
      * \brief Dodaje prawą śrubę drona na scenę
      * Zapisuje pliki opisujące prawą śrubę
      * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
      * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
      */
-    void dodaj_sruba_prawa(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void dodaj_right_motor(const std::string& nazwa_lok, const std::string& nazwa_glob);
     /*!
      * \brief Dodaje prostopadłościan na scenę
      * Zapisuje pliki opisujące prostopadłościan i dodaje go na koniec listy przeszkód.

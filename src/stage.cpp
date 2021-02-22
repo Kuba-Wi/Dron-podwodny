@@ -63,13 +63,13 @@ void stage::dodaj_body(const std::string& nazwa_lok, const std::string& nazwa_gl
     lacze_dodaj_plik(nazwa_glob);
 }
 
-void stage::dodaj_sruba_lewa(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+void stage::dodaj_left_motor(const std::string& nazwa_lok, const std::string& nazwa_glob) {
     dron_stage.dodaj_pliki_sruby_lewej(nazwa_lok, nazwa_glob);
 
     lacze_dodaj_plik(nazwa_glob);
 }
 
-void stage::dodaj_sruba_prawa(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+void stage::dodaj_right_motor(const std::string& nazwa_lok, const std::string& nazwa_glob) {
     dron_stage.dodaj_pliki_sruby_prawej(nazwa_lok, nazwa_glob);
 
     lacze_dodaj_plik(nazwa_glob);

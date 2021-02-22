@@ -32,23 +32,23 @@ void dron::wylicz_macierz_obrotu(TMatrix<double, 3>& obrot, double kat_obrotu) c
 
 void dron::inicjalizuj_drona() {
     body.inicjalizuj_obiekt();
-    sruba_lewa.inicjalizuj_obiekt();
-    sruba_prawa.inicjalizuj_obiekt();
+    left_motor.inicjalizuj_obiekt();
+    right_motor.inicjalizuj_obiekt();
 
     TVector<double, 3> przesun;
     przesun[0] = -20;
     przesun[1] = -20;
     przesun[2] = 0;
-    sruba_prawa.wpisz_przesuniecie(przesun);
+    right_motor.wpisz_przesuniecie(przesun);
     przesun[1] = 20;
-    sruba_lewa.wpisz_przesuniecie(przesun);
+    left_motor.wpisz_przesuniecie(przesun);
 
     TMatrix<double, 3> obrot_temp;
 
     wylicz_macierz_obrotu(obrot_temp, 0);
 
-    sruba_lewa_ruch(obrot_temp);
-    sruba_prawa_ruch(obrot_temp);
+    left_motor_ruch(obrot_temp);
+    right_motor_ruch(obrot_temp);
 }
 
 void dron::dodaj_pliki_body(const std::string& nazwa_lok, const std::string& nazwa_glob) {
@@ -57,13 +57,13 @@ void dron::dodaj_pliki_body(const std::string& nazwa_lok, const std::string& naz
 }
 
 void dron::dodaj_pliki_sruby_lewej(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    sruba_lewa.dodaj_plik_lok(nazwa_lok);
-    sruba_lewa.dodaj_plik_glob(nazwa_glob);
+    left_motor.dodaj_plik_lok(nazwa_lok);
+    left_motor.dodaj_plik_glob(nazwa_glob);
 }
 
 void dron::dodaj_pliki_sruby_prawej(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    sruba_prawa.dodaj_plik_lok(nazwa_lok);
-    sruba_prawa.dodaj_plik_glob(nazwa_glob);
+    right_motor.dodaj_plik_lok(nazwa_lok);
+    right_motor.dodaj_plik_glob(nazwa_glob);
 }
 
 void dron::ruch_na_wprost(double kat_wznoszenia, double odleglosc) {
@@ -75,8 +75,8 @@ void dron::ruch_na_wprost(double kat_wznoszenia, double odleglosc) {
     translacja = translacja * odleglosc;
     przesuniecie = przesuniecie + translacja;
 
-    sruba_lewa_ruch(obrot);
-    sruba_prawa_ruch(obrot);
+    left_motor_ruch(obrot);
+    right_motor_ruch(obrot);
     body_ruch(obrot);
 }
 
@@ -91,29 +91,29 @@ void dron::obrot(double kat_obrotu) {
 
     wylicz_macierz_obrotu(obrot, laczny_kat_obrotu);
 
-    sruba_lewa_ruch(obrot);
-    sruba_prawa_ruch(obrot);
+    left_motor_ruch(obrot);
+    right_motor_ruch(obrot);
     body_ruch(obrot);
 }
 
-void dron::sruba_lewa_ruch(const TMatrix<double, 3>& obrot) {
-    sruba_lewa.wczytaj_wspolrzedne_lok();
+void dron::left_motor_ruch(const TMatrix<double, 3>& obrot) {
+    left_motor.wczytaj_wspolrzedne_lok();
 
-    sruba_lewa.ruch_lokalny();
-    sruba_lewa.obrot(obrot);
-    sruba_lewa.ruch_na_wprost(przesuniecie);
+    left_motor.ruch_lokalny();
+    left_motor.obrot(obrot);
+    left_motor.ruch_na_wprost(przesuniecie);
 
-    sruba_lewa.wpisz_wspolrzedne_glob();
+    left_motor.wpisz_wspolrzedne_glob();
 }
 
-void dron::sruba_prawa_ruch(const TMatrix<double, 3>& obrot) {
-    sruba_prawa.wczytaj_wspolrzedne_lok();
+void dron::right_motor_ruch(const TMatrix<double, 3>& obrot) {
+    right_motor.wczytaj_wspolrzedne_lok();
 
-    sruba_prawa.ruch_lokalny();
-    sruba_prawa.obrot(obrot);
-    sruba_prawa.ruch_na_wprost(przesuniecie);
+    right_motor.ruch_lokalny();
+    right_motor.obrot(obrot);
+    right_motor.ruch_na_wprost(przesuniecie);
 
-    sruba_prawa.wpisz_wspolrzedne_glob();
+    right_motor.wpisz_wspolrzedne_glob();
 }
 
 void dron::body_ruch(const TMatrix<double, 3>& obrot) {
@@ -130,7 +130,7 @@ TVector<double, 3> dron::zwroc_polozenie() const {
 }
 
 TVector<double, 3> dron::zwroc_dlugosci() const {
-    TVector<double, 3> dlugosc_sr = sruba_lewa.zwroc_polowy_dlugosci();
+    TVector<double, 3> dlugosc_sr = left_motor.zwroc_polowy_dlugosci();
     TVector<double, 3> dlugosc_kor = body.zwroc_polowy_dlugosci();
 
     dlugosc_sr[0] = dlugosc_sr[1] = sqrt(dlugosc_sr[0] * dlugosc_sr[0] + dlugosc_sr[1] * dlugosc_sr[1]);

@@ -12,9 +12,9 @@ private:
     /*! \brief body drona */
     obiekt body;
     /*! \brief Prawa śruba drona */
-    hexagon sruba_prawa;
+    hexagon right_motor;
     /*! Lewa śruba drona */
-    hexagon sruba_lewa;
+    hexagon left_motor;
     /*! \brief Łączny kąt obrotu obiektu */
     double laczny_kat_obrotu;
     /*! \brief przesunięcie obiektu względem wspolrzednych lokalnych */
@@ -41,13 +41,13 @@ private:
      * Metoda powoduje ruch lewej śruby o wektor przesunięcie i obrót o zadaną macierz.
      * \param[in] obrot - macierz z zapisanym obrotem
      */
-    void sruba_lewa_ruch(const TMatrix<double, 3>& obrot);
+    void left_motor_ruch(const TMatrix<double, 3>& obrot);
     /*!
      * \brief Powoduje ruch sruby prawej
      * Metoda powoduje ruch prawej śruby o wektor przesunięcie i obrót o zadaną macierz.
      * \param[in] obrot - macierz z zapisanym obrotem
      */
-    void sruba_prawa_ruch(const TMatrix<double, 3>& obrot);
+    void right_motor_ruch(const TMatrix<double, 3>& obrot);
     /*!
      * \brief Powoduje ruch bodyu
      * Metoda powoduje ruch bodyu o wektor przesunięcie i obrót o zadaną macierz.

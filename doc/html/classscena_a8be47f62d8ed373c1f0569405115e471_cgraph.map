@@ -1,4 +1,4 @@
-<map id="stage::dodaj_sruba_lewa" name="stage::dodaj_sruba_lewa">
+<map id="stage::dodaj_left_motor" name="stage::dodaj_left_motor">
 <area shape="rect" id="node2" href="$classdron.html#a3ca8cc6f8ed5bd221a1931d1a6d95bee" title="Dodaje pliki lewej śruby Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące lewą ..." alt="" coords="226,71,381,112"/>
 <area shape="rect" id="node5" href="$classstage.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="223,139,384,166"/>
 <area shape="rect" id="node3" href="$classsurface.html#a97bcc95edec5081f08e6234afff0f1f8" title="Zapisuje plik lokalny Metoda zapisuje nazwę pliku z współrzędnymi lokalnymi. " alt="" coords="447,5,585,47"/>
