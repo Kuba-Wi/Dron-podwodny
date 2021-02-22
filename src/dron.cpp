@@ -7,12 +7,14 @@ dron::dron() {
     all_angle = 0;
 }
 
-void dron::count_translation(TVector<double, 3>& translacja, double rising_angle, double distance) const {
+void dron::count_translation(TVector<double, 3>& vec, double rising_angle, double distance) const {
     const double pi = acos(-1);
 
-    translacja[0] = cos(pi * (all_angle / 180.0)) * cos(pi * (rising_angle / 180.0));
-    translacja[1] = sin(pi * (all_angle / 180.0)) * cos(pi * (rising_angle / 180.0));
-    translacja[2] = sin(pi * (rising_angle / 180.0));
+    vec[0] = cos(pi * (all_angle / 180.0)) * cos(pi * (rising_angle / 180.0));
+    vec[1] = sin(pi * (all_angle / 180.0)) * cos(pi * (rising_angle / 180.0));
+    vec[2] = sin(pi * (rising_angle / 180.0));
+
+    vec = vec * distance;
 }
 
 void dron::count_rotation_angle(TMatrix<double, 3>& rotation, double rotation_angle) const {
@@ -67,13 +69,12 @@ void dron::add_files_right_motor(const std::string& local_name, const std::strin
 }
 
 void dron::move_ahead(double rising_angle, double distance) {
-    TVector<double, 3> translacja;
+    TVector<double, 3> temp_translation;
     TMatrix<double, 3> rotation;
-    count_translation(translacja, rising_angle, distance);
+    count_translation(temp_translation, rising_angle, distance);
     count_rotation_angle(rotation, all_angle);
 
-    translacja = translacja * distance;
-    translation = translation + translacja;
+    translation = translation + temp_translation;
 
     left_motor_move(rotation);
     right_motor_move(rotation);
@@ -130,11 +131,11 @@ TVector<double, 3> dron::return_location() const {
 }
 
 TVector<double, 3> dron::return_lenghts() const {
-    TVector<double, 3> lenght_sr = left_motor.return_lenght_halves();
-    TVector<double, 3> lenght_kor = body.return_lenght_halves();
+    TVector<double, 3> motor_lenght = left_motor.return_lenght_halves();
+    TVector<double, 3> body_lenght = body.return_lenght_halves();
 
-    lenght_sr[0] = lenght_sr[1] = sqrt(lenght_sr[0] * lenght_sr[0] + lenght_sr[1] * lenght_sr[1]);
-    lenght_kor[0] = lenght_kor[1] = sqrt(lenght_kor[0] * lenght_kor[0] + lenght_kor[1] * lenght_kor[1]);
+    motor_lenght[0] = motor_lenght[1] = sqrt(motor_lenght[0] * motor_lenght[0] + motor_lenght[1] * motor_lenght[1]);
+    body_lenght[0] = body_lenght[1] = sqrt(body_lenght[0] * body_lenght[0] + body_lenght[1] * body_lenght[1]);
 
-    return lenght_kor + lenght_sr;
+    return body_lenght + motor_lenght;
 }
