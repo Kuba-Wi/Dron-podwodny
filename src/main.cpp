@@ -21,7 +21,7 @@ void obsluga_sceny() {
 
     glowna.dodaj_cuboid("dat/cuboid.dat", "dat/cuboid1.dat");
     glowna.dodaj_pret("dat/pret.dat", "dat/pret1.dat");
-    glowna.dodaj_prostokat("dat/prostokat.dat", "dat/prostokat1.dat");
+    glowna.dodaj_rectangle("dat/rectangle.dat", "dat/rectangle1.dat");
 
     glowna.dodaj_dno("dat/dno.pow", "dat/dno1.pow");
     glowna.dodaj_wode("dat/pow_wody.dat", "dat/pow_wody1.dat");

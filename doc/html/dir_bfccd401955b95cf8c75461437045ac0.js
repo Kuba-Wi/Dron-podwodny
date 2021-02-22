@@ -16,8 +16,8 @@ var dir_bfccd401955b95cf8c75461437045ac0 =
     [ "pret.hh", "pret_8hh.html", [
       [ "pret", "classpret.html", "classpret" ]
     ] ],
-    [ "prostokat.hh", "prostokat_8hh.html", [
-      [ "prostokat", "classprostokat.html", "classprostokat" ]
+    [ "rectangle.hh", "rectangle_8hh.html", [
+      [ "rectangle", "classrectangle.html", "classrectangle" ]
     ] ],
     [ "cuboid.hh", "cuboid_8hh.html", [
       [ "cuboid", "classcuboid.html", "classcuboid" ]

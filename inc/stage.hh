@@ -5,7 +5,7 @@
 #include "dron.hh"
 #include "lacze_do_gnuplota.hh"
 #include "pret.hh"
-#include "prostokat.hh"
+#include "rectangle.hh"
 #include "cuboid.hh"
 
 /*!
@@ -125,7 +125,7 @@ public:
      * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
      * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
      */
-    void dodaj_prostokat(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void dodaj_rectangle(const std::string& nazwa_lok, const std::string& nazwa_glob);
 
     /*! \brief Inicjalizuje Łącze do gnuplota oraz drona */
     void inicjalizuj();

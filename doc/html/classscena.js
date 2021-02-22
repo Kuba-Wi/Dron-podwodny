@@ -4,7 +4,7 @@ var classstage =
     [ "dodaj_dno", "classstage.html#ad7c4ca7a3eb26bc133eabe65476791d4", null ],
     [ "dodaj_korpus", "classstage.html#ad5d8213c9a23276befedb02e7d4fad7c", null ],
     [ "dodaj_pret", "classstage.html#a8dce746bd5a81c86fb011ae682fb5205", null ],
-    [ "dodaj_prostokat", "classstage.html#ad15da6ac88b5d6aef70d41373633b63d", null ],
+    [ "dodaj_rectangle", "classstage.html#ad15da6ac88b5d6aef70d41373633b63d", null ],
     [ "dodaj_cuboid", "classstage.html#afdd54c0dc31920dc605fe63ed6d746c0", null ],
     [ "dodaj_przeszkode", "classstage.html#a37056be2e45de7e80a4b72a4cedb08c1", null ],
     [ "dodaj_sruba_lewa", "classstage.html#a8be47f62d8ed373c1f0569405115e471", null ],

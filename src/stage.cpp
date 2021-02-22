@@ -96,8 +96,8 @@ void stage::dodaj_pret(const std::string& nazwa_lok, const std::string& nazwa_gl
     dodaj_przeszkode(nazwa_lok, nazwa_glob);
 }
 
-void stage::dodaj_prostokat(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    lista_przeszkod.push_back(std::make_shared<prostokat>());
+void stage::dodaj_rectangle(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+    lista_przeszkod.push_back(std::make_shared<rectangle>());
 
     dodaj_przeszkode(nazwa_lok, nazwa_glob);
 }

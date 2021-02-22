@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$classpowierzchnia.html" title="Modeluje pojęcie powierzchni. " alt="" coords="200,81,299,108"/>
 <area shape="rect" id="node3" href="$classobiekt.html" title="Modeluje pojęcie obiektu Klasa opisuje obiekt geometryczny, który może się poruszać i obracać wokół w..." alt="" coords="347,81,404,108"/>
 <area shape="rect" id="node4" href="$classpret.html" title="Modeluje pojęcie pręta Klasa modeluje pojęcie pręta, dziedziczy po klasie obiekt. Utworzona w celu sk..." alt="" coords="490,5,534,32"/>
-<area shape="rect" id="node5" href="$classprostokat.html" title="Modeluje pojęcie prostokąta Klasa modeluje pojęcie prostokąta, dziedziczy po klasie obiekt..." alt="" coords="474,56,550,83"/>
+<area shape="rect" id="node5" href="$classrectangle.html" title="Modeluje pojęcie prostokąta Klasa modeluje pojęcie prostokąta, dziedziczy po klasie obiekt..." alt="" coords="474,56,550,83"/>
 <area shape="rect" id="node6" href="$classcuboid.html" title="Modeluje pojęcie prostokąta Klasa modeluje pojęcie prostokąta, dziedziczy po klasie obiekt..." alt="" coords="452,107,572,133"/>
 <area shape="rect" id="node7" href="$classhexagon.html" title="Modeluje pojęcie graniastosłupa sześciokątnego Klasa opisuje graniastosłup sześciokątny, który może się poruszać i obracać wokół własnej osi. " alt="" coords="469,157,555,184"/>
 </map>
