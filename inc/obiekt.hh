@@ -14,22 +14,22 @@
 class obiekt : public surface {
 protected:
     /*! \brief Przechowuje współrzędne punktów tworzących obiekt */
-    std::vector<TVector<double, 3>> wspolrzedne;
+    std::vector<TVector<double, 3>> coordinates;
     /*! \brief Łączny kąt rotationu obiektu */
     double all_angle;
     /*! \brief przesunięcie obiektu względem wspolrzednych lokalnych */
     TVector<double, 3> translation;
     /*! \brief odległości środka obiektu od ścian */
-    TVector<double, 3> polowa_dl;
+    TVector<double, 3> lenght_half;
     /*! \brief Środek wspolrzednych lokalnych obiektu */
-    TVector<double, 3> srodek_lok;
+    TVector<double, 3> local_centre;
 
     /*!
-     * \brief Wczytuje wspolrzedne z pliku
+     * \brief Wczytuje coordinates z pliku
      * Wczytuje dane z pliku i zapisuje je do pola współrzędne
-     * \param[in] nazwa_pliku - nazwa pliku z którego będą odczytywane dane
+     * \param[in] file_name - nazwa pliku z którego będą odczytywane dane
      */
-    void wczytaj_wspolrz(const std::string& nazwa_pliku);
+    void read_coordinates(const std::string& file_name);
 
 public:
     /*!
@@ -42,49 +42,49 @@ public:
 
     /*!
      * \brief Inicjalizuje pola klasy
-     * Wylicza srodek_lok oraz polowa_wysokosci, wpisuje plik lokalny do pliku z punktami
+     * Wylicza local_centre oraz polowa_wysokosci, wpisuje plik lokalny do pliku z punktami
      * metoda powinna być wywołana przed wykonaniem ruchów przez obiekt
      */
-    void inicjalizuj_obiekt();
+    void initialize_obiekt();
 
     /*!
-     * \brief Wczytuje wspolrzedne lokalne
+     * \brief Wczytuje coordinates lokalne
      * Wczytuje współrzędne z pliku z współrzędnymi lokalnymi
      * i zapisuje je do pola współrzędne.
      */
-    void wczytaj_wspolrzedne_lok();
+    void read_local_coordinates();
 
     /*!
      * \brief Wpisuje współrzędne do pliku_z_punktami
      * Zapisuje współrzędne z pola współrzędne do pliku globalnego
      */
-    void wpisz_wspolrzedne_glob();
+    void write_global_coordinates();
 
     /*!
      * \brief Przeprowadza ruch na wprost
      * Powoduje ruch obiektu po prostej o zadany vector translacji
-     * \param[in] przesun - zadany vector
+     * \param[in] mv - zadany vector
      */
-    void move_ahead(const TVector<double, 3>& przesun);
+    void move_ahead(const TVector<double, 3>& mv);
 
     /*!
      * \brief Powoduje obrót obiektu
      * Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz rotationu
-     * \param[in] mac_rotationu - zadana macierz rotationu
+     * \param[in] rotation_matrix - zadana macierz rotationu
      */
-    void rotation(const TMatrix<double, 3>& mac_rotationu);
+    void rotation(const TMatrix<double, 3>& rotation_matrix);
 
     /*!
      * \brief Zwraca środek drona
      * Metoda zwraca wartość współrzędnych środka drona
      * \return Współrzędna środka drona
      */
-    TVector<double, 3> polozenie() const;
+    TVector<double, 3> location() const;
 
     /*!
      * \brief Zwraca vector z polowami dlugości obiektu
      * Metoda zwraca połowę wysokości obiektu
      * \retval polowa_wysokosci - pole klasy
      */
-    TVector<double, 3> zwroc_polowy_dlugosci() const { return polowa_dl; }
+    TVector<double, 3> return_lenght_halves() const { return lenght_half; }
 };

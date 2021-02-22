@@ -19,7 +19,7 @@ void hexagon::rotation_matrix_x(TMatrix<double, 3>& rotation, double rotation_an
 }
 
 void hexagon::local_move() {
-    TMatrix<double, 3> mac_rotationu;
+    TMatrix<double, 3> rotation_matrix;
 
     all_angle += 10;
     while (all_angle >= 360.0)
@@ -27,8 +27,8 @@ void hexagon::local_move() {
     while (all_angle <= -360.0)
         all_angle += 360.0;
 
-    rotation_matrix_x(mac_rotationu, all_angle);
+    rotation_matrix_x(rotation_matrix, all_angle);
 
-    rotation(mac_rotationu);
+    rotation(rotation_matrix);
     move_ahead(translation);
 }

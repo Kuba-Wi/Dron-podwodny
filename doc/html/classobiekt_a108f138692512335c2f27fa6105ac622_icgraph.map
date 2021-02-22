@@ -1,4 +1,4 @@
-<map id="obiekt::wpisz_wspolrzedne_glob" name="obiekt::wpisz_wspolrzedne_glob">
+<map id="obiekt::write_global_coordinates" name="obiekt::write_global_coordinates">
 <area shape="rect" id="node2" href="$classobiekt.html#a03123cc45a13884014eb2f8d4c1a471f" title="Destruktor wirtualny. " alt="" coords="291,53,399,79"/>
 <area shape="rect" id="node3" href="$classdron.html#abec453101e86600f17535f7bde1c3f35" title="Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o vector przesunięcie i obrót o zadaną mac..." alt="" coords="268,103,421,130"/>
 <area shape="rect" id="node14" href="$classdron.html#ab4a804bb48d6e7a58f31d6ea6d839f5c" title="Powoduje ruch sruby prawej Metoda powoduje ruch prawej śruby o vector przesunięcie i obrót o zadaną m..." alt="" coords="264,154,425,181"/>

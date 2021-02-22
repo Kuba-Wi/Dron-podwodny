@@ -19,8 +19,8 @@ bool stage::kolizja() const {
     bool jest_kolizja = false;
 
     for (auto& przeszkoda : lista_przeszkod) {
-        dlugosci_przeszkody = przeszkoda->zwroc_polowy_dlugosci();
-        distancei = srodek_drona - przeszkoda->polozenie();
+        dlugosci_przeszkody = przeszkoda->return_lenght_halves();
+        distancei = srodek_drona - przeszkoda->location();
 
         for (int i = 0; i < 3; ++i) {
             jest_kolizja = (fabs(distancei[i]) <= (dlugosci_przeszkody[i] + dlugosci_drona[i]));
@@ -35,8 +35,8 @@ bool stage::kolizja() const {
     return false;
 }
 
-void stage::lacze_dodaj_plik(const std::string& nazwa_pliku) {
-    Lacze.DodajNazwePliku(nazwa_pliku.c_str());
+void stage::lacze_dodaj_plik(const std::string& file_name) {
+    Lacze.DodajNazwePliku(file_name.c_str());
 }
 
 void stage::add_bottom(const std::string& local_name, const std::string& global_name) {
@@ -79,7 +79,7 @@ void stage::dodaj_przeszkode(const std::string& local_name, const std::string& g
     lista_przeszkod.back()->dodaj_plik_lok(local_name);
     lista_przeszkod.back()->dodaj_plik_glob(global_name);
 
-    lista_przeszkod.back()->inicjalizuj_obiekt();
+    lista_przeszkod.back()->initialize_obiekt();
 
     lacze_dodaj_plik(global_name);
 }

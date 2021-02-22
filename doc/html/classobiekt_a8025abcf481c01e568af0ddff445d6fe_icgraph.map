@@ -1,4 +1,4 @@
-<map id="obiekt::polozenie" name="obiekt::polozenie">
+<map id="obiekt::location" name="obiekt::location">
 <area shape="rect" id="node2" href="$classobiekt.html#a03123cc45a13884014eb2f8d4c1a471f" title="Destruktor wirtualny. " alt="" coords="195,31,303,57"/>
 <area shape="rect" id="node3" href="$classdron.html#a19e92252d303310b61c69d2068030923" title="Zwraca położenie drona Metoda zwraca aktualne położenie drona. " alt="" coords="173,81,325,108"/>
 <area shape="rect" id="node4" href="$classstage.html#ab5fbfa861967e0faa82d61d4d239fdf5" title="Zwraca informację o kolizji z dnem Metoda sprawdza czy nie ma kolizji z dnem. " alt="" coords="373,31,504,57"/>

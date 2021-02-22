@@ -1,6 +1,6 @@
 <map id="surface::wczytaj_lok" name="surface::wczytaj_lok">
 <area shape="rect" id="node2" href="$classsurface.html#a6ac31a60fe60f0be1d9859367ca631d8" title="Konstruktor zapisuje nazwę pliku lokalnego i globalnego. " alt="" coords="228,5,411,32"/>
-<area shape="rect" id="node3" href="$classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="Inicjalizuje pola klasy Wylicza srodek_lok oraz polowa_wysokosci, wpisuje plik lokalny do pliku z pun..." alt="" coords="260,57,379,98"/>
+<area shape="rect" id="node3" href="$classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="Inicjalizuje pola klasy Wylicza local_centre oraz polowa_wysokosci, wpisuje plik lokalny do pliku z pun..." alt="" coords="260,57,379,98"/>
 <area shape="rect" id="node10" href="$classstage.html#ad7c4ca7a3eb26bc133eabe65476791d4" title="Dodaje bottom na scenę Zapisuje pliki opisujące powierzchnię dna. " alt="" coords="659,123,783,149"/>
 <area shape="rect" id="node11" href="$classstage.html#a9721c738d27eb6b7806685edd3f84ce5" title="Dodaje wodę na scenę Zapisuje pliki opisujące powierzchnię wody. " alt="" coords="653,173,788,200"/>
 <area shape="rect" id="node4" href="$classobiekt.html#a03123cc45a13884014eb2f8d4c1a471f" title="Destruktor wirtualny. " alt="" coords="478,21,586,48"/>

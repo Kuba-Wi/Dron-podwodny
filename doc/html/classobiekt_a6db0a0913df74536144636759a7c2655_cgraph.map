@@ -1,6 +1,6 @@
 <map id="obiekt::macierz_rotationu" name="obiekt::macierz_rotationu">
 <area shape="rect" id="node2" href="$classobiekt.html#a968676d67a6b4e31486f045eb3dac91a" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadany kąt. " alt="" coords="208,31,303,57"/>
-<area shape="rect" id="node3" href="$classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="351,5,565,32"/>
+<area shape="rect" id="node3" href="$classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje coordinates lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="351,5,565,32"/>
 <area shape="rect" id="node5" href="$classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="353,56,563,83"/>
-<area shape="rect" id="node4" href="$classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="613,5,776,32"/>
+<area shape="rect" id="node4" href="$classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje coordinates z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="613,5,776,32"/>
 </map>

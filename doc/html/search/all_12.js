@@ -24,7 +24,7 @@ var searchData=
   ['skladowe',['skladowe',['../class_s_vector.html#a7a649b8a13ca81a98cd19b9aa6eb2fd2',1,'TVector']]],
   ['TMatrix',['TMatrix',['../class_s_macierz.html',1,'']]],
   ['TMatrix_2ehh',['TMatrix.hh',['../_s_macierz_8hh.html',1,'']]],
-  ['srodek_5flok',['srodek_lok',['../classobiekt.html#a2a6beb67b4b01af91b6d106eb541e04d',1,'obiekt']]],
+  ['srodek_5flok',['local_centre',['../classobiekt.html#a2a6beb67b4b01af91b6d106eb541e04d',1,'obiekt']]],
   ['sruba_5flewa',['left_motor',['../classdron.html#a8315f6b6ef76d5890f43e9df65e1f25c',1,'dron']]],
   ['sruba_5flewa_5fruch',['left_motor_move',['../classdron.html#abec453101e86600f17535f7bde1c3f35',1,'dron']]],
   ['sruba_5fprawa',['right_motor',['../classdron.html#a74ad0a884748bdcb3b7eb7cd27880567',1,'dron']]],

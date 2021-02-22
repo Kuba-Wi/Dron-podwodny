@@ -1,10 +1,10 @@
-<map id="obiekt::wczytaj_wspolrz" name="obiekt::wczytaj_wspolrz">
-<area shape="rect" id="node2" href="$classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="216,165,431,192"/>
+<map id="obiekt::read_coordinates" name="obiekt::read_coordinates">
+<area shape="rect" id="node2" href="$classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje coordinates lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="216,165,431,192"/>
 <area shape="rect" id="node3" href="$classobiekt.html#a03123cc45a13884014eb2f8d4c1a471f" title="Destruktor wirtualny. " alt="" coords="688,5,796,32"/>
 <area shape="rect" id="node4" href="$classdron.html#abec453101e86600f17535f7bde1c3f35" title="Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o vector przesunięcie i obrót o zadaną mac..." alt="" coords="483,216,636,243"/>
 <area shape="rect" id="node15" href="$classdron.html#ab4a804bb48d6e7a58f31d6ea6d839f5c" title="Powoduje ruch sruby prawej Metoda powoduje ruch prawej śruby o vector przesunięcie i obrót o zadaną m..." alt="" coords="479,165,640,192"/>
 <area shape="rect" id="node16" href="$classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead" title="Powoduje ruch bodyu Metoda powoduje ruch bodyu o vector przesunięcie i obrót o zadaną macierz..." alt="" coords="496,267,623,293"/>
-<area shape="rect" id="node17" href="$classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="Inicjalizuje pola klasy Wylicza srodek_lok oraz polowa_wysokosci, wpisuje plik lokalny do pliku z pun..." alt="" coords="500,57,619,98"/>
+<area shape="rect" id="node17" href="$classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="Inicjalizuje pola klasy Wylicza local_centre oraz polowa_wysokosci, wpisuje plik lokalny do pliku z pun..." alt="" coords="500,57,619,98"/>
 <area shape="rect" id="node5" href="$classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje body i śruby oraz przesuwa śruby względem bodyu..." alt="" coords="1037,157,1184,184"/>
 <area shape="rect" id="node10" href="$classdron.html#a809f2fc3fc515c8992d5f04081893a97" title="Powoduje ruch drona po prostej Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość ..." alt="" coords="1037,325,1184,352"/>
 <area shape="rect" id="node12" href="$classdron.html#a648ea5308782ad19b74f6651c712708f" title="Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt rotationu. " alt="" coords="700,267,784,293"/>

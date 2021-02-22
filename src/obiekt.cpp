@@ -9,14 +9,14 @@ obiekt::obiekt() {
     all_angle = 0;
 }
 
-void obiekt::inicjalizuj_obiekt() {
+void obiekt::initialize_obiekt() {
     wczytaj_lok();
-    wczytaj_wspolrzedne_lok();
+    read_local_coordinates();
 
-    TVector<double, 3> min_wsp = wspolrzedne[0];
-    TVector<double, 3> max_wsp = wspolrzedne[0];
+    TVector<double, 3> min_wsp = coordinates[0];
+    TVector<double, 3> max_wsp = coordinates[0];
 
-    for (auto& wiersz : wspolrzedne) {
+    for (auto& wiersz : coordinates) {
         for (int i = 0; i < 3; ++i) {
             if (wiersz[i] < min_wsp[i])
                 min_wsp[i] = wiersz[i];
@@ -25,22 +25,22 @@ void obiekt::inicjalizuj_obiekt() {
         }
     }
 
-    srodek_lok = (min_wsp + max_wsp) / 2;
-    polowa_dl = (max_wsp - min_wsp) / 2;
+    local_centre = (min_wsp + max_wsp) / 2;
+    lenght_half = (max_wsp - min_wsp) / 2;
 
     for (int i = 0; i < 3; ++i) {
-        polowa_dl[i] += 0.25;
+        lenght_half[i] += 0.25;
     }
 }
 
-void obiekt::wczytaj_wspolrz(const std::string& nazwa_pliku) {
+void obiekt::read_coordinates(const std::string& file_name) {
     std::ifstream read;
-    read.open(nazwa_pliku);
+    read.open(file_name);
     if (!read.is_open())
         return;
 
     TVector<double, 3> wiersz;
-    wspolrzedne.clear();
+    coordinates.clear();
 
     read >> wiersz;
     while (!read.eof()) {
@@ -49,7 +49,7 @@ void obiekt::wczytaj_wspolrz(const std::string& nazwa_pliku) {
             while (read.get() != '\n')
                 ;
         } else {
-            wspolrzedne.push_back(wiersz);
+            coordinates.push_back(wiersz);
         }
         read >> wiersz;
     }
@@ -57,11 +57,11 @@ void obiekt::wczytaj_wspolrz(const std::string& nazwa_pliku) {
     read.close();
 }
 
-void obiekt::wczytaj_wspolrzedne_lok() {
-    wczytaj_wspolrz(local_file_name);
+void obiekt::read_local_coordinates() {
+    read_coordinates(local_file_name);
 }
 
-void obiekt::wpisz_wspolrzedne_glob() {
+void obiekt::write_global_coordinates() {
     std::ofstream write;
     write.open(plik_z_punktami);
     if (!write.is_open())
@@ -69,7 +69,7 @@ void obiekt::wpisz_wspolrzedne_glob() {
 
     int licznik = 0;
 
-    for (TVector<double, 3>& i : wspolrzedne) {
+    for (TVector<double, 3>& i : coordinates) {
         write << i;
         ++licznik;
         if (licznik == 4) {
@@ -82,15 +82,15 @@ void obiekt::wpisz_wspolrzedne_glob() {
 }
 
 void obiekt::move_ahead(const TVector<double, 3>& przesun) {
-    for (TVector<double, 3>& x : wspolrzedne)
+    for (TVector<double, 3>& x : coordinates)
         x = x + przesun;
 }
 
-void obiekt::rotation(const TMatrix<double, 3>& mac_rotationu) {
-    for (TVector<double, 3>& x : wspolrzedne)
-        x = mac_rotationu * x;
+void obiekt::rotation(const TMatrix<double, 3>& rotation_matrix) {
+    for (TVector<double, 3>& x : coordinates)
+        x = rotation_matrix * x;
 }
 
-TVector<double, 3> obiekt::polozenie() const {
-    return srodek_lok + translation;
+TVector<double, 3> obiekt::location() const {
+    return local_centre + translation;
 }

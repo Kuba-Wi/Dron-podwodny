@@ -31,9 +31,9 @@ private:
     void rysuj() { Lacze.Rysuj(); }
     /*!
      * \brief Dodaje plik do łącza do gnuplota
-     * \param[in] nazwa_pliku - nazwa dołączanego pliku
+     * \param[in] file_name - nazwa dołączanego pliku
      */
-    void lacze_dodaj_plik(const std::string& nazwa_pliku);
+    void lacze_dodaj_plik(const std::string& file_name);
 
     /*!
      * \brief Dodaje przeszkodę na scenie

@@ -31,9 +31,9 @@ void dron::count_rotation_angle(TMatrix<double, 3>& rotation, double rotation_an
 }
 
 void dron::initialize_drone() {
-    body.inicjalizuj_obiekt();
-    left_motor.inicjalizuj_obiekt();
-    right_motor.inicjalizuj_obiekt();
+    body.initialize_obiekt();
+    left_motor.initialize_obiekt();
+    right_motor.initialize_obiekt();
 
     TVector<double, 3> przesun;
     przesun[0] = -20;
@@ -97,41 +97,41 @@ void dron::rotation(double rotation_angle) {
 }
 
 void dron::left_motor_move(const TMatrix<double, 3>& rotation) {
-    left_motor.wczytaj_wspolrzedne_lok();
+    left_motor.read_local_coordinates();
 
     left_motor.local_move();
     left_motor.rotation(rotation);
     left_motor.move_ahead(translation);
 
-    left_motor.wpisz_wspolrzedne_glob();
+    left_motor.write_global_coordinates();
 }
 
 void dron::right_motor_move(const TMatrix<double, 3>& rotation) {
-    right_motor.wczytaj_wspolrzedne_lok();
+    right_motor.read_local_coordinates();
 
     right_motor.local_move();
     right_motor.rotation(rotation);
     right_motor.move_ahead(translation);
 
-    right_motor.wpisz_wspolrzedne_glob();
+    right_motor.write_global_coordinates();
 }
 
 void dron::body_move(const TMatrix<double, 3>& rotation) {
-    body.wczytaj_wspolrzedne_lok();
+    body.read_local_coordinates();
 
     body.rotation(rotation);
     body.move_ahead(translation);
 
-    body.wpisz_wspolrzedne_glob();
+    body.write_global_coordinates();
 }
 
 TVector<double, 3> dron::return_location() const {
-    return translation + body.polozenie();
+    return translation + body.location();
 }
 
 TVector<double, 3> dron::return_lenghts() const {
-    TVector<double, 3> dlugosc_sr = left_motor.zwroc_polowy_dlugosci();
-    TVector<double, 3> dlugosc_kor = body.zwroc_polowy_dlugosci();
+    TVector<double, 3> dlugosc_sr = left_motor.return_lenght_halves();
+    TVector<double, 3> dlugosc_kor = body.return_lenght_halves();
 
     dlugosc_sr[0] = dlugosc_sr[1] = sqrt(dlugosc_sr[0] * dlugosc_sr[0] + dlugosc_sr[1] * dlugosc_sr[1]);
     dlugosc_kor[0] = dlugosc_kor[1] = sqrt(dlugosc_kor[0] * dlugosc_kor[0] + dlugosc_kor[1] * dlugosc_kor[1]);

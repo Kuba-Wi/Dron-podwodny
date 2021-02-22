@@ -16,7 +16,7 @@ public:
     local_surface() {}
     /*!
      * \brief Konstruktor zapisuje nazwę pliku
-     * \param[in] nazwa - nazwa_pliku, który ma zostać zapisany
+     * \param[in] nazwa - file_name, który ma zostać zapisany
      */
     local_surface(const std::string& nazwa) : local_file_name(nazwa) {}
 };
