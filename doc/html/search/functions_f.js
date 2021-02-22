@@ -12,11 +12,11 @@ var searchData=
   ['showsyncon',['showSyncOn',['../navtree_8js.html#a84095390aca39b6cb693d3fb22d32dd0',1,'navtree.js']]],
   ['skalax',['SkalaX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a76f367ee032ec1aaa610ee6f6dc49b67',1,'PzG::LaczeDoGNUPlota']]],
   ['skalaz',['SkalaZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a2b34c26dc7193546666cf15e74d29209',1,'PzG::LaczeDoGNUPlota']]],
-  ['sruba_5flewa_5fruch',['left_motor_ruch',['../classdron.html#abec453101e86600f17535f7bde1c3f35',1,'dron']]],
-  ['sruba_5fprawa_5fruch',['right_motor_ruch',['../classdron.html#ab4a804bb48d6e7a58f31d6ea6d839f5c',1,'dron']]],
+  ['sruba_5flewa_5fruch',['left_motor_move',['../classdron.html#abec453101e86600f17535f7bde1c3f35',1,'dron']]],
+  ['sruba_5fprawa_5fruch',['right_motor_move',['../classdron.html#ab4a804bb48d6e7a58f31d6ea6d839f5c',1,'dron']]],
   ['storelink',['storeLink',['../navtree_8js.html#ade730323aadb971c053136b7758c9dce',1,'navtree.js']]],
   ['strippath',['stripPath',['../navtree_8js.html#a9336c21407bb7ced644331eb7a2a6e35',1,'navtree.js']]],
   ['strippath2',['stripPath2',['../navtree_8js.html#a70bc36adda6141a703fc7ee2b772ec63',1,'navtree.js']]],
-  ['TVector',['TVector',['../class_s_wektor.html#ab9eddd07eec733cc8531883c3ca48230',1,'TVector::TVector()'],['../class_s_wektor.html#ae03640173358e34e77adb3a6cd2b4c3a',1,'TVector::TVector(const TVector&lt; Typ, Rozmiar &gt; &amp;Wek)']]],
+  ['TVector',['TVector',['../class_s_vector.html#ab9eddd07eec733cc8531883c3ca48230',1,'TVector::TVector()'],['../class_s_vector.html#ae03640173358e34e77adb3a6cd2b4c3a',1,'TVector::TVector(const TVector&lt; Typ, Rozmiar &gt; &amp;vec)']]],
   ['hexagon',['hexagon',['../classhexagon.html#ad9ae67f15b7fbc2eb921c7ccef4f36fa',1,'hexagon']]]
 ];

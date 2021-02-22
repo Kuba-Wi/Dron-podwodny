@@ -2,33 +2,33 @@
 #include <cmath>
 #include <fstream>
 
-void hexagon::macierz_obrotu_x(TMatrix<double, 3>& obrot, double kat_obrotu) const {
+void hexagon::macierz_rotationu_x(TMatrix<double, 3>& rotation, double rotation_angle) const {
     const double pi = acos(-1);
 
-    obrot(0, 1) = 0;
-    obrot(0, 2) = 0;
-    obrot(1, 0) = 0;
-    obrot(2, 0) = 0;
+    rotation(0, 1) = 0;
+    rotation(0, 2) = 0;
+    rotation(1, 0) = 0;
+    rotation(2, 0) = 0;
 
-    obrot(0, 0) = 1;
+    rotation(0, 0) = 1;
 
-    obrot(1, 1) = cos(pi * (kat_obrotu / 180.0));
-    obrot(2, 2) = obrot(1, 1);
-    obrot(2, 1) = sin(pi * (kat_obrotu / 180.0));
-    obrot(1, 2) = -obrot(2, 1);
+    rotation(1, 1) = cos(pi * (rotation_angle / 180.0));
+    rotation(2, 2) = rotation(1, 1);
+    rotation(2, 1) = sin(pi * (rotation_angle / 180.0));
+    rotation(1, 2) = -rotation(2, 1);
 }
 
 void hexagon::ruch_lokalny() {
-    TMatrix<double, 3> mac_obrotu;
+    TMatrix<double, 3> mac_rotationu;
 
-    laczny_kat_obrotu += 10;
-    while (laczny_kat_obrotu >= 360.0)
-        laczny_kat_obrotu -= 360.0;
-    while (laczny_kat_obrotu <= -360.0)
-        laczny_kat_obrotu += 360.0;
+    all_angle += 10;
+    while (all_angle >= 360.0)
+        all_angle -= 360.0;
+    while (all_angle <= -360.0)
+        all_angle += 360.0;
 
-    macierz_obrotu_x(mac_obrotu, laczny_kat_obrotu);
+    macierz_rotationu_x(mac_rotationu, all_angle);
 
-    obrot(mac_obrotu);
-    ruch_na_wprost(przesuniecie);
+    rotation(mac_rotationu);
+    move_ahead(translation);
 }

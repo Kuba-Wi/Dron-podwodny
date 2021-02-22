@@ -15,103 +15,103 @@ private:
     hexagon right_motor;
     /*! Lewa śruba drona */
     hexagon left_motor;
-    /*! \brief Łączny kąt obrotu obiektu */
-    double laczny_kat_obrotu;
+    /*! \brief Łączny kąt rotationu obiektu */
+    double all_angle;
     /*! \brief przesunięcie obiektu względem wspolrzednych lokalnych */
-    TVector<double, 3> przesuniecie;
+    TVector<double, 3> translation;
 
     /*!
-     * \brief Wylicza wektor translacji.
-     * Metoda wylicza wektor translacji na podstawie zadanych parametrów
-     * \param[in] wek - wektor który będzie zapisany
-     * \param[in] kat_wznoszenia - kąt o jaki ma być odchylony wektor
-     * \param[in] odleglosc - długość wektora
+     * \brief Wylicza vector translacji.
+     * Metoda wylicza vector translacji na podstawie zadanych parametrów
+     * \param[in] vec - vector który będzie zapisany
+     * \param[in] rising_angle - kąt o jaki ma być odchylony vector
+     * \param[in] distance - długość vectora
      */
-    void wylicz_translacje(TVector<double, 3>& wek, double kat_wznoszenia, double odleglosc) const;
+    void count_translation(TVector<double, 3>& vec, double rising_angle, double distance) const;
     /*!
-     * \brief Wylicza macierz obrotu.
-     * Metoda wylicza macierz obrotu wokół osi OZ na podstawie zadanych parametrów.
-     * \param[in] obrot - wypełniana macierz obrotu
-     * \param[in] kat_obrotu - kąt dla jakiego ma zostać wyliczona macierz
+     * \brief Wylicza macierz rotationu.
+     * Metoda wylicza macierz rotationu wokół osi OZ na podstawie zadanych parametrów.
+     * \param[in] rotation - wypełniana macierz rotationu
+     * \param[in] rotation_angle - kąt dla jakiego ma zostać wyliczona macierz
      */
-    void wylicz_macierz_obrotu(TMatrix<double, 3>& obrot, double kat_obrotu) const;
+    void count_rotation_angle(TMatrix<double, 3>& rotation, double rotation_angle) const;
 
     /*!
      * \brief Powoduje ruch sruby lewej
-     * Metoda powoduje ruch lewej śruby o wektor przesunięcie i obrót o zadaną macierz.
-     * \param[in] obrot - macierz z zapisanym obrotem
+     * Metoda powoduje ruch lewej śruby o vector przesunięcie i obrót o zadaną macierz.
+     * \param[in] rotation - macierz z zapisanym rotationem
      */
-    void left_motor_ruch(const TMatrix<double, 3>& obrot);
+    void left_motor_move(const TMatrix<double, 3>& rotation);
     /*!
      * \brief Powoduje ruch sruby prawej
-     * Metoda powoduje ruch prawej śruby o wektor przesunięcie i obrót o zadaną macierz.
-     * \param[in] obrot - macierz z zapisanym obrotem
+     * Metoda powoduje ruch prawej śruby o vector przesunięcie i obrót o zadaną macierz.
+     * \param[in] rotation - macierz z zapisanym rotationem
      */
-    void right_motor_ruch(const TMatrix<double, 3>& obrot);
+    void right_motor_move(const TMatrix<double, 3>& rotation);
     /*!
      * \brief Powoduje ruch bodyu
-     * Metoda powoduje ruch bodyu o wektor przesunięcie i obrót o zadaną macierz.
-     * \param[in] obrot - macierz z zapisanym obrotem
+     * Metoda powoduje ruch bodyu o vector przesunięcie i obrót o zadaną macierz.
+     * \param[in] rotation - macierz z zapisanym rotationem
      */
-    void body_ruch(const TMatrix<double, 3>& obrot);
+    void body_move(const TMatrix<double, 3>& rotation);
 
 public:
     /*!
      * \brief Konstruktor
-     * Zeruje wektor przesunięcie i laczny_kat_obrotu
+     * Zeruje vector przesunięcie i all_angle
      */
     dron();
     /*!
      * \brief Inicjaizuje drona
      * Metoda inicjalizuje body i śruby oraz przesuwa śruby względem bodyu.
      */
-    void inicjalizuj_drona();
+    void initialize_drone();
     /*!
      * \brief Dodaje pliki bodyu
      * Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące body.
-     * \param[in] nazwa_lok - plik ze współrzędnymi lokalnymi
-     * \param[in] nazwa_glob - plik ze współrzędnymi globalnymi
+     * \param[in] local_name - plik ze współrzędnymi lokalnymi
+     * \param[in] global_name - plik ze współrzędnymi globalnymi
      */
-    void dodaj_pliki_body(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_files_body(const std::string& local_name, const std::string& global_name);
     /*!
      * \brief Dodaje pliki lewej śruby
      * Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące lewą śrubę.
-     * \param[in] nazwa_lok - plik ze współrzędnymi lokalnymi
-     * \param[in] nazwa_glob - plik ze współrzędnymi globalnymi
+     * \param[in] local_name - plik ze współrzędnymi lokalnymi
+     * \param[in] global_name - plik ze współrzędnymi globalnymi
      */
-    void dodaj_pliki_sruby_lewej(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_files_left_motor(const std::string& local_name, const std::string& global_name);
     /*!
      * \brief Dodaje pliki prawej śruby
      * Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące prawą śrubę.
-     * \param[in] nazwa_lok - plik ze współrzędnymi lokalnymi
-     * \param[in] nazwa_glob - plik ze współrzędnymi globalnymi
+     * \param[in] local_name - plik ze współrzędnymi lokalnymi
+     * \param[in] global_name - plik ze współrzędnymi globalnymi
      */
-    void dodaj_pliki_sruby_prawej(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_files_right_motor(const std::string& local_name, const std::string& global_name);
 
     /*!
      * \brief Powoduje ruch drona po prostej
      * Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość
-     * \param[in] kat_wznoszenia - kąt o jaki ma wznieść się dron
-     * \param[in] odleglosc - odległość na jaką ma przesunąć się dron
+     * \param[in] rising_angle - kąt o jaki ma wznieść się dron
+     * \param[in] distance - odległość na jaką ma przesunąć się dron
      */
-    void ruch_na_wprost(double kat_wznoszenia, double odleglosc);
+    void move_ahead(double rising_angle, double distance);
     /*!
      * \brief Powoduje obrót drona
-     * Metoda powoduje obrót drona o zadany kąt obrotu
-     * \param[in] kat_obrotu - kąt o jaki ma obrócić się dron w osi OZ
+     * Metoda powoduje obrót drona o zadany kąt rotationu
+     * \param[in] rotation_angle - kąt o jaki ma obrócić się dron w osi OZ
      */
-    void obrot(double kat_obrotu);
+    void rotation(double rotation_angle);
 
     /*!
      * \brief Zwraca położenie drona
      * Metoda zwraca aktualne położenie drona
-     * \return wektor z zapisanymi współrzędnymi kartezjańskimi drona
+     * \return vector z zapisanymi współrzędnymi kartezjańskimi drona
      */
-    TVector<double, 3> zwroc_polozenie() const;
+    TVector<double, 3> return_location() const;
     /*!
      * \brief Zwraca wymiary drona
      * Metoda zwraca odległości środka drona od jego ścian.
-     * \return wektor z zapisanymi długościami
+     * \return vector z zapisanymi długościami
      */
-    TVector<double, 3> zwroc_dlugosci() const;
+    TVector<double, 3> return_lenghts() const;
 };

@@ -12,28 +12,28 @@
 class hexagon : public obiekt {
 private:
     /*!
-     * \brief wylicza macierz obrotu
-     * Metoda wylicza macierz obrotu wokół osi OX.
+     * \brief wylicza macierz rotationu
+     * Metoda wylicza macierz rotationu wokół osi OX.
      */
-    void macierz_obrotu_x(TMatrix<double, 3>& obrot, double kat_obrotu) const;
+    void macierz_rotationu_x(TMatrix<double, 3>& rotation, double rotation_angle) const;
 
 public:
     /*!
      * \brief Konstruktor
-     * Zeruje wektor przesunięcia i łączny kąt obrotu.
+     * Zeruje vector przesunięcia i łączny kąt rotationu.
      */
     hexagon() : obiekt() {}
 
     /*!
      * \brief Zmienia przesunięcie graniastosłupa
-     * Metoda wpisuje wektor wejściowy do wektora przesunięcie.
-     * \param[in] przesun - wektor, który ma być przepisany
+     * Metoda wpisuje vector wejściowy do vectora przesunięcie.
+     * \param[in] przesun - vector, który ma być przepisany
      */
-    void wpisz_przesuniecie(const TVector<double, 3>& przesun) { przesuniecie = przesun; }
+    void wpisz_translation(const TVector<double, 3>& przesun) { translation = przesun; }
 
     /*!
-     * \brief Powoduje ruch o wektor przesunięcie
-     * Metoda powoduje przesunięcie graniastosłupa o wektor przesunięcie
+     * \brief Powoduje ruch o vector przesunięcie
+     * Metoda powoduje przesunięcie graniastosłupa o vector przesunięcie
      * oraz obrót wokół osi 0X.
      */
     void ruch_lokalny();

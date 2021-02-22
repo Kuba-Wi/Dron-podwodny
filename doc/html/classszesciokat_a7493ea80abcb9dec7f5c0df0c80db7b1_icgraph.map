@@ -1,4 +1,4 @@
-<map id="hexagon::wpisz_przesuniecie" name="hexagon::wpisz_przesuniecie">
+<map id="hexagon::wpisz_translation" name="hexagon::wpisz_translation">
 <area shape="rect" id="node2" href="$classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje body i śruby oraz przesuwa śruby względem bodyu..." alt="" coords="260,31,407,57"/>
 <area shape="rect" id="node3" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="455,31,573,57"/>
 <area shape="rect" id="node4" href="$classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="626,5,726,32"/>

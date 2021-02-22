@@ -1,5 +1,5 @@
 <map id="hexagon::ruch_lokalny" name="hexagon::ruch_lokalny">
-<area shape="rect" id="node2" href="$classhexagon.html#a470a40b18794d7f58423ccd1e6f0aa45" title="wylicza macierz obrotu Metoda wylicza macierz obrotu wokół osi OX. " alt="" coords="229,5,368,47"/>
-<area shape="rect" id="node3" href="$classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu..." alt="" coords="425,42,520,69"/>
-<area shape="rect" id="node4" href="$classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany wektor translacji. " alt="" coords="220,122,377,149"/>
+<area shape="rect" id="node2" href="$classhexagon.html#a470a40b18794d7f58423ccd1e6f0aa45" title="wylicza macierz rotationu Metoda wylicza macierz rotationu wokół osi OX. " alt="" coords="229,5,368,47"/>
+<area shape="rect" id="node3" href="$classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz rotationu..." alt="" coords="425,42,520,69"/>
+<area shape="rect" id="node4" href="$classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany vector translacji. " alt="" coords="220,122,377,149"/>
 </map>

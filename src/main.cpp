@@ -2,66 +2,66 @@
 
 using namespace std;
 
-void naprawa_strumienia(istream& Strm) {
+void stream_fix(istream& Strm) {
     Strm.clear();
     while (Strm.get() != '\n')
         ;
 }
 
-void inf_o_obiektach() {
-    std::cout << "\n\tAktualna liczba obiektow wektor 3D: " << TVector<double, 3>::aktualnie_wektory() << "\n";
-    std::cout << "\tLaczna liczba obiektow wektor 3D: " << TVector<double, 3>::lacznie_wektory() << "\n";
+void obiects_info() {
+    std::cout << "\n\tAktualna liczba obiektow vector 3D: " << TVector<double, 3>::aktualnie_vectory() << "\n";
+    std::cout << "\tLaczna liczba obiektow vector 3D: " << TVector<double, 3>::lacznie_vectory() << "\n";
 }
 
 void obsluga_sceny() {
-    stage glowna;
-    glowna.add_body("dat/body.pow", "dat/body1.pow");
-    glowna.add_left_motor("dat/left_motor.dat", "dat/left_motor1.dat");
-    glowna.add_right_motor("dat/right_motor.dat", "dat/right_motor1.dat");
+    stage main_stage;
+    main_stage.add_body("dat/body.pow", "dat/body1.pow");
+    main_stage.add_left_motor("dat/left_motor.dat", "dat/left_motor1.dat");
+    main_stage.add_right_motor("dat/right_motor.dat", "dat/right_motor1.dat");
 
-    glowna.add_cuboid("dat/cuboid.dat", "dat/cuboid1.dat");
-    glowna.add_bar("dat/bar.dat", "dat/bar1.dat");
-    glowna.dodaj_rectangle("dat/rectangle.dat", "dat/rectangle1.dat");
+    main_stage.add_cuboid("dat/cuboid.dat", "dat/cuboid1.dat");
+    main_stage.add_bar("dat/bar.dat", "dat/bar1.dat");
+    main_stage.add_rectangle("dat/rectangle.dat", "dat/rectangle1.dat");
 
-    glowna.dodaj_bottom("dat/bottom.pow", "dat/bottom1.pow");
-    glowna.add_water("dat/water_surface.dat", "dat/water_surface1.dat");
-    glowna.inicjalizuj();
+    main_stage.add_bottom("dat/bottom.pow", "dat/bottom1.pow");
+    main_stage.add_water("dat/water_surface.dat", "dat/water_surface1.dat");
+    main_stage.inicjalizuj();
 
-    char wybor = 'm';
-    double kat;
-    double odleglosc;
+    char choice = 'm';
+    double angle;
+    double distance;
 
-    while (wybor != 'k') {
-        switch (wybor) {
+    while (choice != 'k') {
+        switch (choice) {
         case 'r':
-            cout << "\tPodaj wartosc kata (wznoszenia/opadania) w stopniach.\n";
-            cout << "\tWartosc kata> ";
-            cin >> kat;
+            cout << "\tPodaj wartosc anglea (wznoszenia/opadania) w stopniach.\n";
+            cout << "\tWartosc anglea> ";
+            cin >> angle;
             cin.get();
             if (!cin) {
-                naprawa_strumienia(cin);
+                stream_fix(cin);
                 break;
             }
-            cout << "\nPodaj wartosc odleglosci, na ktora ma sie przemiescic dron.\n";
-            cout << "\tWartosc odleglosci> ";
-            cin >> odleglosc;
+            cout << "\nPodaj wartosc distancei, na ktora ma sie przemiescic dron.\n";
+            cout << "\tWartosc distancei> ";
+            cin >> distance;
             cin.get();
             if (!cin) {
-                naprawa_strumienia(cin);
+                stream_fix(cin);
                 break;
             }
-            glowna.ruch_prosto(kat, odleglosc);
+            main_stage.ruch_prosto(angle, distance);
             break;
         case 'o':
-            cout << "\tPodaj wartosc kata w stopniach.\n";
-            cout << "\tWartosc kata> ";
-            cin >> kat;
+            cout << "\tPodaj wartosc anglea w stopniach.\n";
+            cout << "\tWartosc anglea> ";
+            cin >> angle;
             cin.get();
             if (!cin) {
-                naprawa_strumienia(cin);
+                stream_fix(cin);
                 break;
             }
-            glowna.obrot(kat);
+            main_stage.rotation(angle);
             break;
         case 'm':
             cout << "\tr - zadaj ruch na wprost\n";
@@ -70,13 +70,13 @@ void obsluga_sceny() {
             cout << "\tk - koniec dzialania programu\n";
             break;
         }
-        inf_o_obiektach();
-        cout << "\nTwoj wybor, m - menu> ";
-        cin >> wybor;
+        obiects_info();
+        cout << "\nTwoj choice, m - menu> ";
+        cin >> choice;
     }
 }
 
 int main() {
     obsluga_sceny();
-    inf_o_obiektach();
+    obiects_info();
 }

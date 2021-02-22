@@ -5,54 +5,54 @@
 #include <cmath>
 #include <iostream>
 /*!
- * \brief modeluje pojęcie Wektora
- * Szablon klasy modeluje pojęcie wektora dowolnego rozmiaru
+ * \brief modeluje pojęcie vectora
+ * Szablon klasy modeluje pojęcie vectora dowolnego rozmiaru
  * i dowolnego typu
  */
 template <typename Typ, int Rozmiar>
 class TVector {
-    /*! \brief Liczy wszystkie utworzone wektory 3D */
-    static int lacznie_wektorow;
-    /*! \brief Liczy aktualnie istniejące wektory 3D */
-    static int aktualnie_wektorow;
+    /*! \brief Liczy wszystkie utworzone vectory 3D */
+    static int lacznie_vectorow;
+    /*! \brief Liczy aktualnie istniejące vectory 3D */
+    static int aktualnie_vectorow;
 
-    std::array<Typ, Rozmiar> skladowe; /*! kolejne składowe wektora */
+    std::array<Typ, Rozmiar> skladowe; /*! kolejne składowe vectora */
 public:
     /*!
      * \brief Konsturuktor
      * Tworzy nowy obiekt TVector.
-     * Zwiększa o jeden pola statyczne klasy, jeśli wektor
+     * Zwiększa o jeden pola statyczne klasy, jeśli vector
      * ma rozmiar równy 3.
      */
     TVector();
     /*!
      * \brief Konstruktor kopiujący
-     * Kopiuje wektor do obiektu, który wywołuje tę metodę.
-     * Zwiększa o jeden pole aktualnie_wektorow3D, jeśli wektor
+     * Kopiuje vector do obiektu, który wywołuje tę metodę.
+     * Zwiększa o jeden pole aktualnie_vectorow3D, jeśli vector
      * ma rozmiar równy 3.
-     * \param[in] Wek - kopiowany wektor
+     * \param[in] vec - kopiowany vector
      */
-    TVector(const TVector<Typ, Rozmiar>& Wek);
+    TVector(const TVector<Typ, Rozmiar>& vec);
     /*!
      * \brief Destruktor
-     * Zmniejsza o jeden pole aktualnie_wektorow3D, jeśli wektor
+     * Zmniejsza o jeden pole aktualnie_vectorow3D, jeśli vector
      * ma rozmiar równy 3.
      */
     ~TVector();
 
     /*!
-     * \brief Odczytuje odpowiednią współrzędną wektora.
-     * Metoda pozwala odczytać odpowiednią składową wektora.
+     * \brief Odczytuje odpowiednią współrzędną vectora.
+     * Metoda pozwala odczytać odpowiednią składową vectora.
      * \param[in] i - indeks składowej
-     * \return i-tą składową wektora
+     * \return i-tą składową vectora
      */
     Typ operator[](int i) const {
         assert(i < Rozmiar);
         return skladowe[i];
     }
     /*!
-     * \brief Wpisuje odpowiednią składową wektora
-     * Metoda pozwala wpisać odpowiednią składową wektora.
+     * \brief Wpisuje odpowiednią składową vectora
+     * Metoda pozwala wpisać odpowiednią składową vectora.
      * \param[in] i - indeks składowej
      * \return referencję do i-tej składowej
      */
@@ -62,88 +62,88 @@ public:
     }
 
     /*!
-     * \brief oblicza sumę dwóch wektorów
-     * Metoda oblicza sumę dwóch wektorów.
-     * \param[in] drugi - wektor, który dodajemy
-     * \return sumę dwóch wektorów
+     * \brief oblicza sumę dwóch vectorów
+     * Metoda oblicza sumę dwóch vectorów.
+     * \param[in] drugi - vector, który dodajemy
+     * \return sumę dwóch vectorów
      */
     TVector<Typ, Rozmiar> operator+(const TVector<Typ, Rozmiar>& drugi) const;
 
     /*!
-     * \brief Oblicza różnicę dwóch wektorów
-     * Metoda oblicza różnicę dwóch wektorów.
-     * \param[in] drugi - wektór, który odejmujemy
+     * \brief Oblicza różnicę dwóch vectorów
+     * Metoda oblicza różnicę dwóch vectorów.
+     * \param[in] drugi - vectór, który odejmujemy
      * \return wynik odejmowania
      */
     TVector<Typ, Rozmiar> operator-(const TVector<Typ, Rozmiar>& drugi) const;
 
     /*!
      * \brief Oblicza iloczyn skalarny
-     * Metoda liczy iloczyn skalarny dwóch wektorów.
+     * Metoda liczy iloczyn skalarny dwóch vectorów.
      * \param[in] drugi - drugi składnik iloczynu
      * \return wynik mnożenia
      */
     Typ operator*(const TVector<Typ, Rozmiar>& drugi) const;
     /*!
-     * \brief Oblicza iloczyn wektora przez liczbę
-     * Metoda liczy iloczyn wektora przez liczbę
+     * \brief Oblicza iloczyn vectora przez liczbę
+     * Metoda liczy iloczyn vectora przez liczbę
      * \param[in] liczba - liczba przez którą mnożymy
      * \return wynik mnożenia
      */
     TVector<Typ, Rozmiar> operator*(Typ liczba) const;
 
     /*!
-     * \brief Oblicza iloraz wektora przez liczbę
-     * Metoda liczy iloraz wektora przez liczbę
+     * \brief Oblicza iloraz vectora przez liczbę
+     * Metoda liczy iloraz vectora przez liczbę
      * \param[in] liczba - liczba przez którą dzielimy
      * \return wynik dzielenia
      */
     TVector<Typ, Rozmiar> operator/(Typ liczba) const;
     /*!
-     * \brief Oblicza długość wektora
-     * Metoda oblicza długość wektora:
-     * \return długość wektora
+     * \brief Oblicza długość vectora
+     * Metoda oblicza długość vectora:
+     * \return długość vectora
      */
     double dlugosc() const;
 
     /*!
-     * \brief Zwraca łączną liczbę wektorów 3D
+     * \brief Zwraca łączną liczbę vectorów 3D
      * \retval lacznie_obiektow3D - pole klasy
      */
-    static int lacznie_wektory() { return lacznie_wektorow; }
+    static int lacznie_vectory() { return lacznie_vectorow; }
     /*!
-     * \brief Zwraca aktualną liczbę wektorów 3D
+     * \brief Zwraca aktualną liczbę vectorów 3D
      * \retval aktualnie_obiektow3D - pole klasy
      */
-    static int aktualnie_wektory() { return aktualnie_wektorow; }
+    static int aktualnie_vectory() { return aktualnie_vectorow; }
 };
 
 template <typename Typ, int Rozmiar>
-int TVector<Typ, Rozmiar>::lacznie_wektorow = 0;
+int TVector<Typ, Rozmiar>::lacznie_vectorow = 0;
 
 template <typename Typ, int Rozmiar>
-int TVector<Typ, Rozmiar>::aktualnie_wektorow = 0;
+int TVector<Typ, Rozmiar>::aktualnie_vectorow = 0;
 
 template <typename Typ, int Rozmiar>
 TVector<Typ, Rozmiar>::TVector() {
     if (Rozmiar == 3) {
-        ++lacznie_wektorow;
-        ++aktualnie_wektorow;
+        ++lacznie_vectorow;
+        ++aktualnie_vectorow;
     }
 }
 
 template <typename Typ, int Rozmiar>
-TVector<Typ, Rozmiar>::TVector(const TVector<Typ, Rozmiar>& Wek) : skladowe(Wek.skladowe) {
+TVector<Typ, Rozmiar>::TVector(const TVector<Typ, Rozmiar>& vec) : skladowe(vec.skladowe) {
     if (Rozmiar == 3) {
-        ++aktualnie_wektorow;
-        ++lacznie_wektorow;
+        ++aktualnie_vectorow;
+        ++lacznie_vectorow;
     }
 }
 
 template <typename Typ, int Rozmiar>
 TVector<Typ, Rozmiar>::~TVector() {
     if (Rozmiar == 3)
-        --aktualnie_wektorow;
+        --aktualnie_vectorow;
 }
 
 template <typename Typ, int Rozmiar>
@@ -207,33 +207,33 @@ TVector<Typ, Rozmiar> TVector<Typ, Rozmiar>::operator/(Typ liczba) const {
 }
 
 /*!
- * Funkcja wczytuje wektor:
+ * Funkcja wczytuje vector:
  * Argumenty:
  * Strm - strumień wejściowy
- * Wek - wczytywany Wektor
+ * vec - wczytywany vector
  * Zwracana:
  * referencję do Strm
  */
 template <typename Typ, int Rozmiar>
-std::istream& operator>>(std::istream& Strm, TVector<Typ, Rozmiar>& Wek) {
+std::istream& operator>>(std::istream& Strm, TVector<Typ, Rozmiar>& vec) {
     for (int i = 0; i < Rozmiar; i++)
-        Strm >> Wek[i];
+        Strm >> vec[i];
 
     return Strm;
 }
 
 /*!
- * Funkcja wczytuje wektor:
+ * Funkcja wczytuje vector:
  * Dane wejściowe:
  * Strm - strumień wyjściowy
- * Wek - wypisywany wektor
+ * vec - wypisywany vector
  * Wartość zwracana:
  * referencję do Strm
  */
 template <typename Typ, int Rozmiar>
-std::ostream& operator<<(std::ostream& Strm, const TVector<Typ, Rozmiar>& Wek) {
+std::ostream& operator<<(std::ostream& Strm, const TVector<Typ, Rozmiar>& vec) {
     for (int i = 0; i < Rozmiar; i++)
-        Strm << Wek[i] << " ";
+        Strm << vec[i] << " ";
 
     Strm << std::endl;
 

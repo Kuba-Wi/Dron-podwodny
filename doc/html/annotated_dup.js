@@ -10,6 +10,6 @@ var annotated_dup =
     [ "cuboid", "classcuboid.html", "classcuboid" ],
     [ "stage", "classstage.html", "classstage" ],
     [ "TMatrix", "class_s_macierz.html", "class_s_macierz" ],
-    [ "TVector", "class_s_wektor.html", "class_s_wektor" ],
+    [ "TVector", "class_s_vector.html", "class_s_vector" ],
     [ "hexagon", "classhexagon.html", "classhexagon" ]
 ];

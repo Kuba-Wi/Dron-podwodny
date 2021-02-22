@@ -1,4 +1,4 @@
-<map id="dron::wylicz_translacje" name="dron::wylicz_translacje">
+<map id="dron::count_translation" name="dron::count_translation">
 <area shape="rect" id="node2" href="$classdron.html#a809f2fc3fc515c8992d5f04081893a97" title="Powoduje ruch drona po prostej Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość ..." alt="" coords="208,31,355,57"/>
 <area shape="rect" id="node3" href="$classstage.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="403,31,536,57"/>
 <area shape="rect" id="node4" href="$classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="589,5,689,32"/>

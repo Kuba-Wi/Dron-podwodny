@@ -8,7 +8,7 @@ var searchData=
   ['TMatrix_2ehh',['TMatrix.hh',['../_s_macierz_8hh.html',1,'']]],
   ['strona1_2edox',['strona1.dox',['../strona1_8dox.html',1,'']]],
   ['strona_5fdiagram_2edox',['strona_diagram.dox',['../strona__diagram_8dox.html',1,'']]],
-  ['TVector_2ehh',['TVector.hh',['../_s_wektor_8hh.html',1,'']]],
+  ['TVector_2ehh',['TVector.hh',['../_s_vector_8hh.html',1,'']]],
   ['hexagon_2ecpp',['hexagon.cpp',['../hexagon_8cpp.html',1,'']]],
   ['hexagon_2ehh',['hexagon.hh',['../hexagon_8hh.html',1,'']]]
 ];

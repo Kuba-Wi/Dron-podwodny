@@ -15,10 +15,10 @@ class obiekt : public surface {
 protected:
     /*! \brief Przechowuje współrzędne punktów tworzących obiekt */
     std::vector<TVector<double, 3>> wspolrzedne;
-    /*! \brief Łączny kąt obrotu obiektu */
-    double laczny_kat_obrotu;
+    /*! \brief Łączny kąt rotationu obiektu */
+    double all_angle;
     /*! \brief przesunięcie obiektu względem wspolrzednych lokalnych */
-    TVector<double, 3> przesuniecie;
+    TVector<double, 3> translation;
     /*! \brief odległości środka obiektu od ścian */
     TVector<double, 3> polowa_dl;
     /*! \brief Środek wspolrzednych lokalnych obiektu */
@@ -34,7 +34,7 @@ protected:
 public:
     /*!
      * \brief Konstruktor
-     * Zeruje wektor przesunięcia i łączny kąt obrotu.
+     * Zeruje vector przesunięcia i łączny kąt rotationu.
      */
     obiekt();
     /*! \brief Destruktor wirtualny */
@@ -62,17 +62,17 @@ public:
 
     /*!
      * \brief Przeprowadza ruch na wprost
-     * Powoduje ruch obiektu po prostej o zadany wektor translacji
-     * \param[in] przesun - zadany wektor
+     * Powoduje ruch obiektu po prostej o zadany vector translacji
+     * \param[in] przesun - zadany vector
      */
-    void ruch_na_wprost(const TVector<double, 3>& przesun);
+    void move_ahead(const TVector<double, 3>& przesun);
 
     /*!
      * \brief Powoduje obrót obiektu
-     * Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu
-     * \param[in] mac_obrotu - zadana macierz obrotu
+     * Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz rotationu
+     * \param[in] mac_rotationu - zadana macierz rotationu
      */
-    void obrot(const TMatrix<double, 3>& mac_obrotu);
+    void rotation(const TMatrix<double, 3>& mac_rotationu);
 
     /*!
      * \brief Zwraca środek drona
@@ -82,7 +82,7 @@ public:
     TVector<double, 3> polozenie() const;
 
     /*!
-     * \brief Zwraca wektor z polowami dlugości obiektu
+     * \brief Zwraca vector z polowami dlugości obiektu
      * Metoda zwraca połowę wysokości obiektu
      * \retval polowa_wysokosci - pole klasy
      */

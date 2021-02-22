@@ -1,4 +1,4 @@
-<map id="obiekt::macierz_obrotu" name="obiekt::macierz_obrotu">
+<map id="obiekt::macierz_rotationu" name="obiekt::macierz_rotationu">
 <area shape="rect" id="node2" href="$classobiekt.html#a968676d67a6b4e31486f045eb3dac91a" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadany kąt. " alt="" coords="208,31,303,57"/>
 <area shape="rect" id="node3" href="$classstage.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="351,31,445,57"/>
 <area shape="rect" id="node4" href="$classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="498,5,598,32"/>

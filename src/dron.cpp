@@ -2,35 +2,35 @@
 
 dron::dron() {
     for (int i = 0; i < 3; ++i)
-        przesuniecie[i] = 0;
+        translation[i] = 0;
 
-    laczny_kat_obrotu = 0;
+    all_angle = 0;
 }
 
-void dron::wylicz_translacje(TVector<double, 3>& translacja, double kat_wznoszenia, double odleglosc) const {
+void dron::count_translation(TVector<double, 3>& translacja, double rising_angle, double distance) const {
     const double pi = acos(-1);
 
-    translacja[0] = cos(pi * (laczny_kat_obrotu / 180.0)) * cos(pi * (kat_wznoszenia / 180.0));
-    translacja[1] = sin(pi * (laczny_kat_obrotu / 180.0)) * cos(pi * (kat_wznoszenia / 180.0));
-    translacja[2] = sin(pi * (kat_wznoszenia / 180.0));
+    translacja[0] = cos(pi * (all_angle / 180.0)) * cos(pi * (rising_angle / 180.0));
+    translacja[1] = sin(pi * (all_angle / 180.0)) * cos(pi * (rising_angle / 180.0));
+    translacja[2] = sin(pi * (rising_angle / 180.0));
 }
 
-void dron::wylicz_macierz_obrotu(TMatrix<double, 3>& obrot, double kat_obrotu) const {
+void dron::count_rotation_angle(TMatrix<double, 3>& rotation, double rotation_angle) const {
     const double pi = acos(-1);
 
     for (int i = 0; i < 3; ++i) {
-        obrot(2, i) = 0;
-        obrot(i, 2) = 0;
+        rotation(2, i) = 0;
+        rotation(i, 2) = 0;
     }
-    obrot(2, 2) = 1;
+    rotation(2, 2) = 1;
 
-    obrot(0, 0) = cos(pi * (kat_obrotu / 180.0));
-    obrot(1, 1) = obrot(0, 0);
-    obrot(1, 0) = sin(pi * (kat_obrotu / 180.0));
-    obrot(0, 1) = -obrot(1, 0);
+    rotation(0, 0) = cos(pi * (rotation_angle / 180.0));
+    rotation(1, 1) = rotation(0, 0);
+    rotation(1, 0) = sin(pi * (rotation_angle / 180.0));
+    rotation(0, 1) = -rotation(1, 0);
 }
 
-void dron::inicjalizuj_drona() {
+void dron::initialize_drone() {
     body.inicjalizuj_obiekt();
     left_motor.inicjalizuj_obiekt();
     right_motor.inicjalizuj_obiekt();
@@ -39,97 +39,97 @@ void dron::inicjalizuj_drona() {
     przesun[0] = -20;
     przesun[1] = -20;
     przesun[2] = 0;
-    right_motor.wpisz_przesuniecie(przesun);
+    right_motor.wpisz_translation(przesun);
     przesun[1] = 20;
-    left_motor.wpisz_przesuniecie(przesun);
+    left_motor.wpisz_translation(przesun);
 
-    TMatrix<double, 3> obrot_temp;
+    TMatrix<double, 3> rotation_temp;
 
-    wylicz_macierz_obrotu(obrot_temp, 0);
+    count_rotation_angle(rotation_temp, 0);
 
-    left_motor_ruch(obrot_temp);
-    right_motor_ruch(obrot_temp);
+    left_motor_move(rotation_temp);
+    right_motor_move(rotation_temp);
 }
 
-void dron::dodaj_pliki_body(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    body.dodaj_plik_lok(nazwa_lok);
-    body.dodaj_plik_glob(nazwa_glob);
+void dron::add_files_body(const std::string& local_name, const std::string& global_name) {
+    body.dodaj_plik_lok(local_name);
+    body.dodaj_plik_glob(global_name);
 }
 
-void dron::dodaj_pliki_sruby_lewej(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    left_motor.dodaj_plik_lok(nazwa_lok);
-    left_motor.dodaj_plik_glob(nazwa_glob);
+void dron::add_files_left_motor(const std::string& local_name, const std::string& global_name) {
+    left_motor.dodaj_plik_lok(local_name);
+    left_motor.dodaj_plik_glob(global_name);
 }
 
-void dron::dodaj_pliki_sruby_prawej(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    right_motor.dodaj_plik_lok(nazwa_lok);
-    right_motor.dodaj_plik_glob(nazwa_glob);
+void dron::add_files_right_motor(const std::string& local_name, const std::string& global_name) {
+    right_motor.dodaj_plik_lok(local_name);
+    right_motor.dodaj_plik_glob(global_name);
 }
 
-void dron::ruch_na_wprost(double kat_wznoszenia, double odleglosc) {
+void dron::move_ahead(double rising_angle, double distance) {
     TVector<double, 3> translacja;
-    TMatrix<double, 3> obrot;
-    wylicz_translacje(translacja, kat_wznoszenia, odleglosc);
-    wylicz_macierz_obrotu(obrot, laczny_kat_obrotu);
+    TMatrix<double, 3> rotation;
+    count_translation(translacja, rising_angle, distance);
+    count_rotation_angle(rotation, all_angle);
 
-    translacja = translacja * odleglosc;
-    przesuniecie = przesuniecie + translacja;
+    translacja = translacja * distance;
+    translation = translation + translacja;
 
-    left_motor_ruch(obrot);
-    right_motor_ruch(obrot);
-    body_ruch(obrot);
+    left_motor_move(rotation);
+    right_motor_move(rotation);
+    body_move(rotation);
 }
 
-void dron::obrot(double kat_obrotu) {
-    TMatrix<double, 3> obrot;
+void dron::rotation(double rotation_angle) {
+    TMatrix<double, 3> rotation;
 
-    laczny_kat_obrotu += kat_obrotu;
-    while (laczny_kat_obrotu >= 360.0)
-        laczny_kat_obrotu -= 360.0;
-    while (laczny_kat_obrotu <= -360.0)
-        laczny_kat_obrotu += 360.0;
+    all_angle += rotation_angle;
+    while (all_angle >= 360.0)
+        all_angle -= 360.0;
+    while (all_angle <= -360.0)
+        all_angle += 360.0;
 
-    wylicz_macierz_obrotu(obrot, laczny_kat_obrotu);
+    count_rotation_angle(rotation, all_angle);
 
-    left_motor_ruch(obrot);
-    right_motor_ruch(obrot);
-    body_ruch(obrot);
+    left_motor_move(rotation);
+    right_motor_move(rotation);
+    body_move(rotation);
 }
 
-void dron::left_motor_ruch(const TMatrix<double, 3>& obrot) {
+void dron::left_motor_move(const TMatrix<double, 3>& rotation) {
     left_motor.wczytaj_wspolrzedne_lok();
 
     left_motor.ruch_lokalny();
-    left_motor.obrot(obrot);
-    left_motor.ruch_na_wprost(przesuniecie);
+    left_motor.rotation(rotation);
+    left_motor.move_ahead(translation);
 
     left_motor.wpisz_wspolrzedne_glob();
 }
 
-void dron::right_motor_ruch(const TMatrix<double, 3>& obrot) {
+void dron::right_motor_move(const TMatrix<double, 3>& rotation) {
     right_motor.wczytaj_wspolrzedne_lok();
 
     right_motor.ruch_lokalny();
-    right_motor.obrot(obrot);
-    right_motor.ruch_na_wprost(przesuniecie);
+    right_motor.rotation(rotation);
+    right_motor.move_ahead(translation);
 
     right_motor.wpisz_wspolrzedne_glob();
 }
 
-void dron::body_ruch(const TMatrix<double, 3>& obrot) {
+void dron::body_move(const TMatrix<double, 3>& rotation) {
     body.wczytaj_wspolrzedne_lok();
 
-    body.obrot(obrot);
-    body.ruch_na_wprost(przesuniecie);
+    body.rotation(rotation);
+    body.move_ahead(translation);
 
     body.wpisz_wspolrzedne_glob();
 }
 
-TVector<double, 3> dron::zwroc_polozenie() const {
-    return przesuniecie + body.polozenie();
+TVector<double, 3> dron::return_location() const {
+    return translation + body.polozenie();
 }
 
-TVector<double, 3> dron::zwroc_dlugosci() const {
+TVector<double, 3> dron::return_lenghts() const {
     TVector<double, 3> dlugosc_sr = left_motor.zwroc_polowy_dlugosci();
     TVector<double, 3> dlugosc_kor = body.zwroc_polowy_dlugosci();
 

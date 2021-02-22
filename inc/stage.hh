@@ -38,10 +38,10 @@ private:
     /*!
      * \brief Dodaje przeszkodę na scenie
      * Metoda dodaje na scenę przeszkodę zapisaną w zadanych plikach
-     * \param[in] nazwa_lok - nazwa pliku z danymi lokalnymi
-     * \param[in] nazwa_glob - nazwa pliku z danymi globalnymi
+     * \param[in] local_name - nazwa pliku z danymi lokalnymi
+     * \param[in] global_name - nazwa pliku z danymi globalnymi
      */
-    void dodaj_przeszkode(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void dodaj_przeszkode(const std::string& local_name, const std::string& global_name);
 
     /*!
      * \brief Zwraca informację o kolizji
@@ -73,59 +73,59 @@ public:
     /*!
      * \brief Dodaje bottom na scenę
      * Zapisuje pliki opisujące powierzchnię dna
-     * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
-     * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+     * \param[in] local_name - nazwa pliku z współrzędnymi lokalnymi
+     * \param[in] global_name - nazwa pliku z współrzędnymi globalnymi
      */
-    void dodaj_bottom(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_bottom(const std::string& local_name, const std::string& global_name);
     /*!
      * \brief Dodaje wodę na scenę
      * Zapisuje pliki opisujące powierzchnię wody
-     * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
-     * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+     * \param[in] local_name - nazwa pliku z współrzędnymi lokalnymi
+     * \param[in] global_name - nazwa pliku z współrzędnymi globalnymi
      */
-    void add_water(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_water(const std::string& local_name, const std::string& global_name);
     /*!
      * \brief Dodaje body drona na scenę
      * Zapisuje pliki opisujące body
-     * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
-     * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+     * \param[in] local_name - nazwa pliku z współrzędnymi lokalnymi
+     * \param[in] global_name - nazwa pliku z współrzędnymi globalnymi
      */
-    void add_body(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_body(const std::string& local_name, const std::string& global_name);
     /*!
      * \brief Dodaje lewą śrubę drona na scenę
      * Zapisuje pliki opisujące lewą śrubę
-     * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
-     * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+     * \param[in] local_name - nazwa pliku z współrzędnymi lokalnymi
+     * \param[in] global_name - nazwa pliku z współrzędnymi globalnymi
      */
-    void add_left_motor(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_left_motor(const std::string& local_name, const std::string& global_name);
     /*!
      * \brief Dodaje prawą śrubę drona na scenę
      * Zapisuje pliki opisujące prawą śrubę
-     * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
-     * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+     * \param[in] local_name - nazwa pliku z współrzędnymi lokalnymi
+     * \param[in] global_name - nazwa pliku z współrzędnymi globalnymi
      */
-    void add_right_motor(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_right_motor(const std::string& local_name, const std::string& global_name);
     /*!
      * \brief Dodaje prostopadłościan na scenę
      * Zapisuje pliki opisujące prostopadłościan i dodaje go na koniec listy przeszkód.
-     * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
-     * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+     * \param[in] local_name - nazwa pliku z współrzędnymi lokalnymi
+     * \param[in] global_name - nazwa pliku z współrzędnymi globalnymi
      */
-    void add_cuboid(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_cuboid(const std::string& local_name, const std::string& global_name);
     /*!
      * \brief Dodaje pręt na scenę
      * Zapisuje pliki opisujące pręt i dodaje go na koniec listy przeszkód.
-     * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
-     * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+     * \param[in] local_name - nazwa pliku z współrzędnymi lokalnymi
+     * \param[in] global_name - nazwa pliku z współrzędnymi globalnymi
      */
-    void add_bar(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_bar(const std::string& local_name, const std::string& global_name);
     /*!
      * \brief Dodaje prostokąt na scenę
      * Zapisuje pliki opisujące prostokąt i dodaje go na koniec listy przeszkód.
-     * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
-     * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+     * \param[in] local_name - nazwa pliku z współrzędnymi lokalnymi
+     * \param[in] global_name - nazwa pliku z współrzędnymi globalnymi
      */
-    void dodaj_rectangle(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_rectangle(const std::string& local_name, const std::string& global_name);
 
     /*! \brief Inicjalizuje Łącze do gnuplota oraz drona */
     void inicjalizuj();
@@ -134,14 +134,14 @@ public:
      * \brief Powoduje ruch drona na wprost
      * Powoduje ruch obiektu dron na wprost na zadaną odległość
      * i o dany kąt wznoszenia
-     * \param[in] kat_wznoszenia - kąt o jaki ma się wznieść dron
-     * \param[in] odleglosc - odległość na jaką ma się przemiaeścić dron
+     * \param[in] rising_angle - kąt o jaki ma się wznieść dron
+     * \param[in] distance - odległość na jaką ma się przemiaeścić dron
      */
-    void ruch_prosto(double kat_wznoszenia, double odleglosc);
+    void ruch_prosto(double rising_angle, double distance);
     /*!
      * \brief Powoduje obrót drona
      * Powoduje obrót drona wokół własnej osi o zadany kąt
-     * \param[in] kat_obrotu - kąt o jaki ma być wykonany obrót
+     * \param[in] rotation_angle - kąt o jaki ma być wykonany obrót
      */
-    void obrot(double kat_obrotu);
+    void rotation(double rotation_angle);
 };

@@ -9,7 +9,7 @@ var searchData=
   ['pokazos_5foz',['PokazOs_OZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a9fabfe88cb1801a5de8923f45f514b99',1,'PzG::LaczeDoGNUPlota::PokazOs_OZ(bool Pokaz)'],['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1fed67d4ce58ae40be9c325fb385d5ed',1,'PzG::LaczeDoGNUPlota::PokazOs_OZ() const ']]],
   ['polowa_5fdl',['polowa_dl',['../classobiekt.html#a9ff1db423c9788dd6e66d056a91ebf00',1,'obiekt']]],
   ['polozenie',['polozenie',['../classobiekt.html#a8025abcf481c01e568af0ddff445d6fe',1,'obiekt']]],
-  ['surface',['surface',['../classsurface.html',1,'surface'],['../classsurface.html#a3aa1eba5f4a47cb77e9e86de577e57dd',1,'surface::surface()'],['../classsurface.html#a6ac31a60fe60f0be1d9859367ca631d8',1,'surface::surface(const std::string &amp;nazwa_lok, const std::string &amp;nazwa_glob)']]],
+  ['surface',['surface',['../classsurface.html',1,'surface'],['../classsurface.html#a3aa1eba5f4a47cb77e9e86de577e57dd',1,'surface::surface()'],['../classsurface.html#a6ac31a60fe60f0be1d9859367ca631d8',1,'surface::surface(const std::string &amp;local_name, const std::string &amp;global_name)']]],
   ['surface_2ecpp',['surface.cpp',['../surface_8cpp.html',1,'']]],
   ['surface_2ehh',['surface.hh',['../surface_8hh.html',1,'']]],
   ['surface_5flokalna',['local_surface',['../classsurface__lokalna.html',1,'local_surface'],['../classsurface__lokalna.html#ac33cd87a0ede944f2fe3ff0f63917ddd',1,'local_surface::local_surface()'],['../classsurface__lokalna.html#ad0ce763d80ebc6576cb01c8b99fdba8d',1,'local_surface::local_surface(const std::string &amp;nazwa)']]],
@@ -21,6 +21,6 @@ var searchData=
   ['cuboid',['cuboid',['../classcuboid.html',1,'']]],
   ['cuboid_2ehh',['cuboid.hh',['../cuboid_8hh.html',1,'']]],
   ['przeslijdognuplota',['PrzeslijDoGNUPlota',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a5063854b7232a7951d120a21df63f2b7',1,'PzG::LaczeDoGNUPlota']]],
-  ['przesuniecie',['przesuniecie',['../classdron.html#ab6215dec0f86efc5cb7821c74caacfb5',1,'dron::przesuniecie()'],['../classobiekt.html#afd74db9e2d32cf5d9384a9198650383a',1,'obiekt::przesuniecie()']]],
+  ['translation',['translation',['../classdron.html#ab6215dec0f86efc5cb7821c74caacfb5',1,'dron::translation()'],['../classobiekt.html#afd74db9e2d32cf5d9384a9198650383a',1,'obiekt::translation()']]],
   ['pzg',['PzG',['../namespace_pz_g.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
-<map id="dron::inicjalizuj_drona" name="dron::inicjalizuj_drona">
+<map id="dron::initialize_drone" name="dron::initialize_drone">
 <area shape="rect" id="node2" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="200,31,319,57"/>
 <area shape="rect" id="node3" href="$classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="371,5,471,32"/>
 <area shape="rect" id="node4" href="$main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="367,56,476,83"/>

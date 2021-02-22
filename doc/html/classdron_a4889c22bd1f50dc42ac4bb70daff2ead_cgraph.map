@@ -1,7 +1,7 @@
-<map id="dron::body_ruch" name="dron::body_ruch">
+<map id="dron::body_move" name="dron::body_move">
 <area shape="rect" id="node2" href="$classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="180,5,395,32"/>
-<area shape="rect" id="node4" href="$classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu..." alt="" coords="240,56,335,83"/>
-<area shape="rect" id="node5" href="$classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany wektor translacji. " alt="" coords="209,107,366,133"/>
+<area shape="rect" id="node4" href="$classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz rotationu..." alt="" coords="240,56,335,83"/>
+<area shape="rect" id="node5" href="$classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany vector translacji. " alt="" coords="209,107,366,133"/>
 <area shape="rect" id="node6" href="$classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="182,157,393,184"/>
 <area shape="rect" id="node3" href="$classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="443,5,605,32"/>
 </map>

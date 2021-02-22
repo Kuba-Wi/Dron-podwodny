@@ -1,5 +1,5 @@
-<map id="obiekt::obrot" name="obiekt::obrot">
-<area shape="rect" id="node2" href="$classobiekt.html#a6db0a0913df74536144636759a7c2655" title="Wypełnia macierz obrotu o zadany kat Wypełnia macierz służącą do transformacji współrzędnych obiektu..." alt="" coords="148,5,303,32"/>
+<map id="obiekt::rotation" name="obiekt::rotation">
+<area shape="rect" id="node2" href="$classobiekt.html#a6db0a0913df74536144636759a7c2655" title="Wypełnia macierz rotationu o zadany kat Wypełnia macierz służącą do transformacji współrzędnych obiektu..." alt="" coords="148,5,303,32"/>
 <area shape="rect" id="node3" href="$classstage.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="178,56,273,83"/>
 <area shape="rect" id="node4" href="$classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="355,31,455,57"/>
 <area shape="rect" id="node5" href="$main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="351,81,460,108"/>

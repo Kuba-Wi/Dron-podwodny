@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['aktualnie_5fwektory',['aktualnie_wektory',['../class_s_wektor.html#a0cf464153b2874bf777892319f3f8db8',1,'TVector']]]
+  ['aktualnie_5fvectory',['aktualnie_vectory',['../class_s_vector.html#a0cf464153b2874bf777892319f3f8db8',1,'TVector']]]
 ];

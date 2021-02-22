@@ -51,23 +51,23 @@ public:
     Typ wyznacznik() const;
 
     /*!
-     * Metoda mnoży macierz przez wektor.
+     * Metoda mnoży macierz przez vector.
      * Argumenty:
-     * Wek - wektor przez, który mnożymy
+     * vec - vector przez, który mnożymy
      * Zwraca:
-     * wektor - iloczyn macierzy i wektora
+     * vector - iloczyn macierzy i vectora
      */
-    TVector<Typ, Rozmiar> operator*(const TVector<Typ, Rozmiar>& Wek) const;
+    TVector<Typ, Rozmiar> operator*(const TVector<Typ, Rozmiar>& vec) const;
 
     /*!
      * Metoda wstawia kolumnę do macierzy.
      * Argumenty:
-     * Wek - wektor który wstawiamy
+     * vec - vector który wstawiamy
      * kolumna - indeks zamienianej kolumny
      * Zwraca:
      * macierz po zamianie
      */
-    TMatrix<Typ, Rozmiar> wstaw_kolumne(const TVector<Typ, Rozmiar>& Wek, unsigned int kolumna) const;
+    TMatrix<Typ, Rozmiar> wstaw_kolumne(const TVector<Typ, Rozmiar>& vec, unsigned int kolumna) const;
 };
 
 template <typename Typ, int Rozmiar>
@@ -127,14 +127,14 @@ Typ TMatrix<Typ, Rozmiar>::wyznacznik() const {
 }
 
 template <typename Typ, int Rozmiar>
-TVector<Typ, Rozmiar> TMatrix<Typ, Rozmiar>::operator*(const TVector<Typ, Rozmiar>& Wek) const {
+TVector<Typ, Rozmiar> TMatrix<Typ, Rozmiar>::operator*(const TVector<Typ, Rozmiar>& vec) const {
     TVector<Typ, Rozmiar> pom;
     Typ skl_pom;
     skl_pom = 0;
 
     for (int w = 0; w < Rozmiar; w++) {
         for (int k = 0; k < Rozmiar; k++)
-            skl_pom = skl_pom + kolumny[k][w] * Wek[k];
+            skl_pom = skl_pom + kolumny[k][w] * vec[k];
 
         pom[w] = skl_pom;
         skl_pom = 0;
@@ -144,13 +144,13 @@ TVector<Typ, Rozmiar> TMatrix<Typ, Rozmiar>::operator*(const TVector<Typ, Rozmia
 }
 
 template <typename Typ, int Rozmiar>
-TMatrix<Typ, Rozmiar> TMatrix<Typ, Rozmiar>::wstaw_kolumne(const TVector<Typ, Rozmiar>& Wek,
+TMatrix<Typ, Rozmiar> TMatrix<Typ, Rozmiar>::wstaw_kolumne(const TVector<Typ, Rozmiar>& vec,
                                                              unsigned int kolumna) const {
     assert(kolumna < Rozmiar);
     TMatrix<Typ, Rozmiar> pom = *this;
 
     for (int i = 0; i < Rozmiar; i++)
-        pom(i, kolumna) = Wek[i];
+        pom(i, kolumna) = vec[i];
 
     return pom;
 }

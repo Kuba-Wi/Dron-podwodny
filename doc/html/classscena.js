@@ -1,10 +1,10 @@
 var classstage =
 [
     [ "stage", "classstage.html#a152626dcaf5c3bbb9c803a3134999d2f", null ],
-    [ "dodaj_bottom", "classstage.html#ad7c4ca7a3eb26bc133eabe65476791d4", null ],
+    [ "add_bottom", "classstage.html#ad7c4ca7a3eb26bc133eabe65476791d4", null ],
     [ "add_body", "classstage.html#ad5d8213c9a23276befedb02e7d4fad7c", null ],
     [ "add_bar", "classstage.html#a8dce746bd5a81c86fb011ae682fb5205", null ],
-    [ "dodaj_rectangle", "classstage.html#ad15da6ac88b5d6aef70d41373633b63d", null ],
+    [ "add_rectangle", "classstage.html#ad15da6ac88b5d6aef70d41373633b63d", null ],
     [ "add_cuboid", "classstage.html#afdd54c0dc31920dc605fe63ed6d746c0", null ],
     [ "dodaj_przeszkode", "classstage.html#a37056be2e45de7e80a4b72a4cedb08c1", null ],
     [ "add_left_motor", "classstage.html#a8be47f62d8ed373c1f0569405115e471", null ],
@@ -14,7 +14,7 @@ var classstage =
     [ "kolizja", "classstage.html#a9bbff749c1f2d34f3959afd97e044fc0", null ],
     [ "kolizja_bottom", "classstage.html#ab5fbfa861967e0faa82d61d4d239fdf5", null ],
     [ "lacze_dodaj_plik", "classstage.html#a27983afc7ecb584cb1d0059904608d7b", null ],
-    [ "obrot", "classstage.html#abef62e7d58fc529eda33e376dfc25383", null ],
+    [ "rotation", "classstage.html#abef62e7d58fc529eda33e376dfc25383", null ],
     [ "ruch_prosto", "classstage.html#a0a72068a1c9059f235b4f560fcd317ec", null ],
     [ "rysuj", "classstage.html#acbeaad76c7ea16ae2ae839d08e9051b8", null ],
     [ "wynurzenie", "classstage.html#ac3df4e790dea99820852b895a96da648", null ],

@@ -1,17 +1,17 @@
 <map id="obiekt::wczytaj_wspolrzedne_lok" name="obiekt::wczytaj_wspolrzedne_lok">
 <area shape="rect" id="node2" href="$classobiekt.html#a03123cc45a13884014eb2f8d4c1a471f" title="Destruktor wirtualny. " alt="" coords="477,5,585,32"/>
-<area shape="rect" id="node3" href="$classdron.html#abec453101e86600f17535f7bde1c3f35" title="Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o wektor przesunięcie i obrót o zadaną mac..." alt="" coords="272,216,425,243"/>
-<area shape="rect" id="node14" href="$classdron.html#ab4a804bb48d6e7a58f31d6ea6d839f5c" title="Powoduje ruch sruby prawej Metoda powoduje ruch prawej śruby o wektor przesunięcie i obrót o zadaną m..." alt="" coords="268,165,429,192"/>
-<area shape="rect" id="node15" href="$classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead" title="Powoduje ruch bodyu Metoda powoduje ruch bodyu o wektor przesunięcie i obrót o zadaną macierz..." alt="" coords="285,267,412,293"/>
+<area shape="rect" id="node3" href="$classdron.html#abec453101e86600f17535f7bde1c3f35" title="Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o vector przesunięcie i obrót o zadaną mac..." alt="" coords="272,216,425,243"/>
+<area shape="rect" id="node14" href="$classdron.html#ab4a804bb48d6e7a58f31d6ea6d839f5c" title="Powoduje ruch sruby prawej Metoda powoduje ruch prawej śruby o vector przesunięcie i obrót o zadaną m..." alt="" coords="268,165,429,192"/>
+<area shape="rect" id="node15" href="$classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead" title="Powoduje ruch bodyu Metoda powoduje ruch bodyu o vector przesunięcie i obrót o zadaną macierz..." alt="" coords="285,267,412,293"/>
 <area shape="rect" id="node16" href="$classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="Inicjalizuje pola klasy Wylicza srodek_lok oraz polowa_wysokosci, wpisuje plik lokalny do pliku z pun..." alt="" coords="289,57,408,98"/>
 <area shape="rect" id="node4" href="$classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje body i śruby oraz przesuwa śruby względem bodyu..." alt="" coords="827,157,973,184"/>
 <area shape="rect" id="node9" href="$classdron.html#a809f2fc3fc515c8992d5f04081893a97" title="Powoduje ruch drona po prostej Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość ..." alt="" coords="827,325,973,352"/>
-<area shape="rect" id="node11" href="$classdron.html#a648ea5308782ad19b74f6651c712708f" title="Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt obrotu. " alt="" coords="489,267,573,293"/>
+<area shape="rect" id="node11" href="$classdron.html#a648ea5308782ad19b74f6651c712708f" title="Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt rotationu. " alt="" coords="489,267,573,293"/>
 <area shape="rect" id="node5" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="1029,275,1147,301"/>
 <area shape="rect" id="node6" href="$classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="1207,351,1307,377"/>
 <area shape="rect" id="node7" href="$main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="1203,300,1312,327"/>
 <area shape="rect" id="node8" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1360,300,1411,327"/>
 <area shape="rect" id="node10" href="$classstage.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="1021,325,1155,352"/>
-<area shape="rect" id="node12" href="$classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9" title="Wylicza macierz obrotu. Metoda wylicza macierz obrotu wokół osi OZ na podstawie zadanych parametrów..." alt="" coords="633,259,779,301"/>
+<area shape="rect" id="node12" href="$classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9" title="Wylicza macierz rotationu. Metoda wylicza macierz rotationu wokół osi OZ na podstawie zadanych parametrów..." alt="" coords="633,259,779,301"/>
 <area shape="rect" id="node13" href="$classstage.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="1041,376,1135,403"/>
 </map>

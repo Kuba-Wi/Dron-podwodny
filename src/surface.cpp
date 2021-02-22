@@ -2,12 +2,12 @@
 #include <fstream>
 #include "TVector.hh"
 
-void surface::dodaj_plik_lok(const std::string& nazwa_lok) {
-    nazwa_pliku_lok = nazwa_lok;
+void surface::dodaj_plik_lok(const std::string& local_name) {
+    nazwa_pliku_lok = local_name;
 }
 
-void surface::dodaj_plik_glob(const std::string& nazwa_glob) {
-    plik_z_punktami = nazwa_glob;
+void surface::dodaj_plik_glob(const std::string& global_name) {
+    plik_z_punktami = global_name;
 }
 
 void surface::wczytaj_lok() {

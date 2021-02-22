@@ -12,5 +12,5 @@ var dir_b5cf8c7eed15b9a932fb877c80d323b6 =
     ] ],
     [ "stage.hh", "stage_8hh.html", "stage_8hh" ],
     [ "TMatrix.hh", "_s_macierz_8hh.html", "_s_macierz_8hh" ],
-    [ "TVector.hh", "_s_wektor_8hh.html", "_s_wektor_8hh" ]
+    [ "TVector.hh", "_s_vector_8hh.html", "_s_vector_8hh" ]
 ];

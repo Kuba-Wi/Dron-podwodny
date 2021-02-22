@@ -4,7 +4,7 @@ var searchData=
   ['class_5fpz_5fg_5f1_5f1_5finfo_5fpliku_5fdo_5frysowania',['class_pz_g_1_1_info_pliku_do_rysowania',['../class__pz__g__1__1__info__pliku__do__rysowania_8js.html#a5497c18b48820095e6d0dc74fa72bcf1',1,'class_pz_g_1_1_info_pliku_do_rysowania.js']]],
   ['class_5fpz_5fg_5f1_5f1_5flacze_5fdo_5fg_5fn_5fu_5fplota',['class_pz_g_1_1_lacze_do_g_n_u_plota',['../class__pz__g__1__1__lacze__do__g__n__u__plota_8js.html#abf4e49b1d18032ebf454452e360a4c26',1,'class_pz_g_1_1_lacze_do_g_n_u_plota.js']]],
   ['class_5fs_5fmacierz',['class_s_macierz',['../class__s__macierz_8js.html#a917d2505cc1cc4a0988435e52730d14c',1,'class_s_macierz.js']]],
-  ['class_5fs_5fwektor',['class_s_wektor',['../class__s__wektor_8js.html#ac181e32c809475716fda80f144205591',1,'class_s_wektor.js']]],
+  ['class_5fs_5fvector',['class_s_vector',['../class__s__vector_8js.html#ac181e32c809475716fda80f144205591',1,'class_s_vector.js']]],
   ['classobiekt',['classobiekt',['../classobiekt_8js.html#a87b21722b417916f430293399999a505',1,'classobiekt.js']]],
   ['classsurface',['classsurface',['../classsurface_8js.html#ab7a26542c06ae7561c9ede5d90535b80',1,'classsurface.js']]],
   ['classsurface_5f_5flokalna',['classsurface__lokalna',['../classsurface____lokalna_8js.html#abaf44c3f30d7d1f83c28eacff5b9e90f',1,'classsurface__lokalna.js']]],

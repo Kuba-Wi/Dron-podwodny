@@ -21,24 +21,24 @@ public:
     /*! \brief Konstruktor bezparametryczny */
     surface() {}
     /*! \brief Konstruktor zapisuje nazwę pliku lokalnego i globalnego
-     * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
-     * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
+     * \param[in] local_name - nazwa pliku z współrzędnymi lokalnymi
+     * \param[in] global_name - nazwa pliku z współrzędnymi globalnymi
      */
-    surface(const std::string& nazwa_lok, const std::string& nazwa_glob)
-        : local_surface(nazwa_lok), plik_z_punktami(nazwa_glob) {}
+    surface(const std::string& local_name, const std::string& global_name)
+        : local_surface(local_name), plik_z_punktami(global_name) {}
 
     /*!
      * \brief Zapisuje plik lokalny
      * Metoda zapisuje nazwę pliku z współrzędnymi lokalnymi
-     * \param[in] nazwa_lok - nazwa pliku z danymi lokalnymi
+     * \param[in] local_name - nazwa pliku z danymi lokalnymi
      */
-    void dodaj_plik_lok(const std::string& nazwa_lok);
+    void dodaj_plik_lok(const std::string& local_name);
     /*!
      * \brief Zapisuje plik globalny
      * Metoda zapisuje nazwę pliku z współrzędnymi globalnymi
-     * \param[in] nazwa_glob - nazwa pliku z danymi lokalnymi
+     * \param[in] global_name - nazwa pliku z danymi lokalnymi
      */
-    void dodaj_plik_glob(const std::string& nazwa_glob);
+    void dodaj_plik_glob(const std::string& global_name);
 
     /*!
      * \brief Przepisuje plik lokalny do pliku z punktami

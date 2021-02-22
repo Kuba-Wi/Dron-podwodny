@@ -3,27 +3,27 @@
 #include <iostream>
 
 bool stage::kolizja_bottom() const {
-    return (fabs(dron_stage.zwroc_polozenie()[2] - bottom.zwroc_z()) <= dron_stage.zwroc_dlugosci()[2]);
+    return (fabs(dron_stage.return_location()[2] - bottom.zwroc_z()) <= dron_stage.return_lenghts()[2]);
 }
 
 bool stage::wynurzenie() const {
-    return (fabs(dron_stage.zwroc_polozenie()[2] - woda.zwroc_z()) <= dron_stage.zwroc_dlugosci()[2] - 20);
+    return (fabs(dron_stage.return_location()[2] - woda.zwroc_z()) <= dron_stage.return_lenghts()[2] - 20);
 }
 
 bool stage::kolizja() const {
-    TVector<double, 3> dlugosci_drona = dron_stage.zwroc_dlugosci();
-    TVector<double, 3> srodek_drona = dron_stage.zwroc_polozenie();
+    TVector<double, 3> dlugosci_drona = dron_stage.return_lenghts();
+    TVector<double, 3> srodek_drona = dron_stage.return_location();
     TVector<double, 3> dlugosci_przeszkody;
-    TVector<double, 3> odleglosci;
+    TVector<double, 3> distancei;
 
     bool jest_kolizja = false;
 
     for (auto& przeszkoda : lista_przeszkod) {
         dlugosci_przeszkody = przeszkoda->zwroc_polowy_dlugosci();
-        odleglosci = srodek_drona - przeszkoda->polozenie();
+        distancei = srodek_drona - przeszkoda->polozenie();
 
         for (int i = 0; i < 3; ++i) {
-            jest_kolizja = (fabs(odleglosci[i]) <= (dlugosci_przeszkody[i] + dlugosci_drona[i]));
+            jest_kolizja = (fabs(distancei[i]) <= (dlugosci_przeszkody[i] + dlugosci_drona[i]));
             if (!jest_kolizja) {
                 break;
             }
@@ -39,97 +39,97 @@ void stage::lacze_dodaj_plik(const std::string& nazwa_pliku) {
     Lacze.DodajNazwePliku(nazwa_pliku.c_str());
 }
 
-void stage::dodaj_bottom(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    bottom.dodaj_plik_lok(nazwa_lok);
-    bottom.dodaj_plik_glob(nazwa_glob);
+void stage::add_bottom(const std::string& local_name, const std::string& global_name) {
+    bottom.dodaj_plik_lok(local_name);
+    bottom.dodaj_plik_glob(global_name);
 
     bottom.wczytaj_lok();
 
-    lacze_dodaj_plik(nazwa_glob);
+    lacze_dodaj_plik(global_name);
 }
 
-void stage::add_water(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    woda.dodaj_plik_lok(nazwa_lok);
-    woda.dodaj_plik_glob(nazwa_glob);
+void stage::add_water(const std::string& local_name, const std::string& global_name) {
+    woda.dodaj_plik_lok(local_name);
+    woda.dodaj_plik_glob(global_name);
 
     woda.wczytaj_lok();
 
-    lacze_dodaj_plik(nazwa_glob);
+    lacze_dodaj_plik(global_name);
 }
 
-void stage::add_body(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    dron_stage.dodaj_pliki_body(nazwa_lok, nazwa_glob);
+void stage::add_body(const std::string& local_name, const std::string& global_name) {
+    dron_stage.add_files_body(local_name, global_name);
 
-    lacze_dodaj_plik(nazwa_glob);
+    lacze_dodaj_plik(global_name);
 }
 
-void stage::add_left_motor(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    dron_stage.dodaj_pliki_sruby_lewej(nazwa_lok, nazwa_glob);
+void stage::add_left_motor(const std::string& local_name, const std::string& global_name) {
+    dron_stage.add_files_left_motor(local_name, global_name);
 
-    lacze_dodaj_plik(nazwa_glob);
+    lacze_dodaj_plik(global_name);
 }
 
-void stage::add_right_motor(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    dron_stage.dodaj_pliki_sruby_prawej(nazwa_lok, nazwa_glob);
+void stage::add_right_motor(const std::string& local_name, const std::string& global_name) {
+    dron_stage.add_files_right_motor(local_name, global_name);
 
-    lacze_dodaj_plik(nazwa_glob);
+    lacze_dodaj_plik(global_name);
 }
 
-void stage::dodaj_przeszkode(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    lista_przeszkod.back()->dodaj_plik_lok(nazwa_lok);
-    lista_przeszkod.back()->dodaj_plik_glob(nazwa_glob);
+void stage::dodaj_przeszkode(const std::string& local_name, const std::string& global_name) {
+    lista_przeszkod.back()->dodaj_plik_lok(local_name);
+    lista_przeszkod.back()->dodaj_plik_glob(global_name);
 
     lista_przeszkod.back()->inicjalizuj_obiekt();
 
-    lacze_dodaj_plik(nazwa_glob);
+    lacze_dodaj_plik(global_name);
 }
 
-void stage::add_cuboid(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+void stage::add_cuboid(const std::string& local_name, const std::string& global_name) {
     lista_przeszkod.push_back(std::make_shared<cuboid>());
 
-    dodaj_przeszkode(nazwa_lok, nazwa_glob);
+    dodaj_przeszkode(local_name, global_name);
 }
 
-void stage::add_bar(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+void stage::add_bar(const std::string& local_name, const std::string& global_name) {
     lista_przeszkod.push_back(std::make_shared<bar>());
 
-    dodaj_przeszkode(nazwa_lok, nazwa_glob);
+    dodaj_przeszkode(local_name, global_name);
 }
 
-void stage::dodaj_rectangle(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+void stage::add_rectangle(const std::string& local_name, const std::string& global_name) {
     lista_przeszkod.push_back(std::make_shared<rectangle>());
 
-    dodaj_przeszkode(nazwa_lok, nazwa_glob);
+    dodaj_przeszkode(local_name, global_name);
 }
 
 void stage::inicjalizuj() {
     Lacze.ZmienTrybRys(PzG::TR_3D);
     Lacze.Inicjalizuj();
-    dron_stage.inicjalizuj_drona();
+    dron_stage.initialize_drone();
     rysuj();
 }
 
-void stage::ruch_prosto(double kat_wznoszenia, double odleglosc) {
+void stage::ruch_prosto(double rising_angle, double distance) {
     int kwant = 250;
     for (int i = 0; i < kwant; ++i) {
-        dron_stage.ruch_na_wprost(kat_wznoszenia, odleglosc / double(kwant));
+        dron_stage.move_ahead(rising_angle, distance / double(kwant));
         if (kolizja() || kolizja_bottom()) {
             std::cout << "Kolizja!\n";
-            dron_stage.ruch_na_wprost(kat_wznoszenia, -odleglosc / double(kwant));
+            dron_stage.move_ahead(rising_angle, -distance / double(kwant));
             break;
-        } else if (wynurzenie() && ((kat_wznoszenia > 0 && odleglosc > 0) || (kat_wznoszenia < 0 && odleglosc < 0))) {
+        } else if (wynurzenie() && ((rising_angle > 0 && distance > 0) || (rising_angle < 0 && distance < 0))) {
             std::cout << "Wynurzenie.\n";
-            odleglosc = odleglosc * cos(acos(-1) * kat_wznoszenia / 180.0);
-            kat_wznoszenia = 0;
+            distance = distance * cos(acos(-1) * rising_angle / 180.0);
+            rising_angle = 0;
         }
         rysuj();
     }
 }
 
-void stage::obrot(double kat_obrotu) {
+void stage::rotation(double rotation_angle) {
     int kwant = 360;
     for (int i = 0; i < kwant; ++i) {
-        dron_stage.obrot(kat_obrotu / double(kwant));
+        dron_stage.rotation(rotation_angle / double(kwant));
         rysuj();
     }
 }

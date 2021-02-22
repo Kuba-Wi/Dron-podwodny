@@ -1,4 +1,4 @@
-<map id="dron::zwroc_polozenie" name="dron::zwroc_polozenie">
+<map id="dron::return_location" name="dron::return_location">
 <area shape="rect" id="node2" href="$classstage.html#ab5fbfa861967e0faa82d61d4d239fdf5" title="Zwraca informację o kolizji z dnem Metoda sprawdza czy nie ma kolizji z dnem. " alt="" coords="205,31,336,57"/>
 <area shape="rect" id="node10" href="$classstage.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. " alt="" coords="205,132,336,159"/>
 <area shape="rect" id="node11" href="$classstage.html#a9bbff749c1f2d34f3959afd97e044fc0" title="Zwraca informację o kolizji Sprawdza czy jest kolizja z jakąś przeszkodą " alt="" coords="219,81,322,108"/>

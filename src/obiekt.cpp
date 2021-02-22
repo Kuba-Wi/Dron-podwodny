@@ -4,9 +4,9 @@
 
 obiekt::obiekt() {
     for (int i = 0; i < 3; ++i)
-        przesuniecie[i] = 0;
+        translation[i] = 0;
 
-    laczny_kat_obrotu = 0;
+    all_angle = 0;
 }
 
 void obiekt::inicjalizuj_obiekt() {
@@ -81,16 +81,16 @@ void obiekt::wpisz_wspolrzedne_glob() {
     write.close();
 }
 
-void obiekt::ruch_na_wprost(const TVector<double, 3>& przesun) {
+void obiekt::move_ahead(const TVector<double, 3>& przesun) {
     for (TVector<double, 3>& x : wspolrzedne)
         x = x + przesun;
 }
 
-void obiekt::obrot(const TMatrix<double, 3>& mac_obrotu) {
+void obiekt::rotation(const TMatrix<double, 3>& mac_rotationu) {
     for (TVector<double, 3>& x : wspolrzedne)
-        x = mac_obrotu * x;
+        x = mac_rotationu * x;
 }
 
 TVector<double, 3> obiekt::polozenie() const {
-    return srodek_lok + przesuniecie;
+    return srodek_lok + translation;
 }
