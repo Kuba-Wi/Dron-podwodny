@@ -25,7 +25,7 @@ private:
     PzG::LaczeDoGNUPlota link;
 
     /*! \brief lista z wskaźnikami na przeszkody */
-    std::list<std::shared_ptr<obiekt>> lista_przeszkod;
+    std::list<std::shared_ptr<obiekt>> obstacles_list;
 
     /*! \brief Rysuje wszystkie powierzchnie i obiekty na scenie */
     void draw() { link.Rysuj(); }

@@ -11,24 +11,24 @@ bool stage::emergence() const {
 }
 
 bool stage::colision() const {
-    TVector<double, 3> lenghti_drona = dron_stage.return_lenghts();
-    TVector<double, 3> srodek_drona = dron_stage.return_location();
-    TVector<double, 3> lenghti_przeszkody;
-    TVector<double, 3> distancei;
+    TVector<double, 3> drone_lenghts = dron_stage.return_lenghts();
+    TVector<double, 3> drone_centre = dron_stage.return_location();
+    TVector<double, 3> obstacle_lenghts;
+    TVector<double, 3> distance;
 
-    bool jest_colision = false;
+    bool is_colision = false;
 
-    for (auto& przeszkoda : lista_przeszkod) {
-        lenghti_przeszkody = przeszkoda->return_lenght_halves();
-        distancei = srodek_drona - przeszkoda->location();
+    for (auto& obstacle : obstacles_list) {
+        obstacle_lenghts = obstacle->return_lenght_halves();
+        distance = drone_centre - obstacle->location();
 
         for (int i = 0; i < 3; ++i) {
-            jest_colision = (fabs(distancei[i]) <= (lenghti_przeszkody[i] + lenghti_drona[i]));
-            if (!jest_colision) {
+            is_colision = (fabs(distance[i]) <= (obstacle_lenghts[i] + drone_lenghts[i]));
+            if (!is_colision) {
                 break;
             }
         }
-        if (jest_colision) {
+        if (is_colision) {
             return true;
         }
     }
@@ -76,28 +76,28 @@ void stage::add_right_motor(const std::string& local_name, const std::string& gl
 }
 
 void stage::add_obstacle(const std::string& local_name, const std::string& global_name) {
-    lista_przeszkod.back()->add_local_file(local_name);
-    lista_przeszkod.back()->add_global_file(global_name);
+    obstacles_list.back()->add_local_file(local_name);
+    obstacles_list.back()->add_global_file(global_name);
 
-    lista_przeszkod.back()->initialize_obiekt();
+    obstacles_list.back()->initialize_obiekt();
 
     link_add_file(global_name);
 }
 
 void stage::add_cuboid(const std::string& local_name, const std::string& global_name) {
-    lista_przeszkod.push_back(std::make_shared<cuboid>());
+    obstacles_list.push_back(std::make_shared<cuboid>());
 
     add_obstacle(local_name, global_name);
 }
 
 void stage::add_bar(const std::string& local_name, const std::string& global_name) {
-    lista_przeszkod.push_back(std::make_shared<bar>());
+    obstacles_list.push_back(std::make_shared<bar>());
 
     add_obstacle(local_name, global_name);
 }
 
 void stage::add_rectangle(const std::string& local_name, const std::string& global_name) {
-    lista_przeszkod.push_back(std::make_shared<rectangle>());
+    obstacles_list.push_back(std::make_shared<rectangle>());
 
     add_obstacle(local_name, global_name);
 }
@@ -110,15 +110,15 @@ void stage::initialize() {
 }
 
 void stage::move_ahead(double rising_angle, double distance) {
-    int kwant = 250;
-    for (int i = 0; i < kwant; ++i) {
-        dron_stage.move_ahead(rising_angle, distance / double(kwant));
+    int quantum = 250;
+    for (int i = 0; i < quantum; ++i) {
+        dron_stage.move_ahead(rising_angle, distance / double(quantum));
         if (colision() || colision_bottom()) {
-            std::cout << "colision!\n";
-            dron_stage.move_ahead(rising_angle, -distance / double(kwant));
+            std::cout << "Colision!\n";
+            dron_stage.move_ahead(rising_angle, -distance / double(quantum));
             break;
         } else if (emergence() && ((rising_angle > 0 && distance > 0) || (rising_angle < 0 && distance < 0))) {
-            std::cout << "emergence.\n";
+            std::cout << "Emergence.\n";
             distance = distance * cos(acos(-1) * rising_angle / 180.0);
             rising_angle = 0;
         }
@@ -127,9 +127,9 @@ void stage::move_ahead(double rising_angle, double distance) {
 }
 
 void stage::rotation(double rotation_angle) {
-    int kwant = 360;
-    for (int i = 0; i < kwant; ++i) {
-        dron_stage.rotation(rotation_angle / double(kwant));
+    int quantum = 360;
+    for (int i = 0; i < quantum; ++i) {
+        dron_stage.rotation(rotation_angle / double(quantum));
         draw();
     }
 }
