@@ -13,7 +13,7 @@ void surface::add_global_file(const std::string& global_name) {
 void surface::read_local() {
     std::ifstream read;
     std::ofstream write;
-    TVector<double, 3> wiersz;
+    TVector<double, 3> line;
 
     read.open(local_file_name);
     write.open(file_with_points);
@@ -21,7 +21,7 @@ void surface::read_local() {
     if (!(read.is_open() && write.is_open()))
         return;
 
-    read >> wiersz;
+    read >> line;
     while (!read.eof()) {
         if (!read) {
             read.clear();
@@ -29,12 +29,12 @@ void surface::read_local() {
                 ;
             write << "#\n\n";
         } else
-            write << wiersz;
+            write << line;
 
-        read >> wiersz;
+        read >> line;
     }
 
-    z_of_surface = wiersz[2];
+    z_of_surface = line[2];
 
     read.close();
     write.close();
