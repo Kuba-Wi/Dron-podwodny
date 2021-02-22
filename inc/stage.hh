@@ -16,7 +16,7 @@
 class stage {
 private:
     /*! \brief Opisuje powierzchnię dna */
-    surface dno;
+    surface bottom;
     /*! \brief Opisuje powierzchnię wody */
     surface woda;
     /*! \brief Opisuje obiekt dron */
@@ -56,7 +56,7 @@ private:
      * \retval true - gdy jest kolizja
      * \retval false - gdy nie ma kolizji
      */
-    bool kolizja_dno() const;
+    bool kolizja_bottom() const;
 
     /*!
      * \brief Zwraca informację o wynurzenie
@@ -71,12 +71,12 @@ public:
     stage() {}
 
     /*!
-     * \brief Dodaje dno na scenę
+     * \brief Dodaje bottom na scenę
      * Zapisuje pliki opisujące powierzchnię dna
      * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
      * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
      */
-    void dodaj_dno(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void dodaj_bottom(const std::string& nazwa_lok, const std::string& nazwa_glob);
     /*!
      * \brief Dodaje wodę na scenę
      * Zapisuje pliki opisujące powierzchnię wody

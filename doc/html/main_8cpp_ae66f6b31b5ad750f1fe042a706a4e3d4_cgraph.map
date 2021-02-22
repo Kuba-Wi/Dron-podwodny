@@ -7,7 +7,7 @@
 <area shape="rect" id="node14" href="$classstage.html#afdd54c0dc31920dc605fe63ed6d746c0" title="Dodaje prostopadłościan na scenę Zapisuje pliki opisujące prostopadłościan i dodaje go na koniec list..." alt="" coords="261,395,463,422"/>
 <area shape="rect" id="node16" href="$classstage.html#a8dce746bd5a81c86fb011ae682fb5205" title="Dodaje pręt na scenę Zapisuje pliki opisujące pręt i dodaje go na koniec listy przeszkód. " alt="" coords="299,446,425,473"/>
 <area shape="rect" id="node17" href="$classstage.html#ad15da6ac88b5d6aef70d41373633b63d" title="Dodaje prostokąt na scenę Zapisuje pliki opisujące prostokąt i dodaje go na koniec listy przeszkód..." alt="" coords="283,497,441,523"/>
-<area shape="rect" id="node18" href="$classstage.html#ad7c4ca7a3eb26bc133eabe65476791d4" title="Dodaje dno na scenę Zapisuje pliki opisujące powierzchnię dna. " alt="" coords="757,239,881,266"/>
+<area shape="rect" id="node18" href="$classstage.html#ad7c4ca7a3eb26bc133eabe65476791d4" title="Dodaje bottom na scenę Zapisuje pliki opisujące powierzchnię dna. " alt="" coords="757,239,881,266"/>
 <area shape="rect" id="node20" href="$classstage.html#a9721c738d27eb6b7806685edd3f84ce5" title="Dodaje wodę na scenę Zapisuje pliki opisujące powierzchnię wody. " alt="" coords="751,189,886,215"/>
 <area shape="rect" id="node21" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="303,1082,421,1109"/>
 <area shape="rect" id="node43" href="$main_8cpp.html#a74a538fb8c480018a692668151298e60" title="naprawa_strumienia" alt="" coords="293,91,431,118"/>

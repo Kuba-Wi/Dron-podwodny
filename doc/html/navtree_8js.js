@@ -3,7 +3,7 @@ var navtree_8js =
     [ "cachedLink", "navtree_8js.html#aaa2d293f55e5fe3620af4f9a2836e428", null ],
     [ "createIndent", "navtree_8js.html#a4d8f406d49520a0cede2e48347a3d7aa", null ],
     [ "deleteLink", "navtree_8js.html#abdf8e0e69c89803c1b84784a13b7fd2e", null ],
-    [ "expandNode", "navtree_8js.html#a4eb1f166c9d93b198e1621a4c787a412", null ],
+    [ "expanbottomde", "navtree_8js.html#a4eb1f166c9d93b198e1621a4c787a412", null ],
     [ "getData", "navtree_8js.html#a819e84218d50e54d98161b272d1d5b01", null ],
     [ "getNode", "navtree_8js.html#a256aa4fbee866e9227f78e82e9f258bb", null ],
     [ "getScript", "navtree_8js.html#a32f4aac18d03aee747b55dea195731ac", null ],

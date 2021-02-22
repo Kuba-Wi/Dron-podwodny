@@ -23,8 +23,8 @@ void obsluga_sceny() {
     glowna.dodaj_bar("dat/bar.dat", "dat/bar1.dat");
     glowna.dodaj_rectangle("dat/rectangle.dat", "dat/rectangle1.dat");
 
-    glowna.dodaj_dno("dat/dno.pow", "dat/dno1.pow");
-    glowna.dodaj_wode("dat/pow_wody.dat", "dat/pow_wody1.dat");
+    glowna.dodaj_bottom("dat/bottom.pow", "dat/bottom1.pow");
+    glowna.dodaj_wode("dat/water_surface.dat", "dat/water_surface1.dat");
     glowna.inicjalizuj();
 
     char wybor = 'm';

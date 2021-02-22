@@ -2,7 +2,7 @@ var searchData=
 [
   ['deletelink',['deleteLink',['../navtree_8js.html#abdf8e0e69c89803c1b84784a13b7fd2e',1,'navtree.js']]],
   ['dlugosc',['dlugosc',['../class_s_wektor.html#a5f1248739407307caaeada3d87bd1201',1,'TVector']]],
-  ['dodaj_5fdno',['dodaj_dno',['../classstage.html#ad7c4ca7a3eb26bc133eabe65476791d4',1,'stage']]],
+  ['dodaj_5fbottom',['dodaj_bottom',['../classstage.html#ad7c4ca7a3eb26bc133eabe65476791d4',1,'stage']]],
   ['dodaj_5fbody',['dodaj_body',['../classstage.html#ad5d8213c9a23276befedb02e7d4fad7c',1,'stage']]],
   ['dodaj_5fplik_5fglob',['dodaj_plik_glob',['../classsurface.html#adc90beb15e09c8eccf0603e4eadfbeec',1,'surface']]],
   ['dodaj_5fplik_5flok',['dodaj_plik_lok',['../classsurface.html#a97bcc95edec5081f08e6234afff0f1f8',1,'surface']]],

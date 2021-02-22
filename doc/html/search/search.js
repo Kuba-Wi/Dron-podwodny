@@ -166,9 +166,9 @@ function SearchBox(name, resultsPath, inFrame, label)
       {
         this.OnSearchSelectShow();
         var win=this.DOMSearchSelectWindow();
-        for (i=0;i<win.childNodes.length;i++)
+        for (i=0;i<win.chilbottomdes.length;i++)
         {
-          var child = win.childNodes[i]; // get span within a
+          var child = win.chilbottomdes[i]; // get span within a
           if (child.className=='SelectItem')
           {
             child.focus();
@@ -217,9 +217,9 @@ function SearchBox(name, resultsPath, inFrame, label)
   {
     var count=0;
     var win=this.DOMSearchSelectWindow();
-    for (i=0;i<win.childNodes.length;i++)
+    for (i=0;i<win.chilbottomdes.length;i++)
     {
-      var child = win.childNodes[i]; // get span within a
+      var child = win.chilbottomdes[i]; // get span within a
       if (child.className=='SelectItem')
       {
         count++;
@@ -232,9 +232,9 @@ function SearchBox(name, resultsPath, inFrame, label)
   {
     var i,j=0;
     var win=this.DOMSearchSelectWindow();
-    for (i=0;i<win.childNodes.length;i++)
+    for (i=0;i<win.chilbottomdes.length;i++)
     {
-      var child = win.childNodes[i]; // get span within a
+      var child = win.chilbottomdes[i]; // get span within a
       if (child.className=='SelectItem')
       {
         var node = child.firstChild;
@@ -421,7 +421,7 @@ function SearchResults(name)
           return element;
         }
 
-        if (element.nodeName == 'DIV' && element.hasChildNodes())
+        if (element.nodeName == 'DIV' && element.hasChilbottomdes())
         {
            element = element.firstChild;
         }

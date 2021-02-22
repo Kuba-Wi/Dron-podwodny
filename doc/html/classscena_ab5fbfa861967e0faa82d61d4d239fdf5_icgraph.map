@@ -1,4 +1,4 @@
-<map id="stage::kolizja_dno" name="stage::kolizja_dno">
+<map id="stage::kolizja_bottom" name="stage::kolizja_bottom">
 <area shape="rect" id="node2" href="$classstage.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="184,56,277,83"/>
 <area shape="rect" id="node7" href="$classstage.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="325,107,459,133"/>
 <area shape="rect" id="node3" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="333,56,451,83"/>

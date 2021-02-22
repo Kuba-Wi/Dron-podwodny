@@ -2,8 +2,8 @@
 #include <cmath>
 #include <iostream>
 
-bool stage::kolizja_dno() const {
-    return (fabs(dron_stage.zwroc_polozenie()[2] - dno.zwroc_z()) <= dron_stage.zwroc_dlugosci()[2]);
+bool stage::kolizja_bottom() const {
+    return (fabs(dron_stage.zwroc_polozenie()[2] - bottom.zwroc_z()) <= dron_stage.zwroc_dlugosci()[2]);
 }
 
 bool stage::wynurzenie() const {
@@ -39,11 +39,11 @@ void stage::lacze_dodaj_plik(const std::string& nazwa_pliku) {
     Lacze.DodajNazwePliku(nazwa_pliku.c_str());
 }
 
-void stage::dodaj_dno(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    dno.dodaj_plik_lok(nazwa_lok);
-    dno.dodaj_plik_glob(nazwa_glob);
+void stage::dodaj_bottom(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+    bottom.dodaj_plik_lok(nazwa_lok);
+    bottom.dodaj_plik_glob(nazwa_glob);
 
-    dno.wczytaj_lok();
+    bottom.wczytaj_lok();
 
     lacze_dodaj_plik(nazwa_glob);
 }
@@ -113,7 +113,7 @@ void stage::ruch_prosto(double kat_wznoszenia, double odleglosc) {
     int kwant = 250;
     for (int i = 0; i < kwant; ++i) {
         dron_stage.ruch_na_wprost(kat_wznoszenia, odleglosc / double(kwant));
-        if (kolizja() || kolizja_dno()) {
+        if (kolizja() || kolizja_bottom()) {
             std::cout << "Kolizja!\n";
             dron_stage.ruch_na_wprost(kat_wznoszenia, -odleglosc / double(kwant));
             break;

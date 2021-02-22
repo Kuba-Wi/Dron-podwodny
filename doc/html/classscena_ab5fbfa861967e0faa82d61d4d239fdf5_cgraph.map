@@ -1,4 +1,4 @@
-<map id="stage::kolizja_dno" name="stage::kolizja_dno">
+<map id="stage::kolizja_bottom" name="stage::kolizja_bottom">
 <area shape="rect" id="node2" href="$classdron.html#a19e92252d303310b61c69d2068030923" title="Zwraca położenie drona Metoda zwraca aktualne położenie drona. " alt="" coords="185,5,337,32"/>
 <area shape="rect" id="node4" href="$classsurface.html#afae813342be6d8f34701d85bc60d4f18" title="zwraca wspolrzedną z&#45;tową powierzchni " alt="" coords="184,56,339,83"/>
 <area shape="rect" id="node5" href="$classdron.html#acc3c64940ea21cc19e61a072b8445b0a" title="Zwraca wymiary drona Metoda zwraca odległości środka drona od jego ścian. " alt="" coords="189,107,334,133"/>

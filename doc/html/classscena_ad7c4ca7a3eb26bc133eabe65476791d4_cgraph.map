@@ -1,4 +1,4 @@
-<map id="stage::dodaj_dno" name="stage::dodaj_dno">
+<map id="stage::dodaj_bottom" name="stage::dodaj_bottom">
 <area shape="rect" id="node2" href="$classsurface.html#a97bcc95edec5081f08e6234afff0f1f8" title="Zapisuje plik lokalny Metoda zapisuje nazwę pliku z współrzędnymi lokalnymi. " alt="" coords="196,5,333,47"/>
 <area shape="rect" id="node3" href="$classsurface.html#adc90beb15e09c8eccf0603e4eadfbeec" title="Zapisuje plik globalny Metoda zapisuje nazwę pliku z współrzędnymi globalnymi. " alt="" coords="196,71,333,112"/>
 <area shape="rect" id="node4" href="$classsurface.html#ab30b9bda0dea7c2baffa3a917c1beb7b" title="Przepisuje plik lokalny do pliku z punktami Metoda zapisuje współrzędne z pliku z współrzędnymi lokal..." alt="" coords="177,137,352,163"/>
