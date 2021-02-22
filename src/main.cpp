@@ -15,16 +15,16 @@ void inf_o_obiektach() {
 
 void obsluga_sceny() {
     stage glowna;
-    glowna.dodaj_body("dat/body.pow", "dat/body1.pow");
-    glowna.dodaj_left_motor("dat/left_motor.dat", "dat/left_motor1.dat");
-    glowna.dodaj_right_motor("dat/right_motor.dat", "dat/right_motor1.dat");
+    glowna.add_body("dat/body.pow", "dat/body1.pow");
+    glowna.add_left_motor("dat/left_motor.dat", "dat/left_motor1.dat");
+    glowna.add_right_motor("dat/right_motor.dat", "dat/right_motor1.dat");
 
-    glowna.dodaj_cuboid("dat/cuboid.dat", "dat/cuboid1.dat");
-    glowna.dodaj_bar("dat/bar.dat", "dat/bar1.dat");
+    glowna.add_cuboid("dat/cuboid.dat", "dat/cuboid1.dat");
+    glowna.add_bar("dat/bar.dat", "dat/bar1.dat");
     glowna.dodaj_rectangle("dat/rectangle.dat", "dat/rectangle1.dat");
 
     glowna.dodaj_bottom("dat/bottom.pow", "dat/bottom1.pow");
-    glowna.dodaj_wode("dat/water_surface.dat", "dat/water_surface1.dat");
+    glowna.add_water("dat/water_surface.dat", "dat/water_surface1.dat");
     glowna.inicjalizuj();
 
     char wybor = 'm';

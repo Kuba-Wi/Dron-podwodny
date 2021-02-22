@@ -83,42 +83,42 @@ public:
      * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
      * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
      */
-    void dodaj_wode(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_water(const std::string& nazwa_lok, const std::string& nazwa_glob);
     /*!
      * \brief Dodaje body drona na scenę
      * Zapisuje pliki opisujące body
      * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
      * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
      */
-    void dodaj_body(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_body(const std::string& nazwa_lok, const std::string& nazwa_glob);
     /*!
      * \brief Dodaje lewą śrubę drona na scenę
      * Zapisuje pliki opisujące lewą śrubę
      * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
      * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
      */
-    void dodaj_left_motor(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_left_motor(const std::string& nazwa_lok, const std::string& nazwa_glob);
     /*!
      * \brief Dodaje prawą śrubę drona na scenę
      * Zapisuje pliki opisujące prawą śrubę
      * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
      * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
      */
-    void dodaj_right_motor(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_right_motor(const std::string& nazwa_lok, const std::string& nazwa_glob);
     /*!
      * \brief Dodaje prostopadłościan na scenę
      * Zapisuje pliki opisujące prostopadłościan i dodaje go na koniec listy przeszkód.
      * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
      * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
      */
-    void dodaj_cuboid(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_cuboid(const std::string& nazwa_lok, const std::string& nazwa_glob);
     /*!
      * \brief Dodaje pręt na scenę
      * Zapisuje pliki opisujące pręt i dodaje go na koniec listy przeszkód.
      * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
      * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
      */
-    void dodaj_bar(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void add_bar(const std::string& nazwa_lok, const std::string& nazwa_glob);
     /*!
      * \brief Dodaje prostokąt na scenę
      * Zapisuje pliki opisujące prostokąt i dodaje go na koniec listy przeszkód.

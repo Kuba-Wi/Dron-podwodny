@@ -48,7 +48,7 @@ void stage::dodaj_bottom(const std::string& nazwa_lok, const std::string& nazwa_
     lacze_dodaj_plik(nazwa_glob);
 }
 
-void stage::dodaj_wode(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+void stage::add_water(const std::string& nazwa_lok, const std::string& nazwa_glob) {
     woda.dodaj_plik_lok(nazwa_lok);
     woda.dodaj_plik_glob(nazwa_glob);
 
@@ -57,19 +57,19 @@ void stage::dodaj_wode(const std::string& nazwa_lok, const std::string& nazwa_gl
     lacze_dodaj_plik(nazwa_glob);
 }
 
-void stage::dodaj_body(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+void stage::add_body(const std::string& nazwa_lok, const std::string& nazwa_glob) {
     dron_stage.dodaj_pliki_body(nazwa_lok, nazwa_glob);
 
     lacze_dodaj_plik(nazwa_glob);
 }
 
-void stage::dodaj_left_motor(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+void stage::add_left_motor(const std::string& nazwa_lok, const std::string& nazwa_glob) {
     dron_stage.dodaj_pliki_sruby_lewej(nazwa_lok, nazwa_glob);
 
     lacze_dodaj_plik(nazwa_glob);
 }
 
-void stage::dodaj_right_motor(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+void stage::add_right_motor(const std::string& nazwa_lok, const std::string& nazwa_glob) {
     dron_stage.dodaj_pliki_sruby_prawej(nazwa_lok, nazwa_glob);
 
     lacze_dodaj_plik(nazwa_glob);
@@ -84,13 +84,13 @@ void stage::dodaj_przeszkode(const std::string& nazwa_lok, const std::string& na
     lacze_dodaj_plik(nazwa_glob);
 }
 
-void stage::dodaj_cuboid(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+void stage::add_cuboid(const std::string& nazwa_lok, const std::string& nazwa_glob) {
     lista_przeszkod.push_back(std::make_shared<cuboid>());
 
     dodaj_przeszkode(nazwa_lok, nazwa_glob);
 }
 
-void stage::dodaj_bar(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+void stage::add_bar(const std::string& nazwa_lok, const std::string& nazwa_glob) {
     lista_przeszkod.push_back(std::make_shared<bar>());
 
     dodaj_przeszkode(nazwa_lok, nazwa_glob);

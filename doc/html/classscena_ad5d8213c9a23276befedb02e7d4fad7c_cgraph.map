@@ -1,4 +1,4 @@
-<map id="stage::dodaj_body" name="stage::dodaj_body">
+<map id="stage::add_body" name="stage::add_body">
 <area shape="rect" id="node2" href="$classdron.html#ad4e3e1c99980abc862fad7177d014427" title="Dodaje pliki bodyu Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące body..." alt="" coords="196,78,359,105"/>
 <area shape="rect" id="node5" href="$classstage.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="197,135,358,162"/>
 <area shape="rect" id="node3" href="$classsurface.html#a97bcc95edec5081f08e6234afff0f1f8" title="Zapisuje plik lokalny Metoda zapisuje nazwę pliku z współrzędnymi lokalnymi. " alt="" coords="422,5,559,47"/>
