@@ -3,27 +3,28 @@
 #include <cassert>
 #include <cmath>
 #include <iostream>
+#include <array>
 /*!
  * \brief modeluje pojęcie Wektora
  * Szablon klasy modeluje pojęcie wektora dowolnego rozmiaru
  * i dowolnego typu
  */
 template <typename Typ, int Rozmiar>
-class SWektor {
+class TVector {
     /*! \brief Liczy wszystkie utworzone wektory 3D */
     static int lacznie_wektorow;
     /*! \brief Liczy aktualnie istniejące wektory 3D */
     static int aktualnie_wektorow;
 
-    Typ skladowe[Rozmiar]; /*! kolejne składowe wektora */
+    std::array<Typ, Rozmiar> skladowe; /*! kolejne składowe wektora */
 public:
     /*!
      * \brief Konsturuktor
-     * Tworzy nowy obiekt SWektor.
+     * Tworzy nowy obiekt TVector.
      * Zwiększa o jeden pola statyczne klasy, jeśli wektor
      * ma rozmiar równy 3.
      */
-    SWektor();
+    TVector();
     /*!
      * \brief Konstruktor kopiujący
      * Kopiuje wektor do obiektu, który wywołuje tę metodę.
@@ -31,13 +32,13 @@ public:
      * ma rozmiar równy 3.
      * \param[in] Wek - kopiowany wektor
      */
-    SWektor(const SWektor<Typ, Rozmiar>& Wek);
+    TVector(const TVector<Typ, Rozmiar>& Wek);
     /*!
      * \brief Destruktor
      * Zmniejsza o jeden pole aktualnie_wektorow3D, jeśli wektor
      * ma rozmiar równy 3.
      */
-    ~SWektor();
+    ~TVector();
 
     /*!
      * \brief Odczytuje odpowiednią współrzędną wektora.
@@ -66,7 +67,7 @@ public:
      * \param[in] drugi - wektor, który dodajemy
      * \return sumę dwóch wektorów
      */
-    SWektor<Typ, Rozmiar> operator+(const SWektor<Typ, Rozmiar>& drugi) const;
+    TVector<Typ, Rozmiar> operator+(const TVector<Typ, Rozmiar>& drugi) const;
 
     /*!
      * \brief Oblicza różnicę dwóch wektorów
@@ -74,7 +75,7 @@ public:
      * \param[in] drugi - wektór, który odejmujemy
      * \return wynik odejmowania
      */
-    SWektor<Typ, Rozmiar> operator-(const SWektor<Typ, Rozmiar>& drugi) const;
+    TVector<Typ, Rozmiar> operator-(const TVector<Typ, Rozmiar>& drugi) const;
 
     /*!
      * \brief Oblicza iloczyn skalarny
@@ -82,14 +83,14 @@ public:
      * \param[in] drugi - drugi składnik iloczynu
      * \return wynik mnożenia
      */
-    Typ operator*(const SWektor<Typ, Rozmiar>& drugi) const;
+    Typ operator*(const TVector<Typ, Rozmiar>& drugi) const;
     /*!
      * \brief Oblicza iloczyn wektora przez liczbę
      * Metoda liczy iloczyn wektora przez liczbę
      * \param[in] liczba - liczba przez którą mnożymy
      * \return wynik mnożenia
      */
-    SWektor<Typ, Rozmiar> operator*(Typ liczba) const;
+    TVector<Typ, Rozmiar> operator*(Typ liczba) const;
 
     /*!
      * \brief Oblicza iloraz wektora przez liczbę
@@ -97,7 +98,7 @@ public:
      * \param[in] liczba - liczba przez którą dzielimy
      * \return wynik dzielenia
      */
-    SWektor<Typ, Rozmiar> operator/(Typ liczba) const;
+    TVector<Typ, Rozmiar> operator/(Typ liczba) const;
     /*!
      * \brief Oblicza długość wektora
      * Metoda oblicza długość wektora:
@@ -118,13 +119,13 @@ public:
 };
 
 template <typename Typ, int Rozmiar>
-int SWektor<Typ, Rozmiar>::lacznie_wektorow = 0;
+int TVector<Typ, Rozmiar>::lacznie_wektorow = 0;
 
 template <typename Typ, int Rozmiar>
-int SWektor<Typ, Rozmiar>::aktualnie_wektorow = 0;
+int TVector<Typ, Rozmiar>::aktualnie_wektorow = 0;
 
 template <typename Typ, int Rozmiar>
-SWektor<Typ, Rozmiar>::SWektor() {
+TVector<Typ, Rozmiar>::TVector() {
     if (Rozmiar == 3) {
         ++lacznie_wektorow;
         ++aktualnie_wektorow;
@@ -132,7 +133,7 @@ SWektor<Typ, Rozmiar>::SWektor() {
 }
 
 template <typename Typ, int Rozmiar>
-SWektor<Typ, Rozmiar>::SWektor(const SWektor<Typ, Rozmiar>& Wek) {
+TVector<Typ, Rozmiar>::TVector(const TVector<Typ, Rozmiar>& Wek) {
     *this = Wek;
     if (Rozmiar == 3) {
         ++aktualnie_wektorow;
@@ -141,14 +142,14 @@ SWektor<Typ, Rozmiar>::SWektor(const SWektor<Typ, Rozmiar>& Wek) {
 }
 
 template <typename Typ, int Rozmiar>
-SWektor<Typ, Rozmiar>::~SWektor() {
+TVector<Typ, Rozmiar>::~TVector() {
     if (Rozmiar == 3)
         --aktualnie_wektorow;
 }
 
 template <typename Typ, int Rozmiar>
-SWektor<Typ, Rozmiar> SWektor<Typ, Rozmiar>::operator+(const SWektor<Typ, Rozmiar>& drugi) const {
-    SWektor<Typ, Rozmiar> Suma;
+TVector<Typ, Rozmiar> TVector<Typ, Rozmiar>::operator+(const TVector<Typ, Rozmiar>& drugi) const {
+    TVector<Typ, Rozmiar> Suma;
 
     for (int i = 0; i < Rozmiar; i++)
         Suma.skladowe[i] = skladowe[i] + drugi.skladowe[i];
@@ -157,8 +158,8 @@ SWektor<Typ, Rozmiar> SWektor<Typ, Rozmiar>::operator+(const SWektor<Typ, Rozmia
 }
 
 template <typename Typ, int Rozmiar>
-SWektor<Typ, Rozmiar> SWektor<Typ, Rozmiar>::operator-(const SWektor<Typ, Rozmiar>& drugi) const {
-    SWektor<Typ, Rozmiar> Roznica;
+TVector<Typ, Rozmiar> TVector<Typ, Rozmiar>::operator-(const TVector<Typ, Rozmiar>& drugi) const {
+    TVector<Typ, Rozmiar> Roznica;
 
     for (int i = 0; i < Rozmiar; i++)
         Roznica.skladowe[i] = skladowe[i] - drugi.skladowe[i];
@@ -167,7 +168,7 @@ SWektor<Typ, Rozmiar> SWektor<Typ, Rozmiar>::operator-(const SWektor<Typ, Rozmia
 }
 
 template <typename Typ, int Rozmiar>
-Typ SWektor<Typ, Rozmiar>::operator*(const SWektor<Typ, Rozmiar>& drugi) const {
+Typ TVector<Typ, Rozmiar>::operator*(const TVector<Typ, Rozmiar>& drugi) const {
     Typ iloczyn = 0;
 
     for (int i = 0; i < Rozmiar; i++)
@@ -177,8 +178,8 @@ Typ SWektor<Typ, Rozmiar>::operator*(const SWektor<Typ, Rozmiar>& drugi) const {
 }
 
 template <typename Typ, int Rozmiar>
-SWektor<Typ, Rozmiar> SWektor<Typ, Rozmiar>::operator*(Typ liczba) const {
-    SWektor<Typ, Rozmiar> Wynik;
+TVector<Typ, Rozmiar> TVector<Typ, Rozmiar>::operator*(Typ liczba) const {
+    TVector<Typ, Rozmiar> Wynik;
 
     for (int i = 0; i < Rozmiar; i++)
         Wynik.skladowe[i] = skladowe[i] * liczba;
@@ -187,7 +188,7 @@ SWektor<Typ, Rozmiar> SWektor<Typ, Rozmiar>::operator*(Typ liczba) const {
 }
 
 template <typename Typ, int Rozmiar>
-double SWektor<Typ, Rozmiar>::dlugosc() const {
+double TVector<Typ, Rozmiar>::dlugosc() const {
     double Wynik = 0;
 
     for (int i = 0; i < Rozmiar; i++)
@@ -197,8 +198,8 @@ double SWektor<Typ, Rozmiar>::dlugosc() const {
 }
 
 template <typename Typ, int Rozmiar>
-SWektor<Typ, Rozmiar> SWektor<Typ, Rozmiar>::operator/(Typ liczba) const {
-    SWektor<Typ, Rozmiar> Wynik;
+TVector<Typ, Rozmiar> TVector<Typ, Rozmiar>::operator/(Typ liczba) const {
+    TVector<Typ, Rozmiar> Wynik;
 
     for (int i = 0; i < Rozmiar; ++i)
         Wynik[i] = skladowe[i] / liczba;
@@ -215,7 +216,7 @@ SWektor<Typ, Rozmiar> SWektor<Typ, Rozmiar>::operator/(Typ liczba) const {
  * referencję do Strm
  */
 template <typename Typ, int Rozmiar>
-std::istream& operator>>(std::istream& Strm, SWektor<Typ, Rozmiar>& Wek) {
+std::istream& operator>>(std::istream& Strm, TVector<Typ, Rozmiar>& Wek) {
     for (int i = 0; i < Rozmiar; i++)
         Strm >> Wek[i];
 
@@ -231,7 +232,7 @@ std::istream& operator>>(std::istream& Strm, SWektor<Typ, Rozmiar>& Wek) {
  * referencję do Strm
  */
 template <typename Typ, int Rozmiar>
-std::ostream& operator<<(std::ostream& Strm, const SWektor<Typ, Rozmiar>& Wek) {
+std::ostream& operator<<(std::ostream& Strm, const TVector<Typ, Rozmiar>& Wek) {
     for (int i = 0; i < Rozmiar; i++)
         Strm << Wek[i] << " ";
 

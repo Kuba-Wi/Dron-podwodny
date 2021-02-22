@@ -9,7 +9,7 @@ var annotated_dup =
     [ "prostokat", "classprostokat.html", "classprostokat" ],
     [ "prostopadloscian", "classprostopadloscian.html", "classprostopadloscian" ],
     [ "scena", "classscena.html", "classscena" ],
-    [ "SMacierz", "class_s_macierz.html", "class_s_macierz" ],
-    [ "SWektor", "class_s_wektor.html", "class_s_wektor" ],
+    [ "TMatrix", "class_s_macierz.html", "class_s_macierz" ],
+    [ "TVector", "class_s_wektor.html", "class_s_wektor" ],
     [ "szesciokat", "classszesciokat.html", "classszesciokat" ]
 ];

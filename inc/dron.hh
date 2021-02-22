@@ -18,7 +18,7 @@ private:
     /*! \brief Łączny kąt obrotu obiektu */
     double laczny_kat_obrotu;
     /*! \brief przesunięcie obiektu względem wspolrzednych lokalnych */
-    SWektor<double, 3> przesuniecie;
+    TVector<double, 3> przesuniecie;
 
     /*!
      * \brief Wylicza wektor translacji.
@@ -27,33 +27,33 @@ private:
      * \param[in] kat_wznoszenia - kąt o jaki ma być odchylony wektor
      * \param[in] odleglosc - długość wektora
      */
-    void wylicz_translacje(SWektor<double, 3>& wek, double kat_wznoszenia, double odleglosc) const;
+    void wylicz_translacje(TVector<double, 3>& wek, double kat_wznoszenia, double odleglosc) const;
     /*!
      * \brief Wylicza macierz obrotu.
      * Metoda wylicza macierz obrotu wokół osi OZ na podstawie zadanych parametrów.
      * \param[in] obrot - wypełniana macierz obrotu
      * \param[in] kat_obrotu - kąt dla jakiego ma zostać wyliczona macierz
      */
-    void wylicz_macierz_obrotu(SMacierz<double, 3>& obrot, double kat_obrotu) const;
+    void wylicz_macierz_obrotu(TMatrix<double, 3>& obrot, double kat_obrotu) const;
 
     /*!
      * \brief Powoduje ruch sruby lewej
      * Metoda powoduje ruch lewej śruby o wektor przesunięcie i obrót o zadaną macierz.
      * \param[in] obrot - macierz z zapisanym obrotem
      */
-    void sruba_lewa_ruch(const SMacierz<double, 3>& obrot);
+    void sruba_lewa_ruch(const TMatrix<double, 3>& obrot);
     /*!
      * \brief Powoduje ruch sruby prawej
      * Metoda powoduje ruch prawej śruby o wektor przesunięcie i obrót o zadaną macierz.
      * \param[in] obrot - macierz z zapisanym obrotem
      */
-    void sruba_prawa_ruch(const SMacierz<double, 3>& obrot);
+    void sruba_prawa_ruch(const TMatrix<double, 3>& obrot);
     /*!
      * \brief Powoduje ruch korpusu
      * Metoda powoduje ruch korpusu o wektor przesunięcie i obrót o zadaną macierz.
      * \param[in] obrot - macierz z zapisanym obrotem
      */
-    void korpus_ruch(const SMacierz<double, 3>& obrot);
+    void korpus_ruch(const TMatrix<double, 3>& obrot);
 
 public:
     /*!
@@ -107,11 +107,11 @@ public:
      * Metoda zwraca aktualne położenie drona
      * \return wektor z zapisanymi współrzędnymi kartezjańskimi drona
      */
-    SWektor<double, 3> zwroc_polozenie() const;
+    TVector<double, 3> zwroc_polozenie() const;
     /*!
      * \brief Zwraca wymiary drona
      * Metoda zwraca odległości środka drona od jego ścian.
      * \return wektor z zapisanymi długościami
      */
-    SWektor<double, 3> zwroc_dlugosci() const;
+    TVector<double, 3> zwroc_dlugosci() const;
 };

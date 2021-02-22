@@ -13,8 +13,8 @@ void obiekt::inicjalizuj_obiekt() {
     wczytaj_lok();
     wczytaj_wspolrzedne_lok();
 
-    SWektor<double, 3> min_wsp = wspolrzedne[0];
-    SWektor<double, 3> max_wsp = wspolrzedne[0];
+    TVector<double, 3> min_wsp = wspolrzedne[0];
+    TVector<double, 3> max_wsp = wspolrzedne[0];
 
     for (auto& wiersz : wspolrzedne) {
         for (int i = 0; i < 3; ++i) {
@@ -39,7 +39,7 @@ void obiekt::wczytaj_wspolrz(const std::string& nazwa_pliku) {
     if (!read.is_open())
         return;
 
-    SWektor<double, 3> wiersz;
+    TVector<double, 3> wiersz;
     wspolrzedne.clear();
 
     read >> wiersz;
@@ -69,7 +69,7 @@ void obiekt::wpisz_wspolrzedne_glob() {
 
     int licznik = 0;
 
-    for (SWektor<double, 3>& i : wspolrzedne) {
+    for (TVector<double, 3>& i : wspolrzedne) {
         write << i;
         ++licznik;
         if (licznik == 4) {
@@ -81,16 +81,16 @@ void obiekt::wpisz_wspolrzedne_glob() {
     write.close();
 }
 
-void obiekt::ruch_na_wprost(const SWektor<double, 3>& przesun) {
-    for (SWektor<double, 3>& x : wspolrzedne)
+void obiekt::ruch_na_wprost(const TVector<double, 3>& przesun) {
+    for (TVector<double, 3>& x : wspolrzedne)
         x = x + przesun;
 }
 
-void obiekt::obrot(const SMacierz<double, 3>& mac_obrotu) {
-    for (SWektor<double, 3>& x : wspolrzedne)
+void obiekt::obrot(const TMatrix<double, 3>& mac_obrotu) {
+    for (TVector<double, 3>& x : wspolrzedne)
         x = mac_obrotu * x;
 }
 
-SWektor<double, 3> obiekt::polozenie() const {
+TVector<double, 3> obiekt::polozenie() const {
     return srodek_lok + przesuniecie;
 }

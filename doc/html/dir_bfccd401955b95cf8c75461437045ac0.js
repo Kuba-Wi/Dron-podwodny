@@ -23,8 +23,8 @@ var dir_bfccd401955b95cf8c75461437045ac0 =
       [ "prostopadloscian", "classprostopadloscian.html", "classprostopadloscian" ]
     ] ],
     [ "scena.hh", "scena_8hh.html", "scena_8hh" ],
-    [ "SMacierz.hh", "_s_macierz_8hh.html", "_s_macierz_8hh" ],
-    [ "SWektor.hh", "_s_wektor_8hh.html", "_s_wektor_8hh" ],
+    [ "TMatrix.hh", "_s_macierz_8hh.html", "_s_macierz_8hh" ],
+    [ "TVector.hh", "_s_wektor_8hh.html", "_s_wektor_8hh" ],
     [ "szesciokat.hh", "szesciokat_8hh.html", [
       [ "szesciokat", "classszesciokat.html", "classszesciokat" ]
     ] ]

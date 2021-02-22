@@ -18,7 +18,7 @@ obj/lacze_do_gnuplota.o: inc/lacze_do_gnuplota.hh src/lacze_do_gnuplota.cpp
 obj/powierzchnia.o: inc/powierzchnia.hh src/powierzchnia.cpp
 	g++ -c ${CXXFLAGS} -o obj/powierzchnia.o src/powierzchnia.cpp
 
-obj/obiekt.o: inc/obiekt.hh inc/SWektor.hh inc/powierzchnia.hh src/obiekt.cpp
+obj/obiekt.o: inc/obiekt.hh inc/TVector.hh inc/powierzchnia.hh src/obiekt.cpp
 	g++ -c ${CXXFLAGS} -o obj/obiekt.o src/obiekt.cpp
 
 obj/szesciokat.o: inc/szesciokat.hh src/szesciokat.cpp inc/powierzchnia.hh

@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
-#include "SMacierz.hh"
-#include "SWektor.hh"
+#include "TMatrix.hh"
+#include "TVector.hh"
 #include "obiekt.hh"
 
 /*!
@@ -15,7 +15,7 @@ private:
      * \brief wylicza macierz obrotu
      * Metoda wylicza macierz obrotu wokół osi OX.
      */
-    void macierz_obrotu_x(SMacierz<double, 3>& obrot, double kat_obrotu) const;
+    void macierz_obrotu_x(TMatrix<double, 3>& obrot, double kat_obrotu) const;
 
 public:
     /*!
@@ -29,7 +29,7 @@ public:
      * Metoda wpisuje wektor wejściowy do wektora przesunięcie.
      * \param[in] przesun - wektor, który ma być przepisany
      */
-    void wpisz_przesuniecie(const SWektor<double, 3>& przesun) { przesuniecie = przesun; }
+    void wpisz_przesuniecie(const TVector<double, 3>& przesun) { przesuniecie = przesun; }
 
     /*!
      * \brief Powoduje ruch o wektor przesunięcie

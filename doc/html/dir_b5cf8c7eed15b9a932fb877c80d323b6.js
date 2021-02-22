@@ -11,6 +11,6 @@ var dir_b5cf8c7eed15b9a932fb877c80d323b6 =
       [ "powierzchnia_lokalna", "classpowierzchnia__lokalna.html", "classpowierzchnia__lokalna" ]
     ] ],
     [ "scena.hh", "scena_8hh.html", "scena_8hh" ],
-    [ "SMacierz.hh", "_s_macierz_8hh.html", "_s_macierz_8hh" ],
-    [ "SWektor.hh", "_s_wektor_8hh.html", "_s_wektor_8hh" ]
+    [ "TMatrix.hh", "_s_macierz_8hh.html", "_s_macierz_8hh" ],
+    [ "TVector.hh", "_s_wektor_8hh.html", "_s_wektor_8hh" ]
 ];

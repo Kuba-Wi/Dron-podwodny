@@ -1,7 +1,7 @@
 var searchData=
 [
   ['deletelink',['deleteLink',['../navtree_8js.html#abdf8e0e69c89803c1b84784a13b7fd2e',1,'navtree.js']]],
-  ['dlugosc',['dlugosc',['../class_s_wektor.html#a5f1248739407307caaeada3d87bd1201',1,'SWektor']]],
+  ['dlugosc',['dlugosc',['../class_s_wektor.html#a5f1248739407307caaeada3d87bd1201',1,'TVector']]],
   ['dodaj_5fdno',['dodaj_dno',['../classscena.html#ad7c4ca7a3eb26bc133eabe65476791d4',1,'scena']]],
   ['dodaj_5fkorpus',['dodaj_korpus',['../classscena.html#ad5d8213c9a23276befedb02e7d4fad7c',1,'scena']]],
   ['dodaj_5fplik_5fglob',['dodaj_plik_glob',['../classpowierzchnia.html#adc90beb15e09c8eccf0603e4eadfbeec',1,'powierzchnia']]],

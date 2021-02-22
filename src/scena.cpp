@@ -11,10 +11,10 @@ bool scena::wynurzenie() const {
 }
 
 bool scena::kolizja() const {
-    SWektor<double, 3> dlugosci_drona = dron_scena.zwroc_dlugosci();
-    SWektor<double, 3> srodek_drona = dron_scena.zwroc_polozenie();
-    SWektor<double, 3> dlugosci_przeszkody;
-    SWektor<double, 3> odleglosci;
+    TVector<double, 3> dlugosci_drona = dron_scena.zwroc_dlugosci();
+    TVector<double, 3> srodek_drona = dron_scena.zwroc_polozenie();
+    TVector<double, 3> dlugosci_przeszkody;
+    TVector<double, 3> odleglosci;
 
     bool jest_kolizja = false;
 

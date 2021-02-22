@@ -1,8 +1,8 @@
-<map id="inc/SWektor.hh" name="inc/SWektor.hh">
+<map id="inc/TVector.hh" name="inc/TVector.hh">
 <area shape="rect" id="node2" href="$wypelnij_8cpp.html" title="dat/wypelnij.cpp" alt="" coords="19,80,135,107"/>
 <area shape="rect" id="node3" href="$obiekt_8hh.html" title="inc/obiekt.hh" alt="" coords="306,155,402,181"/>
 <area shape="rect" id="node9" href="$szesciokat_8hh.html" title="inc/szesciokat.hh" alt="" coords="121,229,245,256"/>
-<area shape="rect" id="node15" href="$_s_macierz_8hh.html" title="inc/SMacierz.hh" alt="" coords="211,80,327,107"/>
+<area shape="rect" id="node15" href="$_s_macierz_8hh.html" title="inc/TMatrix.hh" alt="" coords="211,80,327,107"/>
 <area shape="rect" id="node16" href="$powierzchnia_8cpp.html" title="src/powierzchnia.cpp" alt="" coords="403,80,548,107"/>
 <area shape="rect" id="node4" href="$dron_8hh.html" title="inc/dron.hh" alt="" coords="161,304,248,331"/>
 <area shape="rect" id="node11" href="$pret_8hh.html" title="inc/pret.hh" alt="" coords="273,304,355,331"/>

@@ -2,8 +2,8 @@
 
 #include <vector>
 
-#include "SMacierz.hh"
-#include "SWektor.hh"
+#include "TMatrix.hh"
+#include "TVector.hh"
 #include "powierzchnia.hh"
 
 /*!
@@ -14,15 +14,15 @@
 class obiekt : public powierzchnia {
 protected:
     /*! \brief Przechowuje współrzędne punktów tworzących obiekt */
-    std::vector<SWektor<double, 3>> wspolrzedne;
+    std::vector<TVector<double, 3>> wspolrzedne;
     /*! \brief Łączny kąt obrotu obiektu */
     double laczny_kat_obrotu;
     /*! \brief przesunięcie obiektu względem wspolrzednych lokalnych */
-    SWektor<double, 3> przesuniecie;
+    TVector<double, 3> przesuniecie;
     /*! \brief odległości środka obiektu od ścian */
-    SWektor<double, 3> polowa_dl;
+    TVector<double, 3> polowa_dl;
     /*! \brief Środek wspolrzednych lokalnych obiektu */
-    SWektor<double, 3> srodek_lok;
+    TVector<double, 3> srodek_lok;
 
     /*!
      * \brief Wczytuje wspolrzedne z pliku
@@ -65,26 +65,26 @@ public:
      * Powoduje ruch obiektu po prostej o zadany wektor translacji
      * \param[in] przesun - zadany wektor
      */
-    void ruch_na_wprost(const SWektor<double, 3>& przesun);
+    void ruch_na_wprost(const TVector<double, 3>& przesun);
 
     /*!
      * \brief Powoduje obrót obiektu
      * Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu
      * \param[in] mac_obrotu - zadana macierz obrotu
      */
-    void obrot(const SMacierz<double, 3>& mac_obrotu);
+    void obrot(const TMatrix<double, 3>& mac_obrotu);
 
     /*!
      * \brief Zwraca środek drona
      * Metoda zwraca wartość współrzędnych środka drona
      * \return Współrzędna środka drona
      */
-    SWektor<double, 3> polozenie() const;
+    TVector<double, 3> polozenie() const;
 
     /*!
      * \brief Zwraca wektor z polowami dlugości obiektu
      * Metoda zwraca połowę wysokości obiektu
      * \retval polowa_wysokosci - pole klasy
      */
-    SWektor<double, 3> zwroc_polowy_dlugosci() const { return polowa_dl; }
+    TVector<double, 3> zwroc_polowy_dlugosci() const { return polowa_dl; }
 };

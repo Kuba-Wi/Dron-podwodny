@@ -1,6 +1,6 @@
 <map id="inc/obiekt.hh" name="inc/obiekt.hh">
-<area shape="rect" id="node3" href="$_s_wektor_8hh.html" title="SWektor.hh" alt="" coords="59,155,150,181"/>
+<area shape="rect" id="node3" href="$_s_wektor_8hh.html" title="TVector.hh" alt="" coords="59,155,150,181"/>
 <area shape="rect" id="node7" href="$powierzchnia_8hh.html" title="powierzchnia.hh" alt="" coords="329,80,445,107"/>
-<area shape="rect" id="node10" href="$_s_macierz_8hh.html" title="SMacierz.hh" alt="" coords="143,80,237,107"/>
+<area shape="rect" id="node10" href="$_s_macierz_8hh.html" title="TMatrix.hh" alt="" coords="143,80,237,107"/>
 <area shape="rect" id="node8" href="$powierzchnia__lokalna_8hh.html" title="powierzchnia_lokalna.hh" alt="" coords="425,155,589,181"/>
 </map>

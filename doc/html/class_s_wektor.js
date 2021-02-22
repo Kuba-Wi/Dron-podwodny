@@ -1,8 +1,8 @@
 var class_s_wektor =
 [
-    [ "SWektor", "class_s_wektor.html#ab9eddd07eec733cc8531883c3ca48230", null ],
-    [ "SWektor", "class_s_wektor.html#ae03640173358e34e77adb3a6cd2b4c3a", null ],
-    [ "~SWektor", "class_s_wektor.html#ab95f98c924738b9741a5b03543b615d9", null ],
+    [ "TVector", "class_s_wektor.html#ab9eddd07eec733cc8531883c3ca48230", null ],
+    [ "TVector", "class_s_wektor.html#ae03640173358e34e77adb3a6cd2b4c3a", null ],
+    [ "~TVector", "class_s_wektor.html#ab95f98c924738b9741a5b03543b615d9", null ],
     [ "dlugosc", "class_s_wektor.html#a5f1248739407307caaeada3d87bd1201", null ],
     [ "operator*", "class_s_wektor.html#a561c2b02565d56dad23411a753c48af1", null ],
     [ "operator*", "class_s_wektor.html#a5b2de3223d6b2b2939f4ce190bb467d7", null ],

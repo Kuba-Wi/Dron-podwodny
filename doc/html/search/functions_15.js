@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['zamien_5fkolumny',['zamien_kolumny',['../class_s_macierz.html#af77c85c89de06d0c4f6a2a3b3d8c9593',1,'SMacierz']]],
+  ['zamien_5fkolumny',['zamien_kolumny',['../class_s_macierz.html#af77c85c89de06d0c4f6a2a3b3d8c9593',1,'TMatrix']]],
   ['zapiszustawienierotacjiiskali',['ZapiszUstawienieRotacjiISkali',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1ff05325e6dfa77ed1e081aea3df6d28',1,'PzG::LaczeDoGNUPlota']]],
   ['zapiszustawieniezakresu',['ZapiszUstawienieZakresu',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a3fc0ab02fcbaee3f0af9840cd8001cfa',1,'PzG::LaczeDoGNUPlota']]],
   ['zmax',['Zmax',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a65e3ac2d56a464ce6f9519eaa89d9f62',1,'PzG::LaczeDoGNUPlota']]],

@@ -4,14 +4,14 @@
 #include <cassert>
 #include <cmath>
 #include <iostream>
-#include "SWektor.hh"
+#include "TVector.hh"
 
 /*!
  * Szablon klasy modeluje pojęcie macierzy.
  */
 template <typename Typ, int Rozmiar>
-class SMacierz {
-    SWektor<Typ, Rozmiar> kolumny[Rozmiar]; /*! kolejne kolumny macierzy */
+class TMatrix {
+    std::array<TVector<Typ, Rozmiar>, Rozmiar> kolumny; /*! kolejne kolumny macierzy */
 
     /*!
      * Metoda zamienia kolumny w macierzy.
@@ -57,7 +57,7 @@ public:
      * Zwraca:
      * wektor - iloczyn macierzy i wektora
      */
-    SWektor<Typ, Rozmiar> operator*(const SWektor<Typ, Rozmiar>& Wek) const;
+    TVector<Typ, Rozmiar> operator*(const TVector<Typ, Rozmiar>& Wek) const;
 
     /*!
      * Metoda wstawia kolumnę do macierzy.
@@ -67,30 +67,30 @@ public:
      * Zwraca:
      * macierz po zamianie
      */
-    SMacierz<Typ, Rozmiar> wstaw_kolumne(const SWektor<Typ, Rozmiar>& Wek, unsigned int kolumna) const;
+    TMatrix<Typ, Rozmiar> wstaw_kolumne(const TVector<Typ, Rozmiar>& Wek, unsigned int kolumna) const;
 };
 
 template <typename Typ, int Rozmiar>
-void SMacierz<Typ, Rozmiar>::zamien_kolumny(unsigned int a, unsigned int b) {
+void TMatrix<Typ, Rozmiar>::zamien_kolumny(unsigned int a, unsigned int b) {
     if (a < Rozmiar && b < Rozmiar)
         std::swap(kolumny[a], kolumny[b]);
 }
 
 template <typename Typ, int Rozmiar>
-Typ& SMacierz<Typ, Rozmiar>::operator()(unsigned int a, unsigned int b) {
+Typ& TMatrix<Typ, Rozmiar>::operator()(unsigned int a, unsigned int b) {
     assert(a < Rozmiar && b < Rozmiar);
     return kolumny[b][a];
 }
 
 template <typename Typ, int Rozmiar>
-Typ SMacierz<Typ, Rozmiar>::operator()(unsigned int a, unsigned int b) const {
+Typ TMatrix<Typ, Rozmiar>::operator()(unsigned int a, unsigned int b) const {
     assert(a < Rozmiar && b < Rozmiar);
     return kolumny[b][a];
 }
 
 template <typename Typ, int Rozmiar>
-Typ SMacierz<Typ, Rozmiar>::wyznacznik() const {
-    SMacierz<Typ, Rozmiar> pom = *this;
+Typ TMatrix<Typ, Rozmiar>::wyznacznik() const {
+    TMatrix<Typ, Rozmiar> pom = *this;
     double parzystosc = 1;  // parzystosc zamian kolumn wpływa na znak wyznacznika
     int nr_do_zam = 0;      // indeks kolumny z która ma zostać zamieniona kolumna i
     Typ iloraz;             // zmienna pomocnicza do obliczania ilorazu dwóch kolumn
@@ -127,8 +127,8 @@ Typ SMacierz<Typ, Rozmiar>::wyznacznik() const {
 }
 
 template <typename Typ, int Rozmiar>
-SWektor<Typ, Rozmiar> SMacierz<Typ, Rozmiar>::operator*(const SWektor<Typ, Rozmiar>& Wek) const {
-    SWektor<Typ, Rozmiar> pom;
+TVector<Typ, Rozmiar> TMatrix<Typ, Rozmiar>::operator*(const TVector<Typ, Rozmiar>& Wek) const {
+    TVector<Typ, Rozmiar> pom;
     Typ skl_pom;
     skl_pom = 0;
 
@@ -144,10 +144,10 @@ SWektor<Typ, Rozmiar> SMacierz<Typ, Rozmiar>::operator*(const SWektor<Typ, Rozmi
 }
 
 template <typename Typ, int Rozmiar>
-SMacierz<Typ, Rozmiar> SMacierz<Typ, Rozmiar>::wstaw_kolumne(const SWektor<Typ, Rozmiar>& Wek,
+TMatrix<Typ, Rozmiar> TMatrix<Typ, Rozmiar>::wstaw_kolumne(const TVector<Typ, Rozmiar>& Wek,
                                                              unsigned int kolumna) const {
     assert(kolumna < Rozmiar);
-    SMacierz<Typ, Rozmiar> pom = *this;
+    TMatrix<Typ, Rozmiar> pom = *this;
 
     for (int i = 0; i < Rozmiar; i++)
         pom(i, kolumna) = Wek[i];
@@ -164,7 +164,7 @@ SMacierz<Typ, Rozmiar> SMacierz<Typ, Rozmiar>::wstaw_kolumne(const SWektor<Typ, 
  * referencję do Strm
  */
 template <typename Typ, int Rozmiar>
-std::istream& operator>>(std::istream& Strm, SMacierz<Typ, Rozmiar>& Mac) {
+std::istream& operator>>(std::istream& Strm, TMatrix<Typ, Rozmiar>& Mac) {
     for (int a = 0; a < Rozmiar; a++)
         for (int b = 0; b < Rozmiar; b++)
             Strm >> Mac(b, a);  // bo macierz Mac w pliku to macierz transponowana
@@ -181,7 +181,7 @@ std::istream& operator>>(std::istream& Strm, SMacierz<Typ, Rozmiar>& Mac) {
  * referencję do Strm
  */
 template <typename Typ, int Rozmiar>
-std::ostream& operator<<(std::ostream& Strm, const SMacierz<Typ, Rozmiar>& Mac) {
+std::ostream& operator<<(std::ostream& Strm, const TMatrix<Typ, Rozmiar>& Mac) {
     for (int a = 0; a < Rozmiar; a++) {
         Strm << "\t";
         for (int b = 0; b < Rozmiar; b++)

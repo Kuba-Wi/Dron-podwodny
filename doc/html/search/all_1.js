@@ -1,8 +1,8 @@
 var searchData=
 [
   ['ad',['aD',['../jquery_8js.html#ad223f5fba68c41c1236671ac5c5b0fcb',1,'jquery.js']]],
-  ['aktualnie_5fwektorow',['aktualnie_wektorow',['../class_s_wektor.html#af80049dad8c9c31947fd24ba9add1e45',1,'SWektor']]],
-  ['aktualnie_5fwektory',['aktualnie_wektory',['../class_s_wektor.html#a0cf464153b2874bf777892319f3f8db8',1,'SWektor']]],
+  ['aktualnie_5fwektorow',['aktualnie_wektorow',['../class_s_wektor.html#af80049dad8c9c31947fd24ba9add1e45',1,'TVector']]],
+  ['aktualnie_5fwektory',['aktualnie_wektory',['../class_s_wektor.html#a0cf464153b2874bf777892319f3f8db8',1,'TVector']]],
   ['all_5f0_2ejs',['all_0.js',['../all__0_8js.html',1,'']]],
   ['all_5f1_2ejs',['all_1.js',['../all__1_8js.html',1,'']]],
   ['all_5f10_2ejs',['all_10.js',['../all__10_8js.html',1,'']]],

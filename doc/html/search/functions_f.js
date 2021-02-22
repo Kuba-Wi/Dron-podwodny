@@ -17,6 +17,6 @@ var searchData=
   ['storelink',['storeLink',['../navtree_8js.html#ade730323aadb971c053136b7758c9dce',1,'navtree.js']]],
   ['strippath',['stripPath',['../navtree_8js.html#a9336c21407bb7ced644331eb7a2a6e35',1,'navtree.js']]],
   ['strippath2',['stripPath2',['../navtree_8js.html#a70bc36adda6141a703fc7ee2b772ec63',1,'navtree.js']]],
-  ['swektor',['SWektor',['../class_s_wektor.html#ab9eddd07eec733cc8531883c3ca48230',1,'SWektor::SWektor()'],['../class_s_wektor.html#ae03640173358e34e77adb3a6cd2b4c3a',1,'SWektor::SWektor(const SWektor&lt; Typ, Rozmiar &gt; &amp;Wek)']]],
+  ['TVector',['TVector',['../class_s_wektor.html#ab9eddd07eec733cc8531883c3ca48230',1,'TVector::TVector()'],['../class_s_wektor.html#ae03640173358e34e77adb3a6cd2b4c3a',1,'TVector::TVector(const TVector&lt; Typ, Rozmiar &gt; &amp;Wek)']]],
   ['szesciokat',['szesciokat',['../classszesciokat.html#ad9ae67f15b7fbc2eb921c7ccef4f36fa',1,'szesciokat']]]
 ];

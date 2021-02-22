@@ -2,7 +2,7 @@
 #include <cmath>
 #include <fstream>
 
-void szesciokat::macierz_obrotu_x(SMacierz<double, 3>& obrot, double kat_obrotu) const {
+void szesciokat::macierz_obrotu_x(TMatrix<double, 3>& obrot, double kat_obrotu) const {
     const double pi = acos(-1);
 
     obrot(0, 1) = 0;
@@ -19,7 +19,7 @@ void szesciokat::macierz_obrotu_x(SMacierz<double, 3>& obrot, double kat_obrotu)
 }
 
 void szesciokat::ruch_lokalny() {
-    SMacierz<double, 3> mac_obrotu;
+    TMatrix<double, 3> mac_obrotu;
 
     laczny_kat_obrotu += 10;
     while (laczny_kat_obrotu >= 360.0)
