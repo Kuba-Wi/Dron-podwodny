@@ -38,10 +38,7 @@ bool scena::kolizja() const {
 
 
 void scena::lacze_dodaj_plik(const std::string& nazwa_pliku) {
-    
-    char pom[100] = {0};
-    nazwa_pliku.copy(pom, 100);
-    Lacze.DodajNazwePliku(pom);
+    Lacze.DodajNazwePliku(nazwa_pliku.c_str());
 }
 
 
