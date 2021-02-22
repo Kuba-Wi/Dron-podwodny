@@ -19,8 +19,8 @@ var dir_bfccd401955b95cf8c75461437045ac0 =
     [ "prostokat.hh", "prostokat_8hh.html", [
       [ "prostokat", "classprostokat.html", "classprostokat" ]
     ] ],
-    [ "prostopadloscian.hh", "prostopadloscian_8hh.html", [
-      [ "prostopadloscian", "classprostopadloscian.html", "classprostopadloscian" ]
+    [ "cuboid.hh", "cuboid_8hh.html", [
+      [ "cuboid", "classcuboid.html", "classcuboid" ]
     ] ],
     [ "scena.hh", "scena_8hh.html", "scena_8hh" ],
     [ "TMatrix.hh", "_s_macierz_8hh.html", "_s_macierz_8hh" ],

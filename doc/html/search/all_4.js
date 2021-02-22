@@ -29,7 +29,7 @@ var searchData=
   ['dodaj_5fpliki_5fsruby_5fprawej',['dodaj_pliki_sruby_prawej',['../classdron.html#abe7dbb66c7a242dc0110cefcf3268f26',1,'dron']]],
   ['dodaj_5fpret',['dodaj_pret',['../classscena.html#a8dce746bd5a81c86fb011ae682fb5205',1,'scena']]],
   ['dodaj_5fprostokat',['dodaj_prostokat',['../classscena.html#ad15da6ac88b5d6aef70d41373633b63d',1,'scena']]],
-  ['dodaj_5fprostopadloscian',['dodaj_prostopadloscian',['../classscena.html#afdd54c0dc31920dc605fe63ed6d746c0',1,'scena']]],
+  ['dodaj_5fcuboid',['dodaj_cuboid',['../classscena.html#afdd54c0dc31920dc605fe63ed6d746c0',1,'scena']]],
   ['dodaj_5fprzeszkode',['dodaj_przeszkode',['../classscena.html#a37056be2e45de7e80a4b72a4cedb08c1',1,'scena']]],
   ['dodaj_5fsruba_5flewa',['dodaj_sruba_lewa',['../classscena.html#a8be47f62d8ed373c1f0569405115e471',1,'scena']]],
   ['dodaj_5fsruba_5fprawa',['dodaj_sruba_prawa',['../classscena.html#a11c177de196341b4b951c10429df969f',1,'scena']]],

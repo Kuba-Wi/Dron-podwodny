@@ -8,7 +8,7 @@ var hierarchy =
         [ "obiekt", "classobiekt.html", [
           [ "pret", "classpret.html", null ],
           [ "prostokat", "classprostokat.html", null ],
-          [ "prostopadloscian", "classprostopadloscian.html", null ],
+          [ "cuboid", "classcuboid.html", null ],
           [ "hexagon", "classhexagon.html", null ]
         ] ]
       ] ]

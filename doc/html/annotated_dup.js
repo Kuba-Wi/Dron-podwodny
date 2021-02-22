@@ -7,7 +7,7 @@ var annotated_dup =
     [ "powierzchnia_lokalna", "classpowierzchnia__lokalna.html", "classpowierzchnia__lokalna" ],
     [ "pret", "classpret.html", "classpret" ],
     [ "prostokat", "classprostokat.html", "classprostokat" ],
-    [ "prostopadloscian", "classprostopadloscian.html", "classprostopadloscian" ],
+    [ "cuboid", "classcuboid.html", "classcuboid" ],
     [ "scena", "classscena.html", "classscena" ],
     [ "TMatrix", "class_s_macierz.html", "class_s_macierz" ],
     [ "TVector", "class_s_wektor.html", "class_s_wektor" ],

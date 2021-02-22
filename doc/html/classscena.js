@@ -5,7 +5,7 @@ var classscena =
     [ "dodaj_korpus", "classscena.html#ad5d8213c9a23276befedb02e7d4fad7c", null ],
     [ "dodaj_pret", "classscena.html#a8dce746bd5a81c86fb011ae682fb5205", null ],
     [ "dodaj_prostokat", "classscena.html#ad15da6ac88b5d6aef70d41373633b63d", null ],
-    [ "dodaj_prostopadloscian", "classscena.html#afdd54c0dc31920dc605fe63ed6d746c0", null ],
+    [ "dodaj_cuboid", "classscena.html#afdd54c0dc31920dc605fe63ed6d746c0", null ],
     [ "dodaj_przeszkode", "classscena.html#a37056be2e45de7e80a4b72a4cedb08c1", null ],
     [ "dodaj_sruba_lewa", "classscena.html#a8be47f62d8ed373c1f0569405115e471", null ],
     [ "dodaj_sruba_prawa", "classscena.html#a11c177de196341b4b951c10429df969f", null ],

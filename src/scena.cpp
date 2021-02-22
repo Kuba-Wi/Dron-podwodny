@@ -84,8 +84,8 @@ void scena::dodaj_przeszkode(const std::string& nazwa_lok, const std::string& na
     lacze_dodaj_plik(nazwa_glob);
 }
 
-void scena::dodaj_prostopadloscian(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    lista_przeszkod.push_back(std::make_shared<prostopadloscian>());
+void scena::dodaj_cuboid(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+    lista_przeszkod.push_back(std::make_shared<cuboid>());
 
     dodaj_przeszkode(nazwa_lok, nazwa_glob);
 }

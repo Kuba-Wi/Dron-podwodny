@@ -6,7 +6,7 @@
 #include "lacze_do_gnuplota.hh"
 #include "pret.hh"
 #include "prostokat.hh"
-#include "prostopadloscian.hh"
+#include "cuboid.hh"
 
 /*!
  * \brief Modeluje pojęcie sceny
@@ -111,7 +111,7 @@ public:
      * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
      * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
      */
-    void dodaj_prostopadloscian(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void dodaj_cuboid(const std::string& nazwa_lok, const std::string& nazwa_glob);
     /*!
      * \brief Dodaje pręt na scenę
      * Zapisuje pliki opisujące pręt i dodaje go na koniec listy przeszkód.

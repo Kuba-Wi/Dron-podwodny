@@ -18,8 +18,8 @@ var searchData=
   ['pret_2ehh',['pret.hh',['../pret_8hh.html',1,'']]],
   ['prostokat',['prostokat',['../classprostokat.html',1,'']]],
   ['prostokat_2ehh',['prostokat.hh',['../prostokat_8hh.html',1,'']]],
-  ['prostopadloscian',['prostopadloscian',['../classprostopadloscian.html',1,'']]],
-  ['prostopadloscian_2ehh',['prostopadloscian.hh',['../prostopadloscian_8hh.html',1,'']]],
+  ['cuboid',['cuboid',['../classcuboid.html',1,'']]],
+  ['cuboid_2ehh',['cuboid.hh',['../cuboid_8hh.html',1,'']]],
   ['przeslijdognuplota',['PrzeslijDoGNUPlota',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a5063854b7232a7951d120a21df63f2b7',1,'PzG::LaczeDoGNUPlota']]],
   ['przesuniecie',['przesuniecie',['../classdron.html#ab6215dec0f86efc5cb7821c74caacfb5',1,'dron::przesuniecie()'],['../classobiekt.html#afd74db9e2d32cf5d9384a9198650383a',1,'obiekt::przesuniecie()']]],
   ['pzg',['PzG',['../namespace_pz_g.html',1,'']]]
