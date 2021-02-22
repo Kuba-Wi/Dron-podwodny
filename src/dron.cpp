@@ -31,7 +31,7 @@ void dron::wylicz_macierz_obrotu(TMatrix<double, 3>& obrot, double kat_obrotu) c
 }
 
 void dron::inicjalizuj_drona() {
-    korpus.inicjalizuj_obiekt();
+    body.inicjalizuj_obiekt();
     sruba_lewa.inicjalizuj_obiekt();
     sruba_prawa.inicjalizuj_obiekt();
 
@@ -51,9 +51,9 @@ void dron::inicjalizuj_drona() {
     sruba_prawa_ruch(obrot_temp);
 }
 
-void dron::dodaj_pliki_korpus(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    korpus.dodaj_plik_lok(nazwa_lok);
-    korpus.dodaj_plik_glob(nazwa_glob);
+void dron::dodaj_pliki_body(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+    body.dodaj_plik_lok(nazwa_lok);
+    body.dodaj_plik_glob(nazwa_glob);
 }
 
 void dron::dodaj_pliki_sruby_lewej(const std::string& nazwa_lok, const std::string& nazwa_glob) {
@@ -77,7 +77,7 @@ void dron::ruch_na_wprost(double kat_wznoszenia, double odleglosc) {
 
     sruba_lewa_ruch(obrot);
     sruba_prawa_ruch(obrot);
-    korpus_ruch(obrot);
+    body_ruch(obrot);
 }
 
 void dron::obrot(double kat_obrotu) {
@@ -93,7 +93,7 @@ void dron::obrot(double kat_obrotu) {
 
     sruba_lewa_ruch(obrot);
     sruba_prawa_ruch(obrot);
-    korpus_ruch(obrot);
+    body_ruch(obrot);
 }
 
 void dron::sruba_lewa_ruch(const TMatrix<double, 3>& obrot) {
@@ -116,22 +116,22 @@ void dron::sruba_prawa_ruch(const TMatrix<double, 3>& obrot) {
     sruba_prawa.wpisz_wspolrzedne_glob();
 }
 
-void dron::korpus_ruch(const TMatrix<double, 3>& obrot) {
-    korpus.wczytaj_wspolrzedne_lok();
+void dron::body_ruch(const TMatrix<double, 3>& obrot) {
+    body.wczytaj_wspolrzedne_lok();
 
-    korpus.obrot(obrot);
-    korpus.ruch_na_wprost(przesuniecie);
+    body.obrot(obrot);
+    body.ruch_na_wprost(przesuniecie);
 
-    korpus.wpisz_wspolrzedne_glob();
+    body.wpisz_wspolrzedne_glob();
 }
 
 TVector<double, 3> dron::zwroc_polozenie() const {
-    return przesuniecie + korpus.polozenie();
+    return przesuniecie + body.polozenie();
 }
 
 TVector<double, 3> dron::zwroc_dlugosci() const {
     TVector<double, 3> dlugosc_sr = sruba_lewa.zwroc_polowy_dlugosci();
-    TVector<double, 3> dlugosc_kor = korpus.zwroc_polowy_dlugosci();
+    TVector<double, 3> dlugosc_kor = body.zwroc_polowy_dlugosci();
 
     dlugosc_sr[0] = dlugosc_sr[1] = sqrt(dlugosc_sr[0] * dlugosc_sr[0] + dlugosc_sr[1] * dlugosc_sr[1]);
     dlugosc_kor[0] = dlugosc_kor[1] = sqrt(dlugosc_kor[0] * dlugosc_kor[0] + dlugosc_kor[1] * dlugosc_kor[1]);

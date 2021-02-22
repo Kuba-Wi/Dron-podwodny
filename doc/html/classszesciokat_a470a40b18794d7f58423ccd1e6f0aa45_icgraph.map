@@ -3,7 +3,7 @@
 <area shape="rect" id="node3" href="$classhexagon.html#a7493ea80abcb9dec7f5c0df0c80db7b1" title="Zmienia przesunięcie graniastosłupa Metoda wpisuje wektor wejściowy do wektora przesunięcie. " alt="" coords="616,5,823,32"/>
 <area shape="rect" id="node9" href="$classdron.html#abec453101e86600f17535f7bde1c3f35" title="Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o wektor przesunięcie i obrót o zadaną mac..." alt="" coords="411,191,564,217"/>
 <area shape="rect" id="node15" href="$classdron.html#ab4a804bb48d6e7a58f31d6ea6d839f5c" title="Powoduje ruch sruby prawej Metoda powoduje ruch prawej śruby o wektor przesunięcie i obrót o zadaną m..." alt="" coords="407,115,568,141"/>
-<area shape="rect" id="node4" href="$classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje korpus i śruby oraz przesuwa śruby względem korpusu..." alt="" coords="1064,107,1211,133"/>
+<area shape="rect" id="node4" href="$classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje body i śruby oraz przesuwa śruby względem bodyu..." alt="" coords="1064,107,1211,133"/>
 <area shape="rect" id="node5" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="1266,195,1385,221"/>
 <area shape="rect" id="node6" href="$classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="1445,271,1545,297"/>
 <area shape="rect" id="node7" href="$main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="1440,220,1549,247"/>

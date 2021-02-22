@@ -2,7 +2,7 @@ var classstage =
 [
     [ "stage", "classstage.html#a152626dcaf5c3bbb9c803a3134999d2f", null ],
     [ "dodaj_dno", "classstage.html#ad7c4ca7a3eb26bc133eabe65476791d4", null ],
-    [ "dodaj_korpus", "classstage.html#ad5d8213c9a23276befedb02e7d4fad7c", null ],
+    [ "dodaj_body", "classstage.html#ad5d8213c9a23276befedb02e7d4fad7c", null ],
     [ "dodaj_bar", "classstage.html#a8dce746bd5a81c86fb011ae682fb5205", null ],
     [ "dodaj_rectangle", "classstage.html#ad15da6ac88b5d6aef70d41373633b63d", null ],
     [ "dodaj_cuboid", "classstage.html#afdd54c0dc31920dc605fe63ed6d746c0", null ],

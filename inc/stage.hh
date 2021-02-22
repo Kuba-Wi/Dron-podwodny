@@ -85,12 +85,12 @@ public:
      */
     void dodaj_wode(const std::string& nazwa_lok, const std::string& nazwa_glob);
     /*!
-     * \brief Dodaje korpus drona na scenę
-     * Zapisuje pliki opisujące korpus
+     * \brief Dodaje body drona na scenę
+     * Zapisuje pliki opisujące body
      * \param[in] nazwa_lok - nazwa pliku z współrzędnymi lokalnymi
      * \param[in] nazwa_glob - nazwa pliku z współrzędnymi globalnymi
      */
-    void dodaj_korpus(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void dodaj_body(const std::string& nazwa_lok, const std::string& nazwa_glob);
     /*!
      * \brief Dodaje lewą śrubę drona na scenę
      * Zapisuje pliki opisujące lewą śrubę

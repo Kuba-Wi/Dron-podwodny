@@ -57,8 +57,8 @@ void stage::dodaj_wode(const std::string& nazwa_lok, const std::string& nazwa_gl
     lacze_dodaj_plik(nazwa_glob);
 }
 
-void stage::dodaj_korpus(const std::string& nazwa_lok, const std::string& nazwa_glob) {
-    dron_stage.dodaj_pliki_korpus(nazwa_lok, nazwa_glob);
+void stage::dodaj_body(const std::string& nazwa_lok, const std::string& nazwa_glob) {
+    dron_stage.dodaj_pliki_body(nazwa_lok, nazwa_glob);
 
     lacze_dodaj_plik(nazwa_glob);
 }

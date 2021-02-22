@@ -1,5 +1,5 @@
 <map id="obsluga_sceny" name="obsluga_sceny">
-<area shape="rect" id="node2" href="$classstage.html#ad5d8213c9a23276befedb02e7d4fad7c" title="Dodaje korpus drona na scenę Zapisuje pliki opisujące korpus. " alt="" coords="428,183,571,209"/>
+<area shape="rect" id="node2" href="$classstage.html#ad5d8213c9a23276befedb02e7d4fad7c" title="Dodaje body drona na scenę Zapisuje pliki opisujące body. " alt="" coords="428,183,571,209"/>
 <area shape="rect" id="node9" href="$classstage.html#a8be47f62d8ed373c1f0569405115e471" title="Dodaje lewą śrubę drona na scenę Zapisuje pliki opisujące lewą śrubę " alt="" coords="415,351,584,377"/>
 <area shape="rect" id="node11" href="$classstage.html#a11c177de196341b4b951c10429df969f" title="Dodaje prawą śrubę drona na scenę Zapisuje pliki opisujące prawą śrubę " alt="" coords="432,234,567,275"/>
 <area shape="rect" id="node13" href="$classstage.html#afdd54c0dc31920dc605fe63ed6d746c0" title="Dodaje prostopadłościan na scenę Zapisuje pliki opisujące prostopadłościan i dodaje go na koniec list..." alt="" coords="163,503,364,529"/>
@@ -12,7 +12,7 @@
 <area shape="rect" id="node44" href="$classstage.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="197,604,330,631"/>
 <area shape="rect" id="node47" href="$classstage.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="216,655,311,681"/>
 <area shape="rect" id="node48" href="$main_8cpp.html#af20b42416a1531564b366ef201040562" title="inf_o_obiektach" alt="" coords="207,1256,320,1283"/>
-<area shape="rect" id="node3" href="$classdron.html#ad4e3e1c99980abc862fad7177d014427" title="Dodaje pliki korpusu Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące korpus..." alt="" coords="639,5,801,32"/>
+<area shape="rect" id="node3" href="$classdron.html#ad4e3e1c99980abc862fad7177d014427" title="Dodaje pliki bodyu Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące body..." alt="" coords="639,5,801,32"/>
 <area shape="rect" id="node6" href="$classstage.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="860,340,1021,367"/>
 <area shape="rect" id="node4" href="$classsurface.html#a97bcc95edec5081f08e6234afff0f1f8" title="Zapisuje plik lokalny Metoda zapisuje nazwę pliku z współrzędnymi lokalnymi. " alt="" coords="872,147,1009,189"/>
 <area shape="rect" id="node5" href="$classsurface.html#adc90beb15e09c8eccf0603e4eadfbeec" title="Zapisuje plik globalny Metoda zapisuje nazwę pliku z współrzędnymi globalnymi. " alt="" coords="872,82,1009,123"/>
@@ -24,7 +24,7 @@
 <area shape="rect" id="node18" href="$classsurface.html#ab30b9bda0dea7c2baffa3a917c1beb7b" title="Przepisuje plik lokalny do pliku z punktami Metoda zapisuje współrzędne z pliku z współrzędnymi lokal..." alt="" coords="853,239,1028,265"/>
 <area shape="rect" id="node21" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a10950349b348fd3a3d4143e95337527c" title="Zmienia tryb rysowania. " alt="" coords="415,1125,583,1166"/>
 <area shape="rect" id="node22" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e" title="Inicjalizuje połączenie z programem gnuplot. " alt="" coords="415,1190,583,1231"/>
-<area shape="rect" id="node23" href="$classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje korpus i śruby oraz przesuwa śruby względem korpusu..." alt="" coords="426,1073,573,1100"/>
+<area shape="rect" id="node23" href="$classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje body i śruby oraz przesuwa śruby względem bodyu..." alt="" coords="426,1073,573,1100"/>
 <area shape="rect" id="node35" href="$classstage.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="453,655,546,681"/>
 <area shape="rect" id="node24" href="$classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="Inicjalizuje pola klasy Wylicza srodek_lok oraz polowa_wysokosci, wpisuje plik lokalny do pliku z pun..." alt="" coords="661,1183,779,1225"/>
 <area shape="rect" id="node26" href="$classhexagon.html#a7493ea80abcb9dec7f5c0df0c80db7b1" title="Zmienia przesunięcie graniastosłupa Metoda wpisuje wektor wejściowy do wektora przesunięcie. " alt="" coords="1076,1292,1283,1319"/>
@@ -36,7 +36,7 @@
 <area shape="rect" id="node28" href="$classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu..." alt="" coords="1625,1077,1719,1104"/>
 <area shape="rect" id="node29" href="$classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany wektor translacji. " alt="" coords="1593,1229,1751,1256"/>
 <area shape="rect" id="node31" href="$classdron.html#a648ea5308782ad19b74f6651c712708f" title="Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt obrotu. " alt="" coords="899,1073,983,1100"/>
-<area shape="rect" id="node34" href="$classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead" title="Powoduje ruch korpusu Metoda powoduje ruch korpusu o wektor przesunięcie i obrót o zadaną macierz..." alt="" coords="1116,1073,1243,1100"/>
+<area shape="rect" id="node34" href="$classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead" title="Powoduje ruch bodyu Metoda powoduje ruch bodyu o wektor przesunięcie i obrót o zadaną macierz..." alt="" coords="1116,1073,1243,1100"/>
 <area shape="rect" id="node36" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="PzG::LaczeDoGNUPlota\l::Rysuj" alt="" coords="636,645,804,686"/>
 <area shape="rect" id="node37" href="$classstage.html#a9bbff749c1f2d34f3959afd97e044fc0" title="Zwraca informację o kolizji Sprawdza czy jest kolizja z jakąś przeszkodą " alt="" coords="669,711,771,737"/>
 <area shape="rect" id="node40" href="$classstage.html#ab5fbfa861967e0faa82d61d4d239fdf5" title="Zwraca informację o kolizji z dnem Metoda sprawdza czy nie ma kolizji z dnem. " alt="" coords="655,543,785,569"/>

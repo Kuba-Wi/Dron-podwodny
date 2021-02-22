@@ -1,4 +1,4 @@
-<map id="dron::korpus_ruch" name="dron::korpus_ruch">
+<map id="dron::body_ruch" name="dron::body_ruch">
 <area shape="rect" id="node2" href="$classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="180,5,395,32"/>
 <area shape="rect" id="node4" href="$classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu..." alt="" coords="240,56,335,83"/>
 <area shape="rect" id="node5" href="$classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany wektor translacji. " alt="" coords="209,107,366,133"/>

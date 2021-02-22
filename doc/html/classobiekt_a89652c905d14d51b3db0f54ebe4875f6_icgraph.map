@@ -2,9 +2,9 @@
 <area shape="rect" id="node2" href="$classobiekt.html#a03123cc45a13884014eb2f8d4c1a471f" title="Destruktor wirtualny. " alt="" coords="477,5,585,32"/>
 <area shape="rect" id="node3" href="$classdron.html#abec453101e86600f17535f7bde1c3f35" title="Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o wektor przesunięcie i obrót o zadaną mac..." alt="" coords="272,216,425,243"/>
 <area shape="rect" id="node14" href="$classdron.html#ab4a804bb48d6e7a58f31d6ea6d839f5c" title="Powoduje ruch sruby prawej Metoda powoduje ruch prawej śruby o wektor przesunięcie i obrót o zadaną m..." alt="" coords="268,165,429,192"/>
-<area shape="rect" id="node15" href="$classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead" title="Powoduje ruch korpusu Metoda powoduje ruch korpusu o wektor przesunięcie i obrót o zadaną macierz..." alt="" coords="285,267,412,293"/>
+<area shape="rect" id="node15" href="$classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead" title="Powoduje ruch bodyu Metoda powoduje ruch bodyu o wektor przesunięcie i obrót o zadaną macierz..." alt="" coords="285,267,412,293"/>
 <area shape="rect" id="node16" href="$classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="Inicjalizuje pola klasy Wylicza srodek_lok oraz polowa_wysokosci, wpisuje plik lokalny do pliku z pun..." alt="" coords="289,57,408,98"/>
-<area shape="rect" id="node4" href="$classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje korpus i śruby oraz przesuwa śruby względem korpusu..." alt="" coords="827,157,973,184"/>
+<area shape="rect" id="node4" href="$classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje body i śruby oraz przesuwa śruby względem bodyu..." alt="" coords="827,157,973,184"/>
 <area shape="rect" id="node9" href="$classdron.html#a809f2fc3fc515c8992d5f04081893a97" title="Powoduje ruch drona po prostej Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość ..." alt="" coords="827,325,973,352"/>
 <area shape="rect" id="node11" href="$classdron.html#a648ea5308782ad19b74f6651c712708f" title="Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt obrotu. " alt="" coords="489,267,573,293"/>
 <area shape="rect" id="node5" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="1029,275,1147,301"/>

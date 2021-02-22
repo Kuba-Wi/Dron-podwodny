@@ -9,8 +9,8 @@
  */
 class dron {
 private:
-    /*! \brief Korpus drona */
-    obiekt korpus;
+    /*! \brief body drona */
+    obiekt body;
     /*! \brief Prawa śruba drona */
     hexagon sruba_prawa;
     /*! Lewa śruba drona */
@@ -49,11 +49,11 @@ private:
      */
     void sruba_prawa_ruch(const TMatrix<double, 3>& obrot);
     /*!
-     * \brief Powoduje ruch korpusu
-     * Metoda powoduje ruch korpusu o wektor przesunięcie i obrót o zadaną macierz.
+     * \brief Powoduje ruch bodyu
+     * Metoda powoduje ruch bodyu o wektor przesunięcie i obrót o zadaną macierz.
      * \param[in] obrot - macierz z zapisanym obrotem
      */
-    void korpus_ruch(const TMatrix<double, 3>& obrot);
+    void body_ruch(const TMatrix<double, 3>& obrot);
 
 public:
     /*!
@@ -63,16 +63,16 @@ public:
     dron();
     /*!
      * \brief Inicjaizuje drona
-     * Metoda inicjalizuje korpus i śruby oraz przesuwa śruby względem korpusu.
+     * Metoda inicjalizuje body i śruby oraz przesuwa śruby względem bodyu.
      */
     void inicjalizuj_drona();
     /*!
-     * \brief Dodaje pliki korpusu
-     * Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące korpus.
+     * \brief Dodaje pliki bodyu
+     * Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące body.
      * \param[in] nazwa_lok - plik ze współrzędnymi lokalnymi
      * \param[in] nazwa_glob - plik ze współrzędnymi globalnymi
      */
-    void dodaj_pliki_korpus(const std::string& nazwa_lok, const std::string& nazwa_glob);
+    void dodaj_pliki_body(const std::string& nazwa_lok, const std::string& nazwa_glob);
     /*!
      * \brief Dodaje pliki lewej śruby
      * Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące lewą śrubę.
