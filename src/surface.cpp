@@ -3,7 +3,7 @@
 #include "TVector.hh"
 
 void surface::dodaj_plik_lok(const std::string& local_name) {
-    nazwa_pliku_lok = local_name;
+    local_file_name = local_name;
 }
 
 void surface::dodaj_plik_glob(const std::string& global_name) {
@@ -15,7 +15,7 @@ void surface::wczytaj_lok() {
     std::ofstream write;
     TVector<double, 3> wiersz;
 
-    read.open(nazwa_pliku_lok);
+    read.open(local_file_name);
     write.open(plik_z_punktami);
 
     if (!(read.is_open() && write.is_open()))

@@ -58,7 +58,7 @@ void obiekt::wczytaj_wspolrz(const std::string& nazwa_pliku) {
 }
 
 void obiekt::wczytaj_wspolrzedne_lok() {
-    wczytaj_wspolrz(nazwa_pliku_lok);
+    wczytaj_wspolrz(local_file_name);
 }
 
 void obiekt::wpisz_wspolrzedne_glob() {
