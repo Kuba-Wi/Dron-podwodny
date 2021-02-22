@@ -1,9 +1,9 @@
-<map id="stage::dodaj_przeszkode" name="stage::dodaj_przeszkode">
+<map id="stage::add_obstacle" name="stage::add_obstacle">
 <area shape="rect" id="node2" href="$classstage.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="224,107,317,133"/>
 <area shape="rect" id="node9" href="$classstage.html#afdd54c0dc31920dc605fe63ed6d746c0" title="Dodaje prostopadłościan na scenę Zapisuje pliki opisujące prostopadłościan i dodaje go na koniec list..." alt="" coords="365,157,567,184"/>
 <area shape="rect" id="node10" href="$classstage.html#a8dce746bd5a81c86fb011ae682fb5205" title="Dodaje pręt na scenę Zapisuje pliki opisujące pręt i dodaje go na koniec listy przeszkód. " alt="" coords="403,208,529,235"/>
 <area shape="rect" id="node11" href="$classstage.html#ad15da6ac88b5d6aef70d41373633b63d" title="Dodaje prostokąt na scenę Zapisuje pliki opisujące prostokąt i dodaje go na koniec listy przeszkód..." alt="" coords="387,259,545,285"/>
-<area shape="rect" id="node3" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="407,5,525,32"/>
+<area shape="rect" id="node3" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="initializee Łącze do gnuplota oraz drona. " alt="" coords="407,5,525,32"/>
 <area shape="rect" id="node7" href="$classstage.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="399,56,533,83"/>
 <area shape="rect" id="node8" href="$classstage.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="419,107,513,133"/>
 <area shape="rect" id="node4" href="$classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="619,107,719,133"/>

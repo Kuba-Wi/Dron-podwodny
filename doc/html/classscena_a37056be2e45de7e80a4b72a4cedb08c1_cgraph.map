@@ -1,4 +1,4 @@
-<map id="stage::dodaj_przeszkode" name="stage::dodaj_przeszkode">
+<map id="stage::add_obstacle" name="stage::add_obstacle">
 <area shape="rect" id="node2" href="$classstage.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="224,13,385,39"/>
 <area shape="rect" id="node3" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku. " alt="" coords="433,5,601,47"/>
 <area shape="rect" id="node4" href="$namespace_pz_g.html#ae1ae4d36f66c77879380ba73da8e20e3" title="PzG::CzyJestPlik" alt="" coords="649,13,776,39"/>

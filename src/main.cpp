@@ -25,7 +25,7 @@ void obsluga_sceny() {
 
     main_stage.add_bottom("dat/bottom.pow", "dat/bottom1.pow");
     main_stage.add_water("dat/water_surface.dat", "dat/water_surface1.dat");
-    main_stage.inicjalizuj();
+    main_stage.initialize();
 
     char choice = 'm';
     double angle;
@@ -50,7 +50,7 @@ void obsluga_sceny() {
                 stream_fix(cin);
                 break;
             }
-            main_stage.ruch_prosto(angle, distance);
+            main_stage.move_ahead(angle, distance);
             break;
         case 'o':
             cout << "\tPodaj wartosc anglea w stopniach.\n";

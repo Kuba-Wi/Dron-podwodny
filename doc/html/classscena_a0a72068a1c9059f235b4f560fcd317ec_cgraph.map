@@ -1,8 +1,8 @@
-<map id="stage::ruch_prosto" name="stage::ruch_prosto">
+<map id="stage::move_ahead" name="stage::move_ahead">
 <area shape="rect" id="node2" href="$classdron.html#a809f2fc3fc515c8992d5f04081893a97" title="Powoduje ruch drona po prostej Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość ..." alt="" coords="187,265,333,292"/>
-<area shape="rect" id="node16" href="$classstage.html#a9bbff749c1f2d34f3959afd97e044fc0" title="Zwraca informację o kolizji Sprawdza czy jest kolizja z jakąś przeszkodą " alt="" coords="415,435,518,461"/>
+<area shape="rect" id="node16" href="$classstage.html#a9bbff749c1f2d34f3959afd97e044fc0" title="Zwraca informację o kolizji Sprawdza czy jest colision z jakąś przeszkodą " alt="" coords="415,435,518,461"/>
 <area shape="rect" id="node21" href="$classstage.html#ab5fbfa861967e0faa82d61d4d239fdf5" title="Zwraca informację o kolizji z dnem Metoda sprawdza czy nie ma kolizji z dnem. " alt="" coords="401,485,532,512"/>
-<area shape="rect" id="node23" href="$classstage.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. " alt="" coords="401,603,532,629"/>
+<area shape="rect" id="node23" href="$classstage.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o emergence Sprawdza czy obiekt jest wynurzony. " alt="" coords="401,603,532,629"/>
 <area shape="rect" id="node24" href="$classstage.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="213,544,307,571"/>
 <area shape="rect" id="node3" href="$classdron.html#a648ea5308782ad19b74f6651c712708f" title="Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt rotationu. " alt="" coords="425,215,509,241"/>
 <area shape="rect" id="node4" href="$classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9" title="Wylicza macierz rotationu. Metoda wylicza macierz rotationu wokół osi OZ na podstawie zadanych parametrów..." alt="" coords="608,191,753,233"/>

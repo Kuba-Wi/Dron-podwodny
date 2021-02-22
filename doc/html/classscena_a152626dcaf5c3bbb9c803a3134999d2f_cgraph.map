@@ -7,7 +7,7 @@
 <area shape="rect" id="node16" href="$classstage.html#afdd54c0dc31920dc605fe63ed6d746c0" title="Dodaje prostopadłościan na scenę Zapisuje pliki opisujące prostopadłościan i dodaje go na koniec list..." alt="" coords="153,424,355,451"/>
 <area shape="rect" id="node18" href="$classstage.html#a8dce746bd5a81c86fb011ae682fb5205" title="Dodaje pręt na scenę Zapisuje pliki opisujące pręt i dodaje go na koniec listy przeszkód. " alt="" coords="191,475,317,501"/>
 <area shape="rect" id="node19" href="$classstage.html#ad15da6ac88b5d6aef70d41373633b63d" title="Dodaje prostokąt na scenę Zapisuje pliki opisujące prostokąt i dodaje go na koniec listy przeszkód..." alt="" coords="175,525,333,552"/>
-<area shape="rect" id="node20" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="195,887,313,913"/>
+<area shape="rect" id="node20" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="initializee Łącze do gnuplota oraz drona. " alt="" coords="195,887,313,913"/>
 <area shape="rect" id="node47" href="$classstage.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="187,627,321,653"/>
 <area shape="rect" id="node50" href="$classstage.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="207,677,301,704"/>
 <area shape="rect" id="node3" href="$classsurface.html#a97bcc95edec5081f08e6234afff0f1f8" title="Zapisuje plik lokalny Metoda zapisuje nazwę pliku z współrzędnymi lokalnymi. " alt="" coords="857,82,995,123"/>
@@ -21,10 +21,10 @@
 <area shape="rect" id="node15" href="$classdron.html#abe7dbb66c7a242dc0110cefcf3268f26" title="Dodaje pliki prawej śruby Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące praw..." alt="" coords="628,122,783,163"/>
 <area shape="rect" id="node17" href="$classstage.html#a37056be2e45de7e80a4b72a4cedb08c1" title="Dodaje przeszkodę na scenie Metoda dodaje na scenę przeszkodę zapisaną w zadanych plikach..." alt="" coords="620,441,791,468"/>
 <area shape="rect" id="node21" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a10950349b348fd3a3d4143e95337527c" title="Zmienia tryb rysowania. " alt="" coords="403,1047,571,1089"/>
-<area shape="rect" id="node22" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e" title="Inicjalizuje połączenie z programem gnuplot. " alt="" coords="403,1113,571,1154"/>
-<area shape="rect" id="node23" href="$classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje body i śruby oraz przesuwa śruby względem bodyu..." alt="" coords="414,887,561,913"/>
+<area shape="rect" id="node22" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e" title="initializee połączenie z programem gnuplot. " alt="" coords="403,1113,571,1154"/>
+<area shape="rect" id="node23" href="$classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda initializee body i śruby oraz przesuwa śruby względem bodyu..." alt="" coords="414,887,561,913"/>
 <area shape="rect" id="node37" href="$classstage.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="441,627,534,653"/>
-<area shape="rect" id="node24" href="$classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="Inicjalizuje pola klasy Wylicza local_centre oraz polowa_wysokosci, wpisuje plik lokalny do pliku z pun..." alt="" coords="646,762,765,803"/>
+<area shape="rect" id="node24" href="$classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="initializee pola klasy Wylicza local_centre oraz polowa_wysokosci, wpisuje plik lokalny do pliku z pun..." alt="" coords="646,762,765,803"/>
 <area shape="rect" id="node27" href="$classhexagon.html#a7493ea80abcb9dec7f5c0df0c80db7b1" title="Zmienia przesunięcie graniastosłupa Metoda wpisuje vector wejściowy do vectora przesunięcie. " alt="" coords="1061,1212,1268,1239"/>
 <area shape="rect" id="node31" href="$classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9" title="Wylicza macierz rotationu. Metoda wylicza macierz rotationu wokół osi OZ na podstawie zadanych parametrów..." alt="" coords="633,879,778,921"/>
 <area shape="rect" id="node33" href="$classdron.html#abec453101e86600f17535f7bde1c3f35" title="Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o vector przesunięcie i obrót o zadaną mac..." alt="" coords="1088,996,1241,1023"/>
@@ -38,9 +38,9 @@
 <area shape="rect" id="node36" href="$classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead" title="Powoduje ruch bodyu Metoda powoduje ruch bodyu o vector przesunięcie i obrót o zadaną macierz..." alt="" coords="1101,1161,1228,1188"/>
 <area shape="rect" id="node34" href="$classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="1318,1199,1529,1225"/>
 <area shape="rect" id="node38" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="PzG::LaczeDoGNUPlota\l::Rysuj" alt="" coords="621,594,789,635"/>
-<area shape="rect" id="node39" href="$classstage.html#a9bbff749c1f2d34f3959afd97e044fc0" title="Zwraca informację o kolizji Sprawdza czy jest kolizja z jakąś przeszkodą " alt="" coords="654,543,757,569"/>
+<area shape="rect" id="node39" href="$classstage.html#a9bbff749c1f2d34f3959afd97e044fc0" title="Zwraca informację o kolizji Sprawdza czy jest colision z jakąś przeszkodą " alt="" coords="654,543,757,569"/>
 <area shape="rect" id="node44" href="$classstage.html#ab5fbfa861967e0faa82d61d4d239fdf5" title="Zwraca informację o kolizji z dnem Metoda sprawdza czy nie ma kolizji z dnem. " alt="" coords="640,660,771,687"/>
-<area shape="rect" id="node46" href="$classstage.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. " alt="" coords="640,711,771,737"/>
+<area shape="rect" id="node46" href="$classstage.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o emergence Sprawdza czy obiekt jest wynurzony. " alt="" coords="640,711,771,737"/>
 <area shape="rect" id="node40" href="$classdron.html#acc3c64940ea21cc19e61a072b8445b0a" title="Zwraca wymiary drona Metoda zwraca odległości środka drona od jego ścian. " alt="" coords="853,607,999,633"/>
 <area shape="rect" id="node42" href="$classdron.html#a19e92252d303310b61c69d2068030923" title="Zwraca położenie drona Metoda zwraca aktualne położenie drona. " alt="" coords="850,660,1002,687"/>
 <area shape="rect" id="node41" href="$classobiekt.html#a3ecfb97e19691cdb46f997fca5f23a53" title="Zwraca vector z polowami dlugości obiektu Metoda zwraca połowę wysokości obiektu. ..." alt="" coords="1091,598,1239,639"/>

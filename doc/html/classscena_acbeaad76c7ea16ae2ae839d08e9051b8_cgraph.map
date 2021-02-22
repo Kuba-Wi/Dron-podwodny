@@ -1,10 +1,10 @@
-<map id="stage::rysuj" name="stage::rysuj">
+<map id="stage::draw" name="stage::draw">
 <area shape="rect" id="node2" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="PzG::LaczeDoGNUPlota\l::Rysuj" alt="" coords="148,5,316,47"/>
 <area shape="rect" id="node3" href="$classstage.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="365,87,527,114"/>
 <area shape="rect" id="node6" href="$classstage.html#a37056be2e45de7e80a4b72a4cedb08c1" title="Dodaje przeszkodę na scenie Metoda dodaje na scenę przeszkodę zapisaną w zadanych plikach..." alt="" coords="147,122,317,149"/>
-<area shape="rect" id="node7" href="$classstage.html#a9bbff749c1f2d34f3959afd97e044fc0" title="Zwraca informację o kolizji Sprawdza czy jest kolizja z jakąś przeszkodą " alt="" coords="181,173,283,199"/>
+<area shape="rect" id="node7" href="$classstage.html#a9bbff749c1f2d34f3959afd97e044fc0" title="Zwraca informację o kolizji Sprawdza czy jest colision z jakąś przeszkodą " alt="" coords="181,173,283,199"/>
 <area shape="rect" id="node12" href="$classstage.html#ab5fbfa861967e0faa82d61d4d239fdf5" title="Zwraca informację o kolizji z dnem Metoda sprawdza czy nie ma kolizji z dnem. " alt="" coords="167,223,297,250"/>
-<area shape="rect" id="node14" href="$classstage.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. " alt="" coords="167,274,297,301"/>
+<area shape="rect" id="node14" href="$classstage.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o emergence Sprawdza czy obiekt jest wynurzony. " alt="" coords="167,274,297,301"/>
 <area shape="rect" id="node4" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku. " alt="" coords="575,80,743,121"/>
 <area shape="rect" id="node5" href="$namespace_pz_g.html#ae1ae4d36f66c77879380ba73da8e20e3" title="PzG::CzyJestPlik" alt="" coords="791,87,917,114"/>
 <area shape="rect" id="node8" href="$classdron.html#acc3c64940ea21cc19e61a072b8445b0a" title="Zwraca wymiary drona Metoda zwraca odległości środka drona od jego ścian. " alt="" coords="373,173,519,199"/>

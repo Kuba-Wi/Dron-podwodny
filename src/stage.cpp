@@ -2,41 +2,41 @@
 #include <cmath>
 #include <iostream>
 
-bool stage::kolizja_bottom() const {
+bool stage::colision_bottom() const {
     return (fabs(dron_stage.return_location()[2] - bottom.zwroc_z()) <= dron_stage.return_lenghts()[2]);
 }
 
-bool stage::wynurzenie() const {
-    return (fabs(dron_stage.return_location()[2] - woda.zwroc_z()) <= dron_stage.return_lenghts()[2] - 20);
+bool stage::emergence() const {
+    return (fabs(dron_stage.return_location()[2] - water.zwroc_z()) <= dron_stage.return_lenghts()[2] - 20);
 }
 
-bool stage::kolizja() const {
+bool stage::colision() const {
     TVector<double, 3> dlugosci_drona = dron_stage.return_lenghts();
     TVector<double, 3> srodek_drona = dron_stage.return_location();
     TVector<double, 3> dlugosci_przeszkody;
     TVector<double, 3> distancei;
 
-    bool jest_kolizja = false;
+    bool jest_colision = false;
 
     for (auto& przeszkoda : lista_przeszkod) {
         dlugosci_przeszkody = przeszkoda->return_lenght_halves();
         distancei = srodek_drona - przeszkoda->location();
 
         for (int i = 0; i < 3; ++i) {
-            jest_kolizja = (fabs(distancei[i]) <= (dlugosci_przeszkody[i] + dlugosci_drona[i]));
-            if (!jest_kolizja) {
+            jest_colision = (fabs(distancei[i]) <= (dlugosci_przeszkody[i] + dlugosci_drona[i]));
+            if (!jest_colision) {
                 break;
             }
         }
-        if (jest_kolizja) {
+        if (jest_colision) {
             return true;
         }
     }
     return false;
 }
 
-void stage::lacze_dodaj_plik(const std::string& file_name) {
-    Lacze.DodajNazwePliku(file_name.c_str());
+void stage::link_add_file(const std::string& file_name) {
+    link.DodajNazwePliku(file_name.c_str());
 }
 
 void stage::add_bottom(const std::string& local_name, const std::string& global_name) {
@@ -45,84 +45,84 @@ void stage::add_bottom(const std::string& local_name, const std::string& global_
 
     bottom.wczytaj_lok();
 
-    lacze_dodaj_plik(global_name);
+    link_add_file(global_name);
 }
 
 void stage::add_water(const std::string& local_name, const std::string& global_name) {
-    woda.dodaj_plik_lok(local_name);
-    woda.dodaj_plik_glob(global_name);
+    water.dodaj_plik_lok(local_name);
+    water.dodaj_plik_glob(global_name);
 
-    woda.wczytaj_lok();
+    water.wczytaj_lok();
 
-    lacze_dodaj_plik(global_name);
+    link_add_file(global_name);
 }
 
 void stage::add_body(const std::string& local_name, const std::string& global_name) {
     dron_stage.add_files_body(local_name, global_name);
 
-    lacze_dodaj_plik(global_name);
+    link_add_file(global_name);
 }
 
 void stage::add_left_motor(const std::string& local_name, const std::string& global_name) {
     dron_stage.add_files_left_motor(local_name, global_name);
 
-    lacze_dodaj_plik(global_name);
+    link_add_file(global_name);
 }
 
 void stage::add_right_motor(const std::string& local_name, const std::string& global_name) {
     dron_stage.add_files_right_motor(local_name, global_name);
 
-    lacze_dodaj_plik(global_name);
+    link_add_file(global_name);
 }
 
-void stage::dodaj_przeszkode(const std::string& local_name, const std::string& global_name) {
+void stage::add_obstacle(const std::string& local_name, const std::string& global_name) {
     lista_przeszkod.back()->dodaj_plik_lok(local_name);
     lista_przeszkod.back()->dodaj_plik_glob(global_name);
 
     lista_przeszkod.back()->initialize_obiekt();
 
-    lacze_dodaj_plik(global_name);
+    link_add_file(global_name);
 }
 
 void stage::add_cuboid(const std::string& local_name, const std::string& global_name) {
     lista_przeszkod.push_back(std::make_shared<cuboid>());
 
-    dodaj_przeszkode(local_name, global_name);
+    add_obstacle(local_name, global_name);
 }
 
 void stage::add_bar(const std::string& local_name, const std::string& global_name) {
     lista_przeszkod.push_back(std::make_shared<bar>());
 
-    dodaj_przeszkode(local_name, global_name);
+    add_obstacle(local_name, global_name);
 }
 
 void stage::add_rectangle(const std::string& local_name, const std::string& global_name) {
     lista_przeszkod.push_back(std::make_shared<rectangle>());
 
-    dodaj_przeszkode(local_name, global_name);
+    add_obstacle(local_name, global_name);
 }
 
-void stage::inicjalizuj() {
-    Lacze.ZmienTrybRys(PzG::TR_3D);
-    Lacze.Inicjalizuj();
+void stage::initialize() {
+    link.ZmienTrybRys(PzG::TR_3D);
+    link.Inicjalizuj();
     dron_stage.initialize_drone();
-    rysuj();
+    draw();
 }
 
-void stage::ruch_prosto(double rising_angle, double distance) {
+void stage::move_ahead(double rising_angle, double distance) {
     int kwant = 250;
     for (int i = 0; i < kwant; ++i) {
         dron_stage.move_ahead(rising_angle, distance / double(kwant));
-        if (kolizja() || kolizja_bottom()) {
-            std::cout << "Kolizja!\n";
+        if (colision() || colision_bottom()) {
+            std::cout << "colision!\n";
             dron_stage.move_ahead(rising_angle, -distance / double(kwant));
             break;
-        } else if (wynurzenie() && ((rising_angle > 0 && distance > 0) || (rising_angle < 0 && distance < 0))) {
-            std::cout << "Wynurzenie.\n";
+        } else if (emergence() && ((rising_angle > 0 && distance > 0) || (rising_angle < 0 && distance < 0))) {
+            std::cout << "emergence.\n";
             distance = distance * cos(acos(-1) * rising_angle / 180.0);
             rising_angle = 0;
         }
-        rysuj();
+        draw();
     }
 }
 
@@ -130,6 +130,6 @@ void stage::rotation(double rotation_angle) {
     int kwant = 360;
     for (int i = 0; i < kwant; ++i) {
         dron_stage.rotation(rotation_angle / double(kwant));
-        rysuj();
+        draw();
     }
 }

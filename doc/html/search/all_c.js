@@ -8,7 +8,7 @@ var searchData=
   ['lacze_5f_5fdo_5f_5fgnuplota_5f8hh_2ejs',['lacze__do__gnuplota_8hh.js',['../lacze____do____gnuplota__8hh_8js.html',1,'']]],
   ['lacze_5fdo_5fgnuplota_2ecpp',['lacze_do_gnuplota.cpp',['../lacze__do__gnuplota_8cpp.html',1,'']]],
   ['lacze_5fdo_5fgnuplota_2ehh',['lacze_do_gnuplota.hh',['../lacze__do__gnuplota_8hh.html',1,'']]],
-  ['lacze_5fdodaj_5fplik',['lacze_dodaj_plik',['../classstage.html#a27983afc7ecb584cb1d0059904608d7b',1,'stage']]],
+  ['lacze_5fdodaj_5fplik',['link_add_file',['../classstage.html#a27983afc7ecb584cb1d0059904608d7b',1,'stage']]],
   ['laczedognuplota',['LaczeDoGNUPlota',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html',1,'PzG']]],
   ['laczedognuplota',['LaczeDoGNUPlota',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a5845189b5ab8c3634acf57024e5deeaf',1,'PzG::LaczeDoGNUPlota']]],
   ['lacznie_5fvectorow',['lacznie_vectorow',['../class_s_vector.html#ad3a89b4268f8def5412be41070421315',1,'TVector']]],

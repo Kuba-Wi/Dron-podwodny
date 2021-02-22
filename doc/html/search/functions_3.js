@@ -12,7 +12,7 @@ var searchData=
   ['dodaj_5fbar',['add_bar',['../classstage.html#a8dce746bd5a81c86fb011ae682fb5205',1,'stage']]],
   ['dodaj_5frectangle',['add_rectangle',['../classstage.html#ad15da6ac88b5d6aef70d41373633b63d',1,'stage']]],
   ['dodaj_5fcuboid',['add_cuboid',['../classstage.html#afdd54c0dc31920dc605fe63ed6d746c0',1,'stage']]],
-  ['dodaj_5fprzeszkode',['dodaj_przeszkode',['../classstage.html#a37056be2e45de7e80a4b72a4cedb08c1',1,'stage']]],
+  ['dodaj_5fprzeszkode',['add_obstacle',['../classstage.html#a37056be2e45de7e80a4b72a4cedb08c1',1,'stage']]],
   ['dodaj_5fsruba_5flewa',['add_left_motor',['../classstage.html#a8be47f62d8ed373c1f0569405115e471',1,'stage']]],
   ['dodaj_5fsruba_5fprawa',['add_right_motor',['../classstage.html#a11c177de196341b4b951c10429df969f',1,'stage']]],
   ['dodaj_5fwode',['add_water',['../classstage.html#a9721c738d27eb6b7806685edd3f84ce5',1,'stage']]],

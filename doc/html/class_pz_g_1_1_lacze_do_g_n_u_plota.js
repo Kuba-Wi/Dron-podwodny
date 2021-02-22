@@ -10,7 +10,7 @@ var class_pz_g_1_1_lacze_do_g_n_u_plota =
     [ "DodajNazwePliku", "class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f", null ],
     [ "DopiszPlikiDoPoleceniaRysowania", "class_pz_g_1_1_lacze_do_g_n_u_plota.html#a25585ec3f1bd3b6bf42f374c38b8d237", null ],
     [ "DopiszRysowanieZPlikow", "class_pz_g_1_1_lacze_do_g_n_u_plota.html#ad3d7607946b82aa941d786dcd086d27e", null ],
-    [ "Inicjalizuj", "class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e", null ],
+    [ "initialize", "class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e", null ],
     [ "KomunikatBledu", "class_pz_g_1_1_lacze_do_g_n_u_plota.html#a61fd7057776e7cdc0be16b8b80e582f2", null ],
     [ "PokazOs_OX", "class_pz_g_1_1_lacze_do_g_n_u_plota.html#a11421d7c67deab6b7524cc492407e897", null ],
     [ "PokazOs_OX", "class_pz_g_1_1_lacze_do_g_n_u_plota.html#a14cafd721032bd57c312759898871ed4", null ],

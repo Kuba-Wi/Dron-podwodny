@@ -7,7 +7,7 @@
 <area shape="rect" id="node13" href="$classstage.html#a8be47f62d8ed373c1f0569405115e471" title="Dodaje lewą śrubę drona na scenę Zapisuje pliki opisujące lewą śrubę " alt="" coords="807,157,976,184"/>
 <area shape="rect" id="node14" href="$classstage.html#a11c177de196341b4b951c10429df969f" title="Dodaje prawą śrubę drona na scenę Zapisuje pliki opisujące prawą śrubę " alt="" coords="824,209,959,250"/>
 <area shape="rect" id="node15" href="$classstage.html#a37056be2e45de7e80a4b72a4cedb08c1" title="Dodaje przeszkodę na scenie Metoda dodaje na scenę przeszkodę zapisaną w zadanych plikach..." alt="" coords="431,427,601,453"/>
-<area shape="rect" id="node4" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="832,376,951,403"/>
+<area shape="rect" id="node4" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="initializee Łącze do gnuplota oraz drona. " alt="" coords="832,376,951,403"/>
 <area shape="rect" id="node8" href="$classstage.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="825,275,958,301"/>
 <area shape="rect" id="node9" href="$classstage.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="844,325,939,352"/>
 <area shape="rect" id="node5" href="$classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="1045,300,1145,327"/>

@@ -41,7 +41,7 @@ public:
     virtual ~obiekt() {}
 
     /*!
-     * \brief Inicjalizuje pola klasy
+     * \brief initializee pola klasy
      * Wylicza local_centre oraz polowa_wysokosci, wpisuje plik lokalny do pliku z punktami
      * metoda powinna być wywołana przed wykonaniem ruchów przez obiekt
      */

@@ -14,7 +14,7 @@ var searchData=
   ['rr_5fpunktowy',['RR_Punktowy',['../namespace_pz_g.html#a705c92106f39b7d0c34a6739d10ff0b6aa01097ee8266d6402b752ef6f9a4690c',1,'PzG']]],
   ['ruch_5flokalny',['local_move',['../classhexagon.html#a7489c4f4a62fa96c88ff7431bf2108ac',1,'hexagon']]],
   ['ruch_5fna_5fwprost',['move_ahead',['../classdron.html#a809f2fc3fc515c8992d5f04081893a97',1,'dron::move_ahead()'],['../classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0',1,'obiekt::move_ahead()']]],
-  ['ruch_5fprosto',['ruch_prosto',['../classstage.html#a0a72068a1c9059f235b4f560fcd317ec',1,'stage']]],
-  ['rysuj',['Rysuj',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335',1,'PzG::LaczeDoGNUPlota::Rysuj()'],['../classstage.html#acbeaad76c7ea16ae2ae839d08e9051b8',1,'stage::rysuj()']]],
-  ['rysujdopliku',['RysujDoPliku',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#addae9ac156ae2fb227f792faff3aa148',1,'PzG::LaczeDoGNUPlota']]]
+  ['ruch_5fprosto',['move_ahead',['../classstage.html#a0a72068a1c9059f235b4f560fcd317ec',1,'stage']]],
+  ['draw',['Rysuj',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335',1,'PzG::LaczeDoGNUPlota::Rysuj()'],['../classstage.html#acbeaad76c7ea16ae2ae839d08e9051b8',1,'stage::draw()']]],
+  ['drawdopliku',['RysujDoPliku',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#addae9ac156ae2fb227f792faff3aa148',1,'PzG::LaczeDoGNUPlota']]]
 ];

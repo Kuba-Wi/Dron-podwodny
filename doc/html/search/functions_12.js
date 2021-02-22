@@ -13,7 +13,7 @@ var searchData=
   ['wstaw_5fkolumne',['wstaw_kolumne',['../class_s_macierz.html#a7f57cdd320892ca27a2f9651a080bc52',1,'TMatrix']]],
   ['wylicz_5fmacierz_5frotationu',['count_rotation_angle',['../classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9',1,'dron']]],
   ['wylicz_5ftranslacje',['count_translation',['../classdron.html#a4e4e78ab43842943e45ac80fee68a1ce',1,'dron']]],
-  ['wynurzenie',['wynurzenie',['../classstage.html#ac3df4e790dea99820852b895a96da648',1,'stage']]],
+  ['emergence',['emergence',['../classstage.html#ac3df4e790dea99820852b895a96da648',1,'stage']]],
   ['wyswietlajkomunikatybledow',['WyswietlajKomunikatyBledow',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a4531e6d166faf2e2c8bb4a54a9c9e1f8',1,'PzG::LaczeDoGNUPlota']]],
   ['wyznacznik',['wyznacznik',['../class_s_macierz.html#a729c4e17ee5a88bef8eb731577803057',1,'TMatrix']]]
 ];

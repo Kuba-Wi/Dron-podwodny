@@ -1,5 +1,5 @@
 <map id="dron::initialize_drone" name="dron::initialize_drone">
-<area shape="rect" id="node2" href="$classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="Inicjalizuje pola klasy Wylicza local_centre oraz polowa_wysokosci, wpisuje plik lokalny do pliku z pun..." alt="" coords="213,149,332,190"/>
+<area shape="rect" id="node2" href="$classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="initializee pola klasy Wylicza local_centre oraz polowa_wysokosci, wpisuje plik lokalny do pliku z pun..." alt="" coords="213,149,332,190"/>
 <area shape="rect" id="node6" href="$classhexagon.html#a7493ea80abcb9dec7f5c0df0c80db7b1" title="Zmienia przesunięcie graniastosłupa Metoda wpisuje vector wejściowy do vectora przesunięcie. " alt="" coords="393,383,600,410"/>
 <area shape="rect" id="node11" href="$classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9" title="Wylicza macierz rotationu. Metoda wylicza macierz rotationu wokół osi OZ na podstawie zadanych parametrów..." alt="" coords="200,266,345,308"/>
 <area shape="rect" id="node13" href="$classdron.html#abec453101e86600f17535f7bde1c3f35" title="Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o vector przesunięcie i obrót o zadaną mac..." alt="" coords="652,282,805,308"/>

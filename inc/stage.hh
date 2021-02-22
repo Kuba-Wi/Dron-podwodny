@@ -18,22 +18,22 @@ private:
     /*! \brief Opisuje powierzchnię dna */
     surface bottom;
     /*! \brief Opisuje powierzchnię wody */
-    surface woda;
+    surface water;
     /*! \brief Opisuje obiekt dron */
     dron dron_stage;
     /*! \brief Łącze z programem gnuplot */
-    PzG::LaczeDoGNUPlota Lacze;
+    PzG::LaczeDoGNUPlota link;
 
     /*! \brief lista z wskaźnikami na przeszkody */
     std::list<std::shared_ptr<obiekt>> lista_przeszkod;
 
     /*! \brief Rysuje wszystkie powierzchnie i obiekty na scenie */
-    void rysuj() { Lacze.Rysuj(); }
+    void draw() { link.Rysuj(); }
     /*!
      * \brief Dodaje plik do łącza do gnuplota
      * \param[in] file_name - nazwa dołączanego pliku
      */
-    void lacze_dodaj_plik(const std::string& file_name);
+    void link_add_file(const std::string& file_name);
 
     /*!
      * \brief Dodaje przeszkodę na scenie
@@ -41,30 +41,30 @@ private:
      * \param[in] local_name - nazwa pliku z danymi lokalnymi
      * \param[in] global_name - nazwa pliku z danymi globalnymi
      */
-    void dodaj_przeszkode(const std::string& local_name, const std::string& global_name);
+    void add_obstacle(const std::string& local_name, const std::string& global_name);
 
     /*!
      * \brief Zwraca informację o kolizji
-     * Sprawdza czy jest kolizja z jakąś przeszkodą
-     * \retval true - gdy będzie kolizja
-     * \retval false - gdy nie będzie kolizja
+     * Sprawdza czy jest colision z jakąś przeszkodą
+     * \retval true - gdy będzie colision
+     * \retval false - gdy nie będzie colision
      */
-    bool kolizja() const;
+    bool colision() const;
     /*!
      * \brief Zwraca informację o kolizji z dnem
      * Metoda sprawdza czy nie ma kolizji z dnem
-     * \retval true - gdy jest kolizja
+     * \retval true - gdy jest colision
      * \retval false - gdy nie ma kolizji
      */
-    bool kolizja_bottom() const;
+    bool colision_bottom() const;
 
     /*!
-     * \brief Zwraca informację o wynurzenie
+     * \brief Zwraca informację o emergence
      * Sprawdza czy obiekt jest wynurzony
-     * \retval true - gdy jest wynurzenie
+     * \retval true - gdy jest emergence
      * \retval false - gdy nie ma wynurzenia
      */
-    bool wynurzenie() const;
+    bool emergence() const;
 
 public:
     /*! \brief Konstruktor domyślny */
@@ -127,8 +127,8 @@ public:
      */
     void add_rectangle(const std::string& local_name, const std::string& global_name);
 
-    /*! \brief Inicjalizuje Łącze do gnuplota oraz drona */
-    void inicjalizuj();
+    /*! \brief initializee Łącze do gnuplota oraz drona */
+    void initialize();
 
     /*!
      * \brief Powoduje ruch drona na wprost
@@ -137,7 +137,7 @@ public:
      * \param[in] rising_angle - kąt o jaki ma się wznieść dron
      * \param[in] distance - odległość na jaką ma się przemiaeścić dron
      */
-    void ruch_prosto(double rising_angle, double distance);
+    void move_ahead(double rising_angle, double distance);
     /*!
      * \brief Powoduje obrót drona
      * Powoduje obrót drona wokół własnej osi o zadany kąt

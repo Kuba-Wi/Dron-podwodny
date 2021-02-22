@@ -63,7 +63,7 @@ public:
     dron();
     /*!
      * \brief Inicjaizuje drona
-     * Metoda inicjalizuje body i śruby oraz przesuwa śruby względem bodyu.
+     * Metoda initializee body i śruby oraz przesuwa śruby względem bodyu.
      */
     void initialize_drone();
     /*!

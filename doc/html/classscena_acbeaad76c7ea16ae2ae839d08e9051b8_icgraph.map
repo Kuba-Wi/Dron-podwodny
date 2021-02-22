@@ -1,5 +1,5 @@
-<map id="stage::rysuj" name="stage::rysuj">
-<area shape="rect" id="node2" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="154,5,273,32"/>
+<map id="stage::draw" name="stage::draw">
+<area shape="rect" id="node2" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="initializee Łącze do gnuplota oraz drona. " alt="" coords="154,5,273,32"/>
 <area shape="rect" id="node6" href="$classstage.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="147,56,280,83"/>
 <area shape="rect" id="node7" href="$classstage.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="166,107,261,133"/>
 <area shape="rect" id="node3" href="$classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="333,31,433,57"/>

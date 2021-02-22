@@ -214,8 +214,8 @@ Metody publiczne</h2></td></tr>
 <tr class="separator:a065f5b8402737cc62b0ad4f66d028335"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addae9ac156ae2fb227f792faff3aa148"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#addae9ac156ae2fb227f792faff3aa148">RysujDoPliku</a> (<a class="el" href="functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131">const</a> char *NazwaPliku)</td></tr>
 <tr class="separator:addae9ac156ae2fb227f792faff3aa148"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a200ce6bdb980c314a9eafe49e8f2dd5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e">Inicjalizuj</a> ()</td></tr>
-<tr class="memdesc:a200ce6bdb980c314a9eafe49e8f2dd5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjalizuje połączenie z programem <em>gnuplot</em>.  <a href="#a200ce6bdb980c314a9eafe49e8f2dd5e">Więcej...</a><br /></td></tr>
+<tr class="memitem:a200ce6bdb980c314a9eafe49e8f2dd5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e">initialize</a> ()</td></tr>
+<tr class="memdesc:a200ce6bdb980c314a9eafe49e8f2dd5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializee połączenie z programem <em>gnuplot</em>.  <a href="#a200ce6bdb980c314a9eafe49e8f2dd5e">Więcej...</a><br /></td></tr>
 <tr class="separator:a200ce6bdb980c314a9eafe49e8f2dd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75f599f17413ea8602c6dbba09f36407"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pz_g_1_1_lacze_do_g_n_u_plota.html#a75f599f17413ea8602c6dbba09f36407">UsunOstatniaNazwe</a> ()</td></tr>
 <tr class="memdesc:a75f599f17413ea8602c6dbba09f36407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa ostatnią nazwę pliku.  <a href="#a75f599f17413ea8602c6dbba09f36407">Więcej...</a><br /></td></tr>
@@ -558,7 +558,7 @@ Oto graf wywoływań tej funkcji:</div>
 <area shape="rect" id="node13" href="classstage.html#a8be47f62d8ed373c1f0569405115e471" title="Dodaje lewą śrubę drona na scenę Zapisuje pliki opisujące lewą śrubę " alt="" coords="807,157,976,184"/>
 <area shape="rect" id="node14" href="classstage.html#a11c177de196341b4b951c10429df969f" title="Dodaje prawą śrubę drona na scenę Zapisuje pliki opisujące prawą śrubę " alt="" coords="824,209,959,250"/>
 <area shape="rect" id="node15" href="classstage.html#a37056be2e45de7e80a4b72a4cedb08c1" title="Dodaje przeszkodę na scenie Metoda dodaje na scenę przeszkodę zapisaną w zadanych plikach..." alt="" coords="431,427,601,453"/>
-<area shape="rect" id="node4" href="classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="832,376,951,403"/>
+<area shape="rect" id="node4" href="classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="initializee Łącze do gnuplota oraz drona. " alt="" coords="832,376,951,403"/>
 <area shape="rect" id="node8" href="classstage.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="825,275,958,301"/>
 <area shape="rect" id="node9" href="classstage.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="844,325,939,352"/>
 <area shape="rect" id="node5" href="classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="1045,300,1145,327"/>
@@ -666,7 +666,7 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool PzG::LaczeDoGNUPlota::Inicjalizuj </td>
+          <td class="memname">bool PzG::LaczeDoGNUPlota::initialize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -674,8 +674,8 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Inicjalizuje połączenie z programem <em>gnuplot</em>. </p>
-<p>Inicjalizuje połączenie z programem <em>gnuplot</em>. Realizowane jest to poprzez rozwidlenie procesu i uruchomienie jako procesu potomnego programu <em>gnuplot</em>. Komunikacja z programem <em>gnuplot</em> realizowana jest poprzez przejęcie jego wejścia i wyjścia standardowego.</p>
+<p>initializee połączenie z programem <em>gnuplot</em>. </p>
+<p>initializee połączenie z programem <em>gnuplot</em>. Realizowane jest to poprzez rozwidlenie procesu i uruchomienie jako procesu potomnego programu <em>gnuplot</em>. Komunikacja z programem <em>gnuplot</em> realizowana jest poprzez przejęcie jego wejścia i wyjścia standardowego.</p>
 <dl class="retval"><dt>Zwracane wartości</dt><dd>
   <table class="retval">
     <tr><td class="paramname">true</td><td>- gdy połączenie z programem <em>0gnuplot</em> zostało poprawnie zainicjalizowane lub gdy już wcześniej było zainicjalizowane. </td></tr>
@@ -689,7 +689,7 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_pz_g_1_1_lacze_do_g_n_u_plota_a200ce6bdb980c314a9eafe49e8f2dd5e_icgraph.png" border="0" usemap="#class_pz_g_1_1_lacze_do_g_n_u_plota_a200ce6bdb980c314a9eafe49e8f2dd5e_icgraph" alt=""/></div>
 <map name="class_pz_g_1_1_lacze_do_g_n_u_plota_a200ce6bdb980c314a9eafe49e8f2dd5e_icgraph" id="class_pz_g_1_1_lacze_do_g_n_u_plota_a200ce6bdb980c314a9eafe49e8f2dd5e_icgraph">
-<area shape="rect" id="node2" href="classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="221,31,340,57"/>
+<area shape="rect" id="node2" href="classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="initializee Łącze do gnuplota oraz drona. " alt="" coords="221,31,340,57"/>
 <area shape="rect" id="node3" href="classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="393,5,493,32"/>
 <area shape="rect" id="node4" href="main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="388,56,497,83"/>
 <area shape="rect" id="node5" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="545,56,596,83"/>
@@ -1030,7 +1030,7 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="center"><img src="class_pz_g_1_1_lacze_do_g_n_u_plota_a065f5b8402737cc62b0ad4f66d028335_icgraph.png" border="0" usemap="#class_pz_g_1_1_lacze_do_g_n_u_plota_a065f5b8402737cc62b0ad4f66d028335_icgraph" alt=""/></div>
 <map name="class_pz_g_1_1_lacze_do_g_n_u_plota_a065f5b8402737cc62b0ad4f66d028335_icgraph" id="class_pz_g_1_1_lacze_do_g_n_u_plota_a065f5b8402737cc62b0ad4f66d028335_icgraph">
 <area shape="rect" id="node2" href="classstage.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="221,56,315,83"/>
-<area shape="rect" id="node3" href="classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="370,5,489,32"/>
+<area shape="rect" id="node3" href="classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="initializee Łącze do gnuplota oraz drona. " alt="" coords="370,5,489,32"/>
 <area shape="rect" id="node7" href="classstage.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="363,56,496,83"/>
 <area shape="rect" id="node8" href="classstage.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="382,107,477,133"/>
 <area shape="rect" id="node4" href="classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="549,31,649,57"/>
@@ -1520,7 +1520,7 @@ Oto graf wywoływań tej funkcji:</div>
 </div><div class="memdoc">
 
 <p>Uruchamia program <em>gnuplot</em> jako proces potomny. </p>
-<p>Inicjalizuje połączenie z programem <em>gnuplot</em>. Realizowane jest to poprzez rozwidlenie procesu i uruchomienie jako procesu potomnego programu <em>gnuplot</em>. Komunikacja z programem <em>gnuplot</em> realizowana jest poprzez przejęcie jego wejścia i wyjścia standardowego.</p>
+<p>initializee połączenie z programem <em>gnuplot</em>. Realizowane jest to poprzez rozwidlenie procesu i uruchomienie jako procesu potomnego programu <em>gnuplot</em>. Komunikacja z programem <em>gnuplot</em> realizowana jest poprzez przejęcie jego wejścia i wyjścia standardowego.</p>
 <dl class="retval"><dt>Zwracane wartości</dt><dd>
   <table class="retval">
     <tr><td class="paramname">true</td><td>- gdy połączenie z programem <em>gnuplot</em> zostało poprawnie zainicjalizowane lub gdy już wcześniej było zainicjalizowane. </td></tr>
@@ -1790,7 +1790,7 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_pz_g_1_1_lacze_do_g_n_u_plota_a10950349b348fd3a3d4143e95337527c_icgraph.png" border="0" usemap="#class_pz_g_1_1_lacze_do_g_n_u_plota_a10950349b348fd3a3d4143e95337527c_icgraph" alt=""/></div>
 <map name="class_pz_g_1_1_lacze_do_g_n_u_plota_a10950349b348fd3a3d4143e95337527c_icgraph" id="class_pz_g_1_1_lacze_do_g_n_u_plota_a10950349b348fd3a3d4143e95337527c_icgraph">
-<area shape="rect" id="node2" href="classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="221,31,340,57"/>
+<area shape="rect" id="node2" href="classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="initializee Łącze do gnuplota oraz drona. " alt="" coords="221,31,340,57"/>
 <area shape="rect" id="node3" href="classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="393,5,493,32"/>
 <area shape="rect" id="node4" href="main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="388,56,497,83"/>
 <area shape="rect" id="node5" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="545,56,596,83"/>
