@@ -10,7 +10,7 @@ obiekt::obiekt() {
 }
 
 void obiekt::initialize_obiekt() {
-    wczytaj_lok();
+    read_local();
     read_local_coordinates();
 
     TVector<double, 3> min_wsp = coordinates[0];
@@ -63,7 +63,7 @@ void obiekt::read_local_coordinates() {
 
 void obiekt::write_global_coordinates() {
     std::ofstream write;
-    write.open(plik_z_punktami);
+    write.open(file_with_points);
     if (!write.is_open())
         return;
 

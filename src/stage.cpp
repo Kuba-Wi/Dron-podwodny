@@ -3,11 +3,11 @@
 #include <iostream>
 
 bool stage::colision_bottom() const {
-    return (fabs(dron_stage.return_location()[2] - bottom.zwroc_z()) <= dron_stage.return_lenghts()[2]);
+    return (fabs(dron_stage.return_location()[2] - bottom.return_z()) <= dron_stage.return_lenghts()[2]);
 }
 
 bool stage::emergence() const {
-    return (fabs(dron_stage.return_location()[2] - water.zwroc_z()) <= dron_stage.return_lenghts()[2] - 20);
+    return (fabs(dron_stage.return_location()[2] - water.return_z()) <= dron_stage.return_lenghts()[2] - 20);
 }
 
 bool stage::colision() const {
@@ -40,19 +40,19 @@ void stage::link_add_file(const std::string& file_name) {
 }
 
 void stage::add_bottom(const std::string& local_name, const std::string& global_name) {
-    bottom.dodaj_plik_lok(local_name);
-    bottom.dodaj_plik_glob(global_name);
+    bottom.add_local_file(local_name);
+    bottom.add_global_file(global_name);
 
-    bottom.wczytaj_lok();
+    bottom.read_local();
 
     link_add_file(global_name);
 }
 
 void stage::add_water(const std::string& local_name, const std::string& global_name) {
-    water.dodaj_plik_lok(local_name);
-    water.dodaj_plik_glob(global_name);
+    water.add_local_file(local_name);
+    water.add_global_file(global_name);
 
-    water.wczytaj_lok();
+    water.read_local();
 
     link_add_file(global_name);
 }
@@ -76,8 +76,8 @@ void stage::add_right_motor(const std::string& local_name, const std::string& gl
 }
 
 void stage::add_obstacle(const std::string& local_name, const std::string& global_name) {
-    lista_przeszkod.back()->dodaj_plik_lok(local_name);
-    lista_przeszkod.back()->dodaj_plik_glob(global_name);
+    lista_przeszkod.back()->add_local_file(local_name);
+    lista_przeszkod.back()->add_global_file(global_name);
 
     lista_przeszkod.back()->initialize_obiekt();
 

@@ -52,18 +52,18 @@ void dron::initialize_drone() {
 }
 
 void dron::add_files_body(const std::string& local_name, const std::string& global_name) {
-    body.dodaj_plik_lok(local_name);
-    body.dodaj_plik_glob(global_name);
+    body.add_local_file(local_name);
+    body.add_global_file(global_name);
 }
 
 void dron::add_files_left_motor(const std::string& local_name, const std::string& global_name) {
-    left_motor.dodaj_plik_lok(local_name);
-    left_motor.dodaj_plik_glob(global_name);
+    left_motor.add_local_file(local_name);
+    left_motor.add_global_file(global_name);
 }
 
 void dron::add_files_right_motor(const std::string& local_name, const std::string& global_name) {
-    right_motor.dodaj_plik_lok(local_name);
-    right_motor.dodaj_plik_glob(global_name);
+    right_motor.add_local_file(local_name);
+    right_motor.add_global_file(global_name);
 }
 
 void dron::move_ahead(double rising_angle, double distance) {

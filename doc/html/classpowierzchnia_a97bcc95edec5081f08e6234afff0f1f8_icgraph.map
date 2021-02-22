@@ -1,4 +1,4 @@
-<map id="surface::dodaj_plik_lok" name="surface::dodaj_plik_lok">
+<map id="surface::add_local_file" name="surface::add_local_file">
 <area shape="rect" id="node2" href="$classsurface.html#a6ac31a60fe60f0be1d9859367ca631d8" title="Konstruktor zapisuje nazwę pliku lokalnego i globalnego. " alt="" coords="191,5,373,32"/>
 <area shape="rect" id="node3" href="$classdron.html#ad4e3e1c99980abc862fad7177d014427" title="Dodaje pliki bodyu Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące body..." alt="" coords="201,56,363,83"/>
 <area shape="rect" id="node8" href="$classdron.html#a3ca8cc6f8ed5bd221a1931d1a6d95bee" title="Dodaje pliki lewej śruby Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące lewą ..." alt="" coords="205,107,359,149"/>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wczytaj_5flok',['wczytaj_lok',['../classsurface.html#ab30b9bda0dea7c2baffa3a917c1beb7b',1,'surface']]],
+  ['wczytaj_5flok',['read_local',['../classsurface.html#ab30b9bda0dea7c2baffa3a917c1beb7b',1,'surface']]],
   ['wczytaj_5fwspolrz',['read_coordinates',['../classobiekt.html#a39861805e6f688c581d23bfd992e4834',1,'obiekt']]],
   ['wczytaj_5fcoordinates_5flok',['read_local_coordinates',['../classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6',1,'obiekt']]],
   ['weznazwepliku',['WezNazwePliku',['../class_pz_g_1_1_info_pliku_do_rysowania.html#a09cd4e5cc04b456b482eba2efa51f8ea',1,'PzG::InfoPlikuDoRysowania']]],
@@ -12,7 +12,7 @@ var searchData=
   ['wpisz_5fcoordinates_5fglob',['write_global_coordinates',['../classobiekt.html#a108f138692512335c2f27fa6105ac622',1,'obiekt']]],
   ['writecookie',['writeCookie',['../resize_8js.html#ad0822459a7d442b8c5e4db795d0aabb4',1,'resize.js']]],
   ['coordinates',['coordinates',['../classobiekt.html#a4d666e6f47762b43eb8a81f6c0547ca4',1,'obiekt']]],
-  ['wstaw_5fkolumne',['wstaw_kolumne',['../class_s_macierz.html#a7f57cdd320892ca27a2f9651a080bc52',1,'TMatrix']]],
+  ['wstaw_5fkolumne',['insert_column',['../class_s_macierz.html#a7f57cdd320892ca27a2f9651a080bc52',1,'TMatrix']]],
   ['wylicz_5fmacierz_5frotationu',['count_rotation_angle',['../classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9',1,'dron']]],
   ['wylicz_5ftranslacje',['count_translation',['../classdron.html#a4e4e78ab43842943e45ac80fee68a1ce',1,'dron']]],
   ['emergence',['emergence',['../classstage.html#ac3df4e790dea99820852b895a96da648',1,'stage']]],
@@ -20,5 +20,5 @@ var searchData=
   ['wypelnij_5f8cpp',['wypelnij_8cpp',['../wypelnij__8cpp_8js.html#ad11cae47518b75648351a26fa930f887',1,'wypelnij_8cpp.js']]],
   ['wypelnij_5f8cpp_2ejs',['wypelnij_8cpp.js',['../wypelnij__8cpp_8js.html',1,'']]],
   ['wyswietlajkomunikatybledow',['WyswietlajKomunikatyBledow',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a4531e6d166faf2e2c8bb4a54a9c9e1f8',1,'PzG::LaczeDoGNUPlota']]],
-  ['wyznacznik',['wyznacznik',['../class_s_macierz.html#a729c4e17ee5a88bef8eb731577803057',1,'TMatrix']]]
+  ['determinant',['determinant',['../class_s_macierz.html#a729c4e17ee5a88bef8eb731577803057',1,'TMatrix']]]
 ];

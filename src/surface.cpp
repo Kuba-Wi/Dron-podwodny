@@ -2,21 +2,21 @@
 #include <fstream>
 #include "TVector.hh"
 
-void surface::dodaj_plik_lok(const std::string& local_name) {
+void surface::add_local_file(const std::string& local_name) {
     local_file_name = local_name;
 }
 
-void surface::dodaj_plik_glob(const std::string& global_name) {
-    plik_z_punktami = global_name;
+void surface::add_global_file(const std::string& global_name) {
+    file_with_points = global_name;
 }
 
-void surface::wczytaj_lok() {
+void surface::read_local() {
     std::ifstream read;
     std::ofstream write;
     TVector<double, 3> wiersz;
 
     read.open(local_file_name);
-    write.open(plik_z_punktami);
+    write.open(file_with_points);
 
     if (!(read.is_open() && write.is_open()))
         return;
@@ -34,7 +34,7 @@ void surface::wczytaj_lok() {
         read >> wiersz;
     }
 
-    z_powierzchni = wiersz[2];
+    z_of_surface = wiersz[2];
 
     read.close();
     write.close();

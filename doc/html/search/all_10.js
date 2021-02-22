@@ -3,7 +3,7 @@ var searchData=
   ['p',['p',['../jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e',1,'jquery.js']]],
   ['pages_5f0_2ejs',['pages_0.js',['../pages__0_8js.html',1,'']]],
   ['pathname',['pathName',['../navtree_8js.html#a364b3f4132309fa9aae78585cf2cb772',1,'navtree.js']]],
-  ['plik_5fz_5fpunktami',['plik_z_punktami',['../classsurface.html#ab5ec871a127bbdc25b05f717616fcf43',1,'surface']]],
+  ['plik_5fz_5fpunktami',['file_with_points',['../classsurface.html#ab5ec871a127bbdc25b05f717616fcf43',1,'surface']]],
   ['pokazos_5fox',['PokazOs_OX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a11421d7c67deab6b7524cc492407e897',1,'PzG::LaczeDoGNUPlota::PokazOs_OX(bool Pokaz)'],['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a14cafd721032bd57c312759898871ed4',1,'PzG::LaczeDoGNUPlota::PokazOs_OX() const ']]],
   ['pokazos_5foy',['PokazOs_OY',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a7c3db909b266fc30808e86406c04b516',1,'PzG::LaczeDoGNUPlota::PokazOs_OY(bool Pokaz)'],['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a62937224f01b1dacba3c3ed5f516d208',1,'PzG::LaczeDoGNUPlota::PokazOs_OY() const ']]],
   ['pokazos_5foz',['PokazOs_OZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a9fabfe88cb1801a5de8923f45f514b99',1,'PzG::LaczeDoGNUPlota::PokazOs_OZ(bool Pokaz)'],['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1fed67d4ce58ae40be9c325fb385d5ed',1,'PzG::LaczeDoGNUPlota::PokazOs_OZ() const ']]],

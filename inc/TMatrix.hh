@@ -9,46 +9,46 @@
 /*!
  * Szablon klasy modeluje pojęcie macierzy.
  */
-template <typename Typ, int Rozmiar>
+template <typename T, int Size>
 class TMatrix {
-    std::array<TVector<Typ, Rozmiar>, Rozmiar> kolumny; /*! kolejne kolumny macierzy */
+    std::array<TVector<T, Size>, Size> columns; /*! kolejne columns macierzy */
 
     /*!
-     * Metoda zamienia kolumny w macierzy.
+     * Metoda zamienia columns w macierzy.
      * Argumenty:
-     * a - indeks kolumny do zamiany
-     * b - indeks kolumny do zamiany
+     * a - indeks columns do zamiany
+     * b - indeks columns do zamiany
      * Brak wartości zwracanej
      */
-    void zamien_kolumny(unsigned int a, unsigned int b);
+    void swap_columns(unsigned int a, unsigned int b);
 
 public:
     /*!
      * Metoda pozwala wpisać odpowiednią składową do macierzy.
      * Argumenty:
      * a - indeks wiersza macierzy
-     * b - indeks kolumny macierzy
+     * b - indeks columns macierzy
      * Zwraca:
      * referencję do składowej (a,b)
      */
-    Typ& operator()(unsigned int a, unsigned int b);
+    T& operator()(unsigned int a, unsigned int b);
     /*!
      * Metoda pozwala odczytać odpowiednią składową macierzy.
      * Argumenty:
      * a - indeks składowej
-     * b - indeks kolumny macierzy
+     * b - indeks columns macierzy
      * Zwraca:
      * składową (a,b)
      */
-    Typ operator()(unsigned int a, unsigned int b) const;
+    T operator()(unsigned int a, unsigned int b) const;
 
     /*!
-     * Metoda oblicza wyznacznik macierzy.
+     * Metoda oblicza determinant macierzy.
      * Argumenty:   Brak
      * Zwraca:
-     * wyznacznik macierzy
+     * determinant macierzy
      */
-    Typ wyznacznik() const;
+    T determinant() const;
 
     /*!
      * Metoda mnoży macierz przez vector.
@@ -57,102 +57,100 @@ public:
      * Zwraca:
      * vector - iloczyn macierzy i vectora
      */
-    TVector<Typ, Rozmiar> operator*(const TVector<Typ, Rozmiar>& vec) const;
+    TVector<T, Size> operator*(const TVector<T, Size>& vec) const;
 
     /*!
      * Metoda wstawia kolumnę do macierzy.
      * Argumenty:
      * vec - vector który wstawiamy
-     * kolumna - indeks zamienianej kolumny
+     * column - indeks zamienianej columns
      * Zwraca:
      * macierz po zamianie
      */
-    TMatrix<Typ, Rozmiar> wstaw_kolumne(const TVector<Typ, Rozmiar>& vec, unsigned int kolumna) const;
+    TMatrix<T, Size> insert_column(const TVector<T, Size>& vec, unsigned int column) const;
 };
 
-template <typename Typ, int Rozmiar>
-void TMatrix<Typ, Rozmiar>::zamien_kolumny(unsigned int a, unsigned int b) {
-    if (a < Rozmiar && b < Rozmiar)
-        std::swap(kolumny[a], kolumny[b]);
+template <typename T, int Size>
+void TMatrix<T, Size>::swap_columns(unsigned int a, unsigned int b) {
+    if (a < Size && b < Size)
+        std::swap(columns[a], columns[b]);
 }
 
-template <typename Typ, int Rozmiar>
-Typ& TMatrix<Typ, Rozmiar>::operator()(unsigned int a, unsigned int b) {
-    assert(a < Rozmiar && b < Rozmiar);
-    return kolumny[b][a];
+template <typename T, int Size>
+T& TMatrix<T, Size>::operator()(unsigned int a, unsigned int b) {
+    assert(a < Size && b < Size);
+    return columns[b][a];
 }
 
-template <typename Typ, int Rozmiar>
-Typ TMatrix<Typ, Rozmiar>::operator()(unsigned int a, unsigned int b) const {
-    assert(a < Rozmiar && b < Rozmiar);
-    return kolumny[b][a];
+template <typename T, int Size>
+T TMatrix<T, Size>::operator()(unsigned int a, unsigned int b) const {
+    assert(a < Size && b < Size);
+    return columns[b][a];
 }
 
-template <typename Typ, int Rozmiar>
-Typ TMatrix<Typ, Rozmiar>::wyznacznik() const {
-    TMatrix<Typ, Rozmiar> pom = *this;
-    double parzystosc = 1;  // parzystosc zamian kolumn wpływa na znak wyznacznika
-    int nr_do_zam = 0;      // indeks kolumny z która ma zostać zamieniona kolumna i
-    Typ iloraz;             // zmienna pomocnicza do obliczania ilorazu dwóch kolumn
-    Typ wyznacznik = 1;
+template <typename T, int Size>
+T TMatrix<T, Size>::determinant() const {
+    TMatrix<T, Size> temp = *this;
+    double parity = 1;
+    int column_nr_to_swap = 0;
+    T quotient;
+    T determinant = 1;
 
-    for (int i = 0; i < Rozmiar; i++) {  // kolejne indeksy kolumn
+    for (int i = 0; i < Size; i++) {
 
-        nr_do_zam = i + 1;
+        column_nr_to_swap = i + 1;
 
-        while (fabs(pom(i, i)) < pow(0.1, 12)) {  // gdy pom(i,i)==0
+        while (fabs(temp(i, i)) < pow(0.1, 12)) { 
 
-            if (nr_do_zam == Rozmiar)  // wyznacznik równy zero gdy w pierwszej kolumnie same zera
+            if (column_nr_to_swap == Size)
                 return 0.0;
 
-            else if (!(fabs(pom(i, nr_do_zam)) <
-                       pow(0.1, 12))) {  // gdy wiersz do zam nie ma 0 na pierwszej ważnej pozycji
+            else if (!(fabs(temp(i, column_nr_to_swap)) <
+                       pow(0.1, 12))) {
 
-                pom.zamien_kolumny(nr_do_zam, i);
-                parzystosc = -parzystosc;
+                temp.swap_columns(column_nr_to_swap, i);
+                parity = -parity;
             }
-            nr_do_zam++;
+            column_nr_to_swap++;
         }
-        wyznacznik = wyznacznik * pom(i, i);
+        determinant = determinant * temp(i, i);
 
-        for (int j = i + 1; j < Rozmiar; j++) {  // kolejne kolumny od ktorych odejmujemy kolumne i
+        for (int j = i + 1; j < Size; j++) {
 
-            iloraz = pom(i, j) / pom(i, i);
-            pom.kolumny[j] = pom.kolumny[j] - pom.kolumny[i] * iloraz;
+            quotient = temp(i, j) / temp(i, i);
+            temp.columns[j] = temp.columns[j] - temp.columns[i] * quotient;
         }
     }
-    wyznacznik = wyznacznik * parzystosc;
+    determinant = determinant * parity;
 
-    return wyznacznik;
+    return determinant;
 }
 
-template <typename Typ, int Rozmiar>
-TVector<Typ, Rozmiar> TMatrix<Typ, Rozmiar>::operator*(const TVector<Typ, Rozmiar>& vec) const {
-    TVector<Typ, Rozmiar> pom;
-    Typ skl_pom;
-    skl_pom = 0;
+template <typename T, int Size>
+TVector<T, Size> TMatrix<T, Size>::operator*(const TVector<T, Size>& vec) const {
+    TVector<T, Size> temp_vec;
+    T temp_num = 0;
 
-    for (int w = 0; w < Rozmiar; w++) {
-        for (int k = 0; k < Rozmiar; k++)
-            skl_pom = skl_pom + kolumny[k][w] * vec[k];
+    for (int w = 0; w < Size; w++) {
+        for (int k = 0; k < Size; k++)
+            temp_num = temp_num + columns[k][w] * vec[k];
 
-        pom[w] = skl_pom;
-        skl_pom = 0;
+        temp_vec[w] = temp_num;
+        temp_num = 0;
     }
 
-    return pom;
+    return temp_vec;
 }
 
-template <typename Typ, int Rozmiar>
-TMatrix<Typ, Rozmiar> TMatrix<Typ, Rozmiar>::wstaw_kolumne(const TVector<Typ, Rozmiar>& vec,
-                                                             unsigned int kolumna) const {
-    assert(kolumna < Rozmiar);
-    TMatrix<Typ, Rozmiar> pom = *this;
+template <typename T, int Size>
+TMatrix<T, Size> TMatrix<T, Size>::insert_column(const TVector<T, Size>& vec, unsigned int column) const {
+    assert(column < Size);
+    TMatrix<T, Size> temp = *this;
 
-    for (int i = 0; i < Rozmiar; i++)
-        pom(i, kolumna) = vec[i];
+    for (int i = 0; i < Size; i++)
+        temp(i, column) = vec[i];
 
-    return pom;
+    return temp;
 }
 
 /*!
@@ -163,10 +161,10 @@ TMatrix<Typ, Rozmiar> TMatrix<Typ, Rozmiar>::wstaw_kolumne(const TVector<Typ, Ro
  * Zwraca:
  * referencję do Strm
  */
-template <typename Typ, int Rozmiar>
-std::istream& operator>>(std::istream& Strm, TMatrix<Typ, Rozmiar>& Mac) {
-    for (int a = 0; a < Rozmiar; a++)
-        for (int b = 0; b < Rozmiar; b++)
+template <typename T, int Size>
+std::istream& operator>>(std::istream& Strm, TMatrix<T, Size>& Mac) {
+    for (int a = 0; a < Size; a++)
+        for (int b = 0; b < Size; b++)
             Strm >> Mac(b, a);  // bo macierz Mac w pliku to macierz transponowana
 
     return Strm;
@@ -180,11 +178,11 @@ std::istream& operator>>(std::istream& Strm, TMatrix<Typ, Rozmiar>& Mac) {
  * Zwraca:
  * referencję do Strm
  */
-template <typename Typ, int Rozmiar>
-std::ostream& operator<<(std::ostream& Strm, const TMatrix<Typ, Rozmiar>& Mac) {
-    for (int a = 0; a < Rozmiar; a++) {
+template <typename T, int Size>
+std::ostream& operator<<(std::ostream& Strm, const TMatrix<T, Size>& Mac) {
+    for (int a = 0; a < Size; a++) {
         Strm << "\t";
-        for (int b = 0; b < Rozmiar; b++)
+        for (int b = 0; b < Size; b++)
             Strm << Mac(a, b) << "   ";
         Strm << std::endl;
     }

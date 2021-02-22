@@ -1,3 +1,3 @@
-<map id="TMatrix::zamien_kolumny" name="TMatrix::zamien_kolumny">
-<area shape="rect" id="node2" href="$class_s_macierz.html#a729c4e17ee5a88bef8eb731577803057" title="TMatrix::wyznacznik" alt="" coords="236,5,391,32"/>
+<map id="TMatrix::swap_columns" name="TMatrix::swap_columns">
+<area shape="rect" id="node2" href="$class_s_macierz.html#a729c4e17ee5a88bef8eb731577803057" title="TMatrix::determinant" alt="" coords="236,5,391,32"/>
 </map>
