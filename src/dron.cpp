@@ -130,11 +130,11 @@ TVector<double, 3> dron::return_location() const {
 }
 
 TVector<double, 3> dron::return_lenghts() const {
-    TVector<double, 3> dlugosc_sr = left_motor.return_lenght_halves();
-    TVector<double, 3> dlugosc_kor = body.return_lenght_halves();
+    TVector<double, 3> lenght_sr = left_motor.return_lenght_halves();
+    TVector<double, 3> lenght_kor = body.return_lenght_halves();
 
-    dlugosc_sr[0] = dlugosc_sr[1] = sqrt(dlugosc_sr[0] * dlugosc_sr[0] + dlugosc_sr[1] * dlugosc_sr[1]);
-    dlugosc_kor[0] = dlugosc_kor[1] = sqrt(dlugosc_kor[0] * dlugosc_kor[0] + dlugosc_kor[1] * dlugosc_kor[1]);
+    lenght_sr[0] = lenght_sr[1] = sqrt(lenght_sr[0] * lenght_sr[0] + lenght_sr[1] * lenght_sr[1]);
+    lenght_kor[0] = lenght_kor[1] = sqrt(lenght_kor[0] * lenght_kor[0] + lenght_kor[1] * lenght_kor[1]);
 
-    return dlugosc_kor + dlugosc_sr;
+    return lenght_kor + lenght_sr;
 }

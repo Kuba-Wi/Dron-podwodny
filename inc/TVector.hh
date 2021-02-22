@@ -9,34 +9,34 @@
  * Szablon klasy modeluje pojęcie vectora dowolnego rozmiaru
  * i dowolnego typu
  */
-template <typename Typ, int Rozmiar>
+template <typename T, int Size>
 class TVector {
     /*! \brief Liczy wszystkie utworzone vectory 3D */
-    static int lacznie_vectorow;
+    static int all_vectors_3D;
     /*! \brief Liczy aktualnie istniejące vectory 3D */
-    static int aktualnie_vectorow;
+    static int currently_vectors_3D;
 
-    std::array<Typ, Rozmiar> skladowe; /*! kolejne składowe vectora */
+    std::array<T, Size> components; /*! kolejne składowe vectora */
 public:
     /*!
      * \brief Konsturuktor
      * Tworzy nowy obiekt TVector.
      * Zwiększa o jeden pola statyczne klasy, jeśli vector
-     * ma rozmiar równy 3.
+     * ma Size równy 3.
      */
     TVector();
     /*!
      * \brief Konstruktor kopiujący
      * Kopiuje vector do obiektu, który wywołuje tę metodę.
-     * Zwiększa o jeden pole aktualnie_vectorow3D, jeśli vector
-     * ma rozmiar równy 3.
+     * Zwiększa o jeden pole currently_vectors_3D3D, jeśli vector
+     * ma Size równy 3.
      * \param[in] vec - kopiowany vector
      */
-    TVector(const TVector<Typ, Rozmiar>& vec);
+    TVector(const TVector<T, Size>& vec);
     /*!
      * \brief Destruktor
-     * Zmniejsza o jeden pole aktualnie_vectorow3D, jeśli vector
-     * ma rozmiar równy 3.
+     * Zmniejsza o jeden pole currently_vectors_3D3D, jeśli vector
+     * ma Size równy 3.
      */
     ~TVector();
 
@@ -46,9 +46,9 @@ public:
      * \param[in] i - indeks składowej
      * \return i-tą składową vectora
      */
-    Typ operator[](int i) const {
-        assert(i < Rozmiar);
-        return skladowe[i];
+    T operator[](int i) const {
+        assert(i < Size);
+        return components[i];
     }
     /*!
      * \brief Wpisuje odpowiednią składową vectora
@@ -56,154 +56,154 @@ public:
      * \param[in] i - indeks składowej
      * \return referencję do i-tej składowej
      */
-    Typ& operator[](int i) {
-        assert(i < Rozmiar);
-        return skladowe[i];
+    T& operator[](int i) {
+        assert(i < Size);
+        return components[i];
     }
 
     /*!
      * \brief oblicza sumę dwóch vectorów
      * Metoda oblicza sumę dwóch vectorów.
-     * \param[in] drugi - vector, który dodajemy
+     * \param[in] second - vector, który dodajemy
      * \return sumę dwóch vectorów
      */
-    TVector<Typ, Rozmiar> operator+(const TVector<Typ, Rozmiar>& drugi) const;
+    TVector<T, Size> operator+(const TVector<T, Size>& second) const;
 
     /*!
      * \brief Oblicza różnicę dwóch vectorów
      * Metoda oblicza różnicę dwóch vectorów.
-     * \param[in] drugi - vectór, który odejmujemy
-     * \return wynik odejmowania
+     * \param[in] second - vectór, który odejmujemy
+     * \return Result odejmowania
      */
-    TVector<Typ, Rozmiar> operator-(const TVector<Typ, Rozmiar>& drugi) const;
+    TVector<T, Size> operator-(const TVector<T, Size>& second) const;
 
     /*!
-     * \brief Oblicza iloczyn skalarny
-     * Metoda liczy iloczyn skalarny dwóch vectorów.
-     * \param[in] drugi - drugi składnik iloczynu
-     * \return wynik mnożenia
+     * \brief Oblicza product skalarny
+     * Metoda liczy product skalarny dwóch vectorów.
+     * \param[in] second - second składnik iloczynu
+     * \return Result mnożenia
      */
-    Typ operator*(const TVector<Typ, Rozmiar>& drugi) const;
+    T operator*(const TVector<T, Size>& second) const;
     /*!
-     * \brief Oblicza iloczyn vectora przez liczbę
-     * Metoda liczy iloczyn vectora przez liczbę
-     * \param[in] liczba - liczba przez którą mnożymy
-     * \return wynik mnożenia
+     * \brief Oblicza product vectora przez liczbę
+     * Metoda liczy product vectora przez liczbę
+     * \param[in] number - number przez którą mnożymy
+     * \return Result mnożenia
      */
-    TVector<Typ, Rozmiar> operator*(Typ liczba) const;
+    TVector<T, Size> operator*(T number) const;
 
     /*!
      * \brief Oblicza iloraz vectora przez liczbę
      * Metoda liczy iloraz vectora przez liczbę
-     * \param[in] liczba - liczba przez którą dzielimy
-     * \return wynik dzielenia
+     * \param[in] number - number przez którą dzielimy
+     * \return Result dzielenia
      */
-    TVector<Typ, Rozmiar> operator/(Typ liczba) const;
+    TVector<T, Size> operator/(T number) const;
     /*!
      * \brief Oblicza długość vectora
      * Metoda oblicza długość vectora:
      * \return długość vectora
      */
-    double dlugosc() const;
+    double lenght() const;
 
     /*!
      * \brief Zwraca łączną liczbę vectorów 3D
      * \retval lacznie_obiektow3D - pole klasy
      */
-    static int lacznie_vectory() { return lacznie_vectorow; }
+    static int return_all_vectors_3D() { return all_vectors_3D; }
     /*!
      * \brief Zwraca aktualną liczbę vectorów 3D
      * \retval aktualnie_obiektow3D - pole klasy
      */
-    static int aktualnie_vectory() { return aktualnie_vectorow; }
+    static int return_current_vectors_3D() { return currently_vectors_3D; }
 };
 
-template <typename Typ, int Rozmiar>
-int TVector<Typ, Rozmiar>::lacznie_vectorow = 0;
+template <typename T, int Size>
+int TVector<T, Size>::all_vectors_3D = 0;
 
-template <typename Typ, int Rozmiar>
-int TVector<Typ, Rozmiar>::aktualnie_vectorow = 0;
+template <typename T, int Size>
+int TVector<T, Size>::currently_vectors_3D = 0;
 
-template <typename Typ, int Rozmiar>
-TVector<Typ, Rozmiar>::TVector() {
-    if (Rozmiar == 3) {
-        ++lacznie_vectorow;
-        ++aktualnie_vectorow;
+template <typename T, int Size>
+TVector<T, Size>::TVector() {
+    if (Size == 3) {
+        ++all_vectors_3D;
+        ++currently_vectors_3D;
     }
 }
 
-template <typename Typ, int Rozmiar>
-TVector<Typ, Rozmiar>::TVector(const TVector<Typ, Rozmiar>& vec) : skladowe(vec.skladowe) {
-    if (Rozmiar == 3) {
-        ++aktualnie_vectorow;
-        ++lacznie_vectorow;
+template <typename T, int Size>
+TVector<T, Size>::TVector(const TVector<T, Size>& vec) : components(vec.components) {
+    if (Size == 3) {
+        ++currently_vectors_3D;
+        ++all_vectors_3D;
     }
 }
 
-template <typename Typ, int Rozmiar>
-TVector<Typ, Rozmiar>::~TVector() {
-    if (Rozmiar == 3)
-        --aktualnie_vectorow;
+template <typename T, int Size>
+TVector<T, Size>::~TVector() {
+    if (Size == 3)
+        --currently_vectors_3D;
 }
 
-template <typename Typ, int Rozmiar>
-TVector<Typ, Rozmiar> TVector<Typ, Rozmiar>::operator+(const TVector<Typ, Rozmiar>& drugi) const {
-    TVector<Typ, Rozmiar> Suma;
+template <typename T, int Size>
+TVector<T, Size> TVector<T, Size>::operator+(const TVector<T, Size>& second) const {
+    TVector<T, Size> Sum;
 
-    for (int i = 0; i < Rozmiar; i++)
-        Suma.skladowe[i] = skladowe[i] + drugi.skladowe[i];
+    for (int i = 0; i < Size; i++)
+        Sum.components[i] = components[i] + second.components[i];
 
-    return Suma;
+    return Sum;
 }
 
-template <typename Typ, int Rozmiar>
-TVector<Typ, Rozmiar> TVector<Typ, Rozmiar>::operator-(const TVector<Typ, Rozmiar>& drugi) const {
-    TVector<Typ, Rozmiar> Roznica;
+template <typename T, int Size>
+TVector<T, Size> TVector<T, Size>::operator-(const TVector<T, Size>& second) const {
+    TVector<T, Size> difference;
 
-    for (int i = 0; i < Rozmiar; i++)
-        Roznica.skladowe[i] = skladowe[i] - drugi.skladowe[i];
+    for (int i = 0; i < Size; i++)
+        difference.components[i] = components[i] - second.components[i];
 
-    return Roznica;
+    return difference;
 }
 
-template <typename Typ, int Rozmiar>
-Typ TVector<Typ, Rozmiar>::operator*(const TVector<Typ, Rozmiar>& drugi) const {
-    Typ iloczyn = 0;
+template <typename T, int Size>
+T TVector<T, Size>::operator*(const TVector<T, Size>& second) const {
+    T product = 0;
 
-    for (int i = 0; i < Rozmiar; i++)
-        iloczyn += skladowe[i] * drugi.skladowe[i];
+    for (int i = 0; i < Size; i++)
+        product += components[i] * second.components[i];
 
-    return iloczyn;
+    return product;
 }
 
-template <typename Typ, int Rozmiar>
-TVector<Typ, Rozmiar> TVector<Typ, Rozmiar>::operator*(Typ liczba) const {
-    TVector<Typ, Rozmiar> Wynik;
+template <typename T, int Size>
+TVector<T, Size> TVector<T, Size>::operator*(T number) const {
+    TVector<T, Size> Result;
 
-    for (int i = 0; i < Rozmiar; i++)
-        Wynik.skladowe[i] = skladowe[i] * liczba;
+    for (int i = 0; i < Size; i++)
+        Result.components[i] = components[i] * number;
 
-    return Wynik;
+    return Result;
 }
 
-template <typename Typ, int Rozmiar>
-double TVector<Typ, Rozmiar>::dlugosc() const {
-    double Wynik = 0;
+template <typename T, int Size>
+double TVector<T, Size>::lenght() const {
+    double Result = 0;
 
-    for (int i = 0; i < Rozmiar; i++)
-        Wynik += skladowe[i] * skladowe[i];
+    for (int i = 0; i < Size; i++)
+        Result += components[i] * components[i];
 
-    return sqrt(Wynik);
+    return sqrt(Result);
 }
 
-template <typename Typ, int Rozmiar>
-TVector<Typ, Rozmiar> TVector<Typ, Rozmiar>::operator/(Typ liczba) const {
-    TVector<Typ, Rozmiar> Wynik;
+template <typename T, int Size>
+TVector<T, Size> TVector<T, Size>::operator/(T number) const {
+    TVector<T, Size> Result;
 
-    for (int i = 0; i < Rozmiar; ++i)
-        Wynik[i] = skladowe[i] / liczba;
+    for (int i = 0; i < Size; ++i)
+        Result[i] = components[i] / number;
 
-    return Wynik;
+    return Result;
 }
 
 /*!
@@ -214,9 +214,9 @@ TVector<Typ, Rozmiar> TVector<Typ, Rozmiar>::operator/(Typ liczba) const {
  * Zwracana:
  * referencję do Strm
  */
-template <typename Typ, int Rozmiar>
-std::istream& operator>>(std::istream& Strm, TVector<Typ, Rozmiar>& vec) {
-    for (int i = 0; i < Rozmiar; i++)
+template <typename T, int Size>
+std::istream& operator>>(std::istream& Strm, TVector<T, Size>& vec) {
+    for (int i = 0; i < Size; i++)
         Strm >> vec[i];
 
     return Strm;
@@ -230,9 +230,9 @@ std::istream& operator>>(std::istream& Strm, TVector<Typ, Rozmiar>& vec) {
  * Wartość zwracana:
  * referencję do Strm
  */
-template <typename Typ, int Rozmiar>
-std::ostream& operator<<(std::ostream& Strm, const TVector<Typ, Rozmiar>& vec) {
-    for (int i = 0; i < Rozmiar; i++)
+template <typename T, int Size>
+std::ostream& operator<<(std::ostream& Strm, const TVector<T, Size>& vec) {
+    for (int i = 0; i < Size; i++)
         Strm << vec[i] << " ";
 
     Strm << std::endl;

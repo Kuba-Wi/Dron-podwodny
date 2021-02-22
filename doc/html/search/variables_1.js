@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ad',['aD',['../jquery_8js.html#ad223f5fba68c41c1236671ac5c5b0fcb',1,'jquery.js']]],
-  ['aktualnie_5fvectorow',['aktualnie_vectorow',['../class_s_vector.html#af80049dad8c9c31947fd24ba9add1e45',1,'TVector']]],
+  ['aktualnie_5fvectorow',['currently_vectors_3D',['../class_s_vector.html#af80049dad8c9c31947fd24ba9add1e45',1,'TVector']]],
   ['am',['aM',['../jquery_8js.html#a8cc6111a5def3ea889157d13fb9a9672',1,'jquery.js']]],
   ['animationinprogress',['animationInProgress',['../navtree_8js.html#a588cb5a5004d817923eb3f45c8f0f7c7',1,'navtree.js']]],
   ['annotated_5fdup',['annotated_dup',['../annotated__dup_8js.html#a3984d1c56eac86ebbabcf0f3233514a2',1,'annotated_dup.js']]],

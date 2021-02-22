@@ -21,7 +21,7 @@ var searchData=
   ['sidenav',['sidenav',['../resize_8js.html#a9a7b07fe0df5af5957564912e842c0a4',1,'resize.js']]],
   ['skalax',['SkalaX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a76f367ee032ec1aaa610ee6f6dc49b67',1,'PzG::LaczeDoGNUPlota']]],
   ['skalaz',['SkalaZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a2b34c26dc7193546666cf15e74d29209',1,'PzG::LaczeDoGNUPlota']]],
-  ['skladowe',['skladowe',['../class_s_vector.html#a7a649b8a13ca81a98cd19b9aa6eb2fd2',1,'TVector']]],
+  ['components',['components',['../class_s_vector.html#a7a649b8a13ca81a98cd19b9aa6eb2fd2',1,'TVector']]],
   ['TMatrix',['TMatrix',['../class_s_macierz.html',1,'']]],
   ['TMatrix_2ehh',['TMatrix.hh',['../_s_macierz_8hh.html',1,'']]],
   ['srodek_5flok',['local_centre',['../classobiekt.html#a2a6beb67b4b01af91b6d106eb541e04d',1,'obiekt']]],

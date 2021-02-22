@@ -11,19 +11,19 @@ bool stage::emergence() const {
 }
 
 bool stage::colision() const {
-    TVector<double, 3> dlugosci_drona = dron_stage.return_lenghts();
+    TVector<double, 3> lenghti_drona = dron_stage.return_lenghts();
     TVector<double, 3> srodek_drona = dron_stage.return_location();
-    TVector<double, 3> dlugosci_przeszkody;
+    TVector<double, 3> lenghti_przeszkody;
     TVector<double, 3> distancei;
 
     bool jest_colision = false;
 
     for (auto& przeszkoda : lista_przeszkod) {
-        dlugosci_przeszkody = przeszkoda->return_lenght_halves();
+        lenghti_przeszkody = przeszkoda->return_lenght_halves();
         distancei = srodek_drona - przeszkoda->location();
 
         for (int i = 0; i < 3; ++i) {
-            jest_colision = (fabs(distancei[i]) <= (dlugosci_przeszkody[i] + dlugosci_drona[i]));
+            jest_colision = (fabs(distancei[i]) <= (lenghti_przeszkody[i] + lenghti_drona[i]));
             if (!jest_colision) {
                 break;
             }

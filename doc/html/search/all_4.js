@@ -18,7 +18,7 @@ var searchData=
   ['dir_5fb5cf8c7eed15b9a932fb877c80d323b6_2ejs',['dir_b5cf8c7eed15b9a932fb877c80d323b6.js',['../dir__b5cf8c7eed15b9a932fb877c80d323b6_8js.html',1,'']]],
   ['dir_5fbfccd401955b95cf8c75461437045ac0',['dir_bfccd401955b95cf8c75461437045ac0',['../dir__bfccd401955b95cf8c75461437045ac0_8js.html#afc74dde60a1e8b3b8a777c9a8146c92b',1,'dir_bfccd401955b95cf8c75461437045ac0.js']]],
   ['dir_5fbfccd401955b95cf8c75461437045ac0_2ejs',['dir_bfccd401955b95cf8c75461437045ac0.js',['../dir__bfccd401955b95cf8c75461437045ac0_8js.html',1,'']]],
-  ['dlugosc',['dlugosc',['../class_s_vector.html#a5f1248739407307caaeada3d87bd1201',1,'TVector']]],
+  ['lenght',['lenght',['../class_s_vector.html#a5f1248739407307caaeada3d87bd1201',1,'TVector']]],
   ['bottom',['bottom',['../classstage.html#a902bc3201c404b9c35c60439edd588a8',1,'stage']]],
   ['dodaj_5fbottom',['add_bottom',['../classstage.html#ad7c4ca7a3eb26bc133eabe65476791d4',1,'stage']]],
   ['dodaj_5fbody',['add_body',['../classstage.html#ad5d8213c9a23276befedb02e7d4fad7c',1,'stage']]],

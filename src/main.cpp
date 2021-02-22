@@ -9,8 +9,8 @@ void stream_fix(istream& Strm) {
 }
 
 void obiects_info() {
-    std::cout << "\n\tAktualna liczba obiektow vector 3D: " << TVector<double, 3>::aktualnie_vectory() << "\n";
-    std::cout << "\tLaczna liczba obiektow vector 3D: " << TVector<double, 3>::lacznie_vectory() << "\n";
+    std::cout << "\n\tAktualna liczba obiektow vector 3D: " << TVector<double, 3>::return_current_vectors_3D() << "\n";
+    std::cout << "\tLaczna liczba obiektow vector 3D: " << TVector<double, 3>::return_all_vectors_3D() << "\n";
 }
 
 void obsluga_sceny() {
