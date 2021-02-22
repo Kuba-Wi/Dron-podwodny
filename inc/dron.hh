@@ -1,6 +1,6 @@
 #pragma once
 #include "obiekt.hh"
-#include "szesciokat.hh"
+#include "hexagon.hh"
 
 /*!
  * \brief Modeluje pojęcie drona
@@ -12,9 +12,9 @@ private:
     /*! \brief Korpus drona */
     obiekt korpus;
     /*! \brief Prawa śruba drona */
-    szesciokat sruba_prawa;
+    hexagon sruba_prawa;
     /*! Lewa śruba drona */
-    szesciokat sruba_lewa;
+    hexagon sruba_lewa;
     /*! \brief Łączny kąt obrotu obiektu */
     double laczny_kat_obrotu;
     /*! \brief przesunięcie obiektu względem wspolrzednych lokalnych */

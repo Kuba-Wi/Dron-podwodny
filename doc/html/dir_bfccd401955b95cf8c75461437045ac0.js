@@ -25,7 +25,7 @@ var dir_bfccd401955b95cf8c75461437045ac0 =
     [ "scena.hh", "scena_8hh.html", "scena_8hh" ],
     [ "TMatrix.hh", "_s_macierz_8hh.html", "_s_macierz_8hh" ],
     [ "TVector.hh", "_s_wektor_8hh.html", "_s_wektor_8hh" ],
-    [ "szesciokat.hh", "szesciokat_8hh.html", [
-      [ "szesciokat", "classszesciokat.html", "classszesciokat" ]
+    [ "hexagon.hh", "hexagon_8hh.html", [
+      [ "hexagon", "classhexagon.html", "classhexagon" ]
     ] ]
 ];

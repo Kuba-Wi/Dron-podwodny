@@ -1,9 +1,9 @@
 #pragma once
 
+#include <array>
 #include <cassert>
 #include <cmath>
 #include <iostream>
-#include <array>
 /*!
  * \brief modeluje pojęcie Wektora
  * Szablon klasy modeluje pojęcie wektora dowolnego rozmiaru
@@ -133,8 +133,7 @@ TVector<Typ, Rozmiar>::TVector() {
 }
 
 template <typename Typ, int Rozmiar>
-TVector<Typ, Rozmiar>::TVector(const TVector<Typ, Rozmiar>& Wek) {
-    *this = Wek;
+TVector<Typ, Rozmiar>::TVector(const TVector<Typ, Rozmiar>& Wek) : skladowe(Wek.skladowe) {
     if (Rozmiar == 3) {
         ++aktualnie_wektorow;
         ++lacznie_wektorow;

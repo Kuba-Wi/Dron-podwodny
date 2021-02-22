@@ -1,8 +1,8 @@
-#include "szesciokat.hh"
+#include "hexagon.hh"
 #include <cmath>
 #include <fstream>
 
-void szesciokat::macierz_obrotu_x(TMatrix<double, 3>& obrot, double kat_obrotu) const {
+void hexagon::macierz_obrotu_x(TMatrix<double, 3>& obrot, double kat_obrotu) const {
     const double pi = acos(-1);
 
     obrot(0, 1) = 0;
@@ -18,7 +18,7 @@ void szesciokat::macierz_obrotu_x(TMatrix<double, 3>& obrot, double kat_obrotu) 
     obrot(1, 2) = -obrot(2, 1);
 }
 
-void szesciokat::ruch_lokalny() {
+void hexagon::ruch_lokalny() {
     TMatrix<double, 3> mac_obrotu;
 
     laczny_kat_obrotu += 10;

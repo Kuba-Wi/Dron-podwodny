@@ -9,7 +9,7 @@
  * Klasa opisuje graniastosłup sześciokątny, który może się poruszać
  * i obracać wokół własnej osi.
  */
-class szesciokat : public obiekt {
+class hexagon : public obiekt {
 private:
     /*!
      * \brief wylicza macierz obrotu
@@ -22,7 +22,7 @@ public:
      * \brief Konstruktor
      * Zeruje wektor przesunięcia i łączny kąt obrotu.
      */
-    szesciokat() : obiekt() {}
+    hexagon() : obiekt() {}
 
     /*!
      * \brief Zmienia przesunięcie graniastosłupa

@@ -9,7 +9,7 @@ var hierarchy =
           [ "pret", "classpret.html", null ],
           [ "prostokat", "classprostokat.html", null ],
           [ "prostopadloscian", "classprostopadloscian.html", null ],
-          [ "szesciokat", "classszesciokat.html", null ]
+          [ "hexagon", "classhexagon.html", null ]
         ] ]
       ] ]
     ] ],

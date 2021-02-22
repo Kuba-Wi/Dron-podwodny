@@ -6,10 +6,10 @@
 <area shape="rect" id="node13" href="$classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead" title="Powoduje ruch korpusu Metoda powoduje ruch korpusu o wektor przesunięcie i obrót o zadaną macierz..." alt="" coords="420,31,547,58"/>
 <area shape="rect" id="node14" href="$classdron.html#a4e4e78ab43842943e45ac80fee68a1ce" title="Wylicza wektor translacji. Metoda wylicza wektor translacji na podstawie zadanych parametrów..." alt="" coords="200,275,355,302"/>
 <area shape="rect" id="node5" href="$classobiekt.html#a89652c905d14d51b3db0f54ebe4875f6" title="Wczytuje wspolrzedne lokalne Wczytuje współrzędne z pliku z współrzędnymi lokalnymi i zapisuje je do ..." alt="" coords="612,139,827,166"/>
-<area shape="rect" id="node7" href="$classszesciokat.html#a7489c4f4a62fa96c88ff7431bf2108ac" title="Powoduje ruch o wektor przesunięcie Metoda powoduje przesunięcie graniastosłupa o wektor przesunięcie..." alt="" coords="636,291,803,318"/>
+<area shape="rect" id="node7" href="$classhexagon.html#a7489c4f4a62fa96c88ff7431bf2108ac" title="Powoduje ruch o wektor przesunięcie Metoda powoduje przesunięcie graniastosłupa o wektor przesunięcie..." alt="" coords="636,291,803,318"/>
 <area shape="rect" id="node9" href="$classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz obrotu..." alt="" coords="1085,236,1180,263"/>
 <area shape="rect" id="node10" href="$classobiekt.html#ae356ba5bd4ac60581216ab0759b6a8d0" title="Przeprowadza ruch na wprost Powoduje ruch obiektu po prostej o zadany wektor translacji. " alt="" coords="877,186,1035,212"/>
 <area shape="rect" id="node11" href="$classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="614,88,825,115"/>
 <area shape="rect" id="node6" href="$classobiekt.html#a39861805e6f688c581d23bfd992e4834" title="Wczytuje wspolrzedne z pliku Wczytuje dane z pliku i zapisuje je do pola współrzędne. " alt="" coords="875,135,1037,162"/>
-<area shape="rect" id="node8" href="$classszesciokat.html#a470a40b18794d7f58423ccd1e6f0aa45" title="wylicza macierz obrotu Metoda wylicza macierz obrotu wokół osi OX. " alt="" coords="887,288,1025,329"/>
+<area shape="rect" id="node8" href="$classhexagon.html#a470a40b18794d7f58423ccd1e6f0aa45" title="wylicza macierz obrotu Metoda wylicza macierz obrotu wokół osi OX. " alt="" coords="887,288,1025,329"/>
 </map>

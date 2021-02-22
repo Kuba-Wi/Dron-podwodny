@@ -1,7 +1,7 @@
 <map id="inc/TVector.hh" name="inc/TVector.hh">
 <area shape="rect" id="node2" href="$wypelnij_8cpp.html" title="dat/wypelnij.cpp" alt="" coords="19,80,135,107"/>
 <area shape="rect" id="node3" href="$obiekt_8hh.html" title="inc/obiekt.hh" alt="" coords="306,155,402,181"/>
-<area shape="rect" id="node9" href="$szesciokat_8hh.html" title="inc/szesciokat.hh" alt="" coords="121,229,245,256"/>
+<area shape="rect" id="node9" href="$hexagon_8hh.html" title="inc/hexagon.hh" alt="" coords="121,229,245,256"/>
 <area shape="rect" id="node15" href="$_s_macierz_8hh.html" title="inc/TMatrix.hh" alt="" coords="211,80,327,107"/>
 <area shape="rect" id="node16" href="$powierzchnia_8cpp.html" title="src/powierzchnia.cpp" alt="" coords="403,80,548,107"/>
 <area shape="rect" id="node4" href="$dron_8hh.html" title="inc/dron.hh" alt="" coords="161,304,248,331"/>
@@ -13,5 +13,5 @@
 <area shape="rect" id="node8" href="$dron_8cpp.html" title="src/dron.cpp" alt="" coords="157,379,252,405"/>
 <area shape="rect" id="node6" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="269,453,367,480"/>
 <area shape="rect" id="node7" href="$scena_8cpp.html" title="src/scena.cpp" alt="" coords="391,453,495,480"/>
-<area shape="rect" id="node10" href="$szesciokat_8cpp.html" title="src/szesciokat.cpp" alt="" coords="5,304,137,331"/>
+<area shape="rect" id="node10" href="$hexagon_8cpp.html" title="src/hexagon.cpp" alt="" coords="5,304,137,331"/>
 </map>

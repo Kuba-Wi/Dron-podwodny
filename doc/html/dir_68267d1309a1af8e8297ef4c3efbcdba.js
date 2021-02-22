@@ -6,5 +6,5 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "obiekt.cpp", "obiekt_8cpp.html", null ],
     [ "powierzchnia.cpp", "powierzchnia_8cpp.html", null ],
     [ "scena.cpp", "scena_8cpp.html", null ],
-    [ "szesciokat.cpp", "szesciokat_8cpp.html", null ]
+    [ "hexagon.cpp", "hexagon_8cpp.html", null ]
 ];

@@ -9,6 +9,6 @@ var searchData=
   ['strona1_2edox',['strona1.dox',['../strona1_8dox.html',1,'']]],
   ['strona_5fdiagram_2edox',['strona_diagram.dox',['../strona__diagram_8dox.html',1,'']]],
   ['TVector_2ehh',['TVector.hh',['../_s_wektor_8hh.html',1,'']]],
-  ['szesciokat_2ecpp',['szesciokat.cpp',['../szesciokat_8cpp.html',1,'']]],
-  ['szesciokat_2ehh',['szesciokat.hh',['../szesciokat_8hh.html',1,'']]]
+  ['hexagon_2ecpp',['hexagon.cpp',['../hexagon_8cpp.html',1,'']]],
+  ['hexagon_2ehh',['hexagon.hh',['../hexagon_8hh.html',1,'']]]
 ];

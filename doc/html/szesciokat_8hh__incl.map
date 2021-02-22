@@ -1,4 +1,4 @@
-<map id="inc/szesciokat.hh" name="inc/szesciokat.hh">
+<map id="inc/hexagon.hh" name="inc/hexagon.hh">
 <area shape="rect" id="node2" href="$obiekt_8hh.html" title="obiekt.hh" alt="" coords="181,80,256,107"/>
 <area shape="rect" id="node4" href="$_s_wektor_8hh.html" title="TVector.hh" alt="" coords="248,229,339,256"/>
 <area shape="rect" id="node11" href="$_s_macierz_8hh.html" title="TMatrix.hh" alt="" coords="331,155,426,181"/>

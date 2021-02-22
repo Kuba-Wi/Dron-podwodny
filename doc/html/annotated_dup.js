@@ -11,5 +11,5 @@ var annotated_dup =
     [ "scena", "classscena.html", "classscena" ],
     [ "TMatrix", "class_s_macierz.html", "class_s_macierz" ],
     [ "TVector", "class_s_wektor.html", "class_s_wektor" ],
-    [ "szesciokat", "classszesciokat.html", "classszesciokat" ]
+    [ "hexagon", "classhexagon.html", "classhexagon" ]
 ];
