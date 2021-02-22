@@ -9,11 +9,11 @@ void stream_fix(istream& Strm) {
 }
 
 void obiects_info() {
-    std::cout << "\n\tAktualna liczba obiektow vector 3D: " << TVector<double, 3>::return_current_vectors_3D() << "\n";
-    std::cout << "\tLaczna liczba obiektow vector 3D: " << TVector<double, 3>::return_all_vectors_3D() << "\n";
+    std::cout << "\n\tCurrent number of vector 3D obiects: " << TVector<double, 3>::return_current_vectors_3D() << "\n";
+    std::cout << "\tCombined number of vector 3D obiects: " << TVector<double, 3>::return_all_vectors_3D() << "\n";
 }
 
-void obsluga_sceny() {
+void stage_management() {
     stage main_stage;
     main_stage.add_body("dat/body.pow", "dat/body1.pow");
     main_stage.add_left_motor("dat/left_motor.dat", "dat/left_motor1.dat");
@@ -31,19 +31,19 @@ void obsluga_sceny() {
     double angle;
     double distance;
 
-    while (choice != 'k') {
+    while (choice != 'q') {
         switch (choice) {
-        case 'r':
-            cout << "\tPodaj wartosc anglea (wznoszenia/opadania) w stopniach.\n";
-            cout << "\tWartosc anglea> ";
+        case 'g':
+            cout << "\tSet angle of rise/descent in degrees.\n";
+            cout << "\tAngle value> ";
             cin >> angle;
             cin.get();
             if (!cin) {
                 stream_fix(cin);
                 break;
             }
-            cout << "\nPodaj wartosc distancei, na ktora ma sie przemiescic dron.\n";
-            cout << "\tWartosc distancei> ";
+            cout << "\nSet distance on which drone will move.\n";
+            cout << "\tDistance value> ";
             cin >> distance;
             cin.get();
             if (!cin) {
@@ -52,9 +52,9 @@ void obsluga_sceny() {
             }
             main_stage.move_ahead(angle, distance);
             break;
-        case 'o':
-            cout << "\tPodaj wartosc anglea w stopniach.\n";
-            cout << "\tWartosc anglea> ";
+        case 'r':
+            cout << "\tSet angle in degrees.\n";
+            cout << "\tAngle value> ";
             cin >> angle;
             cin.get();
             if (!cin) {
@@ -64,19 +64,19 @@ void obsluga_sceny() {
             main_stage.rotation(angle);
             break;
         case 'm':
-            cout << "\tr - zadaj ruch na wprost\n";
-            cout << "\to - zadaj zmiane orientacji\n";
-            cout << "\tm - wyswietl menu\n\n";
-            cout << "\tk - koniec dzialania programu\n";
+            cout << "\tg - go ahead\n";
+            cout << "\tr - roate\n";
+            cout << "\tm - menu\n\n";
+            cout << "\tq - end of program\n";
             break;
         }
         obiects_info();
-        cout << "\nTwoj choice, m - menu> ";
+        cout << "\nYour choice, m - menu> ";
         cin >> choice;
     }
 }
 
 int main() {
-    obsluga_sceny();
+    stage_management();
     obiects_info();
 }
