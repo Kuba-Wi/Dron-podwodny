@@ -13,7 +13,7 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "scena", "classscena.html", null ],
+    [ "stage", "classstage.html", null ],
     [ "TMatrix< Typ, Rozmiar >", "class_s_macierz.html", null ],
     [ "TVector< Typ, Rozmiar >", "class_s_wektor.html", null ],
     [ "TVector< double, 3 >", "class_s_wektor.html", null ]

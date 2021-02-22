@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['scena_2ecpp',['scena.cpp',['../scena_8cpp.html',1,'']]],
-  ['scena_2ehh',['scena.hh',['../scena_8hh.html',1,'']]],
-  ['scena_5f8hh_2ejs',['scena_8hh.js',['../scena__8hh_8js.html',1,'']]],
+  ['stage_2ecpp',['stage.cpp',['../stage_8cpp.html',1,'']]],
+  ['stage_2ehh',['stage.hh',['../stage_8hh.html',1,'']]],
+  ['stage_5f8hh_2ejs',['stage_8hh.js',['../stage__8hh_8js.html',1,'']]],
   ['search_2ejs',['search.js',['../search_8js.html',1,'']]],
   ['searchdata_2ejs',['searchdata.js',['../searchdata_8js.html',1,'']]],
   ['TMatrix_2ehh',['TMatrix.hh',['../_s_macierz_8hh.html',1,'']]],

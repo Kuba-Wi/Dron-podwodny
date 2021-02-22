@@ -1,6 +1,6 @@
-<map id="scena::dodaj_korpus" name="scena::dodaj_korpus">
+<map id="stage::dodaj_korpus" name="stage::dodaj_korpus">
 <area shape="rect" id="node2" href="$classdron.html#ad4e3e1c99980abc862fad7177d014427" title="Dodaje pliki korpusu Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące korpus..." alt="" coords="196,78,359,105"/>
-<area shape="rect" id="node5" href="$classscena.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="197,135,358,162"/>
+<area shape="rect" id="node5" href="$classstage.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="197,135,358,162"/>
 <area shape="rect" id="node3" href="$classpowierzchnia.html#a97bcc95edec5081f08e6234afff0f1f8" title="Zapisuje plik lokalny Metoda zapisuje nazwę pliku z współrzędnymi lokalnymi. " alt="" coords="422,5,559,47"/>
 <area shape="rect" id="node4" href="$classpowierzchnia.html#adc90beb15e09c8eccf0603e4eadfbeec" title="Zapisuje plik globalny Metoda zapisuje nazwę pliku z współrzędnymi globalnymi. " alt="" coords="422,71,559,112"/>
 <area shape="rect" id="node6" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku. " alt="" coords="407,136,575,177"/>

@@ -1,5 +1,5 @@
-<map id="src/scena.cpp" name="src/scena.cpp">
-<area shape="rect" id="node2" href="$scena_8hh.html" title="scena.hh" alt="" coords="321,80,395,107"/>
+<map id="src/stage.cpp" name="src/stage.cpp">
+<area shape="rect" id="node2" href="$stage_8hh.html" title="stage.hh" alt="" coords="321,80,395,107"/>
 <area shape="rect" id="node3" href="$dron_8hh.html" title="dron.hh" alt="" coords="567,155,632,181"/>
 <area shape="rect" id="node16" href="$lacze__do__gnuplota_8hh.html" title="Zawiera definicję klasy PzG::LaczeDoGNUPlota. " alt="" coords="28,155,176,181"/>
 <area shape="rect" id="node18" href="$cuboid_8hh.html" title="cuboid.hh" alt="" coords="391,229,530,256"/>

@@ -1,12 +1,12 @@
 <map id="dron::korpus_ruch" name="dron::korpus_ruch">
 <area shape="rect" id="node2" href="$classdron.html#a809f2fc3fc515c8992d5f04081893a97" title="Powoduje ruch drona po prostej Metoda powoduje przesunięcie drona o zadany kąt i zadaną odległość ..." alt="" coords="505,111,652,137"/>
 <area shape="rect" id="node7" href="$classdron.html#a648ea5308782ad19b74f6651c712708f" title="Powoduje obrót drona Metoda powoduje obrót drona o zadany kąt obrotu. " alt="" coords="180,56,264,83"/>
-<area shape="rect" id="node3" href="$classscena.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="700,107,833,133"/>
-<area shape="rect" id="node4" href="$classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="886,81,986,108"/>
+<area shape="rect" id="node3" href="$classstage.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="700,107,833,133"/>
+<area shape="rect" id="node4" href="$classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="886,81,986,108"/>
 <area shape="rect" id="node5" href="$main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="881,31,991,57"/>
 <area shape="rect" id="node6" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="1039,31,1089,57"/>
 <area shape="rect" id="node8" href="$classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9" title="Wylicza macierz obrotu. Metoda wylicza macierz obrotu wokół osi OZ na podstawie zadanych parametrów..." alt="" coords="312,49,457,90"/>
-<area shape="rect" id="node11" href="$classscena.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="719,5,814,32"/>
+<area shape="rect" id="node11" href="$classstage.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="719,5,814,32"/>
 <area shape="rect" id="node9" href="$classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje korpus i śruby oraz przesuwa śruby względem korpusu..." alt="" coords="505,56,652,83"/>
-<area shape="rect" id="node10" href="$classscena.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="707,56,826,83"/>
+<area shape="rect" id="node10" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="707,56,826,83"/>
 </map>

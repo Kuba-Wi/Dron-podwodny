@@ -1,4 +1,4 @@
-<map id="inc/scena.hh" name="inc/scena.hh">
+<map id="inc/stage.hh" name="inc/stage.hh">
 <area shape="rect" id="node2" href="$dron_8hh.html" title="dron.hh" alt="" coords="201,80,266,107"/>
 <area shape="rect" id="node15" href="$lacze__do__gnuplota_8hh.html" title="Zawiera definicję klasy PzG::LaczeDoGNUPlota. " alt="" coords="558,80,706,107"/>
 <area shape="rect" id="node17" href="$cuboid_8hh.html" title="cuboid.hh" alt="" coords="271,155,409,181"/>

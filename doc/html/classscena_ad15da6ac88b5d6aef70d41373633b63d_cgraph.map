@@ -1,6 +1,6 @@
-<map id="scena::dodaj_prostokat" name="scena::dodaj_prostokat">
-<area shape="rect" id="node2" href="$classscena.html#a37056be2e45de7e80a4b72a4cedb08c1" title="Dodaje przeszkodę na scenie Metoda dodaje na scenę przeszkodę zapisaną w zadanych plikach..." alt="" coords="211,13,381,39"/>
-<area shape="rect" id="node3" href="$classscena.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="429,13,591,39"/>
+<map id="stage::dodaj_prostokat" name="stage::dodaj_prostokat">
+<area shape="rect" id="node2" href="$classstage.html#a37056be2e45de7e80a4b72a4cedb08c1" title="Dodaje przeszkodę na scenie Metoda dodaje na scenę przeszkodę zapisaną w zadanych plikach..." alt="" coords="211,13,381,39"/>
+<area shape="rect" id="node3" href="$classstage.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="429,13,591,39"/>
 <area shape="rect" id="node4" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku. " alt="" coords="639,5,807,47"/>
 <area shape="rect" id="node5" href="$namespace_pz_g.html#ae1ae4d36f66c77879380ba73da8e20e3" title="PzG::CzyJestPlik" alt="" coords="855,13,981,39"/>
 </map>

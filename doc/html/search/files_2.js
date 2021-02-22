@@ -12,5 +12,5 @@ var searchData=
   ['classobiekt_2ejs',['classobiekt.js',['../classobiekt_8js.html',1,'']]],
   ['classpowierzchnia_2ejs',['classpowierzchnia.js',['../classpowierzchnia_8js.html',1,'']]],
   ['classpowierzchnia_5f_5flokalna_2ejs',['classpowierzchnia__lokalna.js',['../classpowierzchnia____lokalna_8js.html',1,'']]],
-  ['classscena_2ejs',['classscena.js',['../classscena_8js.html',1,'']]]
+  ['classstage_2ejs',['classstage.js',['../classstage_8js.html',1,'']]]
 ];

@@ -1,12 +1,12 @@
 <map id="dron::zwroc_polozenie" name="dron::zwroc_polozenie">
-<area shape="rect" id="node2" href="$classscena.html#ab5fbfa861967e0faa82d61d4d239fdf5" title="Zwraca informację o kolizji z dnem Metoda sprawdza czy nie ma kolizji z dnem. " alt="" coords="205,31,336,57"/>
-<area shape="rect" id="node10" href="$classscena.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. " alt="" coords="205,132,336,159"/>
-<area shape="rect" id="node11" href="$classscena.html#a9bbff749c1f2d34f3959afd97e044fc0" title="Zwraca informację o kolizji Sprawdza czy jest kolizja z jakąś przeszkodą " alt="" coords="219,81,322,108"/>
-<area shape="rect" id="node3" href="$classscena.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="384,56,477,83"/>
-<area shape="rect" id="node8" href="$classscena.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="525,107,659,133"/>
-<area shape="rect" id="node4" href="$classscena.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="533,56,651,83"/>
-<area shape="rect" id="node9" href="$classscena.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="545,5,639,32"/>
-<area shape="rect" id="node5" href="$classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="711,31,811,57"/>
+<area shape="rect" id="node2" href="$classstage.html#ab5fbfa861967e0faa82d61d4d239fdf5" title="Zwraca informację o kolizji z dnem Metoda sprawdza czy nie ma kolizji z dnem. " alt="" coords="205,31,336,57"/>
+<area shape="rect" id="node10" href="$classstage.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. " alt="" coords="205,132,336,159"/>
+<area shape="rect" id="node11" href="$classstage.html#a9bbff749c1f2d34f3959afd97e044fc0" title="Zwraca informację o kolizji Sprawdza czy jest kolizja z jakąś przeszkodą " alt="" coords="219,81,322,108"/>
+<area shape="rect" id="node3" href="$classstage.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="384,56,477,83"/>
+<area shape="rect" id="node8" href="$classstage.html#a0a72068a1c9059f235b4f560fcd317ec" title="Powoduje ruch drona na wprost Powoduje ruch obiektu dron na wprost na zadaną odległość i o dany kąt w..." alt="" coords="525,107,659,133"/>
+<area shape="rect" id="node4" href="$classstage.html#af2e5207902ca5eed0744d41ff9f806db" title="Inicjalizuje Łącze do gnuplota oraz drona. " alt="" coords="533,56,651,83"/>
+<area shape="rect" id="node9" href="$classstage.html#abef62e7d58fc529eda33e376dfc25383" title="Powoduje obrót drona Powoduje obrót drona wokół własnej osi o zadany kąt. " alt="" coords="545,5,639,32"/>
+<area shape="rect" id="node5" href="$classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="711,31,811,57"/>
 <area shape="rect" id="node6" href="$main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="707,81,816,108"/>
 <area shape="rect" id="node7" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="864,81,915,108"/>
 </map>

@@ -8,7 +8,7 @@ var searchData=
   ['classobiekt',['classobiekt',['../classobiekt_8js.html#a87b21722b417916f430293399999a505',1,'classobiekt.js']]],
   ['classpowierzchnia',['classpowierzchnia',['../classpowierzchnia_8js.html#ab7a26542c06ae7561c9ede5d90535b80',1,'classpowierzchnia.js']]],
   ['classpowierzchnia_5f_5flokalna',['classpowierzchnia__lokalna',['../classpowierzchnia____lokalna_8js.html#abaf44c3f30d7d1f83c28eacff5b9e90f',1,'classpowierzchnia__lokalna.js']]],
-  ['classscena',['classscena',['../classscena_8js.html#a645181aa3dd1ed0bae5cfa9662c4bdf2',1,'classscena.js']]],
+  ['classstage',['classstage',['../classstage_8js.html#a645181aa3dd1ed0bae5cfa9662c4bdf2',1,'classstage.js']]],
   ['const',['const',['../all__a_8js.html#a9e47bfc7cdf4f529920df30cb3159131',1,'const():&#160;all_a.js'],['../functions__9_8js.html#a9e47bfc7cdf4f529920df30cb3159131',1,'const():&#160;functions_9.js']]],
   ['content',['content',['../resize_8js.html#abaa405b2de1fea05ef421122098b4750',1,'resize.js']]],
   ['cookie_5fnamespace',['cookie_namespace',['../resize_8js.html#ab3321080c64c8797ebbcd6e30982c62c',1,'resize.js']]],

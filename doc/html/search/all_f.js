@@ -3,7 +3,7 @@ var searchData=
   ['obiekt',['obiekt',['../classobiekt.html',1,'obiekt'],['../classobiekt.html#a8900a8b09fec5c8628a9ce19d4054451',1,'obiekt::obiekt()']]],
   ['obiekt_2ecpp',['obiekt.cpp',['../obiekt_8cpp.html',1,'']]],
   ['obiekt_2ehh',['obiekt.hh',['../obiekt_8hh.html',1,'']]],
-  ['obrot',['obrot',['../classdron.html#a648ea5308782ad19b74f6651c712708f',1,'dron::obrot()'],['../classobiekt.html#ae17951004694760b0bcd91ed8eb12104',1,'obiekt::obrot()'],['../classscena.html#abef62e7d58fc529eda33e376dfc25383',1,'scena::obrot()']]],
+  ['obrot',['obrot',['../classdron.html#a648ea5308782ad19b74f6651c712708f',1,'dron::obrot()'],['../classobiekt.html#ae17951004694760b0bcd91ed8eb12104',1,'obiekt::obrot()'],['../classstage.html#abef62e7d58fc529eda33e376dfc25383',1,'stage::obrot()']]],
   ['obsluga_5fsceny',['obsluga_sceny',['../main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836',1,'main.cpp']]],
   ['operator_28_29',['operator()',['../class_s_macierz.html#abe3b962f00324890d283b4230e7dfdb8',1,'TMatrix::operator()(unsigned int a, unsigned int b)'],['../class_s_macierz.html#a49d22ffdc538a7911ea3283a2049522b',1,'TMatrix::operator()(unsigned int a, unsigned int b) const ']]],
   ['operator_2a',['operator*',['../class_s_macierz.html#a489e2a82f0a338327a3efee0e56ef7f1',1,'TMatrix::operator*()'],['../class_s_wektor.html#a561c2b02565d56dad23411a753c48af1',1,'TVector::operator*(const TVector&lt; Typ, Rozmiar &gt; &amp;drugi) const '],['../class_s_wektor.html#a5b2de3223d6b2b2939f4ce190bb467d7',1,'TVector::operator*(Typ liczba) const ']]],

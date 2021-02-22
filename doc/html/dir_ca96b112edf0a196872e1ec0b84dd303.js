@@ -11,7 +11,7 @@ var dir_ca96b112edf0a196872e1ec0b84dd303 =
     [ "classobiekt.js", "classobiekt_8js.html", "classobiekt_8js" ],
     [ "classpowierzchnia.js", "classpowierzchnia_8js.html", "classpowierzchnia_8js" ],
     [ "classpowierzchnia__lokalna.js", "classpowierzchnia____lokalna_8js.html", "classpowierzchnia____lokalna_8js" ],
-    [ "classscena.js", "classscena_8js.html", "classscena_8js" ],
+    [ "classstage.js", "classstage_8js.html", "classstage_8js" ],
     [ "dir_1d4f848b8bfc734495f6ec015350d07c.js", "dir__1d4f848b8bfc734495f6ec015350d07c_8js.html", "dir__1d4f848b8bfc734495f6ec015350d07c_8js" ],
     [ "dir_33ed69dcdb2bf701dd31bfae06b6b3b2.js", "dir__33ed69dcdb2bf701dd31bfae06b6b3b2_8js.html", "dir__33ed69dcdb2bf701dd31bfae06b6b3b2_8js" ],
     [ "dir_668d4168cb90a78eb8e24c20ed0fd2a3.js", "dir__668d4168cb90a78eb8e24c20ed0fd2a3_8js.html", "dir__668d4168cb90a78eb8e24c20ed0fd2a3_8js" ],
@@ -32,6 +32,6 @@ var dir_ca96b112edf0a196872e1ec0b84dd303 =
     [ "navtreedata.js", "navtreedata_8js.html", "navtreedata_8js" ],
     [ "navtreeindex0.js", "navtreeindex0_8js.html", "navtreeindex0_8js" ],
     [ "resize.js", "resize_8js.html", "resize_8js" ],
-    [ "scena_8hh.js", "scena__8hh_8js.html", "scena__8hh_8js" ],
+    [ "stage_8hh.js", "stage__8hh_8js.html", "stage__8hh_8js" ],
     [ "wypelnij_8cpp.js", "wypelnij__8cpp_8js.html", "wypelnij__8cpp_8js" ]
 ];

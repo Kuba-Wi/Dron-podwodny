@@ -1,5 +1,5 @@
-<map id="scena::dodaj_sruba_prawa" name="scena::dodaj_sruba_prawa">
-<area shape="rect" id="node2" href="$classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="193,5,293,32"/>
+<map id="stage::dodaj_sruba_prawa" name="stage::dodaj_sruba_prawa">
+<area shape="rect" id="node2" href="$classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="193,5,293,32"/>
 <area shape="rect" id="node3" href="$main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="188,56,297,83"/>
 <area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="345,56,396,83"/>
 </map>

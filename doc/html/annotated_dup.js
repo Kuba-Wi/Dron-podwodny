@@ -8,7 +8,7 @@ var annotated_dup =
     [ "pret", "classpret.html", "classpret" ],
     [ "prostokat", "classprostokat.html", "classprostokat" ],
     [ "cuboid", "classcuboid.html", "classcuboid" ],
-    [ "scena", "classscena.html", "classscena" ],
+    [ "stage", "classstage.html", "classstage" ],
     [ "TMatrix", "class_s_macierz.html", "class_s_macierz" ],
     [ "TVector", "class_s_wektor.html", "class_s_wektor" ],
     [ "hexagon", "classhexagon.html", "classhexagon" ]

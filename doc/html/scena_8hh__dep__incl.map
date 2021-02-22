@@ -1,4 +1,4 @@
-<map id="inc/scena.hh" name="inc/scena.hh">
+<map id="inc/stage.hh" name="inc/stage.hh">
 <area shape="rect" id="node2" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="5,80,103,107"/>
-<area shape="rect" id="node3" href="$scena_8cpp.html" title="src/scena.cpp" alt="" coords="127,80,231,107"/>
+<area shape="rect" id="node3" href="$stage_8cpp.html" title="src/stage.cpp" alt="" coords="127,80,231,107"/>
 </map>

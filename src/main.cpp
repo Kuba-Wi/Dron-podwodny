@@ -1,4 +1,4 @@
-#include "scena.hh"
+#include "stage.hh"
 
 using namespace std;
 
@@ -14,7 +14,7 @@ void inf_o_obiektach() {
 }
 
 void obsluga_sceny() {
-    scena glowna;
+    stage glowna;
     glowna.dodaj_korpus("dat/korpus.pow", "dat/korpus1.pow");
     glowna.dodaj_sruba_lewa("dat/sruba_lewa.dat", "dat/sruba_lewa1.dat");
     glowna.dodaj_sruba_prawa("dat/sruba_prawa.dat", "dat/sruba_prawa1.dat");

@@ -37,7 +37,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "__s__macierz__8hh_8js.html",
-"classscena.html#a902bc3201c404b9c35c60439edd588a8",
+"classstage.html#a902bc3201c404b9c35c60439edd588a8",
 "navtreedata_8js.html#afc3e53a71ba26a8215797019b9b1451b"
 ];
 

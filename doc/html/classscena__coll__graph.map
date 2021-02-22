@@ -1,4 +1,4 @@
-<map id="scena" name="scena">
+<map id="stage" name="stage">
 <area shape="rect" id="node2" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html" title="Klasa realizuje interfejs do programu GNUPlot. " alt="" coords="5,396,173,423"/>
 <area shape="rect" id="node3" href="$classpowierzchnia.html" title="Modeluje pojęcie powierzchni. " alt="" coords="284,81,383,108"/>
 <area shape="rect" id="node7" href="$classobiekt.html" title="Modeluje pojęcie obiektu Klasa opisuje obiekt geometryczny, który może się poruszać i obracać wokół w..." alt="" coords="173,200,230,227"/>

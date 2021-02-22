@@ -5,8 +5,8 @@ __start__: ./dron_podwodny
 	./dron_podwodny
 
 
-./dron_podwodny: obj obj/main.o obj/powierzchnia.o obj/obiekt.o obj/scena.o obj/lacze_do_gnuplota.o obj/hexagon.o obj/dron.o
-	g++ -Wall -pedantic -o dron_podwodny obj/main.o obj/scena.o obj/powierzchnia.o obj/obiekt.o obj/lacze_do_gnuplota.o\
+./dron_podwodny: obj obj/main.o obj/powierzchnia.o obj/obiekt.o obj/stage.o obj/lacze_do_gnuplota.o obj/hexagon.o obj/dron.o
+	g++ -Wall -pedantic -o dron_podwodny obj/main.o obj/stage.o obj/powierzchnia.o obj/obiekt.o obj/lacze_do_gnuplota.o\
 				obj/hexagon.o obj/dron.o
 
 obj:
@@ -27,10 +27,10 @@ obj/hexagon.o: inc/hexagon.hh src/hexagon.cpp inc/powierzchnia.hh
 obj/dron.o: inc/dron.hh src/dron.cpp inc/hexagon.hh inc/obiekt.hh
 	g++ -c ${CXXFLAGS} -o obj/dron.o src/dron.cpp
 
-obj/scena.o: inc/scena.hh inc/obiekt.hh inc/lacze_do_gnuplota.hh src/scena.cpp
-	g++ -c ${CXXFLAGS} -o obj/scena.o src/scena.cpp
+obj/stage.o: inc/stage.hh inc/obiekt.hh inc/lacze_do_gnuplota.hh src/stage.cpp
+	g++ -c ${CXXFLAGS} -o obj/stage.o src/stage.cpp
 
-obj/main.o: inc/scena.hh src/main.cpp
+obj/main.o: inc/stage.hh src/main.cpp
 	g++ -c ${CXXFLAGS} -o obj/main.o src/main.cpp
 
 clean:

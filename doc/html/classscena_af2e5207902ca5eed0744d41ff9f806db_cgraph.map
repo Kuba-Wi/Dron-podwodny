@@ -1,8 +1,8 @@
-<map id="scena::inicjalizuj" name="scena::inicjalizuj">
+<map id="stage::inicjalizuj" name="stage::inicjalizuj">
 <area shape="rect" id="node2" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a10950349b348fd3a3d4143e95337527c" title="Zmienia tryb rysowania. " alt="" coords="172,151,340,192"/>
 <area shape="rect" id="node3" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e" title="Inicjalizuje połączenie z programem gnuplot. " alt="" coords="172,216,340,257"/>
 <area shape="rect" id="node4" href="$classdron.html#a81ff7cc6b57a1b6dc148ac7d33b33332" title="Inicjaizuje drona Metoda inicjalizuje korpus i śruby oraz przesuwa śruby względem korpusu..." alt="" coords="183,282,329,309"/>
-<area shape="rect" id="node20" href="$classscena.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="209,510,303,537"/>
+<area shape="rect" id="node20" href="$classstage.html#acbeaad76c7ea16ae2ae839d08e9051b8" title="Rysuje wszystkie powierzchnie i obiekty na scenie. " alt="" coords="209,510,303,537"/>
 <area shape="rect" id="node5" href="$classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="Inicjalizuje pola klasy Wylicza srodek_lok oraz polowa_wysokosci, wpisuje plik lokalny do pliku z pun..." alt="" coords="414,125,533,167"/>
 <area shape="rect" id="node9" href="$classhexagon.html#a7493ea80abcb9dec7f5c0df0c80db7b1" title="Zmienia przesunięcie graniastosłupa Metoda wpisuje wektor wejściowy do wektora przesunięcie. " alt="" coords="607,358,813,385"/>
 <area shape="rect" id="node14" href="$classdron.html#a69d6e8b01b4701c34f2813d1e4c2eff9" title="Wylicza macierz obrotu. Metoda wylicza macierz obrotu wokół osi OZ na podstawie zadanych parametrów..." alt="" coords="401,191,546,232"/>
@@ -19,11 +19,11 @@
 <area shape="rect" id="node19" href="$classdron.html#a4889c22bd1f50dc42ac4bb70daff2ead" title="Powoduje ruch korpusu Metoda powoduje ruch korpusu o wektor przesunięcie i obrót o zadaną macierz..." alt="" coords="882,46,1009,73"/>
 <area shape="rect" id="node17" href="$classobiekt.html#a108f138692512335c2f27fa6105ac622" title="Wpisuje współrzędne do pliku_z_punktami Zapisuje współrzędne z pola współrzędne do pliku globalnego..." alt="" coords="1079,249,1290,275"/>
 <area shape="rect" id="node21" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="PzG::LaczeDoGNUPlota\l::Rysuj" alt="" coords="389,561,557,603"/>
-<area shape="rect" id="node22" href="$classscena.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="629,653,791,679"/>
-<area shape="rect" id="node25" href="$classscena.html#a37056be2e45de7e80a4b72a4cedb08c1" title="Dodaje przeszkodę na scenie Metoda dodaje na scenę przeszkodę zapisaną w zadanych plikach..." alt="" coords="388,627,559,654"/>
-<area shape="rect" id="node26" href="$classscena.html#a9bbff749c1f2d34f3959afd97e044fc0" title="Zwraca informację o kolizji Sprawdza czy jest kolizja z jakąś przeszkodą " alt="" coords="422,510,525,537"/>
-<area shape="rect" id="node31" href="$classscena.html#ab5fbfa861967e0faa82d61d4d239fdf5" title="Zwraca informację o kolizji z dnem Metoda sprawdza czy nie ma kolizji z dnem. " alt="" coords="408,409,539,435"/>
-<area shape="rect" id="node33" href="$classscena.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. " alt="" coords="408,459,539,486"/>
+<area shape="rect" id="node22" href="$classstage.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="629,653,791,679"/>
+<area shape="rect" id="node25" href="$classstage.html#a37056be2e45de7e80a4b72a4cedb08c1" title="Dodaje przeszkodę na scenie Metoda dodaje na scenę przeszkodę zapisaną w zadanych plikach..." alt="" coords="388,627,559,654"/>
+<area shape="rect" id="node26" href="$classstage.html#a9bbff749c1f2d34f3959afd97e044fc0" title="Zwraca informację o kolizji Sprawdza czy jest kolizja z jakąś przeszkodą " alt="" coords="422,510,525,537"/>
+<area shape="rect" id="node31" href="$classstage.html#ab5fbfa861967e0faa82d61d4d239fdf5" title="Zwraca informację o kolizji z dnem Metoda sprawdza czy nie ma kolizji z dnem. " alt="" coords="408,409,539,435"/>
+<area shape="rect" id="node33" href="$classstage.html#ac3df4e790dea99820852b895a96da648" title="Zwraca informację o wynurzenie Sprawdza czy obiekt jest wynurzony. " alt="" coords="408,459,539,486"/>
 <area shape="rect" id="node23" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku. " alt="" coords="861,645,1029,687"/>
 <area shape="rect" id="node24" href="$namespace_pz_g.html#ae1ae4d36f66c77879380ba73da8e20e3" title="PzG::CzyJestPlik" alt="" coords="1121,653,1248,679"/>
 <area shape="rect" id="node27" href="$classdron.html#acc3c64940ea21cc19e61a072b8445b0a" title="Zwraca wymiary drona Metoda zwraca odległości środka drona od jego ścian. " alt="" coords="637,510,783,537"/>

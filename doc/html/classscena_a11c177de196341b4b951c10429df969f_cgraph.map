@@ -1,6 +1,6 @@
-<map id="scena::dodaj_sruba_prawa" name="scena::dodaj_sruba_prawa">
+<map id="stage::dodaj_sruba_prawa" name="stage::dodaj_sruba_prawa">
 <area shape="rect" id="node2" href="$classdron.html#abe7dbb66c7a242dc0110cefcf3268f26" title="Dodaje pliki prawej śruby Metoda dodaje plik lokalny i globalny, które zawierają punkty tworzące praw..." alt="" coords="191,71,346,112"/>
-<area shape="rect" id="node5" href="$classscena.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="188,139,349,166"/>
+<area shape="rect" id="node5" href="$classstage.html#a27983afc7ecb584cb1d0059904608d7b" title="Dodaje plik do łącza do gnuplota. " alt="" coords="188,139,349,166"/>
 <area shape="rect" id="node3" href="$classpowierzchnia.html#a97bcc95edec5081f08e6234afff0f1f8" title="Zapisuje plik lokalny Metoda zapisuje nazwę pliku z współrzędnymi lokalnymi. " alt="" coords="413,5,550,47"/>
 <area shape="rect" id="node4" href="$classpowierzchnia.html#adc90beb15e09c8eccf0603e4eadfbeec" title="Zapisuje plik globalny Metoda zapisuje nazwę pliku z współrzędnymi globalnymi. " alt="" coords="413,71,550,112"/>
 <area shape="rect" id="node6" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a34bd48f57c0fd69c12bf4127a1cacd8f" title="Dodaje nazwę pliku. " alt="" coords="397,136,565,177"/>

@@ -5,5 +5,5 @@ var dir_668d4168cb90a78eb8e24c20ed0fd2a3 =
     [ "obiekt.cpp", "obiekt_8cpp.html", null ],
     [ "powierzchnia.cpp", "powierzchnia_8cpp.html", null ],
     [ "powierzchnia_lokalna.cpp", "powierzchnia__lokalna_8cpp.html", null ],
-    [ "scena.cpp", "scena_8cpp.html", null ]
+    [ "stage.cpp", "stage_8cpp.html", null ]
 ];

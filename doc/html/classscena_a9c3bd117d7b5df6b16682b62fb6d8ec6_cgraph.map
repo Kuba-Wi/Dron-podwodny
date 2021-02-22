@@ -1,4 +1,4 @@
-<map id="scena::dodaj_drona" name="scena::dodaj_drona">
+<map id="stage::dodaj_drona" name="stage::dodaj_drona">
 <area shape="rect" id="node2" href="$classpowierzchnia.html#a97bcc95edec5081f08e6234afff0f1f8" title="Zapisuje plik lokalny Metoda zapisuje nazwę pliku z współrzędnymi lokalnymi. " alt="" coords="207,5,344,47"/>
 <area shape="rect" id="node3" href="$classpowierzchnia.html#adc90beb15e09c8eccf0603e4eadfbeec" title="Zapisuje plik globalny Metoda zapisuje nazwę pliku z współrzędnymi globalnymi. " alt="" coords="207,71,344,112"/>
 <area shape="rect" id="node4" href="$classobiekt.html#a5e8fe236162ef911e76bceebde10062f" title="Inicjalizuje pola klasy Wylicza srodek_lok oraz polowa_wysokosci, metoda powinna być wywołana przed w..." alt="" coords="216,136,335,177"/>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['scena',['scena',['../classscena.html#a152626dcaf5c3bbb9c803a3134999d2f',1,'scena']]],
+  ['stage',['stage',['../classstage.html#a152626dcaf5c3bbb9c803a3134999d2f',1,'stage']]],
   ['searchbox',['SearchBox',['../search_8js.html#a52066106482f8136aa9e0ec859e8188f',1,'search.js']]],
   ['searchresults',['SearchResults',['../search_8js.html#a9189b9f7a32b6bc78240f40348f7fe03',1,'search.js']]],
   ['selectandhighlight',['selectAndHighlight',['../navtree_8js.html#a0dbf0d5f6126afd88420745f7d3c202d',1,'navtree.js']]],

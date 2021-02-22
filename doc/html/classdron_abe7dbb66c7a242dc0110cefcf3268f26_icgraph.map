@@ -1,6 +1,6 @@
 <map id="dron::dodaj_pliki_sruby_prawej" name="dron::dodaj_pliki_sruby_prawej">
-<area shape="rect" id="node2" href="$classscena.html#a11c177de196341b4b951c10429df969f" title="Dodaje prawą śrubę drona na scenę Zapisuje pliki opisujące prawą śrubę " alt="" coords="208,23,343,65"/>
-<area shape="rect" id="node3" href="$classscena.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="395,5,495,32"/>
+<area shape="rect" id="node2" href="$classstage.html#a11c177de196341b4b951c10429df969f" title="Dodaje prawą śrubę drona na scenę Zapisuje pliki opisujące prawą śrubę " alt="" coords="208,23,343,65"/>
+<area shape="rect" id="node3" href="$classstage.html#a152626dcaf5c3bbb9c803a3134999d2f" title="Konstruktor domyślny. " alt="" coords="395,5,495,32"/>
 <area shape="rect" id="node4" href="$main_8cpp.html#af13e2a3ae3d191ea45cf272deb4cd836" title="obsluga_sceny" alt="" coords="391,56,500,83"/>
 <area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="548,56,599,83"/>
 </map>
