@@ -13,20 +13,20 @@ void obiekt::initialize_obiekt() {
     read_local();
     read_local_coordinates();
 
-    TVector<double, 3> min_wsp = coordinates[0];
-    TVector<double, 3> max_wsp = coordinates[0];
+    TVector<double, 3> min_coord = coordinates[0];
+    TVector<double, 3> max_coord = coordinates[0];
 
-    for (auto& wiersz : coordinates) {
+    for (auto& line : coordinates) {
         for (int i = 0; i < 3; ++i) {
-            if (wiersz[i] < min_wsp[i])
-                min_wsp[i] = wiersz[i];
-            else if (wiersz[i] > max_wsp[i])
-                max_wsp[i] = wiersz[i];
+            if (line[i] < min_coord[i])
+                min_coord[i] = line[i];
+            else if (line[i] > max_coord[i])
+                max_coord[i] = line[i];
         }
     }
 
-    local_centre = (min_wsp + max_wsp) / 2;
-    lenght_half = (max_wsp - min_wsp) / 2;
+    local_centre = (min_coord + max_coord) / 2;
+    lenght_half = (max_coord - min_coord) / 2;
 
     for (int i = 0; i < 3; ++i) {
         lenght_half[i] += 0.25;
@@ -39,19 +39,19 @@ void obiekt::read_coordinates(const std::string& file_name) {
     if (!read.is_open())
         return;
 
-    TVector<double, 3> wiersz;
+    TVector<double, 3> line;
     coordinates.clear();
 
-    read >> wiersz;
+    read >> line;
     while (!read.eof()) {
         if (!read) {
             read.clear();
             while (read.get() != '\n')
                 ;
         } else {
-            coordinates.push_back(wiersz);
+            coordinates.push_back(line);
         }
-        read >> wiersz;
+        read >> line;
     }
 
     read.close();
@@ -67,13 +67,13 @@ void obiekt::write_global_coordinates() {
     if (!write.is_open())
         return;
 
-    int licznik = 0;
+    int counter = 0;
 
     for (TVector<double, 3>& i : coordinates) {
         write << i;
-        ++licznik;
-        if (licznik == 4) {
-            licznik = 0;
+        ++counter;
+        if (counter == 4) {
+            counter = 0;
             write << "#\n\n";
         }
     }
@@ -81,9 +81,9 @@ void obiekt::write_global_coordinates() {
     write.close();
 }
 
-void obiekt::move_ahead(const TVector<double, 3>& przesun) {
+void obiekt::move_ahead(const TVector<double, 3>& mv) {
     for (TVector<double, 3>& x : coordinates)
-        x = x + przesun;
+        x = x + mv;
 }
 
 void obiekt::rotation(const TMatrix<double, 3>& rotation_matrix) {
