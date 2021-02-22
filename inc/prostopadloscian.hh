@@ -8,8 +8,7 @@
  * Utworzona w celu skorzystania z rzutowania w górę.
  */
 class prostopadloscian : public obiekt {
-
-    public:
-        /*! \brief Wirtualny destruktor */
-        virtual ~prostopadloscian() {}
+public:
+    /*! \brief Wirtualny destruktor */
+    virtual ~prostopadloscian() {}
 };

@@ -8,8 +8,7 @@
  * Utworzona w celu skorzystania z rzutowania w górę.
  */
 class prostokat : public obiekt {
-
-    public:
-        /*! \brief Wirtualny destruktor */
-        virtual ~prostokat() {}
+public:
+    /*! \brief Wirtualny destruktor */
+    virtual ~prostokat() {}
 };

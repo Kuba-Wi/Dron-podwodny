@@ -2,9 +2,10 @@
 
 using namespace std;
 
-void naprawa_strumienia(istream & Strm) {
+void naprawa_strumienia(istream& Strm) {
     Strm.clear();
-    while(Strm.get() != '\n');
+    while (Strm.get() != '\n')
+        ;
 }
 
 void inf_o_obiektach() {
@@ -30,45 +31,44 @@ void obsluga_sceny() {
     double kat;
     double odleglosc;
 
-    while(wybor != 'k') {
-
-        switch(wybor) {
-            case 'r':
-                cout << "\tPodaj wartosc kata (wznoszenia/opadania) w stopniach.\n";
-                cout << "\tWartosc kata> ";
-                cin >> kat;
-                cin.get();
-                if(!cin) {
-                    naprawa_strumienia(cin);
-                    break;
-                }
-                cout << "\nPodaj wartosc odleglosci, na ktora ma sie przemiescic dron.\n";
-                cout << "\tWartosc odleglosci> ";
-                cin >> odleglosc;
-                cin.get();
-                if(!cin) {
-                    naprawa_strumienia(cin);
-                    break;
-                }
-                glowna.ruch_prosto(kat, odleglosc);
+    while (wybor != 'k') {
+        switch (wybor) {
+        case 'r':
+            cout << "\tPodaj wartosc kata (wznoszenia/opadania) w stopniach.\n";
+            cout << "\tWartosc kata> ";
+            cin >> kat;
+            cin.get();
+            if (!cin) {
+                naprawa_strumienia(cin);
                 break;
-            case 'o':
-                cout << "\tPodaj wartosc kata w stopniach.\n";
-                cout << "\tWartosc kata> ";
-                cin >> kat;
-                cin.get();
-                if(!cin) {
-                    naprawa_strumienia(cin);
-                    break;
-                }
-                glowna.obrot(kat);
+            }
+            cout << "\nPodaj wartosc odleglosci, na ktora ma sie przemiescic dron.\n";
+            cout << "\tWartosc odleglosci> ";
+            cin >> odleglosc;
+            cin.get();
+            if (!cin) {
+                naprawa_strumienia(cin);
                 break;
-            case 'm':
-                cout << "\tr - zadaj ruch na wprost\n";
-                cout << "\to - zadaj zmiane orientacji\n";
-                cout << "\tm - wyswietl menu\n\n";
-                cout << "\tk - koniec dzialania programu\n";
+            }
+            glowna.ruch_prosto(kat, odleglosc);
+            break;
+        case 'o':
+            cout << "\tPodaj wartosc kata w stopniach.\n";
+            cout << "\tWartosc kata> ";
+            cin >> kat;
+            cin.get();
+            if (!cin) {
+                naprawa_strumienia(cin);
                 break;
+            }
+            glowna.obrot(kat);
+            break;
+        case 'm':
+            cout << "\tr - zadaj ruch na wprost\n";
+            cout << "\to - zadaj zmiane orientacji\n";
+            cout << "\tm - wyswietl menu\n\n";
+            cout << "\tk - koniec dzialania programu\n";
+            break;
         }
         inf_o_obiektach();
         cout << "\nTwoj wybor, m - menu> ";
@@ -77,8 +77,6 @@ void obsluga_sceny() {
 }
 
 int main() {
-
     obsluga_sceny();
     inf_o_obiektach();
-
 }

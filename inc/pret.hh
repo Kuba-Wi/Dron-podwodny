@@ -8,8 +8,7 @@
  * Utworzona w celu skorzystania z rzutowania w górę.
  */
 class pret : public obiekt {
-
-    public:
-        /*! Wirtualny destruktor */
-        virtual ~pret() {}
+public:
+    /*! Wirtualny destruktor */
+    virtual ~pret() {}
 };
