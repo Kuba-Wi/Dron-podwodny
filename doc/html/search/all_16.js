@@ -8,7 +8,7 @@ var searchData=
   ['wezszerokosc',['WezSzerokosc',['../class_pz_g_1_1_info_pliku_do_rysowania.html#aa9af97b6c1fff023902b5b3bc4642a7e',1,'PzG::InfoPlikuDoRysowania']]],
   ['weztrybrys',['WezTrybRys',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a114cd58a1b8cf00cd72aac204d7743b8',1,'PzG::LaczeDoGNUPlota']]],
   ['woda',['woda',['../classstage.html#aff7ec64e4965c19430c2277f667e7f6c',1,'stage']]],
-  ['wpisz_5ftranslation',['wpisz_translation',['../classhexagon.html#a7493ea80abcb9dec7f5c0df0c80db7b1',1,'hexagon']]],
+  ['wpisz_5ftranslation',['inscribe_translation',['../classhexagon.html#a7493ea80abcb9dec7f5c0df0c80db7b1',1,'hexagon']]],
   ['wpisz_5fwspolrzedne_5fglob',['wpisz_wspolrzedne_glob',['../classobiekt.html#a108f138692512335c2f27fa6105ac622',1,'obiekt']]],
   ['writecookie',['writeCookie',['../resize_8js.html#ad0822459a7d442b8c5e4db795d0aabb4',1,'resize.js']]],
   ['wspolrzedne',['wspolrzedne',['../classobiekt.html#a4d666e6f47762b43eb8a81f6c0547ca4',1,'obiekt']]],

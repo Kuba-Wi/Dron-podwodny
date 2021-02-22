@@ -1,4 +1,4 @@
-<map id="hexagon::wpisz_translation" name="hexagon::wpisz_translation">
+<map id="hexagon::inscribe_translation" name="hexagon::inscribe_translation">
 <area shape="rect" id="node2" href="$classhexagon.html#a7489c4f4a62fa96c88ff7431bf2108ac" title="Powoduje ruch o vector przesunięcie Metoda powoduje przesunięcie graniastosłupa o vector przesunięcie..." alt="" coords="260,71,427,98"/>
 <area shape="rect" id="node3" href="$classhexagon.html#a470a40b18794d7f58423ccd1e6f0aa45" title="wylicza macierz rotationu Metoda wylicza macierz rotationu wokół osi OX. " alt="" coords="484,5,623,47"/>
 <area shape="rect" id="node4" href="$classobiekt.html#ae17951004694760b0bcd91ed8eb12104" title="Powoduje obrót obiektu Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz rotationu..." alt="" coords="680,42,775,69"/>

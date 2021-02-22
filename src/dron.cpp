@@ -39,9 +39,9 @@ void dron::initialize_drone() {
     przesun[0] = -20;
     przesun[1] = -20;
     przesun[2] = 0;
-    right_motor.wpisz_translation(przesun);
+    right_motor.inscribe_translation(przesun);
     przesun[1] = 20;
-    left_motor.wpisz_translation(przesun);
+    left_motor.inscribe_translation(przesun);
 
     TMatrix<double, 3> rotation_temp;
 
@@ -99,7 +99,7 @@ void dron::rotation(double rotation_angle) {
 void dron::left_motor_move(const TMatrix<double, 3>& rotation) {
     left_motor.wczytaj_wspolrzedne_lok();
 
-    left_motor.ruch_lokalny();
+    left_motor.local_move();
     left_motor.rotation(rotation);
     left_motor.move_ahead(translation);
 
@@ -109,7 +109,7 @@ void dron::left_motor_move(const TMatrix<double, 3>& rotation) {
 void dron::right_motor_move(const TMatrix<double, 3>& rotation) {
     right_motor.wczytaj_wspolrzedne_lok();
 
-    right_motor.ruch_lokalny();
+    right_motor.local_move();
     right_motor.rotation(rotation);
     right_motor.move_ahead(translation);
 

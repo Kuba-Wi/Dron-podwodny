@@ -15,7 +15,7 @@ private:
      * \brief wylicza macierz rotationu
      * Metoda wylicza macierz rotationu wokół osi OX.
      */
-    void macierz_rotationu_x(TMatrix<double, 3>& rotation, double rotation_angle) const;
+    void rotation_matrix_x(TMatrix<double, 3>& rotation, double rotation_angle) const;
 
 public:
     /*!
@@ -27,14 +27,14 @@ public:
     /*!
      * \brief Zmienia przesunięcie graniastosłupa
      * Metoda wpisuje vector wejściowy do vectora przesunięcie.
-     * \param[in] przesun - vector, który ma być przepisany
+     * \param[in] mv - vector, który ma być przepisany
      */
-    void wpisz_translation(const TVector<double, 3>& przesun) { translation = przesun; }
+    void inscribe_translation(const TVector<double, 3>& mv) { translation = mv; }
 
     /*!
      * \brief Powoduje ruch o vector przesunięcie
      * Metoda powoduje przesunięcie graniastosłupa o vector przesunięcie
      * oraz obrót wokół osi 0X.
      */
-    void ruch_lokalny();
+    void local_move();
 };

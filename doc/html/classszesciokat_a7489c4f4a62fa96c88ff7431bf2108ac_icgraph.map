@@ -1,4 +1,4 @@
-<map id="hexagon::ruch_lokalny" name="hexagon::ruch_lokalny">
+<map id="hexagon::local_move" name="hexagon::local_move">
 <area shape="rect" id="node2" href="$classhexagon.html#a7493ea80abcb9dec7f5c0df0c80db7b1" title="Zmienia przesunięcie graniastosłupa Metoda wpisuje vector wejściowy do vectora przesunięcie. " alt="" coords="429,5,636,32"/>
 <area shape="rect" id="node8" href="$classdron.html#abec453101e86600f17535f7bde1c3f35" title="Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o vector przesunięcie i obrót o zadaną mac..." alt="" coords="224,191,377,217"/>
 <area shape="rect" id="node14" href="$classdron.html#ab4a804bb48d6e7a58f31d6ea6d839f5c" title="Powoduje ruch sruby prawej Metoda powoduje ruch prawej śruby o vector przesunięcie i obrót o zadaną m..." alt="" coords="220,115,381,141"/>

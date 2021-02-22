@@ -2,7 +2,7 @@
 #include <cmath>
 #include <fstream>
 
-void hexagon::macierz_rotationu_x(TMatrix<double, 3>& rotation, double rotation_angle) const {
+void hexagon::rotation_matrix_x(TMatrix<double, 3>& rotation, double rotation_angle) const {
     const double pi = acos(-1);
 
     rotation(0, 1) = 0;
@@ -18,7 +18,7 @@ void hexagon::macierz_rotationu_x(TMatrix<double, 3>& rotation, double rotation_
     rotation(1, 2) = -rotation(2, 1);
 }
 
-void hexagon::ruch_lokalny() {
+void hexagon::local_move() {
     TMatrix<double, 3> mac_rotationu;
 
     all_angle += 10;
@@ -27,7 +27,7 @@ void hexagon::ruch_lokalny() {
     while (all_angle <= -360.0)
         all_angle += 360.0;
 
-    macierz_rotationu_x(mac_rotationu, all_angle);
+    rotation_matrix_x(mac_rotationu, all_angle);
 
     rotation(mac_rotationu);
     move_ahead(translation);

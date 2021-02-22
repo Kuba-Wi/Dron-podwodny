@@ -1,4 +1,4 @@
-<map id="hexagon::macierz_rotationu_x" name="hexagon::macierz_rotationu_x">
+<map id="hexagon::rotation_matrix_x" name="hexagon::rotation_matrix_x">
 <area shape="rect" id="node2" href="$classhexagon.html#a7489c4f4a62fa96c88ff7431bf2108ac" title="Powoduje ruch o vector przesunięcie Metoda powoduje przesunięcie graniastosłupa o vector przesunięcie..." alt="" coords="192,115,359,141"/>
 <area shape="rect" id="node3" href="$classhexagon.html#a7493ea80abcb9dec7f5c0df0c80db7b1" title="Zmienia przesunięcie graniastosłupa Metoda wpisuje vector wejściowy do vectora przesunięcie. " alt="" coords="616,5,823,32"/>
 <area shape="rect" id="node9" href="$classdron.html#abec453101e86600f17535f7bde1c3f35" title="Powoduje ruch sruby lewej Metoda powoduje ruch lewej śruby o vector przesunięcie i obrót o zadaną mac..." alt="" coords="411,191,564,217"/>
