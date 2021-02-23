@@ -15,16 +15,16 @@ void obiects_info() {
 
 void stage_management() {
     stage main_stage;
-    main_stage.add_body("dat/body.pow", "dat/body1.pow");
-    main_stage.add_left_motor("dat/left_motor.dat", "dat/left_motor1.dat");
-    main_stage.add_right_motor("dat/right_motor.dat", "dat/right_motor1.dat");
+    main_stage.add_body("../dat/body.pow", "../dat/body1.pow");
+    main_stage.add_left_motor("../dat/left_motor.dat", "../dat/left_motor1.dat");
+    main_stage.add_right_motor("../dat/right_motor.dat", "../dat/right_motor1.dat");
 
-    main_stage.add_cuboid("dat/cuboid.dat", "dat/cuboid1.dat");
-    main_stage.add_bar("dat/bar.dat", "dat/bar1.dat");
-    main_stage.add_rectangle("dat/rectangle.dat", "dat/rectangle1.dat");
+    main_stage.add_cuboid("../dat/cuboid.dat", "../dat/cuboid1.dat");
+    main_stage.add_bar("../dat/bar.dat", "../dat/bar1.dat");
+    main_stage.add_rectangle("../dat/rectangle.dat", "../dat/rectangle1.dat");
 
-    main_stage.add_bottom("dat/bottom.pow", "dat/bottom1.pow");
-    main_stage.add_water("dat/water_surface.dat", "dat/water_surface1.dat");
+    main_stage.add_bottom("../dat/bottom.pow", "../dat/bottom1.pow");
+    main_stage.add_water("../dat/water_surface.dat", "../dat/water_surface1.dat");
     main_stage.initialize();
 
     char choice = 'm';
@@ -67,7 +67,7 @@ void stage_management() {
             cout << "\tg - go ahead\n";
             cout << "\tr - roate\n";
             cout << "\tm - menu\n\n";
-            cout << "\tq - end of program\n";
+            cout << "\tq - quit\n";
             break;
         }
         obiects_info();
