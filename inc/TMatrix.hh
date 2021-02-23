@@ -165,7 +165,7 @@ template <typename T, int Size>
 std::istream& operator>>(std::istream& Strm, TMatrix<T, Size>& Mac) {
     for (int a = 0; a < Size; a++)
         for (int b = 0; b < Size; b++)
-            Strm >> Mac(b, a);  // bo macierz Mac w pliku to macierz transponowana
+            Strm >> Mac(b, a);
 
     return Strm;
 }
