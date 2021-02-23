@@ -18,7 +18,7 @@ private:
     /*! \brief Łączny kąt rotationu obiektu */
     double all_angle;
     /*! \brief przesunięcie obiektu względem wspolrzednych lokalnych */
-    TVector<double, 3> translation;
+    TVector<double, size_of_TVector> translation;
 
     /*!
      * \brief Wylicza vector translacji.
@@ -27,33 +27,33 @@ private:
      * \param[in] rising_angle - kąt o jaki ma być odchylony vector
      * \param[in] distance - długość vectora
      */
-    void count_translation(TVector<double, 3>& vec, double rising_angle, double distance) const;
+    void count_translation(TVector<double, size_of_TVector>& vec, double rising_angle, double distance) const;
     /*!
      * \brief Wylicza macierz rotationu.
      * Metoda wylicza macierz rotationu wokół osi OZ na podstawie zadanych parametrów.
      * \param[in] rotation - wypełniana macierz rotationu
      * \param[in] rotation_angle - kąt dla jakiego ma zostać wyliczona macierz
      */
-    void count_rotation_angle(TMatrix<double, 3>& rotation, double rotation_angle) const;
+    void count_rotation_angle(TMatrix<double, size_of_TVector>& rotation, double rotation_angle) const;
 
     /*!
      * \brief Powoduje ruch sruby lewej
      * Metoda powoduje ruch lewej śruby o vector przesunięcie i obrót o zadaną macierz.
      * \param[in] rotation - macierz z zapisanym rotationem
      */
-    void left_motor_move(const TMatrix<double, 3>& rotation);
+    void left_motor_move(const TMatrix<double, size_of_TVector>& rotation);
     /*!
      * \brief Powoduje ruch sruby prawej
      * Metoda powoduje ruch prawej śruby o vector przesunięcie i obrót o zadaną macierz.
      * \param[in] rotation - macierz z zapisanym rotationem
      */
-    void right_motor_move(const TMatrix<double, 3>& rotation);
+    void right_motor_move(const TMatrix<double, size_of_TVector>& rotation);
     /*!
      * \brief Powoduje ruch bodyu
      * Metoda powoduje ruch bodyu o vector przesunięcie i obrót o zadaną macierz.
      * \param[in] rotation - macierz z zapisanym rotationem
      */
-    void body_move(const TMatrix<double, 3>& rotation);
+    void body_move(const TMatrix<double, size_of_TVector>& rotation);
 
 public:
     /*!
@@ -107,11 +107,11 @@ public:
      * Metoda zwraca aktualne położenie drona
      * \return vector z zapisanymi współrzędnymi kartezjańskimi drona
      */
-    TVector<double, 3> return_location() const;
+    TVector<double, size_of_TVector> return_location() const;
     /*!
      * \brief Zwraca wymiary drona
      * Metoda zwraca odległości środka drona od jego ścian.
      * \return vector z zapisanymi długościami
      */
-    TVector<double, 3> return_lenghts() const;
+    TVector<double, size_of_TVector> return_lenghts() const;
 };

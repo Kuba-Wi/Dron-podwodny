@@ -11,10 +11,10 @@ bool stage::emergence() const {
 }
 
 bool stage::colision() const {
-    TVector<double, 3> drone_lenghts = dron_stage.return_lenghts();
-    TVector<double, 3> drone_centre = dron_stage.return_location();
-    TVector<double, 3> obstacle_lenghts;
-    TVector<double, 3> distance;
+    TVector<double, size_of_TVector> drone_lenghts = dron_stage.return_lenghts();
+    TVector<double, size_of_TVector> drone_centre = dron_stage.return_location();
+    TVector<double, size_of_TVector> obstacle_lenghts;
+    TVector<double, size_of_TVector> distance;
 
     bool is_colision = false;
 
@@ -22,7 +22,7 @@ bool stage::colision() const {
         obstacle_lenghts = obstacle->return_lenght_halves();
         distance = drone_centre - obstacle->location();
 
-        for (int i = 0; i < 3; ++i) {
+        for (int i = 0; i < size_of_TVector; ++i) {
             is_colision = (fabs(distance[i]) <= (obstacle_lenghts[i] + drone_lenghts[i]));
             if (!is_colision) {
                 break;
