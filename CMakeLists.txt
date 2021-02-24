@@ -46,17 +46,18 @@ set(FILES
     src/stage.cpp
     src/surface.cpp
 )
-set(FLAGS -Wall -pedantic -Wextra)
+set(FLAGS -Wall -pedantic)
 include_directories(inc)
 add_library(lib STATIC ${FILES})
+target_compile_options(lib PRIVATE ${FLAGS})
 
 add_executable(${PROJECT_NAME} src/main.cpp)
-add_compile_options(${PROJECT_NAME} ${FLAGS})
 target_link_libraries(${PROJECT_NAME} lib)
+target_compile_options(${PROJECT_NAME} PRIVATE ${FLAGS})
 
-add_executable(${PROJECT_NAME}-ut tests/test.cpp)
-add_compile_options(${PROJECT_NAME}-ut ${FLAGS})
-target_link_libraries(${PROJECT_NAME}-ut lib gtest_main)
+add_executable(${PROJECT_NAME}-ut tests/TVectorTest.cpp)
+target_link_libraries(${PROJECT_NAME}-ut gtest_main)
+target_compile_options(${PROJECT_NAME}-ut PRIVATE ${FLAGS})
 
 enable_testing()
 add_test(NAME ${PROJECT_NAME}_tests COMMAND ${PROJECT_NAME}-ut)
