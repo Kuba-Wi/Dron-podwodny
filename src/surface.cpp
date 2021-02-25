@@ -13,7 +13,7 @@ void surface::add_global_file(const std::string& global_name) {
 void surface::read_local() {
     std::ifstream read;
     std::ofstream write;
-    TVector<double, size_of_TVector> line;
+    TVector<double, size_of_TVec_3D> line;
 
     read.open(local_file_name);
     write.open(file_with_points);

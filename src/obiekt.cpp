@@ -3,7 +3,7 @@
 #include <fstream>
 
 obiekt::obiekt() {
-    for (int i = 0; i < size_of_TVector; ++i)
+    for (int i = 0; i < size_of_TVec_3D; ++i)
         translation[i] = 0;
 
     all_angle = 0;
@@ -13,11 +13,11 @@ void obiekt::initialize_obiekt() {
     read_local();
     read_local_coordinates();
 
-    TVector<double, size_of_TVector> min_coord = coordinates[0];
-    TVector<double, size_of_TVector> max_coord = coordinates[0];
+    TVector<double, size_of_TVec_3D> min_coord = coordinates[0];
+    TVector<double, size_of_TVec_3D> max_coord = coordinates[0];
 
     for (auto& line : coordinates) {
-        for (int i = 0; i < size_of_TVector; ++i) {
+        for (int i = 0; i < size_of_TVec_3D; ++i) {
             if (line[i] < min_coord[i])
                 min_coord[i] = line[i];
             else if (line[i] > max_coord[i])
@@ -28,7 +28,7 @@ void obiekt::initialize_obiekt() {
     local_centre = (min_coord + max_coord) / 2;
     lenght_half = (max_coord - min_coord) / 2;
 
-    for (int i = 0; i < size_of_TVector; ++i) {
+    for (int i = 0; i < size_of_TVec_3D; ++i) {
         lenght_half[i] += 0.25;
     }
 }
@@ -39,7 +39,7 @@ void obiekt::read_coordinates(const std::string& file_name) {
     if (!read.is_open())
         return;
 
-    TVector<double, size_of_TVector> line;
+    TVector<double, size_of_TVec_3D> line;
     coordinates.clear();
 
     read >> line;
@@ -69,7 +69,7 @@ void obiekt::write_global_coordinates() {
 
     int counter = 0;
 
-    for (TVector<double, size_of_TVector>& i : coordinates) {
+    for (TVector<double, size_of_TVec_3D>& i : coordinates) {
         write << i;
         ++counter;
         if (counter == 4) {
@@ -81,16 +81,16 @@ void obiekt::write_global_coordinates() {
     write.close();
 }
 
-void obiekt::move_ahead(const TVector<double, size_of_TVector>& mv) {
-    for (TVector<double, size_of_TVector>& x : coordinates)
+void obiekt::move_ahead(const TVector<double, size_of_TVec_3D>& mv) {
+    for (TVector<double, size_of_TVec_3D>& x : coordinates)
         x = x + mv;
 }
 
-void obiekt::rotation(const TMatrix<double, size_of_TVector>& rotation_matrix) {
-    for (TVector<double, size_of_TVector>& x : coordinates)
+void obiekt::rotation(const TMatrix<double, size_of_TVec_3D>& rotation_matrix) {
+    for (TVector<double, size_of_TVec_3D>& x : coordinates)
         x = rotation_matrix * x;
 }
 
-TVector<double, size_of_TVector> obiekt::location() const {
+TVector<double, size_of_TVec_3D> obiekt::location() const {
     return local_centre + translation;
 }

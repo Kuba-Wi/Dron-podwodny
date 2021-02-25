@@ -2,7 +2,7 @@
 #include <cmath>
 #include <fstream>
 
-void hexagon::rotation_matrix_x(TMatrix<double, size_of_TVector>& rotation, double rotation_angle) const {
+void hexagon::rotation_matrix_x(TMatrix<double, size_of_TVec_3D>& rotation, double rotation_angle) const {
     const double pi = acos(-1);
 
     rotation(0, 1) = 0;
@@ -19,7 +19,7 @@ void hexagon::rotation_matrix_x(TMatrix<double, size_of_TVector>& rotation, doub
 }
 
 void hexagon::local_move() {
-    TMatrix<double, size_of_TVector> rotation_matrix;
+    TMatrix<double, size_of_TVec_3D> rotation_matrix;
 
     all_angle += 10;
     while (all_angle >= 360.0)

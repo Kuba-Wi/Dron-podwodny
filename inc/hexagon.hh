@@ -15,7 +15,7 @@ private:
      * \brief wylicza macierz rotationu
      * Metoda wylicza macierz rotationu wokół osi OX.
      */
-    void rotation_matrix_x(TMatrix<double, size_of_TVector>& rotation, double rotation_angle) const;
+    void rotation_matrix_x(TMatrix<double, size_of_TVec_3D>& rotation, double rotation_angle) const;
 
 public:
     /*!
@@ -29,7 +29,7 @@ public:
      * Metoda wpisuje vector wejściowy do vectora przesunięcie.
      * \param[in] mv - vector, który ma być przepisany
      */
-    void inscribe_translation(const TVector<double, size_of_TVector>& mv) { translation = mv; }
+    void inscribe_translation(const TVector<double, size_of_TVec_3D>& mv) { translation = mv; }
 
     /*!
      * \brief Powoduje ruch o vector przesunięcie

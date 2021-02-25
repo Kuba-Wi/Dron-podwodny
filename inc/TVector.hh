@@ -5,7 +5,7 @@
 #include <cmath>
 #include <iostream>
 
-constexpr int size_of_TVector = 3;
+constexpr int size_of_TVec_3D = 3;
 /*!
  * \brief modeluje pojęcie vectora
  * Szablon klasy modeluje pojęcie vectora dowolnego rozmiaru

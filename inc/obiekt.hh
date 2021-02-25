@@ -14,15 +14,15 @@
 class obiekt : public surface {
 protected:
     /*! \brief Przechowuje współrzędne punktów tworzących obiekt */
-    std::vector<TVector<double, size_of_TVector>> coordinates;
+    std::vector<TVector<double, size_of_TVec_3D>> coordinates;
     /*! \brief Łączny kąt rotationu obiektu */
     double all_angle;
     /*! \brief przesunięcie obiektu względem wspolrzednych lokalnych */
-    TVector<double, size_of_TVector> translation;
+    TVector<double, size_of_TVec_3D> translation;
     /*! \brief odległości środka obiektu od ścian */
-    TVector<double, size_of_TVector> lenght_half;
+    TVector<double, size_of_TVec_3D> lenght_half;
     /*! \brief Środek wspolrzednych lokalnych obiektu */
-    TVector<double, size_of_TVector> local_centre;
+    TVector<double, size_of_TVec_3D> local_centre;
 
     /*!
      * \brief Wczytuje coordinates z pliku
@@ -65,26 +65,26 @@ public:
      * Powoduje ruch obiektu po prostej o zadany vector translacji
      * \param[in] mv - zadany vector
      */
-    void move_ahead(const TVector<double, size_of_TVector>& mv);
+    void move_ahead(const TVector<double, size_of_TVec_3D>& mv);
 
     /*!
      * \brief Powoduje obrót obiektu
      * Metoda powoduje obrót obiektu wokół własnej osi o zadaną macierz rotationu
      * \param[in] rotation_matrix - zadana macierz rotationu
      */
-    void rotation(const TMatrix<double, size_of_TVector>& rotation_matrix);
+    void rotation(const TMatrix<double, size_of_TVec_3D>& rotation_matrix);
 
     /*!
      * \brief Zwraca środek drona
      * Metoda zwraca wartość współrzędnych środka drona
      * \return Współrzędna środka drona
      */
-    TVector<double, size_of_TVector> location() const;
+    TVector<double, size_of_TVec_3D> location() const;
 
     /*!
      * \brief Zwraca vector z polowami dlugości obiektu
      * Metoda zwraca połowę wysokości obiektu
      * \retval polowa_wysokosci - pole klasy
      */
-    TVector<double, size_of_TVector> return_lenght_halves() const { return lenght_half; }
+    TVector<double, size_of_TVec_3D> return_lenght_halves() const { return lenght_half; }
 };
