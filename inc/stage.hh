@@ -2,11 +2,11 @@
 
 #include <list>
 #include <memory>
+#include "bar.hh"
+#include "cuboid.hh"
 #include "dron.hh"
 #include "lacze_do_gnuplota.hh"
-#include "bar.hh"
 #include "rectangle.hh"
-#include "cuboid.hh"
 
 /*!
  * \brief Modeluje pojęcie sceny

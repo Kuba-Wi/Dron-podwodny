@@ -20,7 +20,7 @@ class TMatrix {
      * b - indeks columns do zamiany
      * Brak wartości zwracanej
      */
-    void swap_columns(unsigned int a, unsigned int b);
+    void swap_columns(std::size_t a, std::size_t b);
 
 public:
     /*!
@@ -31,7 +31,7 @@ public:
      * Zwraca:
      * referencję do składowej (a,b)
      */
-    T& operator()(unsigned int a, unsigned int b);
+    T& operator()(std::size_t a, std::size_t b);
     /*!
      * Metoda pozwala odczytać odpowiednią składową macierzy.
      * Argumenty:
@@ -40,7 +40,7 @@ public:
      * Zwraca:
      * składową (a,b)
      */
-    T operator()(unsigned int a, unsigned int b) const;
+    T operator()(std::size_t a, std::size_t b) const;
 
     /*!
      * Metoda oblicza determinant macierzy.
@@ -67,23 +67,23 @@ public:
      * Zwraca:
      * macierz po zamianie
      */
-    TMatrix<T, Size> insert_column(const TVector<T, Size>& vec, unsigned int column) const;
+    TMatrix<T, Size> insert_column(const TVector<T, Size>& vec, std::size_t column) const;
 };
 
 template <typename T, int Size>
-void TMatrix<T, Size>::swap_columns(unsigned int a, unsigned int b) {
+void TMatrix<T, Size>::swap_columns(std::size_t a, std::size_t b) {
     if (a < Size && b < Size)
         std::swap(columns[a], columns[b]);
 }
 
 template <typename T, int Size>
-T& TMatrix<T, Size>::operator()(unsigned int a, unsigned int b) {
+T& TMatrix<T, Size>::operator()(std::size_t a, std::size_t b) {
     assert(a < Size && b < Size);
     return columns[b][a];
 }
 
 template <typename T, int Size>
-T TMatrix<T, Size>::operator()(unsigned int a, unsigned int b) const {
+T TMatrix<T, Size>::operator()(std::size_t a, std::size_t b) const {
     assert(a < Size && b < Size);
     return columns[b][a];
 }
@@ -143,7 +143,7 @@ TVector<T, Size> TMatrix<T, Size>::operator*(const TVector<T, Size>& vec) const 
 }
 
 template <typename T, int Size>
-TMatrix<T, Size> TMatrix<T, Size>::insert_column(const TVector<T, Size>& vec, unsigned int column) const {
+TMatrix<T, Size> TMatrix<T, Size>::insert_column(const TVector<T, Size>& vec, std::size_t column) const {
     assert(column < Size);
     TMatrix<T, Size> temp = *this;
 

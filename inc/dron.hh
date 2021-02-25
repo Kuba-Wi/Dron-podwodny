@@ -1,6 +1,6 @@
 #pragma once
-#include "obiekt.hh"
 #include "hexagon.hh"
+#include "obiekt.hh"
 
 /*!
  * \brief Modeluje pojęcie drona

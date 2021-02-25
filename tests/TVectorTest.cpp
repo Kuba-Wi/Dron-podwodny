@@ -25,83 +25,63 @@ TEST(TVectorTest, squareBracketsOperatorShouldReturnValueAndReference) {
     ASSERT_EQ(vec_3D[1], value + 1);
 }
 
-TEST(TVectorTest, operatorPlusShouldAddTVectors) {
-    constexpr int first_val = 1;
-    constexpr int second_val = 2;
+struct TVectorTestInt : public ::testing::Test {
+    const int first_val = 1;
+    const int second_val = 2;
     TVector<int, 2> first_2D;
     TVector<int, 2> second_2D;
+    TVectorTestInt() {
+        first_2D[0] = first_val;
+        first_2D[1] = first_val;
+        second_2D[0] = second_val;
+        second_2D[1] = second_val;
+    }
+};
 
-    first_2D[0] = first_val;
-    first_2D[1] = first_val;
-    second_2D[0] = second_val;
-    second_2D[1] = second_val;
+TEST_F(TVectorTestInt, operatorPlusShouldAddTVectors) {
     auto sum_2D = first_2D + second_2D;
-
     ASSERT_EQ(sum_2D[0], first_val + second_val);
     ASSERT_EQ(sum_2D[1], first_val + second_val);
 }
 
-TEST(TVectorTest, operatorMinusShouldSubstractVectors) {
-    constexpr int first_val = 1;
-    constexpr int second_val = 2;
-    TVector<int, 2> first_2D;
-    TVector<int, 2> second_2D;
-
-    first_2D[0] = first_val;
-    first_2D[1] = first_val;
-    second_2D[0] = second_val;
-    second_2D[1] = second_val;
-    auto sum_2D = first_2D - second_2D;
-
-    ASSERT_EQ(sum_2D[0], first_val - second_val);
-    ASSERT_EQ(sum_2D[1], first_val - second_val);
+TEST_F(TVectorTestInt, operatorMinusShouldSubstractVectors) {
+    auto difference_2D = first_2D - second_2D;
+    ASSERT_EQ(difference_2D[0], first_val - second_val);
+    ASSERT_EQ(difference_2D[1], first_val - second_val);
 }
 
-TEST(TVectorTest, operatorMultiplyShouldMultiplyVectorByNumber) {
-    constexpr int first_val = 1;
-    constexpr int second_val = 2;
-    TVector<int, 2> vec_2D;
-    vec_2D[0] = first_val;
-    vec_2D[1] = first_val;
-    vec_2D = vec_2D * second_val;
-
-    ASSERT_EQ(vec_2D[0], first_val * second_val);
-    ASSERT_EQ(vec_2D[1], first_val * second_val);
-}
-
-TEST(TVectorTest, operatorMultiplyShouldMultiplyVectors) {
-    constexpr int first_val = 1;
-    constexpr int second_val = 2;
-    TVector<int, 2> first_2D;
-    TVector<int, 2> second_2D;
-
-    first_2D[0] = first_val;
-    first_2D[1] = first_val;
-    second_2D[0] = second_val;
-    second_2D[1] = second_val;
-
+TEST_F(TVectorTestInt, operatorMultiplyShouldMultiplyVectors) {
     auto result = first_2D * second_2D;
     ASSERT_EQ(result, 2 * first_val * second_val);
 }
 
-TEST(TVectorTest, operatorDivideShouldDivideVectorByNumber) {
-    constexpr int first_val = 4;
-    constexpr int second_val = 2;
-    TVector<int, 2> vec_2D;
-    vec_2D[0] = first_val;
-    vec_2D[1] = first_val;
-    vec_2D = vec_2D / second_val;
+TEST_F(TVectorTestInt, operatorMultiplyShouldMultiplyVectorByNumber) {
+    constexpr int factor = 4;
+    auto vec_2D = first_2D * factor;
 
-    ASSERT_EQ(vec_2D[0], first_val / second_val);
-    ASSERT_EQ(vec_2D[1], first_val / second_val);
+    ASSERT_EQ(vec_2D[0], first_val * factor);
+    ASSERT_EQ(vec_2D[1], first_val * factor);
 }
 
-TEST(TVectorTest, lengthFunctionShouldReturnLengthOfVector) {
-    constexpr double first_val = 3;
-    constexpr double second_val = 4;
-    constexpr double len = 5;
+struct TVectorTestDouble : public ::testing::Test {
+    const double first_val = 3;
+    const double second_val = 4;
     TVector<double, 2> vec_2D;
-    vec_2D[0] = first_val;
-    vec_2D[1] = second_val;
+    TVectorTestDouble() {
+        vec_2D[0] = first_val;
+        vec_2D[1] = second_val;
+    }
+};
+
+TEST_F(TVectorTestDouble, operatorDivideShouldDivideVectorByNumber) {
+    constexpr double divisor = 4;
+    vec_2D = vec_2D / divisor;
+
+    ASSERT_EQ(vec_2D[0], first_val / divisor);
+    ASSERT_EQ(vec_2D[1], second_val / divisor);
+}
+
+TEST_F(TVectorTestDouble, lengthFunctionShouldReturnLengthOfVector) {
+    constexpr double len = 5;
     ASSERT_EQ(vec_2D.lenght(), len);
 }
