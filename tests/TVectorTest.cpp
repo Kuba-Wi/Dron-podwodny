@@ -1,3 +1,4 @@
+#include <sstream>
 #include "TVector.hh"
 #include "gtest/gtest.h"
 
@@ -84,4 +85,21 @@ TEST_F(TVectorTestDouble, operatorDivideShouldDivideVectorByNumber) {
 TEST_F(TVectorTestDouble, lengthFunctionShouldReturnLengthOfVector) {
     constexpr double len = 5;
     ASSERT_EQ(vec_2D.lenght(), len);
+}
+
+TEST(TVectorTest, operatorReadShouldReadFromInput) {
+    std::istringstream str("0 1 2");
+    TVector<int, 3> vec_3D;
+    str >> vec_3D;
+    ASSERT_EQ(vec_3D[0], 0);
+    ASSERT_EQ(vec_3D[1], 1);
+    ASSERT_EQ(vec_3D[2], 2);
+}
+
+TEST_F(TVectorTestInt, operatorWriteShouldWriteToOutput) {
+    std::stringstream str;
+    str << first_2D;
+    str >> second_2D;
+    ASSERT_EQ(first_2D[0], second_2D[0]);
+    ASSERT_EQ(first_2D[1], second_2D[1]);
 }

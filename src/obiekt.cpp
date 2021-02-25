@@ -2,11 +2,9 @@
 #include <cmath>
 #include <fstream>
 
-obiekt::obiekt() {
+obiekt::obiekt() : all_angle(0) {
     for (int i = 0; i < size_of_TVec_3D; ++i)
         translation[i] = 0;
-
-    all_angle = 0;
 }
 
 void obiekt::initialize_obiekt() {

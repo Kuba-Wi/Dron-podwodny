@@ -55,8 +55,12 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 target_link_libraries(${PROJECT_NAME} lib)
 target_compile_options(${PROJECT_NAME} PRIVATE ${FLAGS})
 
-add_executable(${PROJECT_NAME}-ut tests/TVectorTest.cpp tests/TMatrixTest.cpp)
-target_link_libraries(${PROJECT_NAME}-ut gtest_main)
+add_executable(${PROJECT_NAME}-ut
+               tests/TVectorTest.cpp
+               tests/TMatrixTest.cpp
+               tests/surfaceTest.cpp
+)
+target_link_libraries(${PROJECT_NAME}-ut lib gtest_main)
 target_compile_options(${PROJECT_NAME}-ut PRIVATE ${FLAGS})
 
 enable_testing()

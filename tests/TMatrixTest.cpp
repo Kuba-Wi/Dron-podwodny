@@ -1,3 +1,4 @@
+#include <sstream>
 #include "TMatrix.hh"
 #include "gtest/gtest.h"
 
@@ -55,4 +56,25 @@ TEST_F(TMatrixTest, insert_columnFunctionShouldInsertColumnToMatrix) {
     ASSERT_EQ(mat_result(1, 0), vec_2D[1]);
     ASSERT_EQ(mat_result(0, 1), mat_2D(0, 1));
     ASSERT_EQ(mat_result(1, 1), mat_2D(1, 1));
+}
+
+TEST(TMatrixTestInput, operatorReadShouldReadFromInput) {
+    std::istringstream str("1 2 3 4");
+    TMatrix<int, 2> mat_2D;
+    str >> mat_2D;
+    ASSERT_EQ(mat_2D(0, 0), 1);
+    ASSERT_EQ(mat_2D(0, 1), 3);
+    ASSERT_EQ(mat_2D(1, 0), 2);
+    ASSERT_EQ(mat_2D(1, 1), 4);
+}
+
+TEST_F(TMatrixTest, operatorWriteShouldWriteToOutput) {
+    TMatrix<int, 2> second_2D;
+    std::stringstream str;
+    str << mat_2D;
+    str >> second_2D;
+    ASSERT_EQ(mat_2D(0, 0), second_2D(0, 0));
+    ASSERT_EQ(mat_2D(0, 1), second_2D(1, 0));
+    ASSERT_EQ(mat_2D(1, 0), second_2D(0, 1));
+    ASSERT_EQ(mat_2D(1, 1), second_2D(1, 1));
 }
