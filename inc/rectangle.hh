@@ -10,5 +10,5 @@
 class rectangle : public obiekt {
 public:
     /*! \brief Wirtualny destruktor */
-    virtual ~rectangle() {}
+    ~rectangle() override {}
 };

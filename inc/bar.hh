@@ -10,5 +10,5 @@
 class bar : public obiekt {
 public:
     /*! Wirtualny destruktor */
-    virtual ~bar() {}
+    ~bar() override {}
 };

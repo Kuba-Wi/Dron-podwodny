@@ -11,6 +11,7 @@
  */
 class hexagon : public obiekt {
 private:
+    TVector<double, size_of_TVec_3D> translation;
     /*!
      * \brief wylicza macierz rotationu
      * Metoda wylicza macierz rotationu wokół osi OX.
@@ -22,8 +23,11 @@ public:
      * \brief Konstruktor
      * Zeruje vector przesunięcia i łączny kąt rotationu.
      */
-    hexagon() : obiekt() {}
+    hexagon();
 
+    ~hexagon() override {}
+
+    TVector<double, size_of_TVec_3D> location() const override;
     /*!
      * \brief Zmienia przesunięcie graniastosłupa
      * Metoda wpisuje vector wejściowy do vectora przesunięcie.

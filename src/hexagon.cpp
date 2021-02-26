@@ -2,6 +2,11 @@
 #include <cmath>
 #include <fstream>
 
+hexagon::hexagon() : obiekt() {
+    for (int i = 0; i < size_of_TVec_3D; ++i)
+        translation[i] = 0;
+}
+
 void hexagon::rotation_matrix_x(TMatrix<double, size_of_TVec_3D>& rotation, double rotation_angle) const {
     const double pi = acos(-1);
 
@@ -31,4 +36,8 @@ void hexagon::local_move() {
 
     rotation(rotation_matrix);
     move_ahead(translation);
+}
+
+TVector<double, size_of_TVec_3D> hexagon::location() const {
+    return local_centre + translation;
 }

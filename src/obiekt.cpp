@@ -2,11 +2,6 @@
 #include <cmath>
 #include <fstream>
 
-obiekt::obiekt() : all_angle(0) {
-    for (int i = 0; i < size_of_TVec_3D; ++i)
-        translation[i] = 0;
-}
-
 void obiekt::initialize_obiekt() {
     read_local();
     read_local_coordinates();
@@ -26,14 +21,15 @@ void obiekt::initialize_obiekt() {
     local_centre = (min_coord + max_coord) / 2;
     lenght_half = (max_coord - min_coord) / 2;
 
+    constexpr double safe_border = 0.25;
     for (int i = 0; i < size_of_TVec_3D; ++i) {
-        lenght_half[i] += 0.25;
+        lenght_half[i] += safe_border;
     }
 }
 
-void obiekt::read_coordinates(const std::string& file_name) {
+void obiekt::read_local_coordinates() {
     std::ifstream read;
-    read.open(file_name);
+    read.open(local_file_name);
     if (!read.is_open())
         return;
 
@@ -53,10 +49,6 @@ void obiekt::read_coordinates(const std::string& file_name) {
     }
 
     read.close();
-}
-
-void obiekt::read_local_coordinates() {
-    read_coordinates(local_file_name);
 }
 
 void obiekt::write_global_coordinates() {
@@ -80,15 +72,15 @@ void obiekt::write_global_coordinates() {
 }
 
 void obiekt::move_ahead(const TVector<double, size_of_TVec_3D>& mv) {
-    for (TVector<double, size_of_TVec_3D>& x : coordinates)
+    for (auto& x : coordinates)
         x = x + mv;
 }
 
 void obiekt::rotation(const TMatrix<double, size_of_TVec_3D>& rotation_matrix) {
-    for (TVector<double, size_of_TVec_3D>& x : coordinates)
+    for (auto& x : coordinates)
         x = rotation_matrix * x;
 }
 
 TVector<double, size_of_TVec_3D> obiekt::location() const {
-    return local_centre + translation;
+    return local_centre;
 }

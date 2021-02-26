@@ -37,13 +37,13 @@ void dron::initialize_drone() {
     left_motor.initialize_obiekt();
     right_motor.initialize_obiekt();
 
-    TVector<double, size_of_TVec_3D> przesun;
-    przesun[0] = -20;
-    przesun[1] = -20;
-    przesun[2] = 0;
-    right_motor.inscribe_translation(przesun);
-    przesun[1] = 20;
-    left_motor.inscribe_translation(przesun);
+    TVector<double, size_of_TVec_3D> rellocate;
+    rellocate[0] = -20;
+    rellocate[1] = -20;
+    rellocate[2] = 0;
+    right_motor.inscribe_translation(rellocate);
+    rellocate[1] = 20;
+    left_motor.inscribe_translation(rellocate);
 
     TMatrix<double, size_of_TVec_3D> rotation_temp;
 

@@ -17,26 +17,17 @@ protected:
     std::vector<TVector<double, size_of_TVec_3D>> coordinates;
     /*! \brief Łączny kąt rotationu obiektu */
     double all_angle;
-    /*! \brief przesunięcie obiektu względem wspolrzednych lokalnych */
-    TVector<double, size_of_TVec_3D> translation;
     /*! \brief odległości środka obiektu od ścian */
     TVector<double, size_of_TVec_3D> lenght_half;
     /*! \brief Środek wspolrzednych lokalnych obiektu */
     TVector<double, size_of_TVec_3D> local_centre;
-
-    /*!
-     * \brief Wczytuje coordinates z pliku
-     * Wczytuje dane z pliku i zapisuje je do pola współrzędne
-     * \param[in] file_name - nazwa pliku z którego będą odczytywane dane
-     */
-    void read_coordinates(const std::string& file_name);
 
 public:
     /*!
      * \brief Konstruktor
      * Zeruje vector przesunięcia i łączny kąt rotationu.
      */
-    obiekt();
+    obiekt() : all_angle(0) {}
     /*! \brief Destruktor wirtualny */
     virtual ~obiekt() {}
 
@@ -79,7 +70,7 @@ public:
      * Metoda zwraca wartość współrzędnych środka drona
      * \return Współrzędna środka drona
      */
-    TVector<double, size_of_TVec_3D> location() const;
+    virtual TVector<double, size_of_TVec_3D> location() const;
 
     /*!
      * \brief Zwraca vector z polowami dlugości obiektu

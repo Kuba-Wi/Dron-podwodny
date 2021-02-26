@@ -59,6 +59,8 @@ add_executable(${PROJECT_NAME}-ut
                tests/TVectorTest.cpp
                tests/TMatrixTest.cpp
                tests/surfaceTest.cpp
+               tests/obiektTest.cpp
+               tests/testFunctions.cpp
 )
 target_link_libraries(${PROJECT_NAME}-ut lib gtest_main)
 target_compile_options(${PROJECT_NAME}-ut PRIVATE ${FLAGS})
