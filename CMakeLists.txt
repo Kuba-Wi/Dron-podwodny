@@ -60,6 +60,7 @@ add_executable(${PROJECT_NAME}-ut
                tests/TMatrixTest.cpp
                tests/surfaceTest.cpp
                tests/obiektTest.cpp
+               tests/hexagonTest.cpp
                tests/testFunctions.cpp
 )
 target_link_libraries(${PROJECT_NAME}-ut lib gtest_main)

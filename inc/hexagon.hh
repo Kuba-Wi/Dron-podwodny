@@ -11,6 +11,7 @@
  */
 class hexagon : public obiekt {
 private:
+    double all_angle = 0;
     TVector<double, size_of_TVec_3D> translation;
     /*!
      * \brief wylicza macierz rotationu

@@ -133,7 +133,7 @@ TVector<T, Size> TMatrix<T, Size>::operator*(const TVector<T, Size>& vec) const 
 
     for (int w = 0; w < Size; w++) {
         for (int k = 0; k < Size; k++)
-            temp_num = temp_num + columns[k][w] * vec[k];
+            temp_num += columns[k][w] * vec[k];
 
         temp_vec[w] = temp_num;
         temp_num = 0;

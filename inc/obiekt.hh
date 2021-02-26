@@ -15,19 +15,12 @@ class obiekt : public surface {
 protected:
     /*! \brief Przechowuje współrzędne punktów tworzących obiekt */
     std::vector<TVector<double, size_of_TVec_3D>> coordinates;
-    /*! \brief Łączny kąt rotationu obiektu */
-    double all_angle;
     /*! \brief odległości środka obiektu od ścian */
     TVector<double, size_of_TVec_3D> lenght_half;
     /*! \brief Środek wspolrzednych lokalnych obiektu */
     TVector<double, size_of_TVec_3D> local_centre;
 
 public:
-    /*!
-     * \brief Konstruktor
-     * Zeruje vector przesunięcia i łączny kąt rotationu.
-     */
-    obiekt() : all_angle(0) {}
     /*! \brief Destruktor wirtualny */
     virtual ~obiekt() {}
 

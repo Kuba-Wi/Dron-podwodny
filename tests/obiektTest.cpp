@@ -70,31 +70,6 @@ TEST_F(obiektTest, readWriteFunctionsShouldReadFromLocalFileAndWriteToGlobalFile
     clean_global_file();
 }
 
-void check_moved(const TMatrix<double, 3>& rotation_3D,
-                 const TVector<double, 3>& translation_3D,
-                 const TVector<double, 3>& local_3D,
-                 const TVector<double, 3>& global_3D) {
-    auto local_moved = rotation_3D * local_3D + translation_3D;
-    for (std::size_t i = 0; i < size_of_TVec_3D; ++i) {
-        ASSERT_EQ(local_moved[i], global_3D[i]);
-    }
-}
-
-void check_move_and_rotation(const TMatrix<double, 3>& rotation_3D, const TVector<double, 3>& translation_3D) {
-    TVector<double, 3> local_3D;
-    TVector<double, 3> global_3D;
-    std::ifstream read_local(local_name);
-    std::ifstream read_global(global_name);
-    read_local >> local_3D;
-    read_global >> global_3D;
-    check_moved(rotation_3D, translation_3D, local_3D, global_3D);
-    read_local >> local_3D;
-    read_global >> global_3D;
-    check_moved(rotation_3D, translation_3D, local_3D, global_3D);
-    read_local.close();
-    read_global.close();
-}
-
 TEST_F(obiektTest, move_aheadFunctionShouldMoveObiect) {
     std::istringstream write_vec("1 1 1");
     std::istringstream write_mat("1 0 0 0 1 0 0 0 1");
@@ -107,7 +82,7 @@ TEST_F(obiektTest, move_aheadFunctionShouldMoveObiect) {
     ob.move_ahead(translation_3D);
     ob.write_global_coordinates();
 
-    check_move_and_rotation(rotation_3D, translation_3D);
+    check_move_and_rotation(local_name, global_name, rotation_3D, translation_3D);
     clean_global_file();
 }
 
@@ -123,5 +98,5 @@ TEST_F(obiektTest, rotationFunctionShouldRotateObiect) {
     ob.rotation(rotation_3D);
     ob.write_global_coordinates();
 
-    check_move_and_rotation(rotation_3D, translation_3D);
+    check_move_and_rotation(local_name, global_name, rotation_3D, translation_3D);
 }
