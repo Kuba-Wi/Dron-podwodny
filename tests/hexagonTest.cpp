@@ -47,17 +47,8 @@ TEST_F(hexagonTest, local_moveFunctionShouldMoveHexagon) {
     hex.local_move();
     hex.write_global_coordinates();
 
-    constexpr double rotation_angle = 1;
+    std::istringstream write_mat("1 0 0 0 1 0 0 0 1");
     TMatrix<double, 3> rotation_3D;
-    const double pi = acos(-1);
-    rotation_3D(0, 1) = 0;
-    rotation_3D(0, 2) = 0;
-    rotation_3D(1, 0) = 0;
-    rotation_3D(2, 0) = 0;
-    rotation_3D(0, 0) = 1;
-    rotation_3D(1, 1) = cos(pi * (rotation_angle / 180.0));
-    rotation_3D(2, 2) = rotation_3D(1, 1);
-    rotation_3D(2, 1) = sin(pi * (rotation_angle / 180.0));
-    rotation_3D(1, 2) = -rotation_3D(2, 1);
+    write_mat >> rotation_3D;
     check_move_and_rotation(local_name, global_name, rotation_3D, translation_3D);
 }

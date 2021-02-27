@@ -23,8 +23,6 @@ void hexagon::rotation_matrix_x(TMatrix<double, size_of_TVec_3D>& rotation, doub
 
 void hexagon::local_move() {
     TMatrix<double, size_of_TVec_3D> rotation_matrix;
-
-    all_angle += 1;
     while (all_angle >= 360.0)
         all_angle -= 360.0;
     while (all_angle <= -360.0)
@@ -33,6 +31,7 @@ void hexagon::local_move() {
     rotation_matrix_x(rotation_matrix, all_angle);
     rotation(rotation_matrix);
     move_ahead(translation);
+    all_angle += 1;
 }
 
 TVector<double, size_of_TVec_3D> hexagon::location() const {

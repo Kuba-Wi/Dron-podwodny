@@ -37,7 +37,7 @@ void check_moved(const TMatrix<double, 3>& rotation_3D,
                  const TVector<double, 3>& global_3D) {
     auto local_moved = rotation_3D * local_3D + translation_3D;
     for (std::size_t i = 0; i < size_of_TVec_3D; ++i) {
-        ASSERT_TRUE(fabs(local_moved[i] - global_3D[i]) < pow(0.1, 5));
+        ASSERT_TRUE(fabs(local_moved[i] - global_3D[i]) < pow(0.1, 4));
     }
 }
 

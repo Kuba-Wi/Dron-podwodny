@@ -1,10 +1,8 @@
 #include "dron.hh"
 
-dron::dron() {
+dron::dron() : all_angle(0) {
     for (int i = 0; i < size_of_TVec_3D; ++i)
         translation[i] = 0;
-
-    all_angle = 0;
 }
 
 void dron::count_translation(TVector<double, size_of_TVec_3D>& vec, double rising_angle, double distance) const {
@@ -13,7 +11,6 @@ void dron::count_translation(TVector<double, size_of_TVec_3D>& vec, double risin
     vec[0] = cos(pi * (all_angle / 180.0)) * cos(pi * (rising_angle / 180.0));
     vec[1] = sin(pi * (all_angle / 180.0)) * cos(pi * (rising_angle / 180.0));
     vec[2] = sin(pi * (rising_angle / 180.0));
-
     vec = vec * distance;
 }
 
@@ -25,7 +22,6 @@ void dron::count_rotation_angle(TMatrix<double, size_of_TVec_3D>& rotation, doub
         rotation(i, 2) = 0;
     }
     rotation(2, 2) = 1;
-
     rotation(0, 0) = cos(pi * (rotation_angle / 180.0));
     rotation(1, 1) = rotation(0, 0);
     rotation(1, 0) = sin(pi * (rotation_angle / 180.0));
@@ -38,19 +34,18 @@ void dron::initialize_drone() {
     right_motor.initialize_obiekt();
 
     TVector<double, size_of_TVec_3D> rellocate;
-    rellocate[0] = -20;
-    rellocate[1] = -20;
+    constexpr double relocation = 20;
+    rellocate[0] = -relocation;
+    rellocate[1] = -relocation;
     rellocate[2] = 0;
     right_motor.inscribe_translation(rellocate);
-    rellocate[1] = 20;
+    rellocate[1] = relocation;
     left_motor.inscribe_translation(rellocate);
 
     TMatrix<double, size_of_TVec_3D> rotation_temp;
-
     count_rotation_angle(rotation_temp, 0);
-
-    left_motor_move(rotation_temp);
     right_motor_move(rotation_temp);
+    left_motor_move(rotation_temp);
 }
 
 void dron::add_files_body(const std::string& local_name, const std::string& global_name) {
@@ -91,7 +86,6 @@ void dron::rotation(double rotation_angle) {
         all_angle += 360.0;
 
     count_rotation_angle(rotation, all_angle);
-
     left_motor_move(rotation);
     right_motor_move(rotation);
     body_move(rotation);
@@ -99,30 +93,24 @@ void dron::rotation(double rotation_angle) {
 
 void dron::left_motor_move(const TMatrix<double, size_of_TVec_3D>& rotation) {
     left_motor.read_local_coordinates();
-
     left_motor.local_move();
     left_motor.rotation(rotation);
     left_motor.move_ahead(translation);
-
     left_motor.write_global_coordinates();
 }
 
 void dron::right_motor_move(const TMatrix<double, size_of_TVec_3D>& rotation) {
     right_motor.read_local_coordinates();
-
     right_motor.local_move();
     right_motor.rotation(rotation);
     right_motor.move_ahead(translation);
-
     right_motor.write_global_coordinates();
 }
 
 void dron::body_move(const TMatrix<double, size_of_TVec_3D>& rotation) {
     body.read_local_coordinates();
-
     body.rotation(rotation);
     body.move_ahead(translation);
-
     body.write_global_coordinates();
 }
 
