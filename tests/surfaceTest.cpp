@@ -6,8 +6,8 @@
 #include "surface.hh"
 #include "testFuctions.hh"
 
-const std::string local_name = "../tests/surface_local.txt";
-const std::string global_name = "../tests/surface_global.txt";
+const std::string local_name = "../tests/dat_files/surface_local.txt";
+const std::string global_name = "../tests/dat_files/surface_global.txt";
 
 TEST(surfaceTest, read_localFunctionShouldReadLocalFileAndWriteItToGlobalFile) {
     surface surf(local_name, global_name);
@@ -25,9 +25,7 @@ TEST(surfaceTest, return_zFunctionShouldReturnZCoordinateOfSurface) {
     std::string str;
     std::ifstream read_local;
     read_local.open(local_name.c_str());
-    if (!read_local.is_open()) {
-        ASSERT_TRUE(false);
-    }
+    ASSERT_TRUE(read_local.is_open());
     std::getline(read_local, str);
     read_local.close();
 

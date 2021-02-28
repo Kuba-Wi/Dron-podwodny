@@ -1,4 +1,5 @@
 #include "obiekt.hh"
+#include <cassert>
 #include <cmath>
 #include <fstream>
 
@@ -30,8 +31,7 @@ void obiekt::initialize_obiekt() {
 void obiekt::read_local_coordinates() {
     std::ifstream read;
     read.open(local_file_name);
-    if (!read.is_open())
-        return;
+    assert(read.is_open());
 
     TVector<double, size_of_TVec_3D> line;
     coordinates.clear();
@@ -54,11 +54,9 @@ void obiekt::read_local_coordinates() {
 void obiekt::write_global_coordinates() {
     std::ofstream write;
     write.open(file_with_points);
-    if (!write.is_open())
-        return;
+    assert(write.is_open());
 
     int counter = 0;
-
     for (TVector<double, size_of_TVec_3D>& i : coordinates) {
         write << i;
         ++counter;

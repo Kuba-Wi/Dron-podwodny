@@ -8,8 +8,8 @@
 #include "hexagon.hh"
 #include "testFuctions.hh"
 
-const std::string local_name = "../tests/hexagon_local.txt";
-const std::string global_name = "../tests/hexagon_global.txt";
+const std::string local_name = "../tests/dat_files/hexagon_local.txt";
+const std::string global_name = "../tests/dat_files/hexagon_global.txt";
 
 struct hexagonTest : public ::testing::Test {
     hexagon hex;

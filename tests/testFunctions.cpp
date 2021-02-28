@@ -16,9 +16,7 @@ void check_reading_writing_to_file(const std::string& local_name, const std::str
     read_local.open(local_name);
     read_global.open(global_name);
 
-    if (!read_local.is_open() || !read_global.is_open()) {
-        ASSERT_TRUE(false);
-    }
+    ASSERT_TRUE(read_local.is_open() && read_global.is_open());
 
     while (!read_local.eof() && !read_global.eof()) {
         std::getline(read_local, local_line);
@@ -48,7 +46,9 @@ void check_move_and_rotation(const std::string& local_name,
     TVector<double, 3> local_3D;
     TVector<double, 3> global_3D;
     std::ifstream read_local(local_name);
+    ASSERT_TRUE(read_local.is_open());
     std::ifstream read_global(global_name);
+    ASSERT_TRUE(read_global.is_open());
     read_local >> local_3D;
     read_global >> global_3D;
     check_moved(rotation_3D, translation_3D, local_3D, global_3D);

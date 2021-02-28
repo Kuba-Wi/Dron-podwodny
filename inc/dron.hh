@@ -16,7 +16,7 @@ private:
     /*! Lewa śruba drona */
     hexagon left_motor;
     /*! \brief Łączny kąt rotationu obiektu */
-    double all_angle;
+    double all_angle = 0;
     /*! \brief przesunięcie obiektu względem wspolrzednych lokalnych */
     TVector<double, size_of_TVec_3D> translation;
 

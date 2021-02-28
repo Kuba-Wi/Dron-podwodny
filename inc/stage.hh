@@ -67,9 +67,6 @@ private:
     bool emergence() const;
 
 public:
-    /*! \brief Konstruktor domyślny */
-    stage() {}
-
     /*!
      * \brief Dodaje bottom na scenę
      * Zapisuje pliki opisujące powierzchnię dna

@@ -5,8 +5,8 @@
 #include "obiekt.hh"
 #include "testFuctions.hh"
 
-const std::string local_name = "../tests/obiekt_local.txt";
-const std::string global_name = "../tests/obiekt_global.txt";
+const std::string local_name = "../tests/dat_files/obiekt_local.txt";
+const std::string global_name = "../tests/dat_files/obiekt_global.txt";
 
 void clean_global_file() {
     std::ofstream strm(global_name);

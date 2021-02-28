@@ -42,7 +42,6 @@ void stage::link_add_file(const std::string& file_name) {
 void stage::add_bottom(const std::string& local_name, const std::string& global_name) {
     bottom.add_local_file(local_name);
     bottom.add_global_file(global_name);
-
     bottom.read_local();
 
     link_add_file(global_name);
@@ -51,7 +50,6 @@ void stage::add_bottom(const std::string& local_name, const std::string& global_
 void stage::add_water(const std::string& local_name, const std::string& global_name) {
     water.add_local_file(local_name);
     water.add_global_file(global_name);
-
     water.read_local();
 
     link_add_file(global_name);
@@ -59,26 +57,22 @@ void stage::add_water(const std::string& local_name, const std::string& global_n
 
 void stage::add_body(const std::string& local_name, const std::string& global_name) {
     dron_stage.add_files_body(local_name, global_name);
-
     link_add_file(global_name);
 }
 
 void stage::add_left_motor(const std::string& local_name, const std::string& global_name) {
     dron_stage.add_files_left_motor(local_name, global_name);
-
     link_add_file(global_name);
 }
 
 void stage::add_right_motor(const std::string& local_name, const std::string& global_name) {
     dron_stage.add_files_right_motor(local_name, global_name);
-
     link_add_file(global_name);
 }
 
 void stage::add_obstacle(const std::string& local_name, const std::string& global_name) {
     obstacles_list.back()->add_local_file(local_name);
     obstacles_list.back()->add_global_file(global_name);
-
     obstacles_list.back()->initialize_obiekt();
 
     link_add_file(global_name);
@@ -86,19 +80,16 @@ void stage::add_obstacle(const std::string& local_name, const std::string& globa
 
 void stage::add_cuboid(const std::string& local_name, const std::string& global_name) {
     obstacles_list.push_back(std::make_shared<cuboid>());
-
     add_obstacle(local_name, global_name);
 }
 
 void stage::add_bar(const std::string& local_name, const std::string& global_name) {
     obstacles_list.push_back(std::make_shared<bar>());
-
     add_obstacle(local_name, global_name);
 }
 
 void stage::add_rectangle(const std::string& local_name, const std::string& global_name) {
     obstacles_list.push_back(std::make_shared<rectangle>());
-
     add_obstacle(local_name, global_name);
 }
 

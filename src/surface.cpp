@@ -1,4 +1,5 @@
 #include "surface.hh"
+#include <cassert>
 #include <fstream>
 #include "TVector.hh"
 
@@ -18,8 +19,7 @@ void surface::read_local() {
     read.open(local_file_name);
     write.open(file_with_points);
 
-    if (!(read.is_open() && write.is_open()))
-        return;
+    assert(read.is_open() && write.is_open());
 
     read >> line;
     while (!read.eof()) {

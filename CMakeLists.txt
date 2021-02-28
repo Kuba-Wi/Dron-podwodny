@@ -62,6 +62,7 @@ add_executable(${PROJECT_NAME}-ut
                tests/obiektTest.cpp
                tests/hexagonTest.cpp
                tests/dronTest.cpp
+               tests/stageTest.cpp
                tests/testFunctions.cpp
 )
 target_link_libraries(${PROJECT_NAME}-ut lib gtest_main)

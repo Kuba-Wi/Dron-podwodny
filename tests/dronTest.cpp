@@ -7,12 +7,12 @@
 #include "gtest/gtest.h"
 #include "testFuctions.hh"
 
-const std::string body_local = "../tests/body_local.txt";
-const std::string body_global = "../tests/body_global.txt";
-const std::string left_motor_local = "../tests/left_motor_local.txt";
-const std::string left_motor_global = "../tests/left_motor_global.txt";
-const std::string right_motor_local = "../tests/right_motor_local.txt";
-const std::string right_motor_global = "../tests/right_motor_global.txt";
+const std::string body_local = "../tests/dat_files/body_local.txt";
+const std::string body_global = "../tests/dat_files/body_global.txt";
+const std::string left_motor_local = "../tests/dat_files/left_motor_local.txt";
+const std::string left_motor_global = "../tests/dat_files/left_motor_global.txt";
+const std::string right_motor_local = "../tests/dat_files/right_motor_local.txt";
+const std::string right_motor_global = "../tests/dat_files/right_motor_global.txt";
 
 struct dronTest : public ::testing::Test {
     dron drone;

@@ -1,6 +1,6 @@
 #include "dron.hh"
 
-dron::dron() : all_angle(0) {
+dron::dron() {
     for (int i = 0; i < size_of_TVec_3D; ++i)
         translation[i] = 0;
 }
