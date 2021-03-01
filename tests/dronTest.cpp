@@ -46,19 +46,6 @@ struct dronTest : public ::testing::Test {
     }
 };
 
-void rotation_z(TMatrix<double, size_of_TVec_3D>& rotation, double rotation_angle) {
-    constexpr double pi = acos(-1);
-    for (int i = 0; i < size_of_TVec_3D; ++i) {
-        rotation(2, i) = 0;
-        rotation(i, 2) = 0;
-    }
-    rotation(2, 2) = 1;
-    rotation(0, 0) = cos(pi * (rotation_angle / 180.0));
-    rotation(1, 1) = rotation(0, 0);
-    rotation(1, 0) = sin(pi * (rotation_angle / 180.0));
-    rotation(0, 1) = -rotation(1, 0);
-}
-
 TEST_F(dronTest, initialize_droneFunctionShouldWriteCoordinatesToGlobalFiles) {
     std::istringstream str("1 0 0 0 1 0 0 0 1");
     TMatrix<double, 3> rotation_3D;
