@@ -65,7 +65,7 @@ add_executable(${PROJECT_NAME}-ut
                tests/stageTest.cpp
                tests/testFunctions.cpp
 )
-target_link_libraries(${PROJECT_NAME}-ut lib gtest_main)
+target_link_libraries(${PROJECT_NAME}-ut lib gtest_main gmock)
 target_compile_options(${PROJECT_NAME}-ut PRIVATE ${FLAGS})
 
 enable_testing()

@@ -5,6 +5,7 @@
 #include "gtest/gtest.h"
 #include "stage.hh"
 #include "testFuctions.hh"
+#include "mocks/linkMock.hh"
 
 const std::string bottom_local = "../tests/dat_files/bottom_local.txt";
 const std::string bottom_global = "../tests/dat_files/bottom_global.txt";
@@ -24,7 +25,8 @@ const std::string rectangle_local = "../tests/dat_files/rectangle_local.txt";
 const std::string rectangle_global = "../tests/dat_files/rectangle_global.txt";
 
 struct stageTest : public ::testing::Test {
-    stage st;
+    ::testing::NiceMock<LinkMock> link;
+    stage st{link};
     TVector<double, 3> l_motor_relocation_3D;
     TVector<double, 3> r_motor_relocation_3D;
     TMatrix<double, 3> rotation_local_3D;

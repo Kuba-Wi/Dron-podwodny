@@ -1,4 +1,5 @@
 #include "stage.hh"
+#include "lacze_do_gnuplota.hh"
 
 using namespace std;
 
@@ -14,7 +15,8 @@ void obiects_info() {
 }
 
 void stage_management() {
-    stage main_stage;
+    PzG::LaczeDoGNUPlota link;
+    stage main_stage(link);
     main_stage.add_body("../dat/body.pow", "../dat/body1.pow");
     main_stage.add_left_motor("../dat/left_motor.dat", "../dat/left_motor1.dat");
     main_stage.add_right_motor("../dat/right_motor.dat", "../dat/right_motor1.dat");

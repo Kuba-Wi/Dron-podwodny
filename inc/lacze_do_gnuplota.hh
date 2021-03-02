@@ -24,7 +24,6 @@
  * narzędzia umożliwiające realizację połączenia z programem \p gnuplot.
  */
 namespace PzG {
-
   /*!
    * \brief Określa tryb rysowania realizowanego przez program \p gnuplot
    *
@@ -114,8 +113,18 @@ namespace PzG {
      */
       RodzajRysowania  _RodzRys;
   };
+}
 
+class Link {
+public:
+    virtual ~Link() = default;
+    virtual bool Rysuj() = 0;
+    virtual bool DodajNazwePliku(const char* NazwaPliku, PzG::RodzajRysowania RodzRys = PzG::RR_Ciagly, int Szerokosc = 1) = 0;
+    virtual void ZmienTrybRys(PzG::TrybRysowania Tryb) = 0;
+    virtual bool Inicjalizuj() = 0;
 
+};
+namespace PzG {
 /*!
  * \brief  Klasa realizuje interfejs do programu GNUPlot.
  *
@@ -124,7 +133,7 @@ namespace PzG {
  * Każdy taki zbiór może być następnie wizualizowany przez program 
  * gnuplot w postaci oddzielnych płaszczyzn z wycinaniem części zasłanianych.
  */
-class LaczeDoGNUPlota {
+class LaczeDoGNUPlota : public Link {
  protected:
   /*!
    * \brief Lista nazw plików z danymi dla \e gnuplota.

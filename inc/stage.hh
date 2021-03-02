@@ -22,7 +22,7 @@ private:
     /*! \brief Opisuje obiekt dron */
     dron dron_stage;
     /*! \brief Łącze z programem gnuplot */
-    PzG::LaczeDoGNUPlota link;
+    Link& link;
 
     /*! \brief lista z wskaźnikami na przeszkody */
     std::list<std::shared_ptr<obiekt>> obstacles_list;
@@ -67,6 +67,8 @@ private:
     bool emergence() const;
 
 public:
+
+    stage(Link& lin) : link(lin) {}
     /*!
      * \brief Dodaje bottom na scenę
      * Zapisuje pliki opisujące powierzchnię dna
