@@ -67,7 +67,6 @@ private:
     bool emergence() const;
 
 public:
-
     stage(Link& lin) : link(lin) {}
     /*!
      * \brief Dodaje bottom na scenę

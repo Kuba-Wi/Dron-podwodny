@@ -46,7 +46,7 @@ set(FILES
     src/stage.cpp
     src/surface.cpp
 )
-set(FLAGS -Wall -pedantic)
+set(FLAGS -Wall -pedantic -Wextra)
 include_directories(inc)
 add_library(lib STATIC ${FILES})
 target_compile_options(lib PRIVATE ${FLAGS})
