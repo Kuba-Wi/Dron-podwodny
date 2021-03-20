@@ -22,7 +22,7 @@ protected:
 
 public:
     /*! \brief Destruktor wirtualny */
-    virtual ~obiekt() {}
+    virtual ~obiekt() = default;
 
     /*!
      * \brief initializee pola klasy

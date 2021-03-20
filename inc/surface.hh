@@ -19,7 +19,7 @@ protected:
 
 public:
     /*! \brief Konstruktor bezparametryczny */
-    surface() {}
+    surface() = default;
     /*! \brief Konstruktor zapisuje nazwę pliku lokalnego i globalnego
      * \param[in] local_name - nazwa pliku z współrzędnymi lokalnymi
      * \param[in] global_name - nazwa pliku z współrzędnymi globalnymi

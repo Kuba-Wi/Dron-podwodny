@@ -13,7 +13,7 @@ protected:
 
 public:
     /*! \brief konstruktor domyślny */
-    local_surface() {}
+    local_surface() = default;
     /*!
      * \brief Konstruktor zapisuje nazwę pliku
      * \param[in] nazwa - file_name, który ma zostać zapisany

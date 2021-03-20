@@ -35,7 +35,7 @@ public:
      * \param[in] vec - kopiowany vector
      */
     TVector(const TVector<T, Size>& vec);
-    TVector& operator=(const TVector<T, Size>& vec);
+    TVector& operator=(const TVector<T, Size>& vec) = default;
     /*!
      * \brief Destruktor
      * Zmniejsza o jeden pole currently_vectors_3D3D, jeśli vector
@@ -141,14 +141,6 @@ TVector<T, Size>::TVector(const TVector<T, Size>& vec) : components(vec.componen
         ++currently_vectors_3D;
         ++all_vectors_3D;
     }
-}
-
-template <typename T, int Size>
-TVector<T, Size>& TVector<T, Size>::operator=(const TVector<T, Size>& vec) {
-    if (this != &vec) {
-        components = vec.components;
-    }
-    return *this;
 }
 
 template <typename T, int Size>

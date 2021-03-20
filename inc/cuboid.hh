@@ -10,5 +10,5 @@
 class cuboid : public obiekt {
 public:
     /*! \brief Wirtualny destruktor */
-    ~cuboid() override {}
+    ~cuboid() override = default;
 };

@@ -26,7 +26,7 @@ public:
      */
     hexagon();
 
-    ~hexagon() override {}
+    ~hexagon() override = default;
 
     TVector<double, size_of_TVec_3D> location() const override;
     /*!
