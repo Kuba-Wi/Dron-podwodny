@@ -1,5 +1,5 @@
 # Underwater-drone
-This is underwater drone simulation. Program runs in linux gnuplot program.
+This is an underwater drone simulation. It runs in linux gnuplot program.
 
 Screens of running application.
 
